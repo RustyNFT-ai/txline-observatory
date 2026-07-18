@@ -107,6 +107,8 @@ variable. Render supplies `PORT`; `server.py` binds to it automatically. The inc
 without access to the private recorder filesystem. A free service can cold-start, so
 open the app once before a live demo or judging session.
 
+[Deploy the public repository to Render](https://render.com/deploy?repo=https://github.com/RustyNFT-ai/txline-observatory)
+
 For a temporary preview, run `cloudflared tunnel --url http://localhost:8901`. The
 generated URL changes on restart and requires this computer to stay awake, so it is not
 the submission deployment.

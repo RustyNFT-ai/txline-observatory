@@ -1,0 +1,37 @@
+name: Observatory smoke test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source
+        run: |
+          node --check web/app.js
+          python3 -m py_compile server.py normalize.py solana_anchor.py wallet_watch.py jupiter_watch.py
+      - name: Exercise recorded-data API
+        run: |
+          python3 server.py 8901 >/tmp/observatory.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in {1..20}; do
+            curl -fsS http://127.0.0.1:8901/api/health >/tmp/health.json && break
+            sleep 0.25
+          done
+          python3 - <<'PY'
+          import json, urllib.request
+          base = "http://127.0.0.1:8901"
+          health = json.load(urllib.request.urlopen(base + "/api/health"))
+          assert health["ok"] and health["matches"] == 47, health
+          match = json.load(urllib.request.urlopen(base + "/api/match/england-vs-argentina-2026-07-15"))
+          assert match["meta"]["match"] == "England vs Argentina"
+          assert len(match["events"]) == 16044
+          assert len(match["meta"]["moments"]) == 3
+          insights = json.load(urllib.request.urlopen(base + "/api/insights"))
+          assert insights["summary"]["opportunities"]["count"] == 154
+          PY
