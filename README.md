@@ -96,6 +96,7 @@ honestly rather than faking a match. CLI: `python3 solana_anchor.py <fid> <seq> 
 - [Submission brief and TxLINE feedback](SUBMISSION.md)
 - [Five-minute smoke test](TESTING.md)
 - [Demo video script](VIDEO_SCRIPT.md)
+- [Final UX audit and known limitations](UX_AUDIT.md)
 - [AI grounding and security model](AI_INSIGHTS.md)
 
 ## Deploy
