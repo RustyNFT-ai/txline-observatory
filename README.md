@@ -183,8 +183,8 @@ Status check: `pgrep -af "wallet_watch|jupiter_watch"`; logs sit next to the scr
 
 [AI event analyst](AI_INSIGHTS.md): expand any goal moment and ask Claude to explain
 its source timing, nearby feed evidence, executable edge, and recorded bot action.
-The server rebuilds trusted event context from the archive; credentials and model
-calls never reach the browser.
+The server rebuilds trusted event context, prematch history, and five similar goal
+cases from the archive; credentials and model calls never reach the browser.
 
 ## Later extensions
 

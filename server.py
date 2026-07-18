@@ -75,6 +75,7 @@ _AI_RATE = collections.defaultdict(collections.deque)
 _AI_GLOBAL_RATE = collections.deque()
 _AI_LOCK = threading.Lock()
 _AI_ARCHIVE = None
+_AI_GOAL_CASES = None
 
 WALLET_API = "https://data-api.polymarket.com/trades"
 WALLET_DEMO = "0xd218e474776403a330142299f7796e8ba32eb5c9"
@@ -138,6 +139,49 @@ def selected_wallet_context(address, match_id, t0):
             "fills_within_10m": fills[:20]}
 
 
+def similar_goal_cases(match_id, moment, limit=5):
+    """Return a bounded set of fact rows with timing/state patterns nearest this goal."""
+    global _AI_GOAL_CASES
+    if _AI_GOAL_CASES is None:
+        cases = []
+        for row in json.load(open(os.path.join(DATA, "index.json"))):
+            try:
+                meta = json.load(open(os.path.join(DATA, row["id"] + ".json")))
+            except (OSError, ValueError):
+                continue
+            for index, goal in enumerate(meta.get("moments") or []):
+                cases.append({"match_id": row["id"], "moment_index": index,
+                    "match": row.get("match"), "date": row.get("date"),
+                    "scorer": goal.get("scorer"),
+                    "clock_minute": int(goal["cs"] // 60) if goal.get("cs") is not None else None,
+                    "t0_src": goal.get("t0_src"), "poly_dt": goal.get("poly_dt"),
+                    "espn_dt": goal.get("espn_dt"), "wc26_dt": goal.get("wc26_dt"),
+                    "jup_dt": goal.get("jup_dt"), "whale_dt": goal.get("whale_dt"),
+                    "whale_who": goal.get("whale_who"), "delta_120s": goal.get("delta_120s"),
+                    "var": bool(goal.get("var")), "disallowed": bool(goal.get("disallowed")),
+                    "bot_entries": goal.get("bot_entries"), "bot_pnl": goal.get("bot_pnl")})
+        _AI_GOAL_CASES = cases
+
+    def distance(case):
+        score = 0 if case.get("t0_src") == moment.get("t0_src") else 8
+        for key, scale in (("poly_dt", 20), ("espn_dt", 60), ("wc26_dt", 120),
+                           ("jup_dt", 30), ("whale_dt", 30)):
+            a, b = case.get(key), moment.get(key)
+            if a is None or b is None:
+                score += 1.5 if a is not b else 0
+            else:
+                score += min(abs(a - b) / scale, 4)
+        a, b = case.get("delta_120s"), moment.get("delta_120s")
+        score += 1 if a is None or b is None else min(abs(a - b) * 4, 3)
+        score += 1.5 * (case.get("var") != bool(moment.get("var")))
+        score += 4 * (case.get("disallowed") != bool(moment.get("disallowed")))
+        return score
+
+    candidates = [case for case in _AI_GOAL_CASES
+                  if not (case["match_id"] == match_id and case["moment_index"] == moment.get("_index"))]
+    return sorted(candidates, key=distance)[:limit]
+
+
 def ai_context(match_id, moment_index, wallet_address=None):
     """Resolve a small browser selection into trusted archive context server-side."""
     meta = json.load(open(os.path.join(DATA, match_id + ".json")))
@@ -145,6 +189,7 @@ def ai_context(match_id, moment_index, wallet_address=None):
     if moment_index < 0 or moment_index >= len(moments):
         raise IndexError("unknown moment")
     moment = moments[moment_index]
+    comparable_moment = {**moment, "_index": moment_index}
     t0 = moment["t0"]
     events = [json.loads(line) for line in open(os.path.join(DATA, match_id + ".jsonl"))]
 
@@ -197,6 +242,7 @@ def ai_context(match_id, moment_index, wallet_address=None):
         "screened_opportunities_within_240s": opportunities[:6],
         "recorded_bot_events_within_10m": bot[:20],
         "selected_public_wallet_evidence": selected_wallet_context(wallet_address, match_id, t0),
+        "similar_recorded_goal_cases": similar_goal_cases(match_id, comparable_moment),
         "archive_benchmark": _archive_summary(),
         "methodology": {
             "latency_baseline": "Seconds relative to TxLINE's recorded goal message; negative means earlier.",

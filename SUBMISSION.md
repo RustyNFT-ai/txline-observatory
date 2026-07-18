@@ -57,9 +57,10 @@ research, and explaining event-driven execution to a non-technical stakeholder.
 - **Portable implementation.** The server uses Python's standard library and the
   client is vanilla JavaScript/CSS/canvas. The browser uses finite fetches and short
   polling, which works through ordinary hosting proxies.
-- **Grounded Anthropic integration.** The browser sends only a match ID, moment index,
-  and bounded question. The server reconstructs trusted context from the archive,
-  adds prematch/nearby evidence, and calls Claude. A clearly labeled deterministic
+- **Grounded Anthropic integration.** The browser sends a match ID, moment index,
+  bounded question, and optionally a validated public-wallet identifier—not facts. The
+  server reconstructs trusted context from the archive, adds prematch/nearby evidence
+  and similar cases, then calls Claude. A clearly labeled deterministic
   evidence summary keeps the feature useful when AI is unavailable.
 
 ## TxLINE integration
@@ -91,7 +92,7 @@ historical replay and never presented as a live market.
 
 These are retrospective measurements from the included archive, not promises of live
 profitability. Negative source timing means an observation was recorded before the
-TxLINE goal message; it does not by itself establish causality or illicit front-running.
+TxLINE goal message; it does not by itself establish causality or private intent.
 
 ## TxLINE feedback
 

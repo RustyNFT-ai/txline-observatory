@@ -18,9 +18,10 @@ The browser sends one finite `POST /api/ai-insight` request with `match_id`,
 validated `wallet_address`. The browser never supplies timing, price, fill, or bot facts.
 The server resolves the selection into trusted local context: the goal record, all
 available market history before it (including prematch observations), nearby
-feed/fill/bot evidence, screened opportunities, bot events, archive benchmarks, exact
-methodology, and bounded server-cached fills for that address. It then makes one finite
-Anthropic Messages API call. No API key or raw model call exists in `web/`.
+feed/fill/bot evidence, screened opportunities, bot events, archive benchmarks, five
+server-selected similar goal cases, exact methodology, and bounded server-cached fills
+for that address. It then makes one finite Anthropic Messages API call. No API key or
+raw model call exists in `web/`.
 
 Suggested context payload:
 

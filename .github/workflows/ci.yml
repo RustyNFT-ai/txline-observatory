@@ -45,5 +45,8 @@ jobs:
               "matched_matches": 1, "pnl_note": "fills are not P&L", "fills": [fill]})
           context = server.ai_context("england-vs-argentina-2026-07-15", 1, address)
           assert context["selected_public_wallet_evidence"]["fill_count_within_10m"] == 1
+          assert len(context["similar_recorded_goal_cases"]) == 5
+          assert all(not (x["match_id"] == "england-vs-argentina-2026-07-15" and x["moment_index"] == 1)
+                     for x in context["similar_recorded_goal_cases"])
           assert "selected public wallet" in server.fallback_ai(context, "test")["answer"]
           PY
