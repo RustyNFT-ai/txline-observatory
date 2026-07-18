@@ -60,7 +60,8 @@ python3 server.py
 `.env` is ignored by Git. Hosted deployments set `OPENAI_API_KEY` as a secret
 environment variable. The default model is `gpt-5.6-terra` and can be changed with
 `OPENAI_MODEL`. The server uses OpenAI's finite `POST /v1/responses` interface and
-keeps the credential entirely server-side.
+low reasoning effort for responsive event answers, and keeps the credential entirely
+server-side.
 
 The endpoint enforces an 8–240 character question, a 4 KB request ceiling, 12 calls
 per client per ten minutes, 120 calls globally per hour, a 32-second provider timeout,

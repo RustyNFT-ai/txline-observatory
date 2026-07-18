@@ -304,6 +304,7 @@ def openai_ai(context, question):
     payload = json.dumps({
         "model": AI_MODEL,
         "max_output_tokens": 1200,
+        "reasoning": {"effort": "low"},
         "instructions": AI_SYSTEM,
         "input": "Question:\n" + question +
                  "\n\nTrusted archive context (JSON):\n" + json.dumps(context, separators=(",", ":")),

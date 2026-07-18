@@ -75,6 +75,7 @@ jobs:
           assert seen["url"].endswith("/v1/responses") and seen["timeout"] == 32
           assert seen["auth"] == "Bearer test-only"
           assert seen["body"]["model"] == "gpt-5.6-terra"
+          assert seen["body"]["reasoning"] == {"effort": "low"}
           assert "Trusted archive context" in seen["body"]["input"]
           assert answer["provider"] == "openai" and not answer["fallback"], answer
           PY
