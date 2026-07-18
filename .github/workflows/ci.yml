@@ -24,7 +24,7 @@ jobs:
             sleep 0.25
           done
           python3 - <<'PY'
-          import json, time, urllib.request
+          import json, os, time, urllib.request
           import server
           base = "http://127.0.0.1:8901"
           health = json.load(urllib.request.urlopen(base + "/api/health"))
@@ -49,4 +49,32 @@ jobs:
           assert all(not (x["match_id"] == "england-vs-argentina-2026-07-15" and x["moment_index"] == 1)
                      for x in context["similar_recorded_goal_cases"])
           assert "selected public wallet" in server.fallback_ai(context, "test")["answer"]
+          class FakeResponse:
+              def __enter__(self): return self
+              def __exit__(self, *args): pass
+              def read(self, *args):
+                  return json.dumps({"model": "gpt-5.6-terra", "output": [
+                      {"type": "reasoning", "summary": []},
+                      {"type": "message", "content": [
+                          {"type": "output_text", "text": "Recorded facts\nProtocol test."}]}],
+                      "usage": {"input_tokens": 10, "output_tokens": 4}}).encode()
+          seen = {}
+          def fake_urlopen(request, timeout=0):
+              seen["url"], seen["timeout"] = request.full_url, timeout
+              seen["auth"] = request.get_header("Authorization")
+              seen["body"] = json.loads(request.data)
+              return FakeResponse()
+          original_urlopen = server.urllib.request.urlopen
+          server.urllib.request.urlopen = fake_urlopen
+          os.environ["OPENAI_API_KEY"] = "test-only"
+          try:
+              answer = server.openai_ai(context, "What happened around this selected goal?")
+          finally:
+              server.urllib.request.urlopen = original_urlopen
+              os.environ.pop("OPENAI_API_KEY", None)
+          assert seen["url"].endswith("/v1/responses") and seen["timeout"] == 32
+          assert seen["auth"] == "Bearer test-only"
+          assert seen["body"]["model"] == "gpt-5.6-terra"
+          assert "Trusted archive context" in seen["body"]["input"]
+          assert answer["provider"] == "openai" and not answer["fallback"], answer
           PY

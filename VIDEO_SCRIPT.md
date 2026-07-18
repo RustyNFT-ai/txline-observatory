@@ -10,7 +10,7 @@ Keep the mouse still when speaking so tooltips do not cover the screen.
 2. Open the focused Argentina goal link from [TESTING.md](TESTING.md).
 3. In a second tab open France vs Spain; in a third open the repository README.
 4. Test the goal modal, AI response, demo wallet, Replay, and Insights once.
-5. If Claude is unavailable, use the app's labeled recorded-evidence fallback and say so.
+5. If OpenAI is unavailable, use the app's labeled recorded-evidence fallback and say so.
 6. If no game is live, do not demo Live. Replay is the reliable substitute.
 
 ## 0:00–0:35 — Problem
@@ -47,7 +47,7 @@ Click **Show on chart**, briefly pan the local event window, then expand it agai
 “The AI analyst cannot roam across the product or accept invented client facts. The
 browser sends only this match ID, moment index, and question. The Python server rebuilds
 a bounded evidence packet with nearby events, prematch trading, source state, prices,
-and bot activity, then asks Claude to separate fact from interpretation. That keeps the
+and bot activity, then asks OpenAI to separate fact from interpretation. That keeps the
 answer focused on exactly where the user asked for insight.”
 
 Point to the provider label and one event-specific sentence. Do not read the full answer.

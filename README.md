@@ -17,7 +17,7 @@ wallet matching, or the deterministic AI fallback:
 
 ```bash
 cd /path/to/txline-observatory    # or /path/to/rust_bot/observatory
-cp .env.example .env              # optional: add ANTHROPIC_API_KEY for Claude
+cp .env.example .env              # optional: add OPENAI_API_KEY for live AI answers
 python3 server.py                 # http://localhost:8901
 ```
 
@@ -116,7 +116,7 @@ honestly rather than faking a match. CLI: `python3 solana_anchor.py <fid> <seq> 
 ## Deploy
 
 The standalone public repository includes `render.yaml`. In Render, create a new
-Blueprint from the repository and set `ANTHROPIC_API_KEY` and `TXLINE_API_TOKEN` as
+Blueprint from the repository and set `OPENAI_API_KEY` and `TXLINE_API_TOKEN` as
 secret environment variables. The latter enables the optional live Merkle-proof receipt;
 it is never sent to the browser. Render supplies `PORT`; `server.py` binds to it. The included
 47-match archive makes Full, Replay, Insights, AI context, and wallet matching work
@@ -188,7 +188,7 @@ Status check: `pgrep -af "wallet_watch|jupiter_watch"`; logs sit next to the scr
   minute during the ten minutes before the signal.
 - The recorded bot ledger contains 33 entries and 33 exits totaling **+$22.04**.
 
-[AI event analyst](AI_INSIGHTS.md): expand any goal moment and ask Claude to explain
+[AI event analyst](AI_INSIGHTS.md): expand any goal moment and ask OpenAI to explain
 its source timing, nearby feed evidence, executable edge, and recorded bot action.
 The server rebuilds trusted event context, prematch history, and five similar goal
 cases from the archive; credentials and model calls never reach the browser.

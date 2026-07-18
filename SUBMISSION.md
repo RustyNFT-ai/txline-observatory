@@ -57,10 +57,10 @@ research, and explaining event-driven execution to a non-technical stakeholder.
 - **Portable implementation.** The server uses Python's standard library and the
   client is vanilla JavaScript/CSS/canvas. The browser uses finite fetches and short
   polling, which works through ordinary hosting proxies.
-- **Grounded Anthropic integration.** The browser sends a match ID, moment index,
+- **Grounded OpenAI integration.** The browser sends a match ID, moment index,
   bounded question, and optionally a validated public-wallet identifier—not facts. The
   server reconstructs trusted context from the archive, adds prematch/nearby evidence
-  and similar cases, then calls Claude. A clearly labeled deterministic
+  and similar cases, then calls OpenAI's Responses API. A clearly labeled deterministic
   evidence summary keeps the feature useful when AI is unavailable.
 
 ## TxLINE integration
@@ -124,7 +124,7 @@ the recorder while using finite JSON fetches and short polling in the judge-faci
 ## Submission checklist
 
 - [ ] Replace the public app placeholder with the durable deployed URL.
-- [ ] Add `ANTHROPIC_API_KEY` and `TXLINE_API_TOKEN` as deployment secrets; verify AI and one Solana receipt.
+- [ ] Add `OPENAI_API_KEY` and `TXLINE_API_TOKEN` as deployment secrets; verify AI and one Solana receipt.
 - [ ] Run [TESTING.md](TESTING.md) against the deployed URL.
 - [ ] Record and publish the video using [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md).
 - [ ] Confirm the video, app, repository, and documentation links work in a private window.

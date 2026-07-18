@@ -20,7 +20,7 @@ The server resolves the selection into trusted local context: the goal record, a
 available market history before it (including prematch observations), nearby
 feed/fill/bot evidence, screened opportunities, bot events, archive benchmarks, five
 server-selected similar goal cases, exact methodology, and bounded server-cached fills
-for that address. It then makes one finite Anthropic Messages API call. No API key or
+for that address. It then makes one finite OpenAI Responses API call. No API key or
 raw model call exists in `web/`.
 
 Suggested context payload:
@@ -53,16 +53,17 @@ For a replay candidate, the AI must call the result a **quoted historical replay
 ```bash
 cd observatory
 cp .env.example .env
-# edit .env and set ANTHROPIC_API_KEY=sk-ant-...
+# edit .env and set OPENAI_API_KEY=sk-...
 python3 server.py
 ```
 
-`.env` is ignored by Git. Hosted deployments set `ANTHROPIC_API_KEY` as a secret
-environment variable. The default model is `claude-sonnet-5` and can be changed with
-`ANTHROPIC_MODEL`.
+`.env` is ignored by Git. Hosted deployments set `OPENAI_API_KEY` as a secret
+environment variable. The default model is `gpt-5.6-terra` and can be changed with
+`OPENAI_MODEL`. The server uses OpenAI's finite `POST /v1/responses` interface and
+keeps the credential entirely server-side.
 
 The endpoint enforces an 8–240 character question, a 4 KB request ceiling, 12 calls
 per client per ten minutes, 120 calls globally per hour, a 32-second provider timeout,
-and a 128-answer in-memory cache. If the key is absent or Anthropic is unavailable,
+and a 128-answer in-memory cache. If the key is absent or OpenAI is unavailable,
 the same UI returns a clearly labelled deterministic recorded-facts summary so a
 judge is never left with a dead button.

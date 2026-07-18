@@ -34,7 +34,7 @@ recomputed proof status, TxLINE-owned mainnet anchor account, slot, and Solscan 
 Expand the same Argentina goal and click **Ask AI insight**. Expect a response tied to
 Argentina, the selected source times, market move, and recorded bot action. Without a
 key it is labeled `RECORDED-FACTS FALLBACK` and still contains only server-reconstructed
-facts. A keyed response is labeled `CLAUDE · EVENT-GROUNDED` with the configured model
+facts. A keyed response is labeled `OPENAI · EVENT-GROUNDED` with the configured model
 beside it.
 
 ## 4. Feed-gap and VAR states (40 seconds)

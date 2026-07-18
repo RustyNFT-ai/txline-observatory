@@ -50,5 +50,5 @@ manual hash edits still work and naturally create normal browser history.
 ## Pre-submission recommendation
 
 Do not add another major UI surface before the video. The most valuable remaining work
-is operational: add the Anthropic key, complete the durable deployment, execute
+is operational: add the OpenAI key, complete the durable deployment, execute
 [TESTING.md](TESTING.md) against that URL, and record [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md).
