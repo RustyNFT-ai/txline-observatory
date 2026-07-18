@@ -24,7 +24,8 @@ jobs:
             sleep 0.25
           done
           python3 - <<'PY'
-          import json, urllib.request
+          import json, time, urllib.request
+          import server
           base = "http://127.0.0.1:8901"
           health = json.load(urllib.request.urlopen(base + "/api/health"))
           assert health["ok"] and health["matches"] == 47, health
@@ -34,4 +35,15 @@ jobs:
           assert len(match["meta"]["moments"]) == 3
           insights = json.load(urllib.request.urlopen(base + "/api/insights"))
           assert insights["summary"]["opportunities"]["count"] == 154
+          scope_match = {"id": "england-vs-argentina-2026-07-15", "match": "England vs Argentina",
+                         "date": "2026-07-15", "labels": ["Argentina", "England", "draw"], "moments": []}
+          fill = server._wallet_fill({"timestamp": 1784148380, "title": "Will Argentina win on 2026-07-15?",
+                                      "outcome": "Yes", "side": "BUY", "price": .135, "size": 10}, scope_match)
+          assert fill["team"] == "Argentina"
+          address = "0x" + "1" * 40
+          server._WALLET_CACHE[address] = (time.time(), {"scope": "test", "matched_fills": 1,
+              "matched_matches": 1, "pnl_note": "fills are not P&L", "fills": [fill]})
+          context = server.ai_context("england-vs-argentina-2026-07-15", 1, address)
+          assert context["selected_public_wallet_evidence"]["fill_count_within_10m"] == 1
+          assert "selected public wallet" in server.fallback_ai(context, "test")["answer"]
           PY
