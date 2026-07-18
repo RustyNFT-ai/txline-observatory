@@ -96,7 +96,9 @@ def iter_jsonl(path):
 def fetch_fixtures():
     try:
         import requests
-        tok = open(os.path.join(STUDY, ".txodds_token")).read().strip()
+        tok = os.environ.get("TXLINE_API_TOKEN", "").strip()
+        if not tok:
+            tok = open(os.path.join(STUDY, ".txodds_token")).read().strip()
         r = requests.post(TXODDS_BASE + "/auth/guest/start", timeout=12)
         jwt = r.json().get("token")
         h = {"Authorization": f"Bearer {jwt}", "X-Api-Token": tok}

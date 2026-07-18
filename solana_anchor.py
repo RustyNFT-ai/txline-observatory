@@ -105,7 +105,12 @@ _auth = {"jwt": None, "ts": 0}
 
 
 def tx_headers():
-    tok = open(os.path.join(STUDY, ".txodds_token")).read().strip()
+    tok = os.environ.get("TXLINE_API_TOKEN", "").strip()
+    if not tok:
+        try:
+            tok = open(os.path.join(STUDY, ".txodds_token")).read().strip()
+        except OSError as exc:
+            raise RuntimeError("TXLINE_API_TOKEN is not configured") from exc
     if not _auth["jwt"] or time.time() - _auth["ts"] > 1800:
         j = _http_json(TXODDS_BASE + "/auth/guest/start", data=b"")
         _auth["jwt"], _auth["ts"] = j.get("token"), time.time()

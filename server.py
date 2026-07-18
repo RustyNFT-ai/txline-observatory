@@ -1053,7 +1053,9 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if path == "/api/health":
                 return self._json({"ok": True, "matches": len(json.load(open(os.path.join(DATA, "index.json")))),
-                                   "ai_enabled": bool(os.environ.get("ANTHROPIC_API_KEY"))})
+                                   "ai_enabled": bool(os.environ.get("ANTHROPIC_API_KEY")),
+                                   "txline_verify_enabled": bool(os.environ.get("TXLINE_API_TOKEN")) or
+                                       os.path.isfile(os.path.join(N.STUDY, ".txodds_token"))})
             if path == "/api/matches":
                 return self._json(json.load(open(os.path.join(DATA, "index.json"))))
             if path == "/api/insights":
@@ -1193,8 +1195,14 @@ class Handler(BaseHTTPRequestHandler):
             return self._json({"ok": False, "error": "fid, seq, statKey required"}, 400)
         ck = (fid, seq, key)
         if ck not in Handler._anchor_cache:
-            import solana_anchor
-            Handler._anchor_cache[ck] = solana_anchor.anchor_receipt(fid, seq, key)
+            try:
+                import solana_anchor
+                Handler._anchor_cache[ck] = solana_anchor.anchor_receipt(fid, seq, key)
+            except RuntimeError as exc:
+                return self._json({"ok": False, "error": str(exc)}, 503)
+            except Exception as exc:
+                print(f"anchor verification failed: {type(exc).__name__}", file=sys.stderr)
+                return self._json({"ok": False, "error": "TxLINE proof service is temporarily unavailable"}, 502)
         return self._json(Handler._anchor_cache[ck])
 
     def live(self):

@@ -102,8 +102,9 @@ honestly rather than faking a match. CLI: `python3 solana_anchor.py <fid> <seq> 
 ## Deploy
 
 The standalone public repository includes `render.yaml`. In Render, create a new
-Blueprint from the repository and set `ANTHROPIC_API_KEY` as a secret environment
-variable. Render supplies `PORT`; `server.py` binds to it automatically. The included
+Blueprint from the repository and set `ANTHROPIC_API_KEY` and `TXLINE_API_TOKEN` as
+secret environment variables. The latter enables the optional live Merkle-proof receipt;
+it is never sent to the browser. Render supplies `PORT`; `server.py` binds to it. The included
 47-match archive makes Full, Replay, Insights, AI context, and wallet matching work
 without access to the private recorder filesystem. A free service can cold-start, so
 open the app once before a live demo or judging session.

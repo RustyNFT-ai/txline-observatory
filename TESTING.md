@@ -5,9 +5,11 @@ Set `APP` to the deployed origin, without a trailing slash. For local testing us
 
 ## 1. Service and recorded data (20 seconds)
 
-Open `$APP/api/health`. Expect `ok: true`, `matches: 47`, and `ai_enabled: true`
-after the Anthropic secret is configured. `ai_enabled: false` is safe but means Ask AI
-will use the labeled recorded-evidence fallback.
+Open `$APP/api/health`. Expect `ok: true`, `matches: 47`, `ai_enabled: true`, and
+`txline_verify_enabled: true` after both deployment secrets are configured.
+`ai_enabled: false` is safe but means Ask AI will use the labeled recorded-evidence
+fallback. `txline_verify_enabled: false` leaves the recorded data usable but disables
+live retrieval of a new TxLINE Merkle proof.
 
 ## 2. Full match, deep link, and goal detail (75 seconds)
 
@@ -23,6 +25,9 @@ Expect the Argentina goal detail to show RN1 at **−4.1s**, Polymarket at **−
 Jupiter at **+3.6s**, ESPN at **+58.8s**, a **+6.3¢** 120-second move, and the recorded
 bot line **1 entry · +$45.16**. Negative means the source was recorded before TxLINE's
 goal message; it is not a causality claim. Press Escape and confirm the modal closes.
+
+In Inspector, click **Verify on Solana** for the selected goal. Expect the locally
+recomputed proof status, TxLINE-owned mainnet anchor account, slot, and Solscan link.
 
 ## 3. AI evidence path (35 seconds)
 
@@ -84,4 +89,3 @@ curl -fsS http://localhost:8901/api/match/england-vs-argentina-2026-07-15 >/dev/
 curl -fsS http://localhost:8901/api/insights >/dev/null
 curl -fsS http://localhost:8901/api/wallet >/dev/null
 ```
-

@@ -123,10 +123,9 @@ the recorder while using finite JSON fetches and short polling in the judge-faci
 ## Submission checklist
 
 - [ ] Replace the public app placeholder with the durable deployed URL.
-- [ ] Add `ANTHROPIC_API_KEY` as a deployment secret and verify one real AI response.
+- [ ] Add `ANTHROPIC_API_KEY` and `TXLINE_API_TOKEN` as deployment secrets; verify AI and one Solana receipt.
 - [ ] Run [TESTING.md](TESTING.md) against the deployed URL.
 - [ ] Record and publish the video using [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md).
 - [ ] Confirm the video, app, repository, and documentation links work in a private window.
 - [ ] Paste the project explanation and feedback above into the submission form.
 - [ ] Submit before Sunday, July 19, 2026 at 8:00 PM America/New_York.
-

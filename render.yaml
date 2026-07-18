@@ -11,3 +11,5 @@ services:
         sync: false
       - key: ANTHROPIC_MODEL
         value: claude-sonnet-5
+      - key: TXLINE_API_TOKEN
+        sync: false
