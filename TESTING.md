@@ -32,9 +32,10 @@ recomputed proof status, TxLINE-owned mainnet anchor account, slot, and Solscan 
 ## 3. AI evidence path (35 seconds)
 
 Expand the same Argentina goal and click **Ask AI insight**. Expect a response tied to
-Argentina, the selected source times, market move, and recorded bot action. With a valid
-key it is labeled `Claude … · archive-grounded`; without a key it is explicitly labeled
-`Recorded-evidence fallback` and still contains only server-reconstructed facts.
+Argentina, the selected source times, market move, and recorded bot action. Without a
+key it is labeled `RECORDED-FACTS FALLBACK` and still contains only server-reconstructed
+facts. A keyed response is labeled `CLAUDE · EVENT-GROUNDED` with the configured model
+beside it.
 
 ## 4. Feed-gap and VAR states (40 seconds)
 
@@ -71,7 +72,8 @@ signature, login, private key, or trading permission.
 - Click **Full**. Expect the same recorded match to load immediately and the URL/title
   to update without a new browser-history entry.
 - If a match is actually live, select it and click **Live**; otherwise confirm Live is
-  disabled and do not imply the recorded data is live.
+  not marked with a red live count and leaves the current state unchanged. Do not imply
+  the recorded data is live.
 - Select the upcoming France vs England fixture. Expect prematch price history, kickoff
   countdown, and the sticky controls flush beneath the upcoming banner while scrolling.
 - Manually enter `$APP/#m=not-a-match`. Expect a graceful fallback to the normal default.

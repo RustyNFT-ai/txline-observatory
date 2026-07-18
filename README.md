@@ -11,13 +11,20 @@ Zero runtime dependencies: stdlib-only Python server, hand-rolled canvas fronten
 
 ## Run
 
+The committed public repository already contains the normalized 47-match archive. A
+fresh clone needs no TxLINE credential or recorder files to use Full, Replay, Insights,
+wallet matching, or the deterministic AI fallback:
+
 ```bash
-cd observatory                  # omit this line in the standalone public repo
-python3 normalize.py index        # scan recorded feeds -> data/index.json
-python3 normalize.py build all    # build per-match timelines + goal moments
-cp .env.example .env              # optional: add ANTHROPIC_API_KEY for AI insight
+cd /path/to/txline-observatory    # or /path/to/rust_bot/observatory
+cp .env.example .env              # optional: add ANTHROPIC_API_KEY for Claude
 python3 server.py                 # http://localhost:8901
 ```
+
+Only in the original recorder workspace, after new source logs are present, rebuild the
+archive with `python3 normalize.py index && python3 normalize.py build all`. Do not run
+that rebuild in a standalone clone without configuring the `OBS_*` source paths; the
+included data is ready to view as-is.
 
 UI modes (top bar):
 - **Upcoming · Prematch** — scheduled fixtures from TxLINE, with kickoff countdown
