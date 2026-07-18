@@ -1,0 +1,378 @@
+{
+ "id": "portugal-vs-croatia-2026-07-02",
+ "match": "Portugal vs Croatia",
+ "teams": [
+  "Portugal",
+  "Croatia"
+ ],
+ "date": "2026-07-02",
+ "slug": null,
+ "labels": [
+  "Croatia",
+  "Portugal",
+  "draw"
+ ],
+ "t0": 1783033242.1,
+ "t1": 1783040988.1,
+ "rows": 3367,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783037604.4,
+   1
+  ],
+  [
+   1783038485.9,
+   0
+  ],
+  [
+   1783040073.5,
+   0
+  ],
+  [
+   1783040673.7,
+   1
+  ],
+  [
+   1783040703.1,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 3367,
+  "txline:odds": 612,
+  "espn:score": 7,
+  "wc26:score": 5
+ },
+ "moments": [
+  {
+   "t0": 1783037604.4,
+   "t0_src": "espn",
+   "benefit": "Croatia",
+   "baseline": 0.165,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.6,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.4725,
+       "ask": 0.475
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.3625
+      },
+      "Croatia": {
+       "bid": 0.165,
+       "ask": 0.1675
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.4725,
+       "ask": 0.475
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.3625
+      },
+      "Croatia": {
+       "bid": 0.165,
+       "ask": 0.1675
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.4725,
+       "ask": 0.475
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.3625
+      },
+      "Croatia": {
+       "bid": 0.165,
+       "ask": 0.1675
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.7,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.4725,
+       "ask": 0.475
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.3625
+      },
+      "Croatia": {
+       "bid": 0.165,
+       "ask": 0.1675
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Croatia",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783038485.9,
+   "t0_src": "espn",
+   "benefit": "Portugal",
+   "baseline": 0.36,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.4,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.36,
+       "ask": 0.3675
+      },
+      "draw": {
+       "bid": 0.4125,
+       "ask": 0.44
+      },
+      "Croatia": {
+       "bid": 0.19,
+       "ask": 0.24
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.36,
+       "ask": 0.3675
+      },
+      "draw": {
+       "bid": 0.4125,
+       "ask": 0.44
+      },
+      "Croatia": {
+       "bid": 0.19,
+       "ask": 0.24
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.36,
+       "ask": 0.3675
+      },
+      "draw": {
+       "bid": 0.4125,
+       "ask": 0.44
+      },
+      "Croatia": {
+       "bid": 0.19,
+       "ask": 0.24
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.36,
+       "ask": 0.3675
+      },
+      "draw": {
+       "bid": 0.4125,
+       "ask": 0.44
+      },
+      "Croatia": {
+       "bid": 0.19,
+       "ask": 0.24
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Portugal",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783040073.5,
+   "t0_src": "espn",
+   "benefit": "Portugal",
+   "baseline": 0.228,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.2275,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.6725,
+       "ask": 0.68
+      },
+      "Croatia": {
+       "bid": 0.085,
+       "ask": 0.0925
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.2275,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.6725,
+       "ask": 0.68
+      },
+      "Croatia": {
+       "bid": 0.085,
+       "ask": 0.0925
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.2275,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.6725,
+       "ask": 0.68
+      },
+      "Croatia": {
+       "bid": 0.085,
+       "ask": 0.0925
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.6,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.2275,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.6725,
+       "ask": 0.68
+      },
+      "Croatia": {
+       "bid": 0.085,
+       "ask": 0.0925
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Portugal",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783040673.7,
+   "t0_src": "espn",
+   "benefit": "Croatia",
+   "prices": {
+    "before": {
+     "dt": -1.0,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.0625,
+       "ask": 0.065
+      },
+      "draw": {
+       "bid": 0.9075,
+       "ask": 0.91
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.0625,
+       "ask": 0.065
+      },
+      "draw": {
+       "bid": 0.9075,
+       "ask": 0.91
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.0625,
+       "ask": 0.065
+      },
+      "draw": {
+       "bid": 0.9075,
+       "ask": 0.91
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.1,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.0625,
+       "ask": 0.065
+      },
+      "draw": {
+       "bid": 0.9075,
+       "ask": 0.91
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Croatia",
+   "score_before": "2-1",
+   "score_after": "2-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [],
+ "attention_rate": 0.201,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

@@ -1,0 +1,470 @@
+{
+ "id": "brazil-vs-norway-2026-07-05",
+ "match": "Brazil vs Norway",
+ "teams": [
+  "Brazil",
+  "Norway"
+ ],
+ "date": "2026-07-05",
+ "slug": "fifwc-bra-nor-2026-07-05",
+ "labels": [
+  "Brazil",
+  "Norway",
+  "draw"
+ ],
+ "t0": 1783281659.9,
+ "t1": 1783288922.5,
+ "rows": 1296,
+ "fid": 18187298,
+ "home1": true,
+ "tx_teams": [
+  "Brazil",
+  "Norway"
+ ],
+ "score_changes": [
+  [
+   1783287714.4,
+   1
+  ],
+  [
+   1783288325.3,
+   1
+  ],
+  [
+   1783288922.5,
+   0
+  ]
+ ],
+ "tids": [
+  "105654713241167797590254709131417748215287316658191010694033065067279349239377",
+  "19270630777558640544547501118520831346147002509997851493750997099589698621398",
+  "20802374126416843639334054489053876827939271763615197682043793548486789042986"
+ ],
+ "counts": {
+  "txline:action": 720,
+  "poly:book": 1294,
+  "txline:odds": 903,
+  "bot:decision": 7,
+  "espn:score": 3,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1783281772.84,
+   "t0_src": "txline",
+   "benefit": "Norway",
+   "baseline": 0.19,
+   "poly_dt": 92.5,
+   "delta_120s": 0.13,
+   "prices": {
+    "before": {
+     "dt": -0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Norway": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Norway": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Norway": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Norway": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    }
+   },
+   "var": true,
+   "action": "goal",
+   "scorer": "Norway",
+   "cs": 160,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "seq": 59,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 48.1,
+   "bot_price": 0.2,
+   "bot_fair": 0.206,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783287714.4,
+   "t0_src": "espn",
+   "benefit": "Norway",
+   "baseline": 0.14,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "draw": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "Norway": {
+       "bid": 0.14,
+       "ask": 0.15
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "draw": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "Norway": {
+       "bid": 0.14,
+       "ask": 0.15
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "draw": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "Norway": {
+       "bid": 0.14,
+       "ask": 0.15
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "draw": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "Norway": {
+       "bid": 0.14,
+       "ask": 0.15
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Norway",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783288294.97,
+   "t0_src": "txline",
+   "benefit": "Norway",
+   "baseline": 0.74,
+   "poly_dt": -10.2,
+   "delta_120s": -0.08,
+   "prices": {
+    "before": {
+     "dt": -0.2,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.01,
+       "ask": 0.02
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.19
+      },
+      "Norway": {
+       "bid": 0.91,
+       "ask": 0.92
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.5,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.03,
+       "ask": 0.05
+      },
+      "Norway": {
+       "bid": 0.96,
+       "ask": 0.98
+      }
+     }
+    },
+    "5s": {
+     "dt": -2.4,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.05,
+       "ask": 0.06
+      },
+      "Norway": {
+       "bid": 0.95,
+       "ask": 0.97
+      }
+     }
+    },
+    "10s": {
+     "dt": -2.4,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.03,
+       "ask": 0.04
+      },
+      "Norway": {
+       "bid": 0.95,
+       "ask": 0.96
+      }
+     }
+    }
+   },
+   "espn_dt": 30.3,
+   "wc26_dt": 164.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Norway",
+   "cs": 5350,
+   "confirmed": false,
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "seq": 996,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 72.5,
+   "bot_price": 0.99,
+   "bot_fair": 0.75,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783288922.5,
+   "t0_src": "espn",
+   "benefit": "Brazil",
+   "prices": {},
+   "var": false,
+   "action": "goal",
+   "scorer": "Brazil",
+   "score_before": "0-2",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783282464.7,
+   "label": "draw",
+   "tx_fair": 0.272,
+   "poly_ask": 0.18,
+   "initial_gap": 0.092,
+   "max_gap": 0.093,
+   "ask_depth": 37772,
+   "pre_activity": 0.101,
+   "clock": "14'",
+   "score": "0-0",
+   "duration": 305.4,
+   "exit_bid": 0.26,
+   "gross_per_share": 0.08,
+   "entry_5s_ask": 0.18,
+   "gross_5s_per_share": 0.08
+  },
+  {
+   "t": 1783282464.7,
+   "label": "Norway",
+   "tx_fair": 0.21,
+   "poly_ask": 0.12,
+   "initial_gap": 0.09,
+   "max_gap": 0.09,
+   "ask_depth": 9294,
+   "pre_activity": 0.101,
+   "clock": "14'",
+   "score": "0-0",
+   "duration": 305.4,
+   "exit_bid": 0.2,
+   "gross_per_share": 0.08,
+   "entry_5s_ask": 0.12,
+   "gross_5s_per_share": 0.08
+  },
+  {
+   "t": 1783287517.4,
+   "label": "draw",
+   "tx_fair": 0.522,
+   "poly_ask": 0.47,
+   "initial_gap": 0.052,
+   "max_gap": 0.062,
+   "ask_depth": 44519,
+   "pre_activity": 0.202,
+   "clock": "75'",
+   "score": "0-0",
+   "duration": 50.7,
+   "exit_bid": 0.52,
+   "gross_per_share": 0.05,
+   "entry_5s_ask": 0.47,
+   "gross_5s_per_share": 0.05
+  },
+  {
+   "t": 1783287736.9,
+   "label": "Norway",
+   "tx_fair": 0.659,
+   "poly_ask": 0.15,
+   "initial_gap": 0.509,
+   "max_gap": 0.51,
+   "ask_depth": 7197,
+   "pre_activity": 0.204,
+   "clock": "80'",
+   "score": "0-1",
+   "duration": 127.0,
+   "exit_bid": 0.64,
+   "gross_per_share": 0.49,
+   "entry_5s_ask": 0.15,
+   "gross_5s_per_share": 0.49
+  },
+  {
+   "t": 1783288292.5,
+   "label": "draw",
+   "tx_fair": 0.217,
+   "poly_ask": 0.05,
+   "initial_gap": 0.167,
+   "max_gap": 0.167,
+   "ask_depth": 152,
+   "pre_activity": 3.573,
+   "clock": "88'",
+   "score": "0-1",
+   "duration": 79.9,
+   "exit_bid": 0.01,
+   "gross_per_share": -0.04,
+   "entry_5s_ask": 0.06,
+   "gross_5s_per_share": -0.05
+  }
+ ],
+ "attention_rate": 0.929,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783281802.11,
+    "cs": 186,
+    "duration": 17.2,
+    "decision": "completed"
+   },
+   {
+    "t": 1783282262.0,
+    "cs": 643,
+    "duration": 65.7,
+    "decision": "completed"
+   }
+  ],
+  "corrections": 2,
+  "penalties": [
+   {
+    "t": 1783282337.985,
+    "action": "penalty",
+    "team": "Brazil",
+    "cs": 719
+   },
+   {
+    "t": 1783282422.155,
+    "action": "penalty_outcome",
+    "team": "Brazil",
+    "cs": 804
+   },
+   {
+    "t": 1783288883.862,
+    "action": "penalty",
+    "team": "Brazil",
+    "cs": 5868
+   }
+  ],
+  "cards": [],
+  "shots": {
+   "total": 40,
+   "teams": {
+    "Norway": 16,
+    "Unassigned": 5,
+    "Brazil": 19
+   }
+  }
+ }
+}

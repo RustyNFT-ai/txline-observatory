@@ -1,0 +1,702 @@
+{
+ "id": "algeria-vs-austria-2026-06-27",
+ "match": "Algeria vs Austria",
+ "teams": [
+  "Algeria",
+  "Austria"
+ ],
+ "date": "2026-06-27",
+ "slug": null,
+ "labels": [
+  "Algeria",
+  "Austria",
+  "draw"
+ ],
+ "t0": 1782612092.5,
+ "t1": 1782619179.8,
+ "rows": 1368,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782613748.9,
+   1
+  ],
+  [
+   1782614765.5,
+   0
+  ],
+  [
+   1782616645.6,
+   1
+  ],
+  [
+   1782616932.2,
+   0
+  ],
+  [
+   1782618932.7,
+   0
+  ],
+  [
+   1782619096.4,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1368,
+  "txline:odds": 896,
+  "espn:score": 6,
+  "wc26:score": 6
+ },
+ "moments": [
+  {
+   "t0": 1782613748.9,
+   "t0_src": "espn",
+   "benefit": "Austria",
+   "baseline": 0.3,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "draw": {
+       "bid": 0.46,
+       "ask": 0.47
+      },
+      "Austria": {
+       "bid": 0.3,
+       "ask": 0.31
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "draw": {
+       "bid": 0.46,
+       "ask": 0.47
+      },
+      "Austria": {
+       "bid": 0.3,
+       "ask": 0.31
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "draw": {
+       "bid": 0.46,
+       "ask": 0.47
+      },
+      "Austria": {
+       "bid": 0.3,
+       "ask": 0.31
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "draw": {
+       "bid": 0.46,
+       "ask": 0.47
+      },
+      "Austria": {
+       "bid": 0.3,
+       "ask": 0.31
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Austria",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782614765.5,
+   "t0_src": "espn",
+   "benefit": "Algeria",
+   "baseline": 0.1,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.7,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Austria": {
+       "bid": 0.59,
+       "ask": 0.6
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Austria": {
+       "bid": 0.59,
+       "ask": 0.6
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.2,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Austria": {
+       "bid": 0.59,
+       "ask": 0.6
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.4,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Austria": {
+       "bid": 0.59,
+       "ask": 0.6
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Algeria",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782616645.6,
+   "t0_src": "espn",
+   "benefit": "Austria",
+   "baseline": 0.28,
+   "delta_120s": 0.36,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.5,
+       "ask": 0.51
+      },
+      "Austria": {
+       "bid": 0.28,
+       "ask": 0.29
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.5,
+       "ask": 0.51
+      },
+      "Austria": {
+       "bid": 0.28,
+       "ask": 0.29
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.5,
+       "ask": 0.51
+      },
+      "Austria": {
+       "bid": 0.28,
+       "ask": 0.29
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.5,
+       "ask": 0.51
+      },
+      "Austria": {
+       "bid": 0.28,
+       "ask": 0.29
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Austria",
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782616932.2,
+   "t0_src": "espn",
+   "benefit": "Algeria",
+   "baseline": 0.07,
+   "delta_120s": 0.2,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Austria": {
+       "bid": 0.64,
+       "ask": 0.65
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Austria": {
+       "bid": 0.64,
+       "ask": 0.65
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.7,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Austria": {
+       "bid": 0.64,
+       "ask": 0.65
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.7,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Austria": {
+       "bid": 0.64,
+       "ask": 0.65
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Algeria",
+   "score_before": "1-2",
+   "score_after": "2-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782618932.7,
+   "t0_src": "espn",
+   "benefit": "Algeria",
+   "baseline": 0.04,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Austria": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Austria": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Austria": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Austria": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Algeria",
+   "score_before": "2-2",
+   "score_after": "3-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782619096.4,
+   "t0_src": "espn",
+   "benefit": "Austria",
+   "baseline": 0.03,
+   "prices": {
+    "before": {
+     "dt": -0.4,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Austria": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.062,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      },
+      "Austria": {
+       "bid": 0.02,
+       "ask": 0.029
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.062,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      },
+      "Austria": {
+       "bid": 0.02,
+       "ask": 0.029
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Algeria": {
+       "bid": 0.062,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      },
+      "Austria": {
+       "bid": 0.02,
+       "ask": 0.029
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Austria",
+   "score_before": "3-2",
+   "score_after": "3-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782613794.0,
+   "label": "Austria",
+   "tx_fair": 0.565,
+   "poly_ask": 0.31,
+   "initial_gap": 0.255,
+   "max_gap": 0.295,
+   "ask_depth": 11051,
+   "pre_activity": 0.202,
+   "clock": "29'",
+   "score": "0-1",
+   "duration": 200.0,
+   "exit_bid": 0.6,
+   "gross_per_share": 0.29,
+   "entry_5s_ask": 0.31,
+   "gross_5s_per_share": 0.29
+  },
+  {
+   "t": 1782614754.8,
+   "label": "Algeria",
+   "tx_fair": 0.293,
+   "poly_ask": 0.11,
+   "initial_gap": 0.183,
+   "max_gap": 0.183,
+   "ask_depth": 2924,
+   "pre_activity": 0.102,
+   "clock": "45'",
+   "score": "0-1",
+   "duration": 138.3,
+   "exit_bid": 0.21,
+   "gross_per_share": 0.1,
+   "entry_5s_ask": 0.11,
+   "gross_5s_per_share": 0.1
+  },
+  {
+   "t": 1782614754.8,
+   "label": "draw",
+   "tx_fair": 0.45,
+   "poly_ask": 0.31,
+   "initial_gap": 0.14,
+   "max_gap": 0.208,
+   "ask_depth": 13011,
+   "pre_activity": 0.102,
+   "clock": "45'",
+   "score": "0-1",
+   "duration": 138.3,
+   "exit_bid": 0.49,
+   "gross_per_share": 0.18,
+   "entry_5s_ask": 0.31,
+   "gross_5s_per_share": 0.18
+  },
+  {
+   "t": 1782616558.0,
+   "label": "draw",
+   "tx_fair": 0.56,
+   "poly_ask": 0.51,
+   "initial_gap": 0.05,
+   "max_gap": 0.062,
+   "ask_depth": 104948,
+   "pre_activity": 0.101,
+   "clock": "53'",
+   "score": "1-1",
+   "duration": 112.9,
+   "exit_bid": 0.5,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.51,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782616670.9,
+   "label": "Austria",
+   "tx_fair": 0.723,
+   "poly_ask": 0.29,
+   "initial_gap": 0.433,
+   "max_gap": 0.433,
+   "ask_depth": 954,
+   "pre_activity": 0.102,
+   "clock": "56'",
+   "score": "1-2",
+   "duration": 40.1,
+   "exit_bid": 0.64,
+   "gross_per_share": 0.35,
+   "entry_5s_ask": 0.29,
+   "gross_5s_per_share": 0.35
+  },
+  {
+   "t": 1782616957.6,
+   "label": "Algeria",
+   "tx_fair": 0.205,
+   "poly_ask": 0.08,
+   "initial_gap": 0.125,
+   "max_gap": 0.133,
+   "ask_depth": 9759,
+   "pre_activity": 0.202,
+   "clock": "60'",
+   "score": "2-2",
+   "duration": 35.1,
+   "exit_bid": 0.27,
+   "gross_per_share": 0.19,
+   "entry_5s_ask": 0.08,
+   "gross_5s_per_share": 0.19
+  },
+  {
+   "t": 1782616957.6,
+   "label": "draw",
+   "tx_fair": 0.571,
+   "poly_ask": 0.28,
+   "initial_gap": 0.291,
+   "max_gap": 0.295,
+   "ask_depth": 109577,
+   "pre_activity": 0.202,
+   "clock": "60'",
+   "score": "2-2",
+   "duration": 339.9,
+   "exit_bid": 0.64,
+   "gross_per_share": 0.36,
+   "entry_5s_ask": 0.28,
+   "gross_5s_per_share": 0.36
+  },
+  {
+   "t": 1782618010.9,
+   "label": "draw",
+   "tx_fair": 0.754,
+   "poly_ask": 0.7,
+   "initial_gap": 0.054,
+   "max_gap": 0.106,
+   "ask_depth": 90820,
+   "pre_activity": 0.202,
+   "clock": "77'",
+   "score": "2-2",
+   "duration": 500.6,
+   "exit_bid": 0.85,
+   "gross_per_share": 0.15,
+   "entry_5s_ask": 0.7,
+   "gross_5s_per_share": 0.15
+  }
+ ],
+ "attention_rate": 0.169,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

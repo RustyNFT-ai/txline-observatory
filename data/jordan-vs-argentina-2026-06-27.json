@@ -1,0 +1,410 @@
+{
+ "id": "jordan-vs-argentina-2026-06-27",
+ "match": "Jordan vs Argentina",
+ "teams": [
+  "Jordan",
+  "Argentina"
+ ],
+ "date": "2026-06-27",
+ "slug": null,
+ "labels": [
+  "Argentina",
+  "Jordan",
+  "draw"
+ ],
+ "t0": 1782612073.0,
+ "t1": 1782619080.8,
+ "rows": 1352,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782613149.6,
+   1
+  ],
+  [
+   1782613870.0,
+   1
+  ],
+  [
+   1782616625.2,
+   0
+  ],
+  [
+   1782618092.6,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1352,
+  "txline:odds": 283,
+  "espn:score": 4,
+  "wc26:score": 4
+ },
+ "moments": [
+  {
+   "t0": 1782613149.6,
+   "t0_src": "espn",
+   "benefit": "Argentina",
+   "baseline": 0.85,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.11,
+       "ask": 0.12
+      },
+      "Argentina": {
+       "bid": 0.85,
+       "ask": 0.86
+      },
+      "Jordan": {
+       "bid": 0.038,
+       "ask": 0.039
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.11,
+       "ask": 0.12
+      },
+      "Argentina": {
+       "bid": 0.85,
+       "ask": 0.86
+      },
+      "Jordan": {
+       "bid": 0.038,
+       "ask": 0.039
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.11,
+       "ask": 0.12
+      },
+      "Argentina": {
+       "bid": 0.85,
+       "ask": 0.86
+      },
+      "Jordan": {
+       "bid": 0.038,
+       "ask": 0.039
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.11,
+       "ask": 0.12
+      },
+      "Argentina": {
+       "bid": 0.85,
+       "ask": 0.86
+      },
+      "Jordan": {
+       "bid": 0.038,
+       "ask": 0.039
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782613870.0,
+   "t0_src": "espn",
+   "benefit": "Argentina",
+   "baseline": 0.958,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.7,
+     "outcomes": {
+      "draw": {
+       "bid": 0.03,
+       "ask": 0.035
+      },
+      "Argentina": {
+       "bid": 0.958,
+       "ask": 0.959
+      },
+      "Jordan": {
+       "bid": 0.006,
+       "ask": 0.007
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.03,
+       "ask": 0.035
+      },
+      "Argentina": {
+       "bid": 0.958,
+       "ask": 0.959
+      },
+      "Jordan": {
+       "bid": 0.006,
+       "ask": 0.007
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.03,
+       "ask": 0.035
+      },
+      "Argentina": {
+       "bid": 0.958,
+       "ask": 0.959
+      },
+      "Jordan": {
+       "bid": 0.006,
+       "ask": 0.007
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.03,
+       "ask": 0.035
+      },
+      "Argentina": {
+       "bid": 0.958,
+       "ask": 0.959
+      },
+      "Jordan": {
+       "bid": 0.006,
+       "ask": 0.007
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782616625.2,
+   "t0_src": "espn",
+   "benefit": "Jordan",
+   "baseline": 0.001,
+   "delta_120s": 0.007,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.005,
+       "ask": 0.008
+      },
+      "Argentina": {
+       "bid": 0.991,
+       "ask": 0.996
+      },
+      "Jordan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.005,
+       "ask": 0.008
+      },
+      "Argentina": {
+       "bid": 0.991,
+       "ask": 0.996
+      },
+      "Jordan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.005,
+       "ask": 0.008
+      },
+      "Argentina": {
+       "bid": 0.991,
+       "ask": 0.996
+      },
+      "Jordan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.005,
+       "ask": 0.008
+      },
+      "Argentina": {
+       "bid": 0.991,
+       "ask": 0.996
+      },
+      "Jordan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Jordan",
+   "score_before": "0-2",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782618092.6,
+   "t0_src": "espn",
+   "benefit": "Argentina",
+   "baseline": 0.91,
+   "delta_120s": 0.08,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.072,
+       "ask": 0.077
+      },
+      "Argentina": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Jordan": {
+       "bid": 0.005,
+       "ask": 0.009
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.072,
+       "ask": 0.077
+      },
+      "Argentina": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Jordan": {
+       "bid": 0.005,
+       "ask": 0.009
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.072,
+       "ask": 0.077
+      },
+      "Argentina": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Jordan": {
+       "bid": 0.005,
+       "ask": 0.009
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.072,
+       "ask": 0.077
+      },
+      "Argentina": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Jordan": {
+       "bid": 0.005,
+       "ask": 0.009
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "score_before": "1-2",
+   "score_after": "1-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782613194.4,
+   "label": "Argentina",
+   "tx_fair": 0.951,
+   "poly_ask": 0.86,
+   "initial_gap": 0.091,
+   "max_gap": 0.092,
+   "ask_depth": 354855,
+   "pre_activity": 0.202,
+   "clock": "19'",
+   "score": "0-1",
+   "duration": 237.2,
+   "exit_bid": 0.96,
+   "gross_per_share": 0.1,
+   "entry_5s_ask": 0.86,
+   "gross_5s_per_share": 0.1
+  }
+ ],
+ "attention_rate": 0.197,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

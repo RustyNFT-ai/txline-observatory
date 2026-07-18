@@ -1,0 +1,236 @@
+{
+ "id": "mexico-vs-ecuador-2026-06-30",
+ "match": "Mexico vs Ecuador",
+ "teams": [
+  "Mexico",
+  "Ecuador"
+ ],
+ "date": "2026-06-30",
+ "slug": null,
+ "labels": [
+  "Ecuador",
+  "Mexico",
+  "draw"
+ ],
+ "t0": 1782871305.8,
+ "t1": 1782878528.4,
+ "rows": 3065,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782872557.1,
+   0
+  ],
+  [
+   1782873110.7,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 3065,
+  "txline:odds": 703,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1782872557.1,
+   "t0_src": "espn",
+   "benefit": "Mexico",
+   "baseline": 0.45,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Mexico": {
+       "bid": 0.45,
+       "ask": 0.46
+      },
+      "Ecuador": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Mexico": {
+       "bid": 0.45,
+       "ask": 0.46
+      },
+      "Ecuador": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Mexico": {
+       "bid": 0.45,
+       "ask": 0.46
+      },
+      "Ecuador": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Mexico": {
+       "bid": 0.45,
+       "ask": 0.46
+      },
+      "Ecuador": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Mexico",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782873110.7,
+   "t0_src": "espn",
+   "benefit": "Mexico",
+   "baseline": 0.71,
+   "delta_120s": 0.18,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Mexico": {
+       "bid": 0.71,
+       "ask": 0.72
+      },
+      "Ecuador": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Mexico": {
+       "bid": 0.71,
+       "ask": 0.72
+      },
+      "Ecuador": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Mexico": {
+       "bid": 0.71,
+       "ask": 0.72
+      },
+      "Ecuador": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.08,
+       "ask": 0.09
+      },
+      "Mexico": {
+       "bid": 0.89,
+       "ask": 0.9
+      },
+      "Ecuador": {
+       "bid": 0.02,
+       "ask": 0.03
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Mexico",
+   "score_before": "1-0",
+   "score_after": "2-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782872585.3,
+   "label": "Mexico",
+   "tx_fair": 0.735,
+   "poly_ask": 0.46,
+   "initial_gap": 0.275,
+   "max_gap": 0.279,
+   "ask_depth": 18887,
+   "pre_activity": 0.202,
+   "clock": "22'",
+   "score": "1-0",
+   "duration": 236.8,
+   "exit_bid": 0.71,
+   "gross_per_share": 0.25,
+   "entry_5s_ask": 0.46,
+   "gross_5s_per_share": 0.25
+  }
+ ],
+ "attention_rate": 0.174,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "id": "france-vs-spain-2026-07-14",
+ "match": "France vs Spain",
+ "teams": [
+  "France",
+  "Spain"
+ ],
+ "date": "2026-07-14",
+ "slug": "fifwc-fra-esp-2026-07-14",
+ "labels": [
+  "France",
+  "Spain",
+  "draw"
+ ],
+ "t0": 1784055634.1,
+ "t1": 1784062785.8,
+ "rows": 1360,
+ "fid": 18237038,
+ "home1": true,
+ "tx_teams": [
+  "France",
+  "Spain"
+ ],
+ "score_changes": [
+  [
+   1784056940.5,
+   1
+  ],
+  [
+   1784060402.4,
+   1
+  ]
+ ],
+ "tids": [
+  "21567767812902912757274126429598305388508024829091384968631705245381739645667",
+  "25312457392074064866955638920139332428292497556441446372623464789018436410183",
+  "59701348329688999702254197580644416038122802547584947510322394691994999642374"
+ ],
+ "counts": {
+  "txline:odds": 3779,
+  "txline:action": 1008,
+  "poly:book": 1360,
+  "polyws:tick": 6488,
+  "whale:fill": 66,
+  "polyws:burst": 12,
+  "bot:trade": 12,
+  "espn:score": 2,
+  "jupiter:jbook": 382,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1784056940.5,
+   "t0_src": "espn",
+   "benefit": "Spain",
+   "baseline": 0.505,
+   "delta_120s": 0.012,
+   "prices": {
+    "before": {
+     "dt": -0.3,
+     "outcomes": {
+      "France": {
+       "bid": 0.2,
+       "ask": 0.2025
+      },
+      "draw": {
+       "bid": 0.2625,
+       "ask": 0.265
+      },
+      "Spain": {
+       "bid": 0.555,
+       "ask": 0.5575
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "France": {
+       "bid": 0.19,
+       "ask": 0.1975
+      },
+      "draw": {
+       "bid": 0.2675,
+       "ask": 0.27
+      },
+      "Spain": {
+       "bid": 0.545,
+       "ask": 0.5475
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "France": {
+       "bid": 0.19,
+       "ask": 0.1925
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.2725
+      },
+      "Spain": {
+       "bid": 0.545,
+       "ask": 0.5475
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "France": {
+       "bid": 0.2,
+       "ask": 0.2025
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.2725
+      },
+      "Spain": {
+       "bid": 0.545,
+       "ask": 0.5475
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1784060376.03,
+   "t0_src": "txline",
+   "benefit": "Spain",
+   "baseline": 0.58,
+   "poly_dt": -9.0,
+   "delta_120s": 0.283,
+   "prices": {
+    "before": {
+     "dt": -0.2,
+     "outcomes": {
+      "France": {
+       "bid": 0.135,
+       "ask": 0.1375
+      },
+      "draw": {
+       "bid": 0.275,
+       "ask": 0.2775
+      },
+      "Spain": {
+       "bid": 0.595,
+       "ask": 0.6025
+      }
+     }
+    },
+    "txline": {
+     "dt": -0.8,
+     "outcomes": {
+      "France": {
+       "bid": 0.035,
+       "ask": 0.0375
+      },
+      "draw": {
+       "bid": 0.135,
+       "ask": 0.14
+      },
+      "Spain": {
+       "bid": 0.84,
+       "ask": 0.8425
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.0,
+     "outcomes": {
+      "France": {
+       "bid": 0.03,
+       "ask": 0.0325
+      },
+      "draw": {
+       "bid": 0.145,
+       "ask": 0.15
+      },
+      "Spain": {
+       "bid": 0.835,
+       "ask": 0.8375
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.3,
+     "outcomes": {
+      "France": {
+       "bid": 0.0325,
+       "ask": 0.035
+      },
+      "draw": {
+       "bid": 0.13,
+       "ask": 0.1325
+      },
+      "Spain": {
+       "bid": 0.8375,
+       "ask": 0.84
+      }
+     }
+    }
+   },
+   "espn_dt": 26.4,
+   "wc26_dt": 130.1,
+   "jup_dt": 17.4,
+   "var": true,
+   "action": "goal",
+   "scorer": "Spain",
+   "cs": 3455,
+   "confirmed": false,
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "seq": 618,
+   "part": 2
+  },
+  {
+   "t0": 1784060549.96,
+   "t0_src": "txline",
+   "benefit": "Spain",
+   "baseline": 0.863,
+   "poly_dt": -7.7,
+   "delta_120s": 0.015,
+   "prices": {
+    "before": {
+     "dt": -2.3,
+     "outcomes": {
+      "France": {
+       "bid": 0.03,
+       "ask": 0.0325
+      },
+      "draw": {
+       "bid": 0.1075,
+       "ask": 0.11
+      },
+      "Spain": {
+       "bid": 0.865,
+       "ask": 0.8675
+      }
+     }
+    },
+    "txline": {
+     "dt": 1.9,
+     "outcomes": {
+      "France": {
+       "bid": 0.02,
+       "ask": 0.0225
+      },
+      "draw": {
+       "bid": 0.0775,
+       "ask": 0.08
+      },
+      "Spain": {
+       "bid": 0.885,
+       "ask": 0.8875
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.6,
+     "outcomes": {
+      "France": {
+       "bid": 0.025,
+       "ask": 0.0275
+      },
+      "draw": {
+       "bid": 0.09,
+       "ask": 0.0925
+      },
+      "Spain": {
+       "bid": 0.88,
+       "ask": 0.8875
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.3,
+     "outcomes": {
+      "France": {
+       "bid": 0.025,
+       "ask": 0.0275
+      },
+      "draw": {
+       "bid": 0.0925,
+       "ask": 0.095
+      },
+      "Spain": {
+       "bid": 0.875,
+       "ask": 0.8775
+      }
+     }
+    }
+   },
+   "var": true,
+   "action": "goal",
+   "scorer": "Spain",
+   "cs": 3629,
+   "confirmed": false,
+   "score_before": "0-2",
+   "score_after": "0-3",
+   "seq": 638,
+   "part": 2,
+   "disallowed": true
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1784056769.2,
+   "label": "France",
+   "tx_fair": 0.364,
+   "poly_ask": 0.21,
+   "initial_gap": 0.154,
+   "max_gap": 0.157,
+   "ask_depth": 1572,
+   "pre_activity": 7.384,
+   "clock": "19'",
+   "score": "0-0",
+   "duration": 161.0,
+   "exit_bid": 0.2,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.1975,
+   "gross_5s_per_share": 0.003
+  },
+  {
+   "t": 1784056930.2,
+   "label": "Spain",
+   "tx_fair": 0.752,
+   "poly_ask": 0.5575,
+   "initial_gap": 0.195,
+   "max_gap": 0.219,
+   "ask_depth": 2845,
+   "pre_activity": 8.342,
+   "clock": "22'",
+   "score": "0-0",
+   "duration": 47.5,
+   "exit_bid": 0.5475,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.5475,
+   "gross_5s_per_share": 0.0
+  },
+  {
+   "t": 1784060370.5,
+   "label": "France",
+   "tx_fair": 0.142,
+   "poly_ask": 0.0625,
+   "initial_gap": 0.079,
+   "max_gap": 0.079,
+   "ask_depth": 541,
+   "pre_activity": 6.284,
+   "clock": "57'",
+   "score": "0-1",
+   "duration": 50.8,
+   "exit_bid": 0.035,
+   "gross_per_share": -0.027,
+   "entry_5s_ask": 0.0325,
+   "gross_5s_per_share": 0.003
+  },
+  {
+   "t": 1784060370.5,
+   "label": "draw",
+   "tx_fair": 0.281,
+   "poly_ask": 0.1375,
+   "initial_gap": 0.144,
+   "max_gap": 0.144,
+   "ask_depth": 148,
+   "pre_activity": 6.284,
+   "clock": "57'",
+   "score": "0-1",
+   "duration": 50.8,
+   "exit_bid": 0.1075,
+   "gross_per_share": -0.03,
+   "entry_5s_ask": 0.15,
+   "gross_5s_per_share": -0.042
+  }
+ ],
+ "attention_rate": 6.955,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1784060562.861,
+    "cs": 3641,
+    "duration": 10.9,
+    "decision": "goal disallowed"
+   }
+  ],
+  "corrections": 6,
+  "penalties": [
+   {
+    "t": 1784056774.47,
+    "action": "penalty",
+    "team": "Spain",
+    "cs": 1165
+   },
+   {
+    "t": 1784056964.966,
+    "action": "penalty_outcome",
+    "team": "Spain",
+    "cs": 1313
+   }
+  ],
+  "cards": [
+   {
+    "t": 1784056134.108,
+    "action": "yellow_card",
+    "team": "France",
+    "cs": 518
+   },
+   {
+    "t": 1784057444.286,
+    "action": "yellow_card",
+    "team": "Spain",
+    "cs": 1830
+   },
+   {
+    "t": 1784062070.495,
+    "action": "yellow_card",
+    "team": "France",
+    "cs": 5147
+   }
+  ],
+  "shots": {
+   "total": 87,
+   "teams": {
+    "France": 47,
+    "Spain": 26,
+    "Unassigned": 14
+   }
+  }
+ }
+}

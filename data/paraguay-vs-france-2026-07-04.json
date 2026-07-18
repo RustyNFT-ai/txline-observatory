@@ -1,0 +1,187 @@
+{
+ "id": "paraguay-vs-france-2026-07-04",
+ "match": "Paraguay vs France",
+ "teams": [
+  "Paraguay",
+  "France"
+ ],
+ "date": "2026-07-04",
+ "slug": "fifwc-par-fra-2026-07-04",
+ "labels": [
+  "France",
+  "Paraguay",
+  "draw"
+ ],
+ "t0": 1783202331.6,
+ "t1": 1783206297.0,
+ "rows": 745,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783204442.8,
+   1
+  ]
+ ],
+ "tids": [
+  "113891226639705983282066963484423345278150974279743795316461155085208879415201",
+  "46583164088552628109006406225347745689461921407583150295364128401681303855693",
+  "5986488984275762288846227630442187818951318412322984320385279750603889532502"
+ ],
+ "counts": {
+  "poly:book": 745,
+  "txline:odds": 376,
+  "espn:score": 1,
+  "wc26:score": 1
+ },
+ "moments": [
+  {
+   "t0": 1783204442.8,
+   "t0_src": "espn",
+   "benefit": "France",
+   "baseline": 0.58,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 2.3,
+     "outcomes": {
+      "Paraguay": {
+       "bid": 0.049,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "France": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Paraguay": {
+       "bid": 0.049,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "France": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.0,
+     "outcomes": {
+      "Paraguay": {
+       "bid": 0.049,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "France": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.9,
+     "outcomes": {
+      "Paraguay": {
+       "bid": 0.049,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "France": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783203976.1,
+   "label": "draw",
+   "tx_fair": 0.332,
+   "poly_ask": 0.28,
+   "initial_gap": 0.052,
+   "max_gap": 0.052,
+   "ask_depth": 63170,
+   "pre_activity": 0.202,
+   "clock": "61'",
+   "score": "0-0",
+   "duration": 5.0,
+   "exit_bid": 0.32,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.33,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783204185.8,
+   "label": "draw",
+   "tx_fair": 0.384,
+   "poly_ask": 0.33,
+   "initial_gap": 0.054,
+   "max_gap": 0.058,
+   "ask_depth": 3145,
+   "pre_activity": 0.203,
+   "clock": "65'",
+   "score": "0-0",
+   "duration": 263.0,
+   "exit_bid": 0.36,
+   "gross_per_share": 0.03,
+   "entry_5s_ask": 0.33,
+   "gross_5s_per_share": 0.03
+  },
+  {
+   "t": 1783204448.8,
+   "label": "France",
+   "tx_fair": 0.94,
+   "poly_ask": 0.59,
+   "initial_gap": 0.35,
+   "max_gap": 0.35,
+   "ask_depth": 489796,
+   "pre_activity": 0.202,
+   "clock": "70'",
+   "score": "0-1",
+   "duration": 137.9,
+   "exit_bid": 0.92,
+   "gross_per_share": 0.33,
+   "entry_5s_ask": 0.59,
+   "gross_5s_per_share": 0.33
+  }
+ ],
+ "attention_rate": 0.197,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

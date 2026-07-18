@@ -1,0 +1,497 @@
+{
+ "id": "argentina-vs-cape-verde-2026-07-03",
+ "match": "Argentina vs Cape Verde",
+ "teams": [
+  "Argentina",
+  "Cape Verde"
+ ],
+ "date": "2026-07-03",
+ "slug": null,
+ "labels": [
+  "Argentina",
+  "Cabo Verde",
+  "draw"
+ ],
+ "t0": 1783116060.6,
+ "t1": 1783125901.2,
+ "rows": 4264,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783117738.6,
+   0
+  ],
+  [
+   1783120825.1,
+   1
+  ],
+  [
+   1783123633.2,
+   0
+  ],
+  [
+   1783124296.7,
+   1
+  ],
+  [
+   1783125180.0,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 4264,
+  "txline:odds": 2318,
+  "espn:score": 5,
+  "wc26:score": 5
+ },
+ "moments": [
+  {
+   "t0": 1783117738.6,
+   "t0_src": "espn",
+   "benefit": "Argentina",
+   "baseline": 0.83,
+   "delta_120s": 0.1,
+   "prices": {
+    "before": {
+     "dt": 0.8,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.83,
+       "ask": 0.84
+      },
+      "draw": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "Cabo Verde": {
+       "bid": 0.033,
+       "ask": 0.034
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.83,
+       "ask": 0.84
+      },
+      "draw": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "Cabo Verde": {
+       "bid": 0.033,
+       "ask": 0.034
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.83,
+       "ask": 0.84
+      },
+      "draw": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "Cabo Verde": {
+       "bid": 0.033,
+       "ask": 0.034
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.3,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.83,
+       "ask": 0.84
+      },
+      "draw": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "Cabo Verde": {
+       "bid": 0.033,
+       "ask": 0.034
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783120825.1,
+   "t0_src": "espn",
+   "benefit": "Cabo Verde",
+   "baseline": 0.009,
+   "delta_120s": -0.001,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.92,
+       "ask": 0.93
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "Cabo Verde": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.92,
+       "ask": 0.93
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "Cabo Verde": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.92,
+       "ask": 0.93
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "Cabo Verde": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.92,
+       "ask": 0.93
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "Cabo Verde": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Cabo Verde",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783123633.2,
+   "t0_src": "espn",
+   "benefit": "Argentina",
+   "prices": {
+    "before": {
+     "dt": 0.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783124296.7,
+   "t0_src": "espn",
+   "benefit": "Cabo Verde",
+   "prices": {
+    "before": {
+     "dt": 1.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.7,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Cabo Verde",
+   "score_before": "2-1",
+   "score_after": "2-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783125180.0,
+   "t0_src": "espn",
+   "benefit": "Argentina",
+   "prices": {
+    "before": {
+     "dt": 1.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "score_before": "2-2",
+   "score_after": "3-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783117771.5,
+   "label": "Argentina",
+   "tx_fair": 0.954,
+   "poly_ask": 0.84,
+   "initial_gap": 0.114,
+   "max_gap": 0.117,
+   "ask_depth": 891408,
+   "pre_activity": 0.202,
+   "clock": "29'",
+   "score": "1-0",
+   "duration": 37.8,
+   "exit_bid": 0.93,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.84,
+   "gross_5s_per_share": 0.09
+  },
+  {
+   "t": 1783121022.6,
+   "label": "draw",
+   "tx_fair": 0.335,
+   "poly_ask": 0.08,
+   "initial_gap": 0.255,
+   "max_gap": 0.262,
+   "ask_depth": 37438,
+   "pre_activity": 0.101,
+   "clock": "63'",
+   "score": "1-1",
+   "duration": 82.2,
+   "exit_bid": 0.31,
+   "gross_per_share": 0.23,
+   "entry_5s_ask": 0.08,
+   "gross_5s_per_share": 0.23
+  },
+  {
+   "t": 1783121374.6,
+   "label": "draw",
+   "tx_fair": 0.371,
+   "poly_ask": 0.32,
+   "initial_gap": 0.051,
+   "max_gap": 0.058,
+   "ask_depth": 7749,
+   "pre_activity": 0.202,
+   "clock": "69'",
+   "score": "1-1",
+   "duration": 31.9,
+   "exit_bid": 0.36,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.32,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1783121699.9,
+   "label": "draw",
+   "tx_fair": 0.421,
+   "poly_ask": 0.37,
+   "initial_gap": 0.051,
+   "max_gap": 0.093,
+   "ask_depth": 87211,
+   "pre_activity": 0.201,
+   "clock": "74'",
+   "score": "1-1",
+   "duration": 306.3,
+   "exit_bid": 0.44,
+   "gross_per_share": 0.07,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1783122166.2,
+   "label": "draw",
+   "tx_fair": 0.501,
+   "poly_ask": 0.45,
+   "initial_gap": 0.051,
+   "max_gap": 0.06,
+   "ask_depth": 21654,
+   "pre_activity": 0.202,
+   "clock": "81'",
+   "score": "1-1",
+   "duration": 13.9,
+   "exit_bid": 0.44,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.45,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783122198.0,
+   "label": "draw",
+   "tx_fair": 0.508,
+   "poly_ask": 0.45,
+   "initial_gap": 0.058,
+   "max_gap": 0.151,
+   "ask_depth": 41231,
+   "pre_activity": 0.202,
+   "clock": "82'",
+   "score": "1-1",
+   "duration": 424.8,
+   "exit_bid": 0.65,
+   "gross_per_share": 0.2,
+   "entry_5s_ask": 0.45,
+   "gross_5s_per_share": 0.2
+  },
+  {
+   "t": 1783122705.1,
+   "label": "draw",
+   "tx_fair": 0.712,
+   "poly_ask": 0.66,
+   "initial_gap": 0.052,
+   "max_gap": 0.221,
+   "ask_depth": 6354,
+   "pre_activity": 0.201,
+   "clock": "90'",
+   "score": "1-1",
+   "duration": 536.5,
+   "exit_bid": 0.97,
+   "gross_per_share": 0.31,
+   "entry_5s_ask": 0.66,
+   "gross_5s_per_share": 0.31
+  }
+ ],
+ "attention_rate": 0.134,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

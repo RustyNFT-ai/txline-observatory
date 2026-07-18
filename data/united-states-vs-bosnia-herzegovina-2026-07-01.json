@@ -1,0 +1,270 @@
+{
+ "id": "united-states-vs-bosnia-herzegovina-2026-07-01",
+ "match": "United States vs Bosnia-Herzegovina",
+ "teams": [
+  "United States",
+  "Bosnia-Herzegovina"
+ ],
+ "date": "2026-07-01",
+ "slug": null,
+ "labels": [
+  "Bosnia and Herzegovina",
+  "United States",
+  "draw"
+ ],
+ "t0": 1782950477.1,
+ "t1": 1782958007.9,
+ "rows": 3264,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782953117.4,
+   0
+  ],
+  [
+   1782956894.4,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 3264,
+  "txline:odds": 1063,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1782953117.4,
+   "t0_src": "espn",
+   "benefit": "United States",
+   "baseline": 0.66,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "United States": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "United States": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "United States": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "United States": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "United States",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782956894.4,
+   "t0_src": "espn",
+   "benefit": "United States",
+   "baseline": 0.79,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.7,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.025,
+       "ask": 0.026
+      },
+      "United States": {
+       "bid": 0.79,
+       "ask": 0.8
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.025,
+       "ask": 0.026
+      },
+      "United States": {
+       "bid": 0.79,
+       "ask": 0.8
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.025,
+       "ask": 0.026
+      },
+      "United States": {
+       "bid": 0.79,
+       "ask": 0.8
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "Bosnia and Herzegovina": {
+       "bid": 0.025,
+       "ask": 0.026
+      },
+      "United States": {
+       "bid": 0.79,
+       "ask": 0.8
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "United States",
+   "score_before": "1-0",
+   "score_after": "2-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782953139.1,
+   "label": "United States",
+   "tx_fair": 0.887,
+   "poly_ask": 0.67,
+   "initial_gap": 0.217,
+   "max_gap": 0.217,
+   "ask_depth": 417528,
+   "pre_activity": 0.202,
+   "clock": "45'+1'",
+   "score": "1-0",
+   "duration": 112.0,
+   "exit_bid": 0.87,
+   "gross_per_share": 0.2,
+   "entry_5s_ask": 0.67,
+   "gross_5s_per_share": 0.2
+  },
+  {
+   "t": 1782955809.1,
+   "label": "draw",
+   "tx_fair": 0.166,
+   "poly_ask": 0.11,
+   "initial_gap": 0.056,
+   "max_gap": 0.102,
+   "ask_depth": 4808,
+   "pre_activity": 0.202,
+   "clock": "63'",
+   "score": "1-0",
+   "duration": 123.2,
+   "exit_bid": 0.2,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.11,
+   "gross_5s_per_share": 0.09
+  },
+  {
+   "t": 1782956926.8,
+   "label": "United States",
+   "tx_fair": 0.967,
+   "poly_ask": 0.8,
+   "initial_gap": 0.167,
+   "max_gap": 0.176,
+   "ask_depth": 174245,
+   "pre_activity": 0.202,
+   "clock": "83'",
+   "score": "2-0",
+   "duration": 206.1,
+   "exit_bid": 0.975,
+   "gross_per_share": 0.175,
+   "entry_5s_ask": 0.8,
+   "gross_5s_per_share": 0.175
+  }
+ ],
+ "attention_rate": 0.175,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

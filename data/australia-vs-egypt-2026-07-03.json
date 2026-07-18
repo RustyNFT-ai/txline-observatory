@@ -1,0 +1,321 @@
+{
+ "id": "australia-vs-egypt-2026-07-03",
+ "match": "Australia vs Egypt",
+ "teams": [
+  "Australia",
+  "Egypt"
+ ],
+ "date": "2026-07-03",
+ "slug": null,
+ "labels": [
+  "Australia",
+  "Egypt",
+  "draw"
+ ],
+ "t0": 1783101647.3,
+ "t1": 1783112209.9,
+ "rows": 4258,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783102393.9,
+   1
+  ],
+  [
+   1783106237.3,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 4258,
+  "txline:odds": 2445,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1783102393.9,
+   "t0_src": "espn",
+   "benefit": "Egypt",
+   "baseline": 0.36,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.6,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Egypt",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783106237.3,
+   "t0_src": "espn",
+   "benefit": "Australia",
+   "baseline": 0.08,
+   "delta_120s": -0.01,
+   "prices": {
+    "before": {
+     "dt": 0.7,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "Australia": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Australia",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783102491.8,
+   "label": "Egypt",
+   "tx_fair": 0.662,
+   "poly_ask": 0.37,
+   "initial_gap": 0.292,
+   "max_gap": 0.292,
+   "ask_depth": 79198,
+   "pre_activity": 0.201,
+   "clock": "15'",
+   "score": "0-1",
+   "duration": 5.9,
+   "exit_bid": 0.36,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783102526.1,
+   "label": "Egypt",
+   "tx_fair": 0.647,
+   "poly_ask": 0.37,
+   "initial_gap": 0.277,
+   "max_gap": 0.277,
+   "ask_depth": 82467,
+   "pre_activity": 0.201,
+   "clock": "15'",
+   "score": "0-1",
+   "duration": 5.8,
+   "exit_bid": 0.36,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783102542.3,
+   "label": "Egypt",
+   "tx_fair": 0.648,
+   "poly_ask": 0.37,
+   "initial_gap": 0.278,
+   "max_gap": 0.292,
+   "ask_depth": 78270,
+   "pre_activity": 0.201,
+   "clock": "16'",
+   "score": "0-1",
+   "duration": 64.7,
+   "exit_bid": 0.63,
+   "gross_per_share": 0.26,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": 0.26
+  },
+  {
+   "t": 1783106241.8,
+   "label": "Australia",
+   "tx_fair": 0.24,
+   "poly_ask": 0.08,
+   "initial_gap": 0.16,
+   "max_gap": 0.16,
+   "ask_depth": 2022,
+   "pre_activity": 0.202,
+   "clock": "55'",
+   "score": "1-1",
+   "duration": 269.4,
+   "exit_bid": 0.19,
+   "gross_per_share": 0.11,
+   "entry_5s_ask": 0.08,
+   "gross_5s_per_share": 0.11
+  },
+  {
+   "t": 1783106241.8,
+   "label": "draw",
+   "tx_fair": 0.484,
+   "poly_ask": 0.27,
+   "initial_gap": 0.214,
+   "max_gap": 0.271,
+   "ask_depth": 45379,
+   "pre_activity": 0.202,
+   "clock": "55'",
+   "score": "1-1",
+   "duration": 1477.1,
+   "exit_bid": 0.65,
+   "gross_per_share": 0.38,
+   "entry_5s_ask": 0.27,
+   "gross_5s_per_share": 0.38
+  },
+  {
+   "t": 1783107906.3,
+   "label": "draw",
+   "tx_fair": 0.712,
+   "poly_ask": 0.66,
+   "initial_gap": 0.052,
+   "max_gap": 0.096,
+   "ask_depth": 104328,
+   "pre_activity": 0.201,
+   "clock": "83'",
+   "score": "1-1",
+   "duration": 401.8,
+   "exit_bid": 0.79,
+   "gross_per_share": 0.13,
+   "entry_5s_ask": 0.66,
+   "gross_5s_per_share": 0.13
+  }
+ ],
+ "attention_rate": 0.136,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

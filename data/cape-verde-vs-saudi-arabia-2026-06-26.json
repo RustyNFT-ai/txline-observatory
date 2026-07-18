@@ -1,0 +1,75 @@
+{
+ "id": "cape-verde-vs-saudi-arabia-2026-06-26",
+ "match": "Cape Verde vs Saudi Arabia",
+ "teams": [
+  "Cape Verde",
+  "Saudi Arabia"
+ ],
+ "date": "2026-06-26",
+ "slug": null,
+ "labels": [
+  "Cabo Verde",
+  "Saudi Arabia",
+  "draw"
+ ],
+ "t0": 1782518546.0,
+ "t1": 1782525604.1,
+ "rows": 1413,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [],
+ "tids": [],
+ "counts": {
+  "poly:book": 1413,
+  "txline:odds": 990
+ },
+ "moments": [],
+ "opportunities": [
+  {
+   "t": 1782523604.6,
+   "label": "draw",
+   "tx_fair": 0.503,
+   "poly_ask": 0.45,
+   "initial_gap": 0.053,
+   "max_gap": 0.084,
+   "ask_depth": 96428,
+   "pre_activity": 0.203,
+   "clock": "62'",
+   "score": "0-0",
+   "duration": 247.5,
+   "exit_bid": 0.53,
+   "gross_per_share": 0.08,
+   "entry_5s_ask": 0.45,
+   "gross_5s_per_share": 0.08
+  },
+  {
+   "t": 1782524926.1,
+   "label": "draw",
+   "tx_fair": 0.693,
+   "poly_ask": 0.64,
+   "initial_gap": 0.053,
+   "max_gap": 0.079,
+   "ask_depth": 3130,
+   "pre_activity": 0.202,
+   "clock": "85'",
+   "score": "0-0",
+   "duration": 126.1,
+   "exit_bid": 0.72,
+   "gross_per_share": 0.08,
+   "entry_5s_ask": 0.64,
+   "gross_5s_per_share": 0.08
+  }
+ ],
+ "attention_rate": 0.17,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

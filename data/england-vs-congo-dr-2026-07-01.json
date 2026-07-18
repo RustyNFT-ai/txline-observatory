@@ -1,0 +1,442 @@
+{
+ "id": "england-vs-congo-dr-2026-07-01",
+ "match": "England vs Congo DR",
+ "teams": [
+  "England",
+  "Congo DR"
+ ],
+ "date": "2026-07-01",
+ "slug": null,
+ "labels": [
+  "DR Congo",
+  "England",
+  "draw"
+ ],
+ "t0": 1782921682.2,
+ "t1": 1782928858.2,
+ "rows": 2918,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782922043.1,
+   1
+  ],
+  [
+   1782927475.4,
+   0
+  ],
+  [
+   1782928169.2,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 2918,
+  "txline:odds": 1210,
+  "espn:score": 3,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1782922043.1,
+   "t0_src": "espn",
+   "benefit": "DR Congo",
+   "baseline": 0.06,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 1.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "England": {
+       "bid": 0.74,
+       "ask": 0.75
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "England": {
+       "bid": 0.74,
+       "ask": 0.75
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "England": {
+       "bid": 0.74,
+       "ask": 0.75
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "England": {
+       "bid": 0.74,
+       "ask": 0.75
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "DR Congo",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782927475.4,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.19,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "England": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "DR Congo": {
+       "bid": 0.44,
+       "ask": 0.45
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "England": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "DR Congo": {
+       "bid": 0.44,
+       "ask": 0.45
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "England": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "DR Congo": {
+       "bid": 0.44,
+       "ask": 0.45
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "England": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "DR Congo": {
+       "bid": 0.44,
+       "ask": 0.45
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782928169.2,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.37,
+   "delta_120s": -0.04,
+   "prices": {
+    "before": {
+     "dt": 1.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.55,
+       "ask": 0.56
+      },
+      "England": {
+       "bid": 0.37,
+       "ask": 0.38
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.55,
+       "ask": 0.56
+      },
+      "England": {
+       "bid": 0.37,
+       "ask": 0.38
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.55,
+       "ask": 0.56
+      },
+      "England": {
+       "bid": 0.37,
+       "ask": 0.38
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.55,
+       "ask": 0.56
+      },
+      "England": {
+       "bid": 0.37,
+       "ask": 0.38
+      },
+      "DR Congo": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782922073.3,
+   "label": "draw",
+   "tx_fair": 0.259,
+   "poly_ask": 0.19,
+   "initial_gap": 0.069,
+   "max_gap": 0.079,
+   "ask_depth": 13413,
+   "pre_activity": 0.155,
+   "clock": "8'",
+   "score": "0-1",
+   "duration": 174.2,
+   "exit_bid": 0.25,
+   "gross_per_share": 0.06,
+   "entry_5s_ask": 0.19,
+   "gross_5s_per_share": 0.06
+  },
+  {
+   "t": 1782922073.3,
+   "label": "DR Congo",
+   "tx_fair": 0.187,
+   "poly_ask": 0.07,
+   "initial_gap": 0.117,
+   "max_gap": 0.129,
+   "ask_depth": 5049,
+   "pre_activity": 0.155,
+   "clock": "8'",
+   "score": "0-1",
+   "duration": 174.2,
+   "exit_bid": 0.16,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.07,
+   "gross_5s_per_share": 0.09
+  },
+  {
+   "t": 1782926605.1,
+   "label": "DR Congo",
+   "tx_fair": 0.351,
+   "poly_ask": 0.3,
+   "initial_gap": 0.051,
+   "max_gap": 0.084,
+   "ask_depth": 23547,
+   "pre_activity": 0.2,
+   "clock": "60'",
+   "score": "0-1",
+   "duration": 139.7,
+   "exit_bid": 0.36,
+   "gross_per_share": 0.06,
+   "entry_5s_ask": 0.3,
+   "gross_5s_per_share": 0.06
+  },
+  {
+   "t": 1782926976.5,
+   "label": "DR Congo",
+   "tx_fair": 0.425,
+   "poly_ask": 0.37,
+   "initial_gap": 0.055,
+   "max_gap": 0.07,
+   "ask_depth": 98872,
+   "pre_activity": 0.201,
+   "clock": "66'",
+   "score": "0-1",
+   "duration": 377.6,
+   "exit_bid": 0.44,
+   "gross_per_share": 0.07,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1782927554.2,
+   "label": "draw",
+   "tx_fair": 0.507,
+   "poly_ask": 0.36,
+   "initial_gap": 0.147,
+   "max_gap": 0.17,
+   "ask_depth": 45173,
+   "pre_activity": 0.202,
+   "clock": "76'",
+   "score": "1-1",
+   "duration": 94.8,
+   "exit_bid": 0.5,
+   "gross_per_share": 0.14,
+   "entry_5s_ask": 0.36,
+   "gross_5s_per_share": 0.14
+  },
+  {
+   "t": 1782927554.2,
+   "label": "England",
+   "tx_fair": 0.421,
+   "poly_ask": 0.2,
+   "initial_gap": 0.221,
+   "max_gap": 0.227,
+   "ask_depth": 69395,
+   "pre_activity": 0.202,
+   "clock": "76'",
+   "score": "1-1",
+   "duration": 94.8,
+   "exit_bid": 0.4,
+   "gross_per_share": 0.2,
+   "entry_5s_ask": 0.2,
+   "gross_5s_per_share": 0.2
+  },
+  {
+   "t": 1782927809.2,
+   "label": "draw",
+   "tx_fair": 0.562,
+   "poly_ask": 0.51,
+   "initial_gap": 0.052,
+   "max_gap": 0.059,
+   "ask_depth": 47276,
+   "pre_activity": 0.202,
+   "clock": "80'",
+   "score": "1-1",
+   "duration": 138.7,
+   "exit_bid": 0.55,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.51,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1782928194.8,
+   "label": "England",
+   "tx_fair": 0.93,
+   "poly_ask": 0.38,
+   "initial_gap": 0.55,
+   "max_gap": 0.609,
+   "ask_depth": 541645,
+   "pre_activity": 0.203,
+   "clock": "87'",
+   "score": "2-1",
+   "duration": 355.1,
+   "exit_bid": 0.94,
+   "gross_per_share": 0.56,
+   "entry_5s_ask": 0.38,
+   "gross_5s_per_share": 0.56
+  }
+ ],
+ "attention_rate": 0.167,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

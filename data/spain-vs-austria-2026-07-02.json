@@ -1,0 +1,307 @@
+{
+ "id": "spain-vs-austria-2026-07-02",
+ "match": "Spain vs Austria",
+ "teams": [
+  "Spain",
+  "Austria"
+ ],
+ "date": "2026-07-02",
+ "slug": null,
+ "labels": [
+  "Austria",
+  "Spain",
+  "draw"
+ ],
+ "t0": 1783018879.6,
+ "t1": 1783025948.8,
+ "rows": 2809,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783021005.5,
+   0
+  ],
+  [
+   1783024101.0,
+   0
+  ],
+  [
+   1783025478.7,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 2809,
+  "txline:odds": 687,
+  "espn:score": 3,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1783021005.5,
+   "t0_src": "espn",
+   "benefit": "Spain",
+   "baseline": 0.695,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 1.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.695,
+       "ask": 0.6975
+      },
+      "draw": {
+       "bid": 0.225,
+       "ask": 0.2275
+      },
+      "Austria": {
+       "bid": 0.0825,
+       "ask": 0.085
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.695,
+       "ask": 0.6975
+      },
+      "draw": {
+       "bid": 0.225,
+       "ask": 0.2275
+      },
+      "Austria": {
+       "bid": 0.0825,
+       "ask": 0.085
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.695,
+       "ask": 0.6975
+      },
+      "draw": {
+       "bid": 0.225,
+       "ask": 0.2275
+      },
+      "Austria": {
+       "bid": 0.0825,
+       "ask": 0.085
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.6,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.695,
+       "ask": 0.6975
+      },
+      "draw": {
+       "bid": 0.225,
+       "ask": 0.2275
+      },
+      "Austria": {
+       "bid": 0.0825,
+       "ask": 0.085
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783024101.0,
+   "t0_src": "espn",
+   "benefit": "Spain",
+   "baseline": 0.887,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.8875,
+       "ask": 0.89
+      },
+      "draw": {
+       "bid": 0.095,
+       "ask": 0.0975
+      },
+      "Austria": {
+       "bid": 0.0175,
+       "ask": 0.02
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.8875,
+       "ask": 0.89
+      },
+      "draw": {
+       "bid": 0.095,
+       "ask": 0.0975
+      },
+      "Austria": {
+       "bid": 0.0175,
+       "ask": 0.02
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.8875,
+       "ask": 0.89
+      },
+      "draw": {
+       "bid": 0.095,
+       "ask": 0.0975
+      },
+      "Austria": {
+       "bid": 0.0175,
+       "ask": 0.02
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.8875,
+       "ask": 0.89
+      },
+      "draw": {
+       "bid": 0.095,
+       "ask": 0.0975
+      },
+      "Austria": {
+       "bid": 0.0175,
+       "ask": 0.02
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "score_before": "1-0",
+   "score_after": "2-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783025478.7,
+   "t0_src": "espn",
+   "benefit": "Spain",
+   "baseline": 0.993,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -2.5,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.9925,
+       "ask": 0.995
+      },
+      "draw": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.9925,
+       "ask": 0.995
+      },
+      "draw": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.9925,
+       "ask": 0.995
+      },
+      "draw": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.4,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.9925,
+       "ask": 0.995
+      },
+      "draw": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "score_before": "2-0",
+   "score_after": "3-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783021031.7,
+   "label": "Spain",
+   "tx_fair": 0.889,
+   "poly_ask": 0.6975,
+   "initial_gap": 0.192,
+   "max_gap": 0.192,
+   "ask_depth": 50047,
+   "pre_activity": 0.202,
+   "clock": "37'",
+   "score": "1-0",
+   "duration": 105.2,
+   "exit_bid": 0.865,
+   "gross_per_share": 0.167,
+   "entry_5s_ask": 0.6975,
+   "gross_5s_per_share": 0.167
+  }
+ ],
+ "attention_rate": 0.195,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

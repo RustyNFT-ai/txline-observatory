@@ -1,0 +1,1810 @@
+[
+ {
+  "id": "ecuador-vs-germany-2026-06-25",
+  "match": "Ecuador vs Germany",
+  "teams": [
+   "Ecuador",
+   "Germany"
+  ],
+  "date": "2026-06-25",
+  "slug": null,
+  "labels": [
+   "Ecuador",
+   "Germany",
+   "draw"
+  ],
+  "t0": 1782417651.0,
+  "t1": 1782427699.3,
+  "rows": 1444,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782417778.1,
+    1
+   ],
+   [
+    1782418180.8,
+    0
+   ],
+   [
+    1782423531.3,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "cura-ao-vs-ivory-coast-2026-06-25",
+  "match": "Cura\u00e7ao vs Ivory Coast",
+  "teams": [
+   "Cura\u00e7ao",
+   "Ivory Coast"
+  ],
+  "date": "2026-06-25",
+  "slug": null,
+  "labels": [],
+  "t0": 1782417710.3,
+  "t1": 1782424670.5,
+  "rows": 1422,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782418062.2,
+    1
+   ],
+   [
+    1782418079.7,
+    1
+   ],
+   [
+    1782422732.4,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "japan-vs-sweden-2026-06-25",
+  "match": "Japan vs Sweden",
+  "teams": [
+   "Japan",
+   "Sweden"
+  ],
+  "date": "2026-06-25",
+  "slug": null,
+  "labels": [
+   "Japan",
+   "Sweden",
+   "draw"
+  ],
+  "t0": 1782428459.3,
+  "t1": 1782435507.7,
+  "rows": 1432,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782433020.5,
+    0
+   ],
+   [
+    1782433404.3,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "tunisia-vs-netherlands-2026-06-25",
+  "match": "Tunisia vs Netherlands",
+  "teams": [
+   "Tunisia",
+   "Netherlands"
+  ],
+  "date": "2026-06-25",
+  "slug": null,
+  "labels": [
+   "Netherlands",
+   "Tunisia",
+   "draw"
+  ],
+  "t0": 1782428468.8,
+  "t1": 1782435309.6,
+  "rows": 1387,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782428599.5,
+    1
+   ],
+   [
+    1782428858.3,
+    1
+   ],
+   [
+    1782432830.1,
+    0
+   ],
+   [
+    1782433280.2,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "t-rkiye-vs-united-states-2026-06-25",
+  "match": "T\u00fcrkiye vs United States",
+  "teams": [
+   "T\u00fcrkiye",
+   "United States"
+  ],
+  "date": "2026-06-25",
+  "slug": null,
+  "labels": [
+   "T\u00fcrkiye",
+   "United States",
+   "draw"
+  ],
+  "t0": 1782439258.9,
+  "t1": 1782446556.0,
+  "rows": 1423,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782439383.0,
+    1
+   ],
+   [
+    1782439843.2,
+    0
+   ],
+   [
+    1782441098.2,
+    0
+   ],
+   [
+    1782443499.8,
+    1
+   ],
+   [
+    1782446508.9,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "paraguay-vs-australia-2026-06-25",
+  "match": "Paraguay vs Australia",
+  "teams": [
+   "Paraguay",
+   "Australia"
+  ],
+  "date": "2026-06-25",
+  "slug": null,
+  "labels": [
+   "Australia",
+   "Paraguay",
+   "draw"
+  ],
+  "t0": 1782439268.2,
+  "t1": 1782446343.9,
+  "rows": 1376,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [],
+  "tids": []
+ },
+ {
+  "id": "norway-vs-france-2026-06-26",
+  "match": "Norway vs France",
+  "teams": [
+   "Norway",
+   "France"
+  ],
+  "date": "2026-06-26",
+  "slug": null,
+  "labels": [
+   "France",
+   "Norway",
+   "draw"
+  ],
+  "t0": 1782500545.8,
+  "t1": 1782507595.1,
+  "rows": 1299,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782500915.0,
+    1
+   ],
+   [
+    1782501698.2,
+    1
+   ],
+   [
+    1782501768.1,
+    0
+   ],
+   [
+    1782502440.1,
+    1
+   ],
+   [
+    1782507478.0,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "senegal-vs-iraq-2026-06-26",
+  "match": "Senegal vs Iraq",
+  "teams": [
+   "Senegal",
+   "Iraq"
+  ],
+  "date": "2026-06-26",
+  "slug": null,
+  "labels": [
+   "Iraq",
+   "Senegal",
+   "draw"
+  ],
+  "t0": 1782500576.2,
+  "t1": 1782507895.9,
+  "rows": 1353,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782500844.7,
+    0
+   ],
+   [
+    1782505451.1,
+    0
+   ],
+   [
+    1782505621.1,
+    0
+   ],
+   [
+    1782506380.8,
+    0
+   ],
+   [
+    1782507006.9,
+    0
+   ],
+   [
+    1782507041.3,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "uruguay-vs-spain-2026-06-26",
+  "match": "Uruguay vs Spain",
+  "teams": [
+   "Uruguay",
+   "Spain"
+  ],
+  "date": "2026-06-26",
+  "slug": null,
+  "labels": [
+   "Spain",
+   "Uruguay",
+   "draw"
+  ],
+  "t0": 1782518513.5,
+  "t1": 1782525693.2,
+  "rows": 1439,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782520997.1,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "cape-verde-vs-saudi-arabia-2026-06-26",
+  "match": "Cape Verde vs Saudi Arabia",
+  "teams": [
+   "Cape Verde",
+   "Saudi Arabia"
+  ],
+  "date": "2026-06-26",
+  "slug": null,
+  "labels": [
+   "Cabo Verde",
+   "Saudi Arabia",
+   "draw"
+  ],
+  "t0": 1782518546.0,
+  "t1": 1782525604.1,
+  "rows": 1413,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [],
+  "tids": []
+ },
+ {
+  "id": "egypt-vs-iran-2026-06-26",
+  "match": "Egypt vs Iran",
+  "teams": [
+   "Egypt",
+   "Iran"
+  ],
+  "date": "2026-06-26",
+  "slug": null,
+  "labels": [
+   "Egypt",
+   "IR Iran",
+   "draw"
+  ],
+  "t0": 1782529294.8,
+  "t1": 1782536635.1,
+  "rows": 1434,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782529566.4,
+    0
+   ],
+   [
+    1782530069.9,
+    1
+   ],
+   [
+    1782536238.2,
+    1
+   ],
+   [
+    1782536268.9,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "new-zealand-vs-belgium-2026-06-26",
+  "match": "New Zealand vs Belgium",
+  "teams": [
+   "New Zealand",
+   "Belgium"
+  ],
+  "date": "2026-06-26",
+  "slug": null,
+  "labels": [
+   "Belgium",
+   "New Zealand",
+   "draw"
+  ],
+  "t0": 1782529314.5,
+  "t1": 1782536315.0,
+  "rows": 1362,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782530955.6,
+    1
+   ],
+   [
+    1782533585.7,
+    1
+   ],
+   [
+    1782534551.8,
+    1
+   ],
+   [
+    1782535595.6,
+    0
+   ],
+   [
+    1782535699.2,
+    1
+   ],
+   [
+    1782536228.4,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "panama-vs-england-2026-06-27",
+  "match": "Panama vs England",
+  "teams": [
+   "Panama",
+   "England"
+  ],
+  "date": "2026-06-27",
+  "slug": null,
+  "labels": [
+   "England",
+   "Panama",
+   "draw"
+  ],
+  "t0": 1782594097.1,
+  "t1": 1782600949.2,
+  "rows": 1274,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782598870.7,
+    1
+   ],
+   [
+    1782599219.6,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "croatia-vs-ghana-2026-06-27",
+  "match": "Croatia vs Ghana",
+  "teams": [
+   "Croatia",
+   "Ghana"
+  ],
+  "date": "2026-06-27",
+  "slug": null,
+  "labels": [
+   "Croatia",
+   "Ghana",
+   "draw"
+  ],
+  "t0": 1782594118.5,
+  "t1": 1782601166.8,
+  "rows": 1318,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782595964.5,
+    0
+   ],
+   [
+    1782599665.5,
+    1
+   ],
+   [
+    1782599927.4,
+    1
+   ],
+   [
+    1782600235.7,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "colombia-vs-portugal-2026-06-27",
+  "match": "Colombia vs Portugal",
+  "teams": [
+   "Colombia",
+   "Portugal"
+  ],
+  "date": "2026-06-27",
+  "slug": null,
+  "labels": [
+   "Colombia",
+   "Portugal",
+   "draw"
+  ],
+  "t0": 1782603121.2,
+  "t1": 1782610118.3,
+  "rows": 1413,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [],
+  "tids": []
+ },
+ {
+  "id": "congo-dr-vs-uzbekistan-2026-06-27",
+  "match": "Congo DR vs Uzbekistan",
+  "teams": [
+   "Congo DR",
+   "Uzbekistan"
+  ],
+  "date": "2026-06-27",
+  "slug": null,
+  "labels": [
+   "DR Congo",
+   "Uzbekistan",
+   "draw"
+  ],
+  "t0": 1782603121.2,
+  "t1": 1782610351.0,
+  "rows": 1466,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782603704.1,
+    1
+   ],
+   [
+    1782604124.5,
+    0
+   ],
+   [
+    1782608497.4,
+    0
+   ],
+   [
+    1782609097.4,
+    0
+   ],
+   [
+    1782609881.7,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "jordan-vs-argentina-2026-06-27",
+  "match": "Jordan vs Argentina",
+  "teams": [
+   "Jordan",
+   "Argentina"
+  ],
+  "date": "2026-06-27",
+  "slug": null,
+  "labels": [
+   "Argentina",
+   "Jordan",
+   "draw"
+  ],
+  "t0": 1782612073.0,
+  "t1": 1782619080.8,
+  "rows": 1352,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782613149.6,
+    1
+   ],
+   [
+    1782613870.0,
+    1
+   ],
+   [
+    1782616625.2,
+    0
+   ],
+   [
+    1782618092.6,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "algeria-vs-austria-2026-06-27",
+  "match": "Algeria vs Austria",
+  "teams": [
+   "Algeria",
+   "Austria"
+  ],
+  "date": "2026-06-27",
+  "slug": null,
+  "labels": [
+   "Algeria",
+   "Austria",
+   "draw"
+  ],
+  "t0": 1782612092.5,
+  "t1": 1782619179.8,
+  "rows": 1368,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782613748.9,
+    1
+   ],
+   [
+    1782614765.5,
+    0
+   ],
+   [
+    1782616645.6,
+    1
+   ],
+   [
+    1782616932.2,
+    0
+   ],
+   [
+    1782618932.7,
+    0
+   ],
+   [
+    1782619096.4,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "south-africa-vs-canada-2026-06-28",
+  "match": "South Africa vs Canada",
+  "teams": [
+   "South Africa",
+   "Canada"
+  ],
+  "date": "2026-06-28",
+  "slug": null,
+  "labels": [
+   "Canada",
+   "South Africa",
+   "draw"
+  ],
+  "t0": 1782673247.6,
+  "t1": 1782680245.4,
+  "rows": 3686,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782679920.6,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "brazil-vs-japan-2026-06-29",
+  "match": "Brazil vs Japan",
+  "teams": [
+   "Brazil",
+   "Japan"
+  ],
+  "date": "2026-06-29",
+  "slug": null,
+  "labels": [
+   "Brazil",
+   "Japan",
+   "draw"
+  ],
+  "t0": 1782752460.0,
+  "t1": 1782759805.2,
+  "rows": 2854,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782754216.6,
+    1
+   ],
+   [
+    1782757060.3,
+    0
+   ],
+   [
+    1782759500.7,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "germany-vs-paraguay-2026-06-29",
+  "match": "Germany vs Paraguay",
+  "teams": [
+   "Germany",
+   "Paraguay"
+  ],
+  "date": "2026-06-29",
+  "slug": null,
+  "labels": [
+   "Germany",
+   "Paraguay",
+   "draw"
+  ],
+  "t0": 1782765081.9,
+  "t1": 1782775761.8,
+  "rows": 4309,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782767533.3,
+    1
+   ],
+   [
+    1782769660.0,
+    0
+   ],
+   [
+    1782773167.8,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "netherlands-vs-morocco-2026-06-29",
+  "match": "Netherlands vs Morocco",
+  "teams": [
+   "Netherlands",
+   "Morocco"
+  ],
+  "date": "2026-06-29",
+  "slug": null,
+  "labels": [
+   "Morocco",
+   "Netherlands",
+   "draw"
+  ],
+  "t0": 1782781259.8,
+  "t1": 1782791662.8,
+  "rows": 4417,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782786847.1,
+    0
+   ],
+   [
+    1782787962.9,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "ivory-coast-vs-norway-2026-06-30",
+  "match": "Ivory Coast vs Norway",
+  "teams": [
+   "Ivory Coast",
+   "Norway"
+  ],
+  "date": "2026-06-30",
+  "slug": null,
+  "labels": [
+   "C\u00f4te d'Ivoire",
+   "Norway",
+   "draw"
+  ],
+  "t0": 1782838873.9,
+  "t1": 1782845915.8,
+  "rows": 2838,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782841200.9,
+    1
+   ],
+   [
+    1782844455.8,
+    0
+   ],
+   [
+    1782845191.3,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "france-vs-sweden-2026-06-30",
+  "match": "France vs Sweden",
+  "teams": [
+   "France",
+   "Sweden"
+  ],
+  "date": "2026-06-30",
+  "slug": null,
+  "labels": [
+   "France",
+   "Sweden",
+   "draw"
+  ],
+  "t0": 1782853236.7,
+  "t1": 1782860051.4,
+  "rows": 2735,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782855939.4,
+    0
+   ],
+   [
+    1782857521.3,
+    0
+   ],
+   [
+    1782858790.5,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "mexico-vs-ecuador-2026-06-30",
+  "match": "Mexico vs Ecuador",
+  "teams": [
+   "Mexico",
+   "Ecuador"
+  ],
+  "date": "2026-06-30",
+  "slug": null,
+  "labels": [
+   "Ecuador",
+   "Mexico",
+   "draw"
+  ],
+  "t0": 1782871305.8,
+  "t1": 1782878528.4,
+  "rows": 3065,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782872557.1,
+    0
+   ],
+   [
+    1782873110.7,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "england-vs-congo-dr-2026-07-01",
+  "match": "England vs Congo DR",
+  "teams": [
+   "England",
+   "Congo DR"
+  ],
+  "date": "2026-07-01",
+  "slug": null,
+  "labels": [
+   "DR Congo",
+   "England",
+   "draw"
+  ],
+  "t0": 1782921682.2,
+  "t1": 1782928858.2,
+  "rows": 2918,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782922043.1,
+    1
+   ],
+   [
+    1782927475.4,
+    0
+   ],
+   [
+    1782928169.2,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "belgium-vs-senegal-2026-07-01",
+  "match": "Belgium vs Senegal",
+  "teams": [
+   "Belgium",
+   "Senegal"
+  ],
+  "date": "2026-07-01",
+  "slug": null,
+  "labels": [
+   "Belgium",
+   "Senegal",
+   "draw"
+  ],
+  "t0": 1782936071.4,
+  "t1": 1782946232.8,
+  "rows": 4120,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782937541.3,
+    1
+   ],
+   [
+    1782940462.3,
+    1
+   ],
+   [
+    1782942529.1,
+    0
+   ],
+   [
+    1782942560.5,
+    0
+   ],
+   [
+    1782942699.0,
+    0
+   ],
+   [
+    1782945785.4,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "united-states-vs-bosnia-herzegovina-2026-07-01",
+  "match": "United States vs Bosnia-Herzegovina",
+  "teams": [
+   "United States",
+   "Bosnia-Herzegovina"
+  ],
+  "date": "2026-07-01",
+  "slug": null,
+  "labels": [
+   "Bosnia and Herzegovina",
+   "United States",
+   "draw"
+  ],
+  "t0": 1782950477.1,
+  "t1": 1782958007.9,
+  "rows": 3264,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1782953117.4,
+    0
+   ],
+   [
+    1782956894.4,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "spain-vs-austria-2026-07-02",
+  "match": "Spain vs Austria",
+  "teams": [
+   "Spain",
+   "Austria"
+  ],
+  "date": "2026-07-02",
+  "slug": null,
+  "labels": [
+   "Austria",
+   "Spain",
+   "draw"
+  ],
+  "t0": 1783018879.6,
+  "t1": 1783025948.8,
+  "rows": 2809,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783021005.5,
+    0
+   ],
+   [
+    1783024101.0,
+    0
+   ],
+   [
+    1783025478.7,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "portugal-vs-croatia-2026-07-02",
+  "match": "Portugal vs Croatia",
+  "teams": [
+   "Portugal",
+   "Croatia"
+  ],
+  "date": "2026-07-02",
+  "slug": null,
+  "labels": [
+   "Croatia",
+   "Portugal",
+   "draw"
+  ],
+  "t0": 1783033242.1,
+  "t1": 1783040988.1,
+  "rows": 3367,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783037604.4,
+    1
+   ],
+   [
+    1783038485.9,
+    0
+   ],
+   [
+    1783040073.5,
+    0
+   ],
+   [
+    1783040673.7,
+    1
+   ],
+   [
+    1783040703.1,
+    1
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "switzerland-vs-algeria-2026-07-02",
+  "match": "Switzerland vs Algeria",
+  "teams": [
+   "Switzerland",
+   "Algeria"
+  ],
+  "date": "2026-07-02",
+  "slug": null,
+  "labels": [
+   "Algeria",
+   "Switzerland",
+   "draw"
+  ],
+  "t0": 1783047651.2,
+  "t1": 1783055523.4,
+  "rows": 2956,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783048315.5,
+    0
+   ],
+   [
+    1783051610.0,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "australia-vs-egypt-2026-07-03",
+  "match": "Australia vs Egypt",
+  "teams": [
+   "Australia",
+   "Egypt"
+  ],
+  "date": "2026-07-03",
+  "slug": null,
+  "labels": [
+   "Australia",
+   "Egypt",
+   "draw"
+  ],
+  "t0": 1783101647.3,
+  "t1": 1783112209.9,
+  "rows": 4258,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783102393.9,
+    1
+   ],
+   [
+    1783106237.3,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "argentina-vs-cape-verde-2026-07-03",
+  "match": "Argentina vs Cape Verde",
+  "teams": [
+   "Argentina",
+   "Cape Verde"
+  ],
+  "date": "2026-07-03",
+  "slug": null,
+  "labels": [
+   "Argentina",
+   "Cabo Verde",
+   "draw"
+  ],
+  "t0": 1783116060.6,
+  "t1": 1783125901.2,
+  "rows": 4264,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783117738.6,
+    0
+   ],
+   [
+    1783120825.1,
+    1
+   ],
+   [
+    1783123633.2,
+    0
+   ],
+   [
+    1783124296.7,
+    1
+   ],
+   [
+    1783125180.0,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "colombia-vs-ghana-2026-07-03",
+  "match": "Colombia vs Ghana",
+  "teams": [
+   "Colombia",
+   "Ghana"
+  ],
+  "date": "2026-07-03",
+  "slug": null,
+  "labels": [
+   "Colombia",
+   "Ghana",
+   "draw"
+  ],
+  "t0": 1783128657.6,
+  "t1": 1783135946.4,
+  "rows": 3123,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783129492.1,
+    0
+   ]
+  ],
+  "tids": []
+ },
+ {
+  "id": "paraguay-vs-france-2026-07-04",
+  "match": "Paraguay vs France",
+  "teams": [
+   "Paraguay",
+   "France"
+  ],
+  "date": "2026-07-04",
+  "slug": "fifwc-par-fra-2026-07-04",
+  "labels": [
+   "France",
+   "Paraguay",
+   "draw"
+  ],
+  "t0": 1783202331.6,
+  "t1": 1783206297.0,
+  "rows": 745,
+  "fid": null,
+  "home1": null,
+  "tx_teams": null,
+  "score_changes": [
+   [
+    1783204442.8,
+    1
+   ]
+  ],
+  "tids": [
+   "113891226639705983282066963484423345278150974279743795316461155085208879415201",
+   "46583164088552628109006406225347745689461921407583150295364128401681303855693",
+   "5986488984275762288846227630442187818951318412322984320385279750603889532502"
+  ]
+ },
+ {
+  "id": "brazil-vs-norway-2026-07-05",
+  "match": "Brazil vs Norway",
+  "teams": [
+   "Brazil",
+   "Norway"
+  ],
+  "date": "2026-07-05",
+  "slug": "fifwc-bra-nor-2026-07-05",
+  "labels": [
+   "Brazil",
+   "Norway",
+   "draw"
+  ],
+  "t0": 1783281659.9,
+  "t1": 1783288922.5,
+  "rows": 1296,
+  "fid": 18187298,
+  "home1": true,
+  "tx_teams": [
+   "Brazil",
+   "Norway"
+  ],
+  "score_changes": [
+   [
+    1783287714.4,
+    1
+   ],
+   [
+    1783288325.3,
+    1
+   ],
+   [
+    1783288922.5,
+    0
+   ]
+  ],
+  "tids": [
+   "105654713241167797590254709131417748215287316658191010694033065067279349239377",
+   "19270630777558640544547501118520831346147002509997851493750997099589698621398",
+   "20802374126416843639334054489053876827939271763615197682043793548486789042986"
+  ]
+ },
+ {
+  "id": "mexico-vs-england-2026-07-05",
+  "match": "Mexico vs England",
+  "teams": [
+   "Mexico",
+   "England"
+  ],
+  "date": "2026-07-05",
+  "slug": "fifwc-mex-eng-2026-07-05",
+  "labels": [
+   "England",
+   "Mexico",
+   "draw"
+  ],
+  "t0": 1783299665.9,
+  "t1": 1783307131.6,
+  "rows": 1371,
+  "fid": 18192996,
+  "home1": true,
+  "tx_teams": [
+   "Mexico",
+   "England"
+  ],
+  "score_changes": [
+   [
+    1783301808.4,
+    1
+   ],
+   [
+    1783301939.5,
+    1
+   ],
+   [
+    1783302170.6,
+    0
+   ],
+   [
+    1783304561.9,
+    1
+   ],
+   [
+    1783305082.5,
+    0
+   ],
+   [
+    1783305119.7,
+    0
+   ]
+  ],
+  "tids": [
+   "41650247355939592794943171494077106157774707832652837173177374317921469209914",
+   "51911548599887870208512834589104874988746646324647658251485676564237334602135",
+   "53791259745705726030589240827060759250615158391415011769641887216926825684479"
+  ]
+ },
+ {
+  "id": "portugal-vs-spain-2026-07-06",
+  "match": "Portugal vs Spain",
+  "teams": [
+   "Portugal",
+   "Spain"
+  ],
+  "date": "2026-07-06",
+  "slug": "fifwc-prt-esp-2026-07-06",
+  "labels": [
+   "Portugal",
+   "Spain",
+   "draw"
+  ],
+  "t0": 1783364436.4,
+  "t1": 1783371725.8,
+  "rows": 1191,
+  "fid": 18198205,
+  "home1": true,
+  "tx_teams": [
+   "Portugal",
+   "Spain"
+  ],
+  "score_changes": [
+   [
+    1783371216.9,
+    1
+   ]
+  ],
+  "tids": [
+   "5192239819945131266804252801981428616883815794825428562052730446971967802530",
+   "77468978154746252186754362384998395549431983276046673742016654147362593379501",
+   "87143512590234629605431257080998414893198014883333299027317583597291917249311"
+  ]
+ },
+ {
+  "id": "united-states-vs-belgium-2026-07-06",
+  "match": "United States vs Belgium",
+  "teams": [
+   "United States",
+   "Belgium"
+  ],
+  "date": "2026-07-06",
+  "slug": "fifwc-usa-bel-2026-07-06",
+  "labels": [
+   "Belgium",
+   "United States",
+   "draw"
+  ],
+  "t0": 1783382469.6,
+  "t1": 1783389546.4,
+  "rows": 1342,
+  "fid": 18193785,
+  "home1": true,
+  "tx_teams": [
+   "United States",
+   "Belgium"
+  ],
+  "score_changes": [
+   [
+    1783383014.5,
+    1
+   ],
+   [
+    1783384305.1,
+    0
+   ],
+   [
+    1783384416.2,
+    1
+   ],
+   [
+    1783387280.0,
+    1
+   ],
+   [
+    1783389429.5,
+    1
+   ]
+  ],
+  "tids": [
+   "12543071273398745069375249451965314920040978384485189026440480252129098460445",
+   "59186683917106781508840646814784183903801989090902543836226957447714849845978",
+   "76141439386499692279040322719837529255735670745305640408917612006545881065962"
+  ]
+ },
+ {
+  "id": "argentina-vs-egypt-2026-07-07",
+  "match": "Argentina vs Egypt",
+  "teams": [
+   "Argentina",
+   "Egypt"
+  ],
+  "date": "2026-07-07",
+  "slug": "fifwc-arg-egy-2026-07-07",
+  "labels": [
+   "Argentina",
+   "Egypt",
+   "draw"
+  ],
+  "t0": 1783440161.7,
+  "t1": 1783447550.9,
+  "rows": 1201,
+  "fid": 18202701,
+  "home1": true,
+  "tx_teams": [
+   "Argentina",
+   "Egypt"
+  ],
+  "score_changes": [
+   [
+    1783440995.7,
+    1
+   ],
+   [
+    1783441017.1,
+    1
+   ],
+   [
+    1783444988.8,
+    1
+   ],
+   [
+    1783445503.4,
+    1
+   ],
+   [
+    1783446215.8,
+    0
+   ],
+   [
+    1783446474.2,
+    0
+   ],
+   [
+    1783446994.6,
+    0
+   ]
+  ],
+  "tids": [
+   "115321303982678629228305623888886288749804075736763407098365012911341798952806",
+   "29252823886591163818892631827503025749306440692725158708119244431095401849247",
+   "87390712702935875353084647255226721799646621048501318482801979643152933271064"
+  ]
+ },
+ {
+  "id": "switzerland-vs-colombia-2026-07-07",
+  "match": "Switzerland vs Colombia",
+  "teams": [
+   "Switzerland",
+   "Colombia"
+  ],
+  "date": "2026-07-07",
+  "slug": "fifwc-che-col-2026-07-07",
+  "labels": [
+   "Colombia",
+   "Switzerland",
+   "draw"
+  ],
+  "t0": 1783454446.7,
+  "t1": 1783465031.2,
+  "rows": 1649,
+  "fid": 18202783,
+  "home1": true,
+  "tx_teams": [
+   "Switzerland",
+   "Colombia"
+  ],
+  "score_changes": [],
+  "tids": [
+   "42380288660191542812245553421682685747542075745465207800717921959616754402501",
+   "66569899468789141604730928852200840975457837449855481155211476611890307710677",
+   "72753295727566659208677964635039361717871718602259295378609650323504626128275"
+  ]
+ },
+ {
+  "id": "france-vs-morocco-2026-07-09",
+  "match": "France vs Morocco",
+  "teams": [
+   "France",
+   "Morocco"
+  ],
+  "date": "2026-07-09",
+  "slug": "fifwc-fra-mar-2026-07-09",
+  "labels": [
+   "France",
+   "Morocco",
+   "draw"
+  ],
+  "t0": 1783627294.1,
+  "t1": 1783634497.7,
+  "rows": 1176,
+  "fid": 18209181,
+  "home1": true,
+  "tx_teams": [
+   "France",
+   "Morocco"
+  ],
+  "score_changes": [
+   [
+    1783632279.0,
+    0
+   ],
+   [
+    1783632651.7,
+    0
+   ]
+  ],
+  "tids": [
+   "14226508065870426054190705878267947981688371809768362929061594780236487316843",
+   "46553311265357284100312037955579178961205885337560768277560718608306086924270",
+   "59376244379747988336832016917908236721650516433890704080422157946407884434153"
+  ]
+ },
+ {
+  "id": "spain-vs-belgium-2026-07-10",
+  "match": "Spain vs Belgium",
+  "teams": [
+   "Spain",
+   "Belgium"
+  ],
+  "date": "2026-07-10",
+  "slug": "fifwc-esp-bel-2026-07-10",
+  "labels": [
+   "Belgium",
+   "Spain",
+   "draw"
+  ],
+  "t0": 1783710097.8,
+  "t1": 1783717201.1,
+  "rows": 1182,
+  "fid": 18218149,
+  "home1": true,
+  "tx_teams": [
+   "Spain",
+   "Belgium"
+  ],
+  "score_changes": [
+   [
+    1783711863.0,
+    0
+   ],
+   [
+    1783712476.9,
+    1
+   ],
+   [
+    1783716614.5,
+    0
+   ]
+  ],
+  "tids": [
+   "113258140039729603259288671364749723242703790462413008421390186262563698386140",
+   "113279756530825620298138806497651966059839483646018838321123245227908205380626",
+   "114083367175349101587118456512209157494315102378898420654169806682644264287063"
+  ]
+ },
+ {
+  "id": "norway-vs-england-2026-07-11",
+  "match": "Norway vs England",
+  "teams": [
+   "Norway",
+   "England"
+  ],
+  "date": "2026-07-11",
+  "slug": "fifwc-nor-eng-2026-07-11",
+  "labels": [
+   "England",
+   "Norway",
+   "draw"
+  ],
+  "t0": 1783803716.8,
+  "t1": 1783813643.1,
+  "rows": 1586,
+  "fid": 18213979,
+  "home1": true,
+  "tx_teams": [
+   "Norway",
+   "England"
+  ],
+  "score_changes": [
+   [
+    1783805831.4,
+    0
+   ],
+   [
+    1783806505.4,
+    1
+   ],
+   [
+    1783808262.0,
+    0
+   ],
+   [
+    1783808299.2,
+    0
+   ],
+   [
+    1783811447.4,
+    1
+   ]
+  ],
+  "tids": [
+   "101609312241167873882360947921080859853145865660281247946682387335776462114544",
+   "69356014065023591601401540629477632179960561513202758818327214611100094905114",
+   "866370305411260885620344443432925550941005016614412438009174244566837236043"
+  ]
+ },
+ {
+  "id": "argentina-vs-switzerland-2026-07-11",
+  "match": "Argentina vs Switzerland",
+  "teams": [
+   "Argentina",
+   "Switzerland"
+  ],
+  "date": "2026-07-11",
+  "slug": "fifwc-arg-che-2026-07-11",
+  "labels": [
+   "Argentina",
+   "Switzerland",
+   "draw"
+  ],
+  "t0": 1783818095.6,
+  "t1": 1783827900.4,
+  "rows": 1684,
+  "fid": 18222446,
+  "home1": true,
+  "tx_teams": [
+   "Argentina",
+   "Switzerland"
+  ],
+  "score_changes": [
+   [
+    1783818651.3,
+    0
+   ],
+   [
+    1783818686.0,
+    0
+   ],
+   [
+    1783823343.8,
+    1
+   ],
+   [
+    1783825147.5,
+    1
+   ],
+   [
+    1783827162.3,
+    0
+   ],
+   [
+    1783827696.3,
+    0
+   ]
+  ],
+  "tids": [
+   "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+   "35737328415897350073008705151276154836361818348951962282389981878817300121168",
+   "77916360718126045401133554110154807394451430552706503353127448280368541580890"
+  ]
+ },
+ {
+  "id": "france-vs-spain-2026-07-14",
+  "match": "France vs Spain",
+  "teams": [
+   "France",
+   "Spain"
+  ],
+  "date": "2026-07-14",
+  "slug": "fifwc-fra-esp-2026-07-14",
+  "labels": [
+   "France",
+   "Spain",
+   "draw"
+  ],
+  "t0": 1784055634.1,
+  "t1": 1784062785.8,
+  "rows": 1360,
+  "fid": 18237038,
+  "home1": true,
+  "tx_teams": [
+   "France",
+   "Spain"
+  ],
+  "score_changes": [
+   [
+    1784056940.5,
+    1
+   ],
+   [
+    1784060402.4,
+    1
+   ]
+  ],
+  "tids": [
+   "21567767812902912757274126429598305388508024829091384968631705245381739645667",
+   "25312457392074064866955638920139332428292497556441446372623464789018436410183",
+   "59701348329688999702254197580644416038122802547584947510322394691994999642374"
+  ]
+ },
+ {
+  "id": "england-vs-argentina-2026-07-15",
+  "match": "England vs Argentina",
+  "teams": [
+   "England",
+   "Argentina"
+  ],
+  "date": "2026-07-15",
+  "slug": "fifwc-eng-arg-2026-07-15",
+  "labels": [
+   "Argentina",
+   "England",
+   "draw"
+  ],
+  "t0": 1784142063.1,
+  "t1": 1784149401.0,
+  "rows": 1172,
+  "fid": 18241006,
+  "home1": true,
+  "tx_teams": [
+   "England",
+   "Argentina"
+  ],
+  "score_changes": [
+   [
+    1784146568.0,
+    0
+   ],
+   [
+    1784148421.9,
+    1
+   ],
+   [
+    1784148801.2,
+    1
+   ]
+  ],
+  "tids": [
+   "26480993337079434490856133942482101351393348205667335284619584625389515346213",
+   "62975583795498792086117213116943744194566684233762863056174017776352240969485",
+   "85633756210324151397822274959403676422451634259093065838612463900396751402106"
+  ]
+ }
+]

@@ -1,0 +1,469 @@
+{
+ "id": "new-zealand-vs-belgium-2026-06-26",
+ "match": "New Zealand vs Belgium",
+ "teams": [
+  "New Zealand",
+  "Belgium"
+ ],
+ "date": "2026-06-26",
+ "slug": null,
+ "labels": [
+  "Belgium",
+  "New Zealand",
+  "draw"
+ ],
+ "t0": 1782529314.5,
+ "t1": 1782536315.0,
+ "rows": 1362,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782530955.6,
+   1
+  ],
+  [
+   1782533585.7,
+   1
+  ],
+  [
+   1782534551.8,
+   1
+  ],
+  [
+   1782535595.6,
+   0
+  ],
+  [
+   1782535699.2,
+   1
+  ],
+  [
+   1782536228.4,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1362,
+  "txline:odds": 403,
+  "espn:score": 6,
+  "wc26:score": 6
+ },
+ "moments": [
+  {
+   "t0": 1782530955.6,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.84,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.2,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.84,
+       "ask": 0.85
+      },
+      "New Zealand": {
+       "bid": 0.044,
+       "ask": 0.049
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.84,
+       "ask": 0.85
+      },
+      "New Zealand": {
+       "bid": 0.044,
+       "ask": 0.049
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.84,
+       "ask": 0.85
+      },
+      "New Zealand": {
+       "bid": 0.044,
+       "ask": 0.049
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.7,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.84,
+       "ask": 0.85
+      },
+      "New Zealand": {
+       "bid": 0.044,
+       "ask": 0.049
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782533585.7,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.93,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.93,
+       "ask": 0.94
+      },
+      "New Zealand": {
+       "bid": 0.01,
+       "ask": 0.011
+      },
+      "draw": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.93,
+       "ask": 0.94
+      },
+      "New Zealand": {
+       "bid": 0.01,
+       "ask": 0.011
+      },
+      "draw": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.93,
+       "ask": 0.94
+      },
+      "New Zealand": {
+       "bid": 0.01,
+       "ask": 0.011
+      },
+      "draw": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.9,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.93,
+       "ask": 0.94
+      },
+      "New Zealand": {
+       "bid": 0.01,
+       "ask": 0.011
+      },
+      "draw": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782534551.8,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.989,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.1,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.989,
+       "ask": 0.99
+      },
+      "draw": {
+       "bid": 0.007,
+       "ask": 0.008
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.989,
+       "ask": 0.99
+      },
+      "draw": {
+       "bid": 0.007,
+       "ask": 0.008
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.9,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.989,
+       "ask": 0.99
+      },
+      "draw": {
+       "bid": 0.007,
+       "ask": 0.008
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.8,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.989,
+       "ask": 0.99
+      },
+      "draw": {
+       "bid": 0.007,
+       "ask": 0.008
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "0-2",
+   "score_after": "0-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782535595.6,
+   "t0_src": "espn",
+   "benefit": "New Zealand",
+   "prices": {
+    "before": {
+     "dt": -1.4,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "New Zealand",
+   "score_before": "0-3",
+   "score_after": "1-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782535699.2,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.999,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -1.8,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "1-3",
+   "score_after": "1-4",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782536228.4,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.999,
+   "prices": {
+    "before": {
+     "dt": -1.1,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "1-4",
+   "score_after": "1-5",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782530981.0,
+   "label": "Belgium",
+   "tx_fair": 0.95,
+   "poly_ask": 0.85,
+   "initial_gap": 0.1,
+   "max_gap": 0.1,
+   "ask_depth": 244180,
+   "pre_activity": 0.101,
+   "clock": "28'",
+   "score": "0-1",
+   "duration": 103.0,
+   "exit_bid": 0.94,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.85,
+   "gross_5s_per_share": 0.09
+  }
+ ],
+ "attention_rate": 0.146,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

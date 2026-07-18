@@ -1,0 +1,304 @@
+{
+ "id": "ecuador-vs-germany-2026-06-25",
+ "match": "Ecuador vs Germany",
+ "teams": [
+  "Ecuador",
+  "Germany"
+ ],
+ "date": "2026-06-25",
+ "slug": null,
+ "labels": [
+  "Ecuador",
+  "Germany",
+  "draw"
+ ],
+ "t0": 1782417651.0,
+ "t1": 1782427699.3,
+ "rows": 1444,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782417778.1,
+   1
+  ],
+  [
+   1782418180.8,
+   0
+  ],
+  [
+   1782423531.3,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1444,
+  "espn:score": 3,
+  "wc26:score": 1
+ },
+ "moments": [
+  {
+   "t0": 1782417778.1,
+   "t0_src": "espn",
+   "benefit": "Germany",
+   "baseline": 0.56,
+   "delta_120s": 0.179,
+   "prices": {
+    "before": {
+     "dt": 2.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.217,
+       "ask": 0.218
+      },
+      "Germany": {
+       "bid": 0.56,
+       "ask": 0.561
+      },
+      "Ecuador": {
+       "bid": 0.223,
+       "ask": 0.225
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.217,
+       "ask": 0.218
+      },
+      "Germany": {
+       "bid": 0.56,
+       "ask": 0.561
+      },
+      "Ecuador": {
+       "bid": 0.223,
+       "ask": 0.225
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.217,
+       "ask": 0.218
+      },
+      "Germany": {
+       "bid": 0.56,
+       "ask": 0.561
+      },
+      "Ecuador": {
+       "bid": 0.223,
+       "ask": 0.225
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.217,
+       "ask": 0.218
+      },
+      "Germany": {
+       "bid": 0.56,
+       "ask": 0.561
+      },
+      "Ecuador": {
+       "bid": 0.223,
+       "ask": 0.225
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Germany",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782418180.8,
+   "t0_src": "espn",
+   "benefit": "Ecuador",
+   "baseline": 0.094,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 1.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.144,
+       "ask": 0.146
+      },
+      "Germany": {
+       "bid": 0.76,
+       "ask": 0.761
+      },
+      "Ecuador": {
+       "bid": 0.094,
+       "ask": 0.095
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.144,
+       "ask": 0.146
+      },
+      "Germany": {
+       "bid": 0.76,
+       "ask": 0.761
+      },
+      "Ecuador": {
+       "bid": 0.094,
+       "ask": 0.095
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.144,
+       "ask": 0.146
+      },
+      "Germany": {
+       "bid": 0.76,
+       "ask": 0.761
+      },
+      "Ecuador": {
+       "bid": 0.094,
+       "ask": 0.095
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.144,
+       "ask": 0.146
+      },
+      "Germany": {
+       "bid": 0.76,
+       "ask": 0.761
+      },
+      "Ecuador": {
+       "bid": 0.094,
+       "ask": 0.095
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Ecuador",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782423531.3,
+   "t0_src": "espn",
+   "benefit": "Ecuador",
+   "baseline": 0.208,
+   "delta_120s": 0.003,
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.492,
+       "ask": 0.498
+      },
+      "Germany": {
+       "bid": 0.306,
+       "ask": 0.309
+      },
+      "Ecuador": {
+       "bid": 0.211,
+       "ask": 0.212
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.492,
+       "ask": 0.498
+      },
+      "Germany": {
+       "bid": 0.306,
+       "ask": 0.309
+      },
+      "Ecuador": {
+       "bid": 0.211,
+       "ask": 0.212
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.492,
+       "ask": 0.498
+      },
+      "Germany": {
+       "bid": 0.306,
+       "ask": 0.309
+      },
+      "Ecuador": {
+       "bid": 0.211,
+       "ask": 0.212
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.492,
+       "ask": 0.498
+      },
+      "Germany": {
+       "bid": 0.306,
+       "ask": 0.309
+      },
+      "Ecuador": {
+       "bid": 0.211,
+       "ask": 0.212
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Ecuador",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [],
+ "attention_rate": null,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

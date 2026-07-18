@@ -1,0 +1,531 @@
+{
+ "id": "egypt-vs-iran-2026-06-26",
+ "match": "Egypt vs Iran",
+ "teams": [
+  "Egypt",
+  "Iran"
+ ],
+ "date": "2026-06-26",
+ "slug": null,
+ "labels": [
+  "Egypt",
+  "IR Iran",
+  "draw"
+ ],
+ "t0": 1782529294.8,
+ "t1": 1782536635.1,
+ "rows": 1434,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782529566.4,
+   0
+  ],
+  [
+   1782530069.9,
+   1
+  ],
+  [
+   1782536238.2,
+   1
+  ],
+  [
+   1782536268.9,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1434,
+  "txline:odds": 936,
+  "espn:score": 6,
+  "wc26:score": 4
+ },
+ "moments": [
+  {
+   "t0": 1782529566.4,
+   "t0_src": "espn",
+   "benefit": "Egypt",
+   "baseline": 0.35,
+   "delta_120s": 0.01,
+   "prices": {
+    "before": {
+     "dt": -1.1,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.1,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Egypt",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782530069.9,
+   "t0_src": "espn",
+   "benefit": "IR Iran",
+   "baseline": 0.23,
+   "delta_120s": -0.1,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.3
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.3
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.3
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.3
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "IR Iran",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782536238.2,
+   "t0_src": "espn",
+   "benefit": "IR Iran",
+   "baseline": 0.06,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "Egypt": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "Egypt": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "Egypt": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "IR Iran": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "Egypt": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.89,
+       "ask": 0.9
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "IR Iran",
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782529581.5,
+   "label": "Egypt",
+   "tx_fair": 0.642,
+   "poly_ask": 0.37,
+   "initial_gap": 0.272,
+   "max_gap": 0.275,
+   "ask_depth": 37229,
+   "pre_activity": 0.213,
+   "clock": "5'",
+   "score": "1-0",
+   "duration": 277.6,
+   "exit_bid": 0.52,
+   "gross_per_share": 0.15,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": 0.15
+  },
+  {
+   "t": 1782529864.0,
+   "label": "IR Iran",
+   "tx_fair": 0.292,
+   "poly_ask": 0.24,
+   "initial_gap": 0.052,
+   "max_gap": 0.052,
+   "ask_depth": 606,
+   "pre_activity": 0.213,
+   "clock": "10'",
+   "score": "1-0",
+   "duration": 44.9,
+   "exit_bid": 0.23,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.24,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782529908.9,
+   "label": "Egypt",
+   "tx_fair": 0.635,
+   "poly_ask": 0.53,
+   "initial_gap": 0.105,
+   "max_gap": 0.106,
+   "ask_depth": 83274,
+   "pre_activity": 0.202,
+   "clock": "11'",
+   "score": "1-0",
+   "duration": 206.0,
+   "exit_bid": 0.52,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.53,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782530114.9,
+   "label": "IR Iran",
+   "tx_fair": 0.292,
+   "poly_ask": 0.24,
+   "initial_gap": 0.052,
+   "max_gap": 0.145,
+   "ask_depth": 10196,
+   "pre_activity": 0.202,
+   "clock": "14'",
+   "score": "1-1",
+   "duration": 344.2,
+   "exit_bid": 0.28,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.24,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1782530114.9,
+   "label": "draw",
+   "tx_fair": 0.369,
+   "poly_ask": 0.3,
+   "initial_gap": 0.069,
+   "max_gap": 0.124,
+   "ask_depth": 6440,
+   "pre_activity": 0.202,
+   "clock": "14'",
+   "score": "1-1",
+   "duration": 344.2,
+   "exit_bid": 0.33,
+   "gross_per_share": 0.03,
+   "entry_5s_ask": 0.3,
+   "gross_5s_per_share": 0.03
+  },
+  {
+   "t": 1782531888.6,
+   "label": "draw",
+   "tx_fair": 0.421,
+   "poly_ask": 0.37,
+   "initial_gap": 0.051,
+   "max_gap": 0.056,
+   "ask_depth": 76892,
+   "pre_activity": 0.203,
+   "clock": "44'",
+   "score": "1-1",
+   "duration": 67.0,
+   "exit_bid": 0.4,
+   "gross_per_share": 0.03,
+   "entry_5s_ask": 0.37,
+   "gross_5s_per_share": 0.03
+  },
+  {
+   "t": 1782534241.0,
+   "label": "draw",
+   "tx_fair": 0.541,
+   "poly_ask": 0.49,
+   "initial_gap": 0.051,
+   "max_gap": 0.071,
+   "ask_depth": 88544,
+   "pre_activity": 0.202,
+   "clock": "59'",
+   "score": "1-1",
+   "duration": 126.2,
+   "exit_bid": 0.55,
+   "gross_per_share": 0.06,
+   "entry_5s_ask": 0.49,
+   "gross_5s_per_share": 0.06
+  },
+  {
+   "t": 1782534572.9,
+   "label": "draw",
+   "tx_fair": 0.611,
+   "poly_ask": 0.56,
+   "initial_gap": 0.051,
+   "max_gap": 0.068,
+   "ask_depth": 18316,
+   "pre_activity": 0.203,
+   "clock": "65'",
+   "score": "1-1",
+   "duration": 385.1,
+   "exit_bid": 0.63,
+   "gross_per_share": 0.07,
+   "entry_5s_ask": 0.56,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1782535241.2,
+   "label": "draw",
+   "tx_fair": 0.691,
+   "poly_ask": 0.64,
+   "initial_gap": 0.051,
+   "max_gap": 0.075,
+   "ask_depth": 76522,
+   "pre_activity": 0.202,
+   "clock": "76'",
+   "score": "1-1",
+   "duration": 317.9,
+   "exit_bid": 0.74,
+   "gross_per_share": 0.1,
+   "entry_5s_ask": 0.64,
+   "gross_5s_per_share": 0.1
+  },
+  {
+   "t": 1782535828.1,
+   "label": "draw",
+   "tx_fair": 0.801,
+   "poly_ask": 0.75,
+   "initial_gap": 0.051,
+   "max_gap": 0.058,
+   "ask_depth": 144557,
+   "pre_activity": 0.203,
+   "clock": "86'",
+   "score": "1-1",
+   "duration": 31.0,
+   "exit_bid": 0.79,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.75,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1782536015.1,
+   "label": "draw",
+   "tx_fair": 0.861,
+   "poly_ask": 0.8,
+   "initial_gap": 0.061,
+   "max_gap": 0.085,
+   "ask_depth": 114587,
+   "pre_activity": 0.202,
+   "clock": "89'",
+   "score": "1-1",
+   "duration": 145.6,
+   "exit_bid": 0.89,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.8,
+   "gross_5s_per_share": 0.09
+  },
+  {
+   "t": 1782536268.9,
+   "label": "IR Iran",
+   "tx_fair": 0.929,
+   "poly_ask": 0.07,
+   "initial_gap": 0.859,
+   "max_gap": 0.859,
+   "ask_depth": 641436,
+   "pre_activity": 0.203,
+   "clock": "90'+3'",
+   "score": "1-2",
+   "duration": 116.7,
+   "exit_bid": 0.06,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.07,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782536385.6,
+   "label": "draw",
+   "tx_fair": 0.959,
+   "poly_ask": 0.9,
+   "initial_gap": 0.059,
+   "max_gap": 0.059,
+   "ask_depth": 524,
+   "pre_activity": 0.202,
+   "clock": "90'+5'",
+   "score": "1-2",
+   "duration": 32.8,
+   "exit_bid": 0.89,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.9,
+   "gross_5s_per_share": -0.01
+  }
+ ],
+ "attention_rate": 0.172,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

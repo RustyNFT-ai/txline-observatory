@@ -1,0 +1,444 @@
+{
+ "id": "croatia-vs-ghana-2026-06-27",
+ "match": "Croatia vs Ghana",
+ "teams": [
+  "Croatia",
+  "Ghana"
+ ],
+ "date": "2026-06-27",
+ "slug": null,
+ "labels": [
+  "Croatia",
+  "Ghana",
+  "draw"
+ ],
+ "t0": 1782594118.5,
+ "t1": 1782601166.8,
+ "rows": 1318,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782595964.5,
+   0
+  ],
+  [
+   1782599665.5,
+   1
+  ],
+  [
+   1782599927.4,
+   1
+  ],
+  [
+   1782600235.7,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1318,
+  "txline:odds": 807,
+  "espn:score": 5,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1782595964.5,
+   "t0_src": "espn",
+   "benefit": "Croatia",
+   "baseline": 0.52,
+   "delta_120s": -0.01,
+   "prices": {
+    "before": {
+     "dt": 1.6,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Ghana": {
+       "bid": 0.13,
+       "ask": 0.14
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Ghana": {
+       "bid": 0.13,
+       "ask": 0.14
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Ghana": {
+       "bid": 0.13,
+       "ask": 0.14
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.52,
+       "ask": 0.53
+      },
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Ghana": {
+       "bid": 0.13,
+       "ask": 0.14
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Croatia",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782599665.5,
+   "t0_src": "espn",
+   "benefit": "Ghana",
+   "baseline": 0.019,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.3,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.81,
+       "ask": 0.82
+      },
+      "draw": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "Ghana": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.81,
+       "ask": 0.82
+      },
+      "draw": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "Ghana": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.81,
+       "ask": 0.82
+      },
+      "draw": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "Ghana": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.0,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.81,
+       "ask": 0.82
+      },
+      "draw": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "Ghana": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Ghana",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782599927.4,
+   "t0_src": "espn",
+   "benefit": "Ghana",
+   "baseline": 0.091,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.4,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.42,
+       "ask": 0.43
+      },
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "Ghana": {
+       "bid": 0.091,
+       "ask": 0.1
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.42,
+       "ask": 0.43
+      },
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "Ghana": {
+       "bid": 0.091,
+       "ask": 0.1
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.2,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.42,
+       "ask": 0.43
+      },
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "Ghana": {
+       "bid": 0.091,
+       "ask": 0.1
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.4,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.42,
+       "ask": 0.43
+      },
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "Ghana": {
+       "bid": 0.091,
+       "ask": 0.1
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Ghana",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782600235.7,
+   "t0_src": "espn",
+   "benefit": "Croatia",
+   "baseline": 0.22,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.2,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "Ghana": {
+       "bid": 0.101,
+       "ask": 0.103
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "Ghana": {
+       "bid": 0.101,
+       "ask": 0.103
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.7,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "Ghana": {
+       "bid": 0.101,
+       "ask": 0.103
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.7,
+     "outcomes": {
+      "Croatia": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "Ghana": {
+       "bid": 0.101,
+       "ask": 0.103
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Croatia",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782596002.2,
+   "label": "Croatia",
+   "tx_fair": 0.804,
+   "poly_ask": 0.52,
+   "initial_gap": 0.284,
+   "max_gap": 0.284,
+   "ask_depth": 125924,
+   "pre_activity": 0.203,
+   "clock": "32'",
+   "score": "1-0",
+   "duration": 280.9,
+   "exit_bid": 0.78,
+   "gross_per_share": 0.26,
+   "entry_5s_ask": 0.52,
+   "gross_5s_per_share": 0.26
+  },
+  {
+   "t": 1782599911.8,
+   "label": "draw",
+   "tx_fair": 0.635,
+   "poly_ask": 0.49,
+   "initial_gap": 0.145,
+   "max_gap": 0.203,
+   "ask_depth": 22188,
+   "pre_activity": 0.204,
+   "clock": "77'",
+   "score": "1-0",
+   "duration": 272.6,
+   "exit_bid": 0.67,
+   "gross_per_share": 0.18,
+   "entry_5s_ask": 0.49,
+   "gross_5s_per_share": 0.18
+  },
+  {
+   "t": 1782600277.6,
+   "label": "Croatia",
+   "tx_fair": 0.899,
+   "poly_ask": 0.23,
+   "initial_gap": 0.669,
+   "max_gap": 0.681,
+   "ask_depth": 163592,
+   "pre_activity": 0.203,
+   "clock": "83'",
+   "score": "2-1",
+   "duration": 207.8,
+   "exit_bid": 0.89,
+   "gross_per_share": 0.66,
+   "entry_5s_ask": 0.23,
+   "gross_5s_per_share": 0.66
+  }
+ ],
+ "attention_rate": 0.196,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

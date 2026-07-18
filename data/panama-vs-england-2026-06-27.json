@@ -1,0 +1,236 @@
+{
+ "id": "panama-vs-england-2026-06-27",
+ "match": "Panama vs England",
+ "teams": [
+  "Panama",
+  "England"
+ ],
+ "date": "2026-06-27",
+ "slug": null,
+ "labels": [
+  "England",
+  "Panama",
+  "draw"
+ ],
+ "t0": 1782594097.1,
+ "t1": 1782600949.2,
+ "rows": 1274,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782598870.7,
+   1
+  ],
+  [
+   1782599219.6,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1274,
+  "txline:odds": 571,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1782598870.7,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.65,
+   "delta_120s": 0.26,
+   "prices": {
+    "before": {
+     "dt": 0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "England": {
+       "bid": 0.65,
+       "ask": 0.66
+      },
+      "Panama": {
+       "bid": 0.067,
+       "ask": 0.069
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "England": {
+       "bid": 0.65,
+       "ask": 0.66
+      },
+      "Panama": {
+       "bid": 0.067,
+       "ask": 0.069
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "England": {
+       "bid": 0.65,
+       "ask": 0.66
+      },
+      "Panama": {
+       "bid": 0.067,
+       "ask": 0.069
+      }
+     }
+    },
+    "10s": {
+     "dt": 3.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "England": {
+       "bid": 0.65,
+       "ask": 0.66
+      },
+      "Panama": {
+       "bid": 0.067,
+       "ask": 0.069
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782599219.6,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.91,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "England": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Panama": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "England": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Panama": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "England": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Panama": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "England": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Panama": {
+       "bid": 0.008,
+       "ask": 0.009
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782598893.5,
+   "label": "England",
+   "tx_fair": 0.923,
+   "poly_ask": 0.66,
+   "initial_gap": 0.263,
+   "max_gap": 0.263,
+   "ask_depth": 180091,
+   "pre_activity": 0.202,
+   "clock": "63'",
+   "score": "0-1",
+   "duration": 84.5,
+   "exit_bid": 0.91,
+   "gross_per_share": 0.25,
+   "entry_5s_ask": 0.66,
+   "gross_5s_per_share": 0.25
+  }
+ ],
+ "attention_rate": 0.184,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

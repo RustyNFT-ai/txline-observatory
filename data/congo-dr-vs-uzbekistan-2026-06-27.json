@@ -1,0 +1,514 @@
+{
+ "id": "congo-dr-vs-uzbekistan-2026-06-27",
+ "match": "Congo DR vs Uzbekistan",
+ "teams": [
+  "Congo DR",
+  "Uzbekistan"
+ ],
+ "date": "2026-06-27",
+ "slug": null,
+ "labels": [
+  "DR Congo",
+  "Uzbekistan",
+  "draw"
+ ],
+ "t0": 1782603121.2,
+ "t1": 1782610351.0,
+ "rows": 1466,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782603704.1,
+   1
+  ],
+  [
+   1782604124.5,
+   0
+  ],
+  [
+   1782608497.4,
+   0
+  ],
+  [
+   1782609097.4,
+   0
+  ],
+  [
+   1782609881.7,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1466,
+  "txline:odds": 262,
+  "espn:score": 6,
+  "wc26:score": 6
+ },
+ "moments": [
+  {
+   "t0": 1782603704.1,
+   "t0_src": "espn",
+   "benefit": "Uzbekistan",
+   "baseline": 0.19,
+   "delta_120s": 0.24,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "DR Congo": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "Uzbekistan": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "DR Congo": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "Uzbekistan": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "DR Congo": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "Uzbekistan": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "DR Congo": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "Uzbekistan": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Uzbekistan",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782604124.5,
+   "t0_src": "espn",
+   "benefit": "DR Congo",
+   "baseline": 0.29,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "DR Congo": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Uzbekistan": {
+       "bid": 0.42,
+       "ask": 0.43
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "DR Congo": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Uzbekistan": {
+       "bid": 0.42,
+       "ask": 0.43
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "DR Congo": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Uzbekistan": {
+       "bid": 0.42,
+       "ask": 0.43
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "DR Congo": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Uzbekistan": {
+       "bid": 0.42,
+       "ask": 0.43
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "DR Congo",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782608497.4,
+   "t0_src": "espn",
+   "benefit": "DR Congo",
+   "baseline": 0.14,
+   "delta_120s": 0.19,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "DR Congo": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "Uzbekistan": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "DR Congo": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "Uzbekistan": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "DR Congo": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "Uzbekistan": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "DR Congo": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "Uzbekistan": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "DR Congo",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782609097.4,
+   "t0_src": "espn",
+   "benefit": "DR Congo",
+   "baseline": 0.36,
+   "delta_120s": 0.43,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "DR Congo": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Uzbekistan": {
+       "bid": 0.15,
+       "ask": 0.16
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "DR Congo": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Uzbekistan": {
+       "bid": 0.15,
+       "ask": 0.16
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "DR Congo": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Uzbekistan": {
+       "bid": 0.15,
+       "ask": 0.16
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.48,
+       "ask": 0.49
+      },
+      "DR Congo": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Uzbekistan": {
+       "bid": 0.15,
+       "ask": 0.16
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "DR Congo",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782609881.7,
+   "t0_src": "espn",
+   "benefit": "DR Congo",
+   "baseline": 0.91,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "DR Congo": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Uzbekistan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "DR Congo": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Uzbekistan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "DR Congo": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Uzbekistan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "DR Congo": {
+       "bid": 0.91,
+       "ask": 0.92
+      },
+      "Uzbekistan": {
+       "bid": 0.001,
+       "ask": 0.002
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "DR Congo",
+   "score_before": "2-1",
+   "score_after": "3-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782603704.1,
+   "label": "Uzbekistan",
+   "tx_fair": 0.418,
+   "poly_ask": 0.2,
+   "initial_gap": 0.218,
+   "max_gap": 0.218,
+   "ask_depth": 54513,
+   "pre_activity": 0.104,
+   "clock": "11'",
+   "score": "0-1",
+   "duration": 79.3,
+   "exit_bid": 0.43,
+   "gross_per_share": 0.23,
+   "entry_5s_ask": 0.2,
+   "gross_5s_per_share": 0.23
+  },
+  {
+   "t": 1782604208.0,
+   "label": "DR Congo",
+   "tx_fair": 0.511,
+   "poly_ask": 0.3,
+   "initial_gap": 0.211,
+   "max_gap": 0.211,
+   "ask_depth": 39933,
+   "pre_activity": 0.203,
+   "clock": "19'",
+   "score": "1-1",
+   "duration": 19.6,
+   "exit_bid": 0.29,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.3,
+   "gross_5s_per_share": -0.01
+  }
+ ],
+ "attention_rate": 0.191,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

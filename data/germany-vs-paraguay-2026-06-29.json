@@ -1,0 +1,357 @@
+{
+ "id": "germany-vs-paraguay-2026-06-29",
+ "match": "Germany vs Paraguay",
+ "teams": [
+  "Germany",
+  "Paraguay"
+ ],
+ "date": "2026-06-29",
+ "slug": null,
+ "labels": [
+  "Germany",
+  "Paraguay",
+  "draw"
+ ],
+ "t0": 1782765081.9,
+ "t1": 1782775761.8,
+ "rows": 4309,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782767533.3,
+   1
+  ],
+  [
+   1782769660.0,
+   0
+  ],
+  [
+   1782773167.8,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 4309,
+  "txline:odds": 1626,
+  "espn:score": 4,
+  "wc26:score": 4
+ },
+ "moments": [
+  {
+   "t0": 1782767533.3,
+   "t0_src": "espn",
+   "benefit": "Paraguay",
+   "baseline": 0.07,
+   "delta_120s": 0.02,
+   "prices": {
+    "before": {
+     "dt": -3.4,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Paraguay": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Paraguay": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Paraguay": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.7,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Paraguay": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Paraguay",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782769660.0,
+   "t0_src": "espn",
+   "benefit": "Germany",
+   "baseline": 0.36,
+   "delta_120s": 0.17,
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Paraguay": {
+       "bid": 0.28,
+       "ask": 0.29
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "Paraguay": {
+       "bid": 0.28,
+       "ask": 0.29
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.3,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.53,
+       "ask": 0.54
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Paraguay": {
+       "bid": 0.09,
+       "ask": 0.1
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.7,
+     "outcomes": {
+      "Germany": {
+       "bid": 0.53,
+       "ask": 0.54
+      },
+      "draw": {
+       "bid": 0.36,
+       "ask": 0.37
+      },
+      "Paraguay": {
+       "bid": 0.09,
+       "ask": 0.1
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Germany",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782773167.8,
+   "t0_src": "espn",
+   "benefit": "Germany",
+   "prices": {
+    "before": {
+     "dt": 1.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Germany",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782767551.7,
+   "label": "draw",
+   "tx_fair": 0.32,
+   "poly_ask": 0.25,
+   "initial_gap": 0.07,
+   "max_gap": 0.071,
+   "ask_depth": 11890,
+   "pre_activity": 0.204,
+   "clock": "42'",
+   "score": "0-1",
+   "duration": 315.4,
+   "exit_bid": 0.32,
+   "gross_per_share": 0.07,
+   "entry_5s_ask": 0.25,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1782767551.7,
+   "label": "Paraguay",
+   "tx_fair": 0.313,
+   "poly_ask": 0.08,
+   "initial_gap": 0.233,
+   "max_gap": 0.233,
+   "ask_depth": 7506,
+   "pre_activity": 0.204,
+   "clock": "42'",
+   "score": "0-1",
+   "duration": 612.7,
+   "exit_bid": 0.26,
+   "gross_per_share": 0.18,
+   "entry_5s_ask": 0.08,
+   "gross_5s_per_share": 0.18
+  },
+  {
+   "t": 1782769677.3,
+   "label": "Germany",
+   "tx_fair": 0.608,
+   "poly_ask": 0.54,
+   "initial_gap": 0.068,
+   "max_gap": 0.068,
+   "ask_depth": 318194,
+   "pre_activity": 0.202,
+   "clock": "55'",
+   "score": "1-1",
+   "duration": 292.6,
+   "exit_bid": 0.58,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.54,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1782770449.0,
+   "label": "draw",
+   "tx_fair": 0.442,
+   "poly_ask": 0.39,
+   "initial_gap": 0.052,
+   "max_gap": 0.103,
+   "ask_depth": 60901,
+   "pre_activity": 0.202,
+   "clock": "67'",
+   "score": "1-1",
+   "duration": 1022.1,
+   "exit_bid": 0.6,
+   "gross_per_share": 0.21,
+   "entry_5s_ask": 0.39,
+   "gross_5s_per_share": 0.21
+  },
+  {
+   "t": 1782771582.8,
+   "label": "draw",
+   "tx_fair": 0.66,
+   "poly_ask": 0.61,
+   "initial_gap": 0.05,
+   "max_gap": 0.205,
+   "ask_depth": 24859,
+   "pre_activity": 0.202,
+   "clock": "87'",
+   "score": "1-1",
+   "duration": 596.3,
+   "exit_bid": 0.91,
+   "gross_per_share": 0.3,
+   "entry_5s_ask": 0.61,
+   "gross_5s_per_share": 0.3
+  }
+ ],
+ "attention_rate": 0.146,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

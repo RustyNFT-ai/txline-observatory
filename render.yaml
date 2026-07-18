@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: txline-observatory
+    runtime: python
+    plan: free
+    buildCommand: python3 -m py_compile server.py normalize.py
+    startCommand: python3 server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-5

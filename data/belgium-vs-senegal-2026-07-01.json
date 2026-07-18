@@ -1,0 +1,620 @@
+{
+ "id": "belgium-vs-senegal-2026-07-01",
+ "match": "Belgium vs Senegal",
+ "teams": [
+  "Belgium",
+  "Senegal"
+ ],
+ "date": "2026-07-01",
+ "slug": null,
+ "labels": [
+  "Belgium",
+  "Senegal",
+  "draw"
+ ],
+ "t0": 1782936071.4,
+ "t1": 1782946232.8,
+ "rows": 4120,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782937541.3,
+   1
+  ],
+  [
+   1782940462.3,
+   1
+  ],
+  [
+   1782942529.1,
+   0
+  ],
+  [
+   1782942560.5,
+   0
+  ],
+  [
+   1782942699.0,
+   0
+  ],
+  [
+   1782945785.4,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 4120,
+  "txline:odds": 3203,
+  "espn:score": 7,
+  "wc26:score": 5
+ },
+ "moments": [
+  {
+   "t0": 1782937541.3,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.25,
+   "delta_120s": 0.02,
+   "prices": {
+    "before": {
+     "dt": -1.1,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.45,
+       "ask": 0.46
+      },
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Senegal": {
+       "bid": 0.25,
+       "ask": 0.26
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.45,
+       "ask": 0.46
+      },
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Senegal": {
+       "bid": 0.25,
+       "ask": 0.26
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.42,
+       "ask": 0.43
+      },
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Senegal": {
+       "bid": 0.27,
+       "ask": 0.28
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.5,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.42,
+       "ask": 0.43
+      },
+      "draw": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "Senegal": {
+       "bid": 0.27,
+       "ask": 0.28
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782940462.3,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.48,
+   "delta_120s": 0.33,
+   "prices": {
+    "before": {
+     "dt": 1.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Senegal": {
+       "bid": 0.48,
+       "ask": 0.49
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Senegal": {
+       "bid": 0.48,
+       "ask": 0.49
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.8,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Senegal": {
+       "bid": 0.48,
+       "ask": 0.49
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.4,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Senegal": {
+       "bid": 0.48,
+       "ask": 0.49
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782942529.1,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.002,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.3,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.026,
+       "ask": 0.027
+      },
+      "Senegal": {
+       "bid": 0.97,
+       "ask": 0.98
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.026,
+       "ask": 0.027
+      },
+      "Senegal": {
+       "bid": 0.97,
+       "ask": 0.98
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.026,
+       "ask": 0.027
+      },
+      "Senegal": {
+       "bid": 0.97,
+       "ask": 0.98
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.3,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.026,
+       "ask": 0.027
+      },
+      "Senegal": {
+       "bid": 0.97,
+       "ask": 0.98
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "0-2",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782942699.0,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "baseline": 0.012,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.8,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.012,
+       "ask": 0.015
+      },
+      "draw": {
+       "bid": 0.161,
+       "ask": 0.164
+      },
+      "Senegal": {
+       "bid": 0.814,
+       "ask": 0.819
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.012,
+       "ask": 0.015
+      },
+      "draw": {
+       "bid": 0.161,
+       "ask": 0.164
+      },
+      "Senegal": {
+       "bid": 0.814,
+       "ask": 0.819
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.012,
+       "ask": 0.015
+      },
+      "draw": {
+       "bid": 0.161,
+       "ask": 0.164
+      },
+      "Senegal": {
+       "bid": 0.814,
+       "ask": 0.819
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.5,
+     "outcomes": {
+      "Belgium": {
+       "bid": 0.012,
+       "ask": 0.015
+      },
+      "draw": {
+       "bid": 0.161,
+       "ask": 0.164
+      },
+      "Senegal": {
+       "bid": 0.814,
+       "ask": 0.819
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "1-2",
+   "score_after": "2-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782945785.4,
+   "t0_src": "espn",
+   "benefit": "Belgium",
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "score_before": "2-2",
+   "score_after": "3-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782937580.6,
+   "label": "Senegal",
+   "tx_fair": 0.484,
+   "poly_ask": 0.28,
+   "initial_gap": 0.204,
+   "max_gap": 0.209,
+   "ask_depth": 126703,
+   "pre_activity": 0.201,
+   "clock": "25'",
+   "score": "0-1",
+   "duration": 262.0,
+   "exit_bid": 0.47,
+   "gross_per_share": 0.19,
+   "entry_5s_ask": 0.28,
+   "gross_5s_per_share": 0.19
+  },
+  {
+   "t": 1782940457.8,
+   "label": "Senegal",
+   "tx_fair": 0.791,
+   "poly_ask": 0.49,
+   "initial_gap": 0.301,
+   "max_gap": 0.301,
+   "ask_depth": 404821,
+   "pre_activity": 0.101,
+   "clock": "51'",
+   "score": "0-1",
+   "duration": 11.3,
+   "exit_bid": 0.48,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.49,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782940497.3,
+   "label": "Senegal",
+   "tx_fair": 0.796,
+   "poly_ask": 0.49,
+   "initial_gap": 0.306,
+   "max_gap": 0.306,
+   "ask_depth": 188961,
+   "pre_activity": 0.101,
+   "clock": "52'",
+   "score": "0-2",
+   "duration": 5.8,
+   "exit_bid": 0.48,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.49,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782940513.2,
+   "label": "Senegal",
+   "tx_fair": 0.805,
+   "poly_ask": 0.49,
+   "initial_gap": 0.315,
+   "max_gap": 0.319,
+   "ask_depth": 204075,
+   "pre_activity": 0.101,
+   "clock": "53'",
+   "score": "0-2",
+   "duration": 33.8,
+   "exit_bid": 0.81,
+   "gross_per_share": 0.32,
+   "entry_5s_ask": 0.49,
+   "gross_5s_per_share": 0.32
+  },
+  {
+   "t": 1782942539.4,
+   "label": "draw",
+   "tx_fair": 0.193,
+   "poly_ask": 0.027,
+   "initial_gap": 0.166,
+   "max_gap": 0.166,
+   "ask_depth": 1110,
+   "pre_activity": 0.203,
+   "clock": "87'",
+   "score": "0-2",
+   "duration": 37.4,
+   "exit_bid": 0.026,
+   "gross_per_share": -0.001,
+   "entry_5s_ask": 0.027,
+   "gross_5s_per_share": -0.001
+  },
+  {
+   "t": 1782942634.8,
+   "label": "draw",
+   "tx_fair": 0.168,
+   "poly_ask": 0.027,
+   "initial_gap": 0.141,
+   "max_gap": 0.164,
+   "ask_depth": 43,
+   "pre_activity": 0.201,
+   "clock": "88'",
+   "score": "1-2",
+   "duration": 9.2,
+   "exit_bid": 0.161,
+   "gross_per_share": 0.134,
+   "entry_5s_ask": 0.027,
+   "gross_5s_per_share": 0.134
+  },
+  {
+   "t": 1782942752.0,
+   "label": "draw",
+   "tx_fair": 0.733,
+   "poly_ask": 0.164,
+   "initial_gap": 0.569,
+   "max_gap": 0.587,
+   "ask_depth": 147847,
+   "pre_activity": 0.203,
+   "clock": "90'",
+   "score": "2-2",
+   "duration": 27.2,
+   "exit_bid": 0.161,
+   "gross_per_share": -0.003,
+   "entry_5s_ask": 0.164,
+   "gross_5s_per_share": -0.003
+  },
+  {
+   "t": 1782942846.6,
+   "label": "Belgium",
+   "tx_fair": 0.119,
+   "poly_ask": 0.015,
+   "initial_gap": 0.104,
+   "max_gap": 0.144,
+   "ask_depth": 310,
+   "pre_activity": 0.201,
+   "clock": "90'+1'",
+   "score": "2-2",
+   "duration": 99.6,
+   "exit_bid": 0.127,
+   "gross_per_share": 0.112,
+   "entry_5s_ask": 0.015,
+   "gross_5s_per_share": 0.112
+  },
+  {
+   "t": 1782942846.6,
+   "label": "draw",
+   "tx_fair": 0.793,
+   "poly_ask": 0.164,
+   "initial_gap": 0.629,
+   "max_gap": 0.66,
+   "ask_depth": 15739,
+   "pre_activity": 0.201,
+   "clock": "90'+1'",
+   "score": "2-2",
+   "duration": 101.3,
+   "exit_bid": 0.771,
+   "gross_per_share": 0.607,
+   "entry_5s_ask": 0.164,
+   "gross_5s_per_share": 0.607
+  },
+  {
+   "t": 1782942994.8,
+   "label": "draw",
+   "tx_fair": 0.864,
+   "poly_ask": 0.789,
+   "initial_gap": 0.075,
+   "max_gap": 0.077,
+   "ask_depth": 9353,
+   "pre_activity": 0.202,
+   "clock": "90'+4'",
+   "score": "2-2",
+   "duration": 8.9,
+   "exit_bid": 0.771,
+   "gross_per_share": -0.018,
+   "entry_5s_ask": 0.789,
+   "gross_5s_per_share": -0.018
+  }
+ ],
+ "attention_rate": 0.136,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

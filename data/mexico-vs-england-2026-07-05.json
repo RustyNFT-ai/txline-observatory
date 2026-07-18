@@ -1,0 +1,745 @@
+{
+ "id": "mexico-vs-england-2026-07-05",
+ "match": "Mexico vs England",
+ "teams": [
+  "Mexico",
+  "England"
+ ],
+ "date": "2026-07-05",
+ "slug": "fifwc-mex-eng-2026-07-05",
+ "labels": [
+  "England",
+  "Mexico",
+  "draw"
+ ],
+ "t0": 1783299665.9,
+ "t1": 1783307131.6,
+ "rows": 1371,
+ "fid": 18192996,
+ "home1": true,
+ "tx_teams": [
+  "Mexico",
+  "England"
+ ],
+ "score_changes": [
+  [
+   1783301808.4,
+   1
+  ],
+  [
+   1783301939.5,
+   1
+  ],
+  [
+   1783302170.6,
+   0
+  ],
+  [
+   1783304561.9,
+   1
+  ],
+  [
+   1783305082.5,
+   0
+  ],
+  [
+   1783305119.7,
+   0
+  ]
+ ],
+ "tids": [
+  "41650247355939592794943171494077106157774707832652837173177374317921469209914",
+  "51911548599887870208512834589104874988746646324647658251485676564237334602135",
+  "53791259745705726030589240827060759250615158391415011769641887216926825684479"
+ ],
+ "counts": {
+  "poly:book": 1371,
+  "txline:odds": 616,
+  "espn:score": 7,
+  "bot:decision": 4,
+  "wc26:score": 5,
+  "txline:action": 653,
+  "bot:trade": 4
+ },
+ "moments": [
+  {
+   "t0": 1783301808.4,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.62,
+   "delta_120s": 0.23,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.12,
+       "ask": 0.13
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "England": {
+       "bid": 0.62,
+       "ask": 0.63
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "England": {
+       "bid": 0.62,
+       "ask": 0.63
+      }
+     }
+    },
+    "5s": {
+     "dt": 2.4,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "England": {
+       "bid": 0.63,
+       "ask": 0.64
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.6,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "England": {
+       "bid": 0.62,
+       "ask": 0.63
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783301939.5,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.845,
+   "delta_120s": 0.015,
+   "prices": {
+    "before": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "England": {
+       "bid": 0.85,
+       "ask": 0.86
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.03,
+       "ask": 0.04
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "England": {
+       "bid": 0.86,
+       "ask": 0.87
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.03,
+       "ask": 0.04
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "England": {
+       "bid": 0.86,
+       "ask": 0.87
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.1,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "England": {
+       "bid": 0.86,
+       "ask": 0.87
+      }
+     }
+    }
+   },
+   "var": true,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783302121.09,
+   "t0_src": "txline",
+   "benefit": "Mexico",
+   "baseline": 0.033,
+   "poly_dt": -6.0,
+   "delta_120s": 0.09,
+   "prices": {
+    "before": {
+     "dt": 4.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.091,
+       "ask": 0.108
+      },
+      "draw": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "England": {
+       "bid": 0.66,
+       "ask": 0.68
+      }
+     }
+    },
+    "txline": {
+     "dt": -1.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.073,
+       "ask": 0.077
+      },
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "England": {
+       "bid": 0.75,
+       "ask": 0.76
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.7,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.051,
+       "ask": 0.062
+      },
+      "draw": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "England": {
+       "bid": 0.73,
+       "ask": 0.74
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.8,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.061,
+       "ask": 0.067
+      },
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "England": {
+       "bid": 0.67,
+       "ask": 0.68
+      }
+     }
+    }
+   },
+   "espn_dt": 49.5,
+   "wc26_dt": 87.3,
+   "var": true,
+   "action": "goal",
+   "scorer": "Mexico",
+   "cs": 2508,
+   "confirmed": false,
+   "score_before": "0-2",
+   "score_after": "1-2",
+   "seq": 382,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 92.3,
+   "bot_price": 0.131,
+   "bot_fair": 0.117,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783304561.9,
+   "t0_src": "espn",
+   "benefit": "England",
+   "baseline": 0.775,
+   "delta_120s": 0.045,
+   "prices": {
+    "before": {
+     "dt": -3.1,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.051,
+       "ask": 0.054
+      },
+      "draw": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "England": {
+       "bid": 0.79,
+       "ask": 0.8
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.051,
+       "ask": 0.052
+      },
+      "draw": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "England": {
+       "bid": 0.8,
+       "ask": 0.81
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.05,
+       "ask": 0.053
+      },
+      "draw": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "England": {
+       "bid": 0.81,
+       "ask": 0.82
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.05,
+       "ask": 0.051
+      },
+      "draw": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "England": {
+       "bid": 0.81,
+       "ask": 0.82
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "score_before": "1-2",
+   "score_after": "1-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783305082.5,
+   "t0_src": "espn",
+   "benefit": "Mexico",
+   "baseline": 0.112,
+   "delta_120s": 0.006,
+   "prices": {
+    "before": {
+     "dt": -0.2,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.114,
+       "ask": 0.119
+      },
+      "draw": {
+       "bid": 0.33,
+       "ask": 0.34
+      },
+      "England": {
+       "bid": 0.57,
+       "ask": 0.58
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.112,
+       "ask": 0.12
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "England": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.113,
+       "ask": 0.12
+      },
+      "draw": {
+       "bid": 0.31,
+       "ask": 0.32
+      },
+      "England": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Mexico": {
+       "bid": 0.112,
+       "ask": 0.117
+      },
+      "draw": {
+       "bid": 0.31,
+       "ask": 0.32
+      },
+      "England": {
+       "bid": 0.58,
+       "ask": 0.59
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Mexico",
+   "score_before": "1-3",
+   "score_after": "2-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783300517.9,
+   "label": "draw",
+   "tx_fair": 0.597,
+   "poly_ask": 0.34,
+   "initial_gap": 0.257,
+   "max_gap": 0.26,
+   "ask_depth": 6250,
+   "pre_activity": 1.821,
+   "clock": "15'",
+   "score": "0-0",
+   "duration": 16.4,
+   "exit_bid": 0.33,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.34,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783301853.4,
+   "label": "Mexico",
+   "tx_fair": 0.307,
+   "poly_ask": 0.12,
+   "initial_gap": 0.187,
+   "max_gap": 0.258,
+   "ask_depth": 4090,
+   "pre_activity": 2.633,
+   "clock": "38'",
+   "score": "0-1",
+   "duration": 250.3,
+   "exit_bid": 0.033,
+   "gross_per_share": -0.087,
+   "entry_5s_ask": 0.11,
+   "gross_5s_per_share": -0.077
+  },
+  {
+   "t": 1783301853.4,
+   "label": "draw",
+   "tx_fair": 0.314,
+   "poly_ask": 0.26,
+   "initial_gap": 0.054,
+   "max_gap": 0.204,
+   "ask_depth": 47916,
+   "pre_activity": 2.633,
+   "clock": "38'",
+   "score": "0-1",
+   "duration": 250.3,
+   "exit_bid": 0.12,
+   "gross_per_share": -0.14,
+   "entry_5s_ask": 0.2,
+   "gross_5s_per_share": -0.08
+  },
+  {
+   "t": 1783302115.1,
+   "label": "England",
+   "tx_fair": 0.866,
+   "poly_ask": 0.68,
+   "initial_gap": 0.186,
+   "max_gap": 0.186,
+   "ask_depth": 1455,
+   "pre_activity": 5.138,
+   "clock": "42'",
+   "score": "0-2",
+   "duration": 50.4,
+   "exit_bid": 0.66,
+   "gross_per_share": -0.02,
+   "entry_5s_ask": 0.76,
+   "gross_5s_per_share": -0.1
+  },
+  {
+   "t": 1783304073.2,
+   "label": "England",
+   "tx_fair": 0.645,
+   "poly_ask": 0.59,
+   "initial_gap": 0.055,
+   "max_gap": 0.203,
+   "ask_depth": 54473,
+   "pre_activity": 7.191,
+   "clock": "52'",
+   "score": "1-2",
+   "duration": 140.9,
+   "exit_bid": 0.45,
+   "gross_per_share": -0.14,
+   "entry_5s_ask": 0.57,
+   "gross_5s_per_share": -0.12
+  },
+  {
+   "t": 1783304373.2,
+   "label": "Mexico",
+   "tx_fair": 0.211,
+   "poly_ask": 0.13,
+   "initial_gap": 0.081,
+   "max_gap": 0.103,
+   "ask_depth": 2617,
+   "pre_activity": 9.62,
+   "clock": "57'",
+   "score": "1-2",
+   "duration": 175.6,
+   "exit_bid": 0.051,
+   "gross_per_share": -0.079,
+   "entry_5s_ask": 0.09,
+   "gross_5s_per_share": -0.039
+  },
+  {
+   "t": 1783304373.2,
+   "label": "draw",
+   "tx_fair": 0.334,
+   "poly_ask": 0.22,
+   "initial_gap": 0.114,
+   "max_gap": 0.169,
+   "ask_depth": 5618,
+   "pre_activity": 9.62,
+   "clock": "57'",
+   "score": "1-2",
+   "duration": 175.6,
+   "exit_bid": 0.14,
+   "gross_per_share": -0.08,
+   "entry_5s_ask": 0.16,
+   "gross_5s_per_share": -0.02
+  },
+  {
+   "t": 1783304876.3,
+   "label": "England",
+   "tx_fair": 0.829,
+   "poly_ask": 0.72,
+   "initial_gap": 0.109,
+   "max_gap": 0.239,
+   "ask_depth": 1613,
+   "pre_activity": 9.761,
+   "clock": "65'",
+   "score": "1-3",
+   "duration": 206.2,
+   "exit_bid": 0.58,
+   "gross_per_share": -0.14,
+   "entry_5s_ask": 0.74,
+   "gross_5s_per_share": -0.16
+  }
+ ],
+ "attention_rate": 6.743,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783302165.578,
+    "cs": 2548,
+    "duration": 8.1,
+    "decision": "completed"
+   },
+   {
+    "t": 1783304092.846,
+    "cs": 3144,
+    "duration": 35.4,
+    "decision": "completed"
+   },
+   {
+    "t": 1783304433.106,
+    "cs": 3485,
+    "duration": 51.8,
+    "decision": "completed"
+   },
+   {
+    "t": 1783304905.809,
+    "cs": 3958,
+    "duration": 67.0,
+    "decision": "completed"
+   },
+   {
+    "t": 1783305940.126,
+    "cs": 4992,
+    "duration": 1.5,
+    "decision": "completed"
+   }
+  ],
+  "corrections": 8,
+  "penalties": [
+   {
+    "t": 1783304397.649,
+    "action": "penalty",
+    "team": "England",
+    "cs": 3432
+   },
+   {
+    "t": 1783304578.618,
+    "action": "penalty_outcome",
+    "team": "England",
+    "cs": 3591
+   },
+   {
+    "t": 1783304979.352,
+    "action": "penalty",
+    "team": "Mexico",
+    "cs": 4031
+   },
+   {
+    "t": 1783305102.793,
+    "action": "penalty_outcome",
+    "team": "Mexico",
+    "cs": 4115
+   }
+  ],
+  "cards": [
+   {
+    "t": 1783304136.678,
+    "action": "red_card",
+    "team": "England",
+    "cs": 3184
+   },
+   {
+    "t": 1783305029.248,
+    "action": "yellow_card",
+    "team": "England",
+    "cs": 4080
+   },
+   {
+    "t": 1783305200.474,
+    "action": "yellow_card",
+    "team": "Mexico",
+    "cs": 4242
+   },
+   {
+    "t": 1783305292.007,
+    "action": "yellow_card",
+    "team": "England",
+    "cs": 4299
+   },
+   {
+    "t": 1783306818.818,
+    "action": "yellow_card",
+    "team": "Mexico",
+    "cs": 5866
+   },
+   {
+    "t": 1783306840.591,
+    "action": "yellow_card",
+    "team": "Mexico",
+    "cs": 5893
+   },
+   {
+    "t": 1783306874.704,
+    "action": "yellow_card",
+    "team": "England",
+    "cs": 5924
+   }
+  ],
+  "shots": {
+   "total": 44,
+   "teams": {
+    "Mexico": 29,
+    "England": 3,
+    "Unassigned": 12
+   }
+  }
+ }
+}

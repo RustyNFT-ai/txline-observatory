@@ -1,0 +1,893 @@
+{
+ "id": "argentina-vs-egypt-2026-07-07",
+ "match": "Argentina vs Egypt",
+ "teams": [
+  "Argentina",
+  "Egypt"
+ ],
+ "date": "2026-07-07",
+ "slug": "fifwc-arg-egy-2026-07-07",
+ "labels": [
+  "Argentina",
+  "Egypt",
+  "draw"
+ ],
+ "t0": 1783440161.7,
+ "t1": 1783447550.9,
+ "rows": 1201,
+ "fid": 18202701,
+ "home1": true,
+ "tx_teams": [
+  "Argentina",
+  "Egypt"
+ ],
+ "score_changes": [
+  [
+   1783440995.7,
+   1
+  ],
+  [
+   1783441017.1,
+   1
+  ],
+  [
+   1783444988.8,
+   1
+  ],
+  [
+   1783445503.4,
+   1
+  ],
+  [
+   1783446215.8,
+   0
+  ],
+  [
+   1783446474.2,
+   0
+  ],
+  [
+   1783446994.6,
+   0
+  ]
+ ],
+ "tids": [
+  "115321303982678629228305623888886288749804075736763407098365012911341798952806",
+  "29252823886591163818892631827503025749306440692725158708119244431095401849247",
+  "87390712702935875353084647255226721799646621048501318482801979643152933271064"
+ ],
+ "counts": {
+  "txline:action": 1021,
+  "poly:book": 1201,
+  "txline:odds": 837,
+  "polyws:tick": 8164,
+  "polyws:burst": 34,
+  "espn:score": 9,
+  "wc26:score": 7,
+  "bot:decision": 20,
+  "bot:trade": 4
+ },
+ "moments": [
+  {
+   "t0": 1783440953.76,
+   "t0_src": "txline",
+   "benefit": "Egypt",
+   "baseline": 0.085,
+   "poly_dt": -7.8,
+   "delta_120s": 0.135,
+   "prices": {
+    "before": {
+     "dt": 1.7,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.67,
+       "ask": 0.68
+      },
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Egypt": {
+       "bid": 0.16,
+       "ask": 0.17
+      }
+     }
+    },
+    "txline": {
+     "dt": 1.1,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.5,
+       "ask": 0.51
+      },
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "Egypt": {
+       "bid": 0.23,
+       "ask": 0.24
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.9,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.51,
+       "ask": 0.52
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "Egypt": {
+       "bid": 0.21,
+       "ask": 0.22
+      }
+     }
+    },
+    "10s": {
+     "dt": 3.5,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.5,
+       "ask": 0.51
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.2,
+       "ask": 0.22
+      }
+     }
+    }
+   },
+   "espn_dt": 41.9,
+   "wc26_dt": 103.2,
+   "var": false,
+   "action": "goal",
+   "scorer": "Egypt",
+   "cs": 846,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "seq": 158,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 124.3,
+   "bot_price": 0.23,
+   "bot_fair": 0.233,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783444915.42,
+   "t0_src": "txline",
+   "benefit": "Egypt",
+   "baseline": 0.33,
+   "poly_dt": -8.4,
+   "delta_120s": 0.06,
+   "prices": {
+    "before": {
+     "dt": 1.4,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.12,
+       "ask": 0.21
+      },
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.59,
+       "ask": 0.63
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.8,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.12,
+       "ask": 0.13
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Egypt": {
+       "bid": 0.64,
+       "ask": 0.65
+      }
+     }
+    },
+    "5s": {
+     "dt": -2.1,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.11,
+       "ask": 0.12
+      },
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.8,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    }
+   },
+   "espn_dt": 73.4,
+   "wc26_dt": 157.7,
+   "var": true,
+   "action": "goal",
+   "scorer": "Egypt",
+   "cs": 3472,
+   "confirmed": false,
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "seq": 640,
+   "part": 2,
+   "disallowed": true,
+   "bot_action": "SKIP",
+   "bot_dt": 40.3,
+   "bot_price": 0.71,
+   "bot_fair": 0.352,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783445450.39,
+   "t0_src": "txline",
+   "benefit": "Egypt",
+   "baseline": 0.41,
+   "poly_dt": -7.7,
+   "delta_120s": 0.38,
+   "prices": {
+    "before": {
+     "dt": -3.4,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.2,
+       "ask": 0.21
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "Egypt": {
+       "bid": 0.43,
+       "ask": 0.44
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.4,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Egypt": {
+       "bid": 0.74,
+       "ask": 0.75
+      }
+     }
+    },
+    "5s": {
+     "dt": 2.1,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Egypt": {
+       "bid": 0.72,
+       "ask": 0.73
+      }
+     }
+    },
+    "10s": {
+     "dt": -2.9,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Egypt": {
+       "bid": 0.72,
+       "ask": 0.73
+      }
+     }
+    }
+   },
+   "espn_dt": 53.0,
+   "wc26_dt": 106.1,
+   "var": false,
+   "action": "goal",
+   "scorer": "Egypt",
+   "cs": 4007,
+   "confirmed": false,
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "seq": 728,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 43.5,
+   "bot_price": 0.79,
+   "bot_fair": 0.766,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783446164.54,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "baseline": 0.03,
+   "poly_dt": -6.2,
+   "delta_120s": 0.065,
+   "prices": {
+    "before": {
+     "dt": 0.6,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.05,
+       "ask": 0.059
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.66,
+       "ask": 0.73
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.2,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.08,
+       "ask": 0.089
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "Egypt": {
+       "bid": 0.65,
+       "ask": 0.66
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.3,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.053,
+       "ask": 0.059
+      },
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Egypt": {
+       "bid": 0.71,
+       "ask": 0.72
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.057,
+       "ask": 0.068
+      },
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Egypt": {
+       "bid": 0.73,
+       "ask": 0.74
+      }
+     }
+    }
+   },
+   "espn_dt": 51.3,
+   "wc26_dt": 108.7,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 4721,
+   "confirmed": false,
+   "score_before": "0-2",
+   "score_after": "1-2",
+   "seq": 830,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 42.6,
+   "bot_price": 0.099,
+   "bot_fair": 0.034,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783446423.26,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "baseline": 0.093,
+   "poly_dt": -8.6,
+   "delta_120s": 0.222,
+   "prices": {
+    "before": {
+     "dt": 1.1,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.19,
+       "ask": 0.24
+      },
+      "draw": {
+       "bid": 0.53,
+       "ask": 0.57
+      },
+      "Egypt": {
+       "bid": 0.17,
+       "ask": 0.3
+      }
+     }
+    },
+    "txline": {
+     "dt": -0.5,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.301,
+       "ask": 0.309
+      },
+      "draw": {
+       "bid": 0.54,
+       "ask": 0.55
+      },
+      "Egypt": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.5,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.313,
+       "ask": 0.32
+      },
+      "draw": {
+       "bid": 0.57,
+       "ask": 0.58
+      },
+      "Egypt": {
+       "bid": 0.09,
+       "ask": 0.1
+      }
+     }
+    },
+    "10s": {
+     "dt": 3.3,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.31,
+       "ask": 0.317
+      },
+      "draw": {
+       "bid": 0.59,
+       "ask": 0.6
+      },
+      "Egypt": {
+       "bid": 0.07,
+       "ask": 0.08
+      }
+     }
+    }
+   },
+   "espn_dt": 50.9,
+   "wc26_dt": 137.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 4980,
+   "confirmed": false,
+   "score_before": "1-2",
+   "score_after": "2-2",
+   "seq": 876,
+   "part": 1,
+   "bot_action": "ENTRY",
+   "bot_dt": -0.5,
+   "bot_price": 0.309,
+   "bot_fair": 0.113,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": 0.89
+  },
+  {
+   "t0": 1783446959.34,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "baseline": 0.17,
+   "poly_dt": -7.3,
+   "delta_120s": 0.72,
+   "prices": {
+    "before": {
+     "dt": 2.7,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.79,
+       "ask": 0.85
+      },
+      "draw": {
+       "bid": 0.12,
+       "ask": 0.16
+      },
+      "Egypt": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.2,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.9,
+       "ask": 0.91
+      },
+      "draw": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "Egypt": {
+       "bid": 0.01,
+       "ask": 0.02
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.1,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.93,
+       "ask": 0.94
+      },
+      "draw": {
+       "bid": 0.05,
+       "ask": 0.06
+      },
+      "Egypt": {
+       "bid": 0.06,
+       "ask": 0.07
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.4,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.922,
+       "ask": 0.929
+      },
+      "draw": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "Egypt": {
+       "bid": 0.01,
+       "ask": 0.02
+      }
+     }
+    }
+   },
+   "espn_dt": 35.3,
+   "wc26_dt": 148.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 5516,
+   "confirmed": false,
+   "score_before": "2-2",
+   "score_after": "3-2",
+   "seq": 966,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 42.3,
+   "bot_price": 0.92,
+   "bot_fair": null,
+   "bot_reason": "burst-retraced",
+   "bot_entries": 0
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783440950.2,
+   "label": "Argentina",
+   "tx_fair": 0.687,
+   "poly_ask": 0.49,
+   "initial_gap": 0.197,
+   "max_gap": 0.197,
+   "ask_depth": 1518,
+   "pre_activity": 1.828,
+   "clock": "14'",
+   "score": "0-0",
+   "duration": 66.9,
+   "exit_bid": 0.5,
+   "gross_per_share": 0.01,
+   "entry_5s_ask": 0.52,
+   "gross_5s_per_share": -0.02
+  },
+  {
+   "t": 1783441216.0,
+   "label": "draw",
+   "tx_fair": 0.297,
+   "poly_ask": 0.24,
+   "initial_gap": 0.057,
+   "max_gap": 0.058,
+   "ask_depth": 1044,
+   "pre_activity": 3.329,
+   "clock": "18'",
+   "score": "0-1",
+   "duration": 102.4,
+   "exit_bid": 0.29,
+   "gross_per_share": 0.05,
+   "entry_5s_ask": 0.24,
+   "gross_5s_per_share": 0.05
+  },
+  {
+   "t": 1783441211.3,
+   "label": "Egypt",
+   "tx_fair": 0.233,
+   "poly_ask": 0.17,
+   "initial_gap": 0.063,
+   "max_gap": 0.096,
+   "ask_depth": 5035,
+   "pre_activity": 3.243,
+   "clock": "18'",
+   "score": "0-1",
+   "duration": 107.1,
+   "exit_bid": 0.21,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.14,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1783444906.8,
+   "label": "Argentina",
+   "tx_fair": 0.296,
+   "poly_ask": 0.21,
+   "initial_gap": 0.086,
+   "max_gap": 0.164,
+   "ask_depth": 6151,
+   "pre_activity": 3.048,
+   "clock": "58'",
+   "score": "0-1",
+   "duration": 130.2,
+   "exit_bid": 0.24,
+   "gross_per_share": 0.03,
+   "entry_5s_ask": 0.13,
+   "gross_5s_per_share": 0.11
+  },
+  {
+   "t": 1783444906.8,
+   "label": "draw",
+   "tx_fair": 0.354,
+   "poly_ask": 0.28,
+   "initial_gap": 0.074,
+   "max_gap": 0.104,
+   "ask_depth": 8986,
+   "pre_activity": 3.048,
+   "clock": "58'",
+   "score": "0-1",
+   "duration": 130.2,
+   "exit_bid": 0.33,
+   "gross_per_share": 0.05,
+   "entry_5s_ask": 0.25,
+   "gross_5s_per_share": 0.08
+  },
+  {
+   "t": 1783445037.0,
+   "label": "Egypt",
+   "tx_fair": 0.704,
+   "poly_ask": 0.45,
+   "initial_gap": 0.254,
+   "max_gap": 0.254,
+   "ask_depth": 395,
+   "pre_activity": 3.955,
+   "clock": "60'",
+   "score": "0-2",
+   "duration": 17.9,
+   "exit_bid": 0.43,
+   "gross_per_share": -0.02,
+   "entry_5s_ask": 0.42,
+   "gross_5s_per_share": 0.01
+  },
+  {
+   "t": 1783445444.3,
+   "label": "Argentina",
+   "tx_fair": 0.229,
+   "poly_ask": 0.08,
+   "initial_gap": 0.149,
+   "max_gap": 0.149,
+   "ask_depth": 207,
+   "pre_activity": 5.276,
+   "clock": "67'",
+   "score": "0-1",
+   "duration": 33.1,
+   "exit_bid": 0.05,
+   "gross_per_share": -0.03,
+   "entry_5s_ask": 0.08,
+   "gross_5s_per_share": -0.03
+  },
+  {
+   "t": 1783445444.3,
+   "label": "draw",
+   "tx_fair": 0.353,
+   "poly_ask": 0.21,
+   "initial_gap": 0.143,
+   "max_gap": 0.143,
+   "ask_depth": 607,
+   "pre_activity": 5.276,
+   "clock": "67'",
+   "score": "0-1",
+   "duration": 33.1,
+   "exit_bid": 0.15,
+   "gross_per_share": -0.06,
+   "entry_5s_ask": 0.2,
+   "gross_5s_per_share": -0.05
+  },
+  {
+   "t": 1783446155.1,
+   "label": "Egypt",
+   "tx_fair": 0.855,
+   "poly_ask": 0.73,
+   "initial_gap": 0.125,
+   "max_gap": 0.191,
+   "ask_depth": 598,
+   "pre_activity": 3.757,
+   "clock": "78'",
+   "score": "0-2",
+   "duration": 80.2,
+   "exit_bid": 0.57,
+   "gross_per_share": -0.16,
+   "entry_5s_ask": 0.66,
+   "gross_5s_per_share": -0.09
+  },
+  {
+   "t": 1783446414.4,
+   "label": "Egypt",
+   "tx_fair": 0.576,
+   "poly_ask": 0.3,
+   "initial_gap": 0.276,
+   "max_gap": 0.462,
+   "ask_depth": 0,
+   "pre_activity": 5.882,
+   "clock": "82'",
+   "score": "1-2",
+   "duration": 94.7,
+   "exit_bid": 0.06,
+   "gross_per_share": -0.24,
+   "entry_5s_ask": 0.11,
+   "gross_5s_per_share": -0.05
+  },
+  {
+   "t": 1783446952.0,
+   "label": "draw",
+   "tx_fair": 0.769,
+   "poly_ask": 0.16,
+   "initial_gap": 0.609,
+   "max_gap": 0.609,
+   "ask_depth": 381,
+   "pre_activity": 7.873,
+   "clock": "90'+1'",
+   "score": "2-2",
+   "duration": 66.0,
+   "exit_bid": 0.04,
+   "gross_per_share": -0.12,
+   "entry_5s_ask": 0.07,
+   "gross_5s_per_share": -0.03
+  }
+ ],
+ "attention_rate": 3.662,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783444984.081,
+    "cs": 3535,
+    "duration": 53.2,
+    "decision": "goal disallowed"
+   }
+  ],
+  "corrections": 14,
+  "penalties": [
+   {
+    "t": 1783441289.305,
+    "action": "penalty",
+    "team": "Argentina",
+    "cs": 1111
+   },
+   {
+    "t": 1783441320.042,
+    "action": "penalty_outcome",
+    "team": "Argentina",
+    "cs": 1207
+   }
+  ],
+  "cards": [
+   {
+    "t": 1783445177.449,
+    "action": "yellow_card",
+    "team": "Egypt",
+    "cs": 3733
+   },
+   {
+    "t": 1783447120.218,
+    "action": "yellow_card",
+    "team": "Egypt",
+    "cs": 5610
+   },
+   {
+    "t": 1783447140.43,
+    "action": "yellow_card",
+    "team": "Egypt",
+    "cs": 5546
+   },
+   {
+    "t": 1783447306.765,
+    "action": "yellow_card",
+    "team": "Egypt",
+    "cs": 5851
+   }
+  ],
+  "shots": {
+   "total": 46,
+   "teams": {
+    "Egypt": 8,
+    "Argentina": 28,
+    "Unassigned": 10
+   }
+  }
+ }
+}

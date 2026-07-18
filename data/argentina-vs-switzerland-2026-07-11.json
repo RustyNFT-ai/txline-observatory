@@ -1,0 +1,582 @@
+{
+ "id": "argentina-vs-switzerland-2026-07-11",
+ "match": "Argentina vs Switzerland",
+ "teams": [
+  "Argentina",
+  "Switzerland"
+ ],
+ "date": "2026-07-11",
+ "slug": "fifwc-arg-che-2026-07-11",
+ "labels": [
+  "Argentina",
+  "Switzerland",
+  "draw"
+ ],
+ "t0": 1783818095.6,
+ "t1": 1783827900.4,
+ "rows": 1684,
+ "fid": 18222446,
+ "home1": true,
+ "tx_teams": [
+  "Argentina",
+  "Switzerland"
+ ],
+ "score_changes": [
+  [
+   1783818651.3,
+   0
+  ],
+  [
+   1783818686.0,
+   0
+  ],
+  [
+   1783823343.8,
+   1
+  ],
+  [
+   1783825147.5,
+   1
+  ],
+  [
+   1783827162.3,
+   0
+  ],
+  [
+   1783827696.3,
+   0
+  ]
+ ],
+ "tids": [
+  "14635675870982897917581198649476127837975251193150495566552970565909631535281",
+  "35737328415897350073008705151276154836361818348951962282389981878817300121168",
+  "77916360718126045401133554110154807394451430552706503353127448280368541580890"
+ ],
+ "counts": {
+  "txline:action": 1290,
+  "poly:book": 1684,
+  "txline:odds": 1037,
+  "polyws:tick": 7591,
+  "polyws:burst": 24,
+  "espn:score": 10
+ },
+ "moments": [
+  {
+   "t0": 1783818619.53,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "baseline": 0.55,
+   "poly_dt": -9.5,
+   "delta_120s": 0.205,
+   "prices": {
+    "before": {
+     "dt": 1.3,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.7025,
+       "ask": 0.73
+      },
+      "draw": {
+       "bid": 0.175,
+       "ask": 0.195
+      },
+      "Switzerland": {
+       "bid": 0.065,
+       "ask": 0.0975
+      }
+     }
+    },
+    "txline": {
+     "dt": -3.4,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.735,
+       "ask": 0.7475
+      },
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.1825
+      },
+      "Switzerland": {
+       "bid": 0.065,
+       "ask": 0.0675
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.2,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.75,
+       "ask": 0.7525
+      },
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.1825
+      },
+      "Switzerland": {
+       "bid": 0.0675,
+       "ask": 0.07
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.3,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.7425,
+       "ask": 0.75
+      },
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "Switzerland": {
+       "bid": 0.0675,
+       "ask": 0.07
+      }
+     }
+    }
+   },
+   "espn_dt": 31.8,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 575,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "seq": 117,
+   "part": 1
+  },
+  {
+   "t0": 1783823299.48,
+   "t0_src": "txline",
+   "benefit": "Switzerland",
+   "baseline": 0.035,
+   "poly_dt": -7.1,
+   "delta_120s": 0.12,
+   "prices": {
+    "before": {
+     "dt": -2.9,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.78,
+       "ask": 0.7825
+      },
+      "draw": {
+       "bid": 0.1825,
+       "ask": 0.185
+      },
+      "Switzerland": {
+       "bid": 0.035,
+       "ask": 0.0375
+      }
+     }
+    },
+    "txline": {
+     "dt": -1.8,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.375,
+       "ask": 0.4125
+      },
+      "draw": {
+       "bid": 0.44,
+       "ask": 0.45
+      },
+      "Switzerland": {
+       "bid": 0.14,
+       "ask": 0.145
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.1,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.3475,
+       "ask": 0.35
+      },
+      "draw": {
+       "bid": 0.4975,
+       "ask": 0.5
+      },
+      "Switzerland": {
+       "bid": 0.14,
+       "ask": 0.1475
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.3,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.3575,
+       "ask": 0.3625
+      },
+      "draw": {
+       "bid": 0.4925,
+       "ask": 0.4975
+      },
+      "Switzerland": {
+       "bid": 0.1375,
+       "ask": 0.14
+      }
+     }
+    }
+   },
+   "espn_dt": 44.3,
+   "var": true,
+   "action": "goal",
+   "scorer": "Switzerland",
+   "cs": 4010,
+   "confirmed": false,
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "seq": 661,
+   "part": 2
+  },
+  {
+   "t0": 1783825147.5,
+   "t0_src": "espn",
+   "benefit": "Switzerland",
+   "baseline": 0.011,
+   "delta_120s": -0.009,
+   "prices": {
+    "before": {
+     "dt": -1.8,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.1225,
+       "ask": 0.125
+      },
+      "draw": {
+       "bid": 0.855,
+       "ask": 0.8575
+      },
+      "Switzerland": {
+       "bid": 0.01,
+       "ask": 0.0125
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.12,
+       "ask": 0.1225
+      },
+      "draw": {
+       "bid": 0.865,
+       "ask": 0.8675
+      },
+      "Switzerland": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.0,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.11,
+       "ask": 0.1125
+      },
+      "draw": {
+       "bid": 0.88,
+       "ask": 0.8825
+      },
+      "Switzerland": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.8,
+     "outcomes": {
+      "Argentina": {
+       "bid": 0.1,
+       "ask": 0.105
+      },
+      "draw": {
+       "bid": 0.885,
+       "ask": 0.89
+      },
+      "Switzerland": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Switzerland",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783827127.67,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "prices": {
+    "before": {
+     "dt": -2.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "espn_dt": 34.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 6702,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "seq": 1201,
+   "part": 1
+  },
+  {
+   "t0": 1783827669.67,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "prices": {
+    "before": {
+     "dt": 1.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.7,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "espn_dt": 26.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 7244,
+   "confirmed": false,
+   "score_before": "2-1",
+   "score_after": "3-1",
+   "seq": 1282,
+   "part": 1
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783818610.8,
+   "label": "draw",
+   "tx_fair": 0.299,
+   "poly_ask": 0.195,
+   "initial_gap": 0.104,
+   "max_gap": 0.12,
+   "ask_depth": 846,
+   "pre_activity": 6.474,
+   "clock": "9'",
+   "score": "0-0",
+   "duration": 65.0,
+   "exit_bid": 0.185,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.1825,
+   "gross_5s_per_share": 0.003
+  },
+  {
+   "t": 1783818610.8,
+   "label": "Switzerland",
+   "tx_fair": 0.175,
+   "poly_ask": 0.0975,
+   "initial_gap": 0.077,
+   "max_gap": 0.104,
+   "ask_depth": 242,
+   "pre_activity": 6.474,
+   "clock": "9'",
+   "score": "0-0",
+   "duration": 65.0,
+   "exit_bid": 0.0625,
+   "gross_per_share": -0.035,
+   "entry_5s_ask": 0.0675,
+   "gross_5s_per_share": -0.005
+  },
+  {
+   "t": 1783822255.7,
+   "label": "Argentina",
+   "tx_fair": 0.786,
+   "poly_ask": 0.66,
+   "initial_gap": 0.126,
+   "max_gap": 0.126,
+   "ask_depth": 305,
+   "pre_activity": 3.659,
+   "clock": "49'",
+   "score": "1-0",
+   "duration": 10.3,
+   "exit_bid": 0.7875,
+   "gross_per_share": 0.127,
+   "entry_5s_ask": 0.7825,
+   "gross_5s_per_share": 0.005
+  },
+  {
+   "t": 1783823292.4,
+   "label": "Argentina",
+   "tx_fair": 0.792,
+   "poly_ask": 0.55,
+   "initial_gap": 0.242,
+   "max_gap": 0.38,
+   "ask_depth": 32,
+   "pre_activity": 5.093,
+   "clock": "67'",
+   "score": "1-0",
+   "duration": 69.0,
+   "exit_bid": 0.325,
+   "gross_per_share": -0.225,
+   "entry_5s_ask": 0.4125,
+   "gross_5s_per_share": -0.087
+  },
+  {
+   "t": 1783823551.4,
+   "label": "draw",
+   "tx_fair": 0.537,
+   "poly_ask": 0.41,
+   "initial_gap": 0.127,
+   "max_gap": 0.127,
+   "ask_depth": 338,
+   "pre_activity": 7.682,
+   "clock": "71'",
+   "score": "1-1",
+   "duration": 116.8,
+   "exit_bid": 0.4525,
+   "gross_per_share": 0.043,
+   "entry_5s_ask": 0.4125,
+   "gross_5s_per_share": 0.04
+  }
+ ],
+ "attention_rate": 4.18,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783823488.842,
+    "cs": 4180,
+    "duration": 72.2,
+    "decision": "completed"
+   }
+  ],
+  "corrections": 8,
+  "penalties": [],
+  "cards": [
+   {
+    "t": 1783820658.571,
+    "action": "yellow_card",
+    "team": "Switzerland",
+    "cs": 2610
+   },
+   {
+    "t": 1783823424.101,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 4124
+   },
+   {
+    "t": 1783823575.575,
+    "action": "red_card",
+    "team": "Switzerland",
+    "cs": 4280
+   },
+   {
+    "t": 1783825921.223,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 5765
+   },
+   {
+    "t": 1783826009.088,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 5853
+   },
+   {
+    "t": 1783827278.664,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 6829
+   },
+   {
+    "t": 1783827796.808,
+    "action": "yellow_card",
+    "team": "Switzerland",
+    "cs": 7371
+   }
+  ],
+  "shots": {
+   "total": 109,
+   "teams": {
+    "Switzerland": 42,
+    "Argentina": 57,
+    "Unassigned": 10
+   }
+  }
+ }
+}

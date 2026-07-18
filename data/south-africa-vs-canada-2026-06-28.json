@@ -1,0 +1,199 @@
+{
+ "id": "south-africa-vs-canada-2026-06-28",
+ "match": "South Africa vs Canada",
+ "teams": [
+  "South Africa",
+  "Canada"
+ ],
+ "date": "2026-06-28",
+ "slug": null,
+ "labels": [
+  "Canada",
+  "South Africa",
+  "draw"
+ ],
+ "t0": 1782673247.6,
+ "t1": 1782680245.4,
+ "rows": 3686,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782679920.6,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 3686,
+  "txline:odds": 1201,
+  "espn:score": 1
+ },
+ "moments": [
+  {
+   "t0": 1782679920.6,
+   "t0_src": "espn",
+   "benefit": "Canada",
+   "baseline": 0.13,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -1.1,
+     "outcomes": {
+      "Canada": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "South Africa": {
+       "bid": 0.05,
+       "ask": 0.06
+      },
+      "draw": {
+       "bid": 0.8,
+       "ask": 0.81
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Canada": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "South Africa": {
+       "bid": 0.05,
+       "ask": 0.06
+      },
+      "draw": {
+       "bid": 0.8,
+       "ask": 0.81
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Canada": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "South Africa": {
+       "bid": 0.05,
+       "ask": 0.06
+      },
+      "draw": {
+       "bid": 0.8,
+       "ask": 0.81
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.3,
+     "outcomes": {
+      "Canada": {
+       "bid": 0.13,
+       "ask": 0.14
+      },
+      "South Africa": {
+       "bid": 0.05,
+       "ask": 0.06
+      },
+      "draw": {
+       "bid": 0.8,
+       "ask": 0.81
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Canada",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782677719.3,
+   "label": "draw",
+   "tx_fair": 0.471,
+   "poly_ask": 0.42,
+   "initial_gap": 0.051,
+   "max_gap": 0.058,
+   "ask_depth": 87557,
+   "pre_activity": 0.201,
+   "clock": "55'",
+   "score": "0-0",
+   "duration": 23.4,
+   "exit_bid": 0.45,
+   "gross_per_share": 0.03,
+   "entry_5s_ask": 0.42,
+   "gross_5s_per_share": 0.03
+  },
+  {
+   "t": 1782677966.4,
+   "label": "draw",
+   "tx_fair": 0.512,
+   "poly_ask": 0.46,
+   "initial_gap": 0.052,
+   "max_gap": 0.055,
+   "ask_depth": 79164,
+   "pre_activity": 0.203,
+   "clock": "59'",
+   "score": "0-0",
+   "duration": 78.6,
+   "exit_bid": 0.51,
+   "gross_per_share": 0.05,
+   "entry_5s_ask": 0.46,
+   "gross_5s_per_share": 0.05
+  },
+  {
+   "t": 1782679118.2,
+   "label": "draw",
+   "tx_fair": 0.64,
+   "poly_ask": 0.59,
+   "initial_gap": 0.05,
+   "max_gap": 0.067,
+   "ask_depth": 22899,
+   "pre_activity": 0.202,
+   "clock": "78'",
+   "score": "0-0",
+   "duration": 127.7,
+   "exit_bid": 0.63,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.59,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1782679391.2,
+   "label": "draw",
+   "tx_fair": 0.692,
+   "poly_ask": 0.64,
+   "initial_gap": 0.052,
+   "max_gap": 0.145,
+   "ask_depth": 45045,
+   "pre_activity": 0.201,
+   "clock": "82'",
+   "score": "0-0",
+   "duration": 599.4,
+   "exit_bid": 0.8,
+   "gross_per_share": 0.16,
+   "entry_5s_ask": 0.64,
+   "gross_5s_per_share": 0.16
+  }
+ ],
+ "attention_rate": 0.189,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "id": "paraguay-vs-australia-2026-06-25",
+ "match": "Paraguay vs Australia",
+ "teams": [
+  "Paraguay",
+  "Australia"
+ ],
+ "date": "2026-06-25",
+ "slug": null,
+ "labels": [
+  "Australia",
+  "Paraguay",
+  "draw"
+ ],
+ "t0": 1782439268.2,
+ "t1": 1782446343.9,
+ "rows": 1376,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [],
+ "tids": [],
+ "counts": {
+  "poly:book": 1376
+ },
+ "moments": [],
+ "opportunities": [],
+ "attention_rate": null,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

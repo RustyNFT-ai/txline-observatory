@@ -1,0 +1,6 @@
+__pycache__/
+!data/*.jsonl
+.env
+.env.*
+!.env.example
+tunnel.log

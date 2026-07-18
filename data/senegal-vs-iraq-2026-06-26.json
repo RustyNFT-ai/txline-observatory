@@ -1,0 +1,437 @@
+{
+ "id": "senegal-vs-iraq-2026-06-26",
+ "match": "Senegal vs Iraq",
+ "teams": [
+  "Senegal",
+  "Iraq"
+ ],
+ "date": "2026-06-26",
+ "slug": null,
+ "labels": [
+  "Iraq",
+  "Senegal",
+  "draw"
+ ],
+ "t0": 1782500576.2,
+ "t1": 1782507895.9,
+ "rows": 1353,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782500844.7,
+   0
+  ],
+  [
+   1782505451.1,
+   0
+  ],
+  [
+   1782505621.1,
+   0
+  ],
+  [
+   1782506380.8,
+   0
+  ],
+  [
+   1782507006.9,
+   0
+  ],
+  [
+   1782507041.3,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1353,
+  "txline:odds": 303,
+  "espn:score": 7,
+  "wc26:score": 5
+ },
+ "moments": [
+  {
+   "t0": 1782500844.7,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.8,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.8,
+       "ask": 0.81
+      },
+      "Iraq": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.12,
+       "ask": 0.13
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.8,
+       "ask": 0.81
+      },
+      "Iraq": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.12,
+       "ask": 0.13
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.8,
+       "ask": 0.81
+      },
+      "Iraq": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.12,
+       "ask": 0.13
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.8,
+       "ask": 0.81
+      },
+      "Iraq": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "draw": {
+       "bid": 0.12,
+       "ask": 0.13
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782505451.1,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.943,
+   "delta_120s": 0.037,
+   "prices": {
+    "before": {
+     "dt": 0.4,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.943,
+       "ask": 0.946
+      },
+      "Iraq": {
+       "bid": 0.013,
+       "ask": 0.017
+      },
+      "draw": {
+       "bid": 0.039,
+       "ask": 0.041
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.943,
+       "ask": 0.946
+      },
+      "Iraq": {
+       "bid": 0.013,
+       "ask": 0.017
+      },
+      "draw": {
+       "bid": 0.039,
+       "ask": 0.041
+      }
+     }
+    },
+    "5s": {
+     "dt": 3.3,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.943,
+       "ask": 0.946
+      },
+      "Iraq": {
+       "bid": 0.013,
+       "ask": 0.017
+      },
+      "draw": {
+       "bid": 0.039,
+       "ask": 0.041
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.7,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.943,
+       "ask": 0.946
+      },
+      "Iraq": {
+       "bid": 0.013,
+       "ask": 0.017
+      },
+      "draw": {
+       "bid": 0.039,
+       "ask": 0.041
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "1-0",
+   "score_after": "2-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782505621.1,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.98,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.3,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.98,
+       "ask": 0.987
+      },
+      "Iraq": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.98,
+       "ask": 0.987
+      },
+      "Iraq": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.1,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.98,
+       "ask": 0.987
+      },
+      "Iraq": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    },
+    "10s": {
+     "dt": 3.4,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.98,
+       "ask": 0.987
+      },
+      "Iraq": {
+       "bid": 0.002,
+       "ask": 0.003
+      },
+      "draw": {
+       "bid": 0.019,
+       "ask": 0.02
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "2-0",
+   "score_after": "3-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782506380.8,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.999,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 1.8,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "3-0",
+   "score_after": "4-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782507006.9,
+   "t0_src": "espn",
+   "benefit": "Senegal",
+   "baseline": 0.999,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Senegal": {
+       "bid": 0.999,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Senegal",
+   "score_before": "4-0",
+   "score_after": "5-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782500806.6,
+   "label": "Senegal",
+   "tx_fair": 0.923,
+   "poly_ask": 0.81,
+   "initial_gap": 0.113,
+   "max_gap": 0.123,
+   "ask_depth": 49336,
+   "pre_activity": 0.0,
+   "clock": "4'",
+   "score": "0-0",
+   "duration": 211.6,
+   "exit_bid": 0.92,
+   "gross_per_share": 0.11,
+   "entry_5s_ask": 0.81,
+   "gross_5s_per_share": 0.11
+  }
+ ],
+ "attention_rate": 0.139,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

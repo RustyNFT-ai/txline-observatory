@@ -1,0 +1,477 @@
+{
+ "id": "t-rkiye-vs-united-states-2026-06-25",
+ "match": "T\u00fcrkiye vs United States",
+ "teams": [
+  "T\u00fcrkiye",
+  "United States"
+ ],
+ "date": "2026-06-25",
+ "slug": null,
+ "labels": [
+  "T\u00fcrkiye",
+  "United States",
+  "draw"
+ ],
+ "t0": 1782439258.9,
+ "t1": 1782446556.0,
+ "rows": 1423,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782439383.0,
+   1
+  ],
+  [
+   1782439843.2,
+   0
+  ],
+  [
+   1782441098.2,
+   0
+  ],
+  [
+   1782443499.8,
+   1
+  ],
+  [
+   1782446508.9,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1423,
+  "espn:score": 5,
+  "wc26:score": 6
+ },
+ "moments": [
+  {
+   "t0": 1782439383.0,
+   "t0_src": "espn",
+   "benefit": "United States",
+   "baseline": 0.47,
+   "delta_120s": 0.22,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "United States": {
+       "bid": 0.47,
+       "ask": 0.48
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "United States": {
+       "bid": 0.47,
+       "ask": 0.48
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "United States": {
+       "bid": 0.47,
+       "ask": 0.48
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.29,
+       "ask": 0.3
+      },
+      "United States": {
+       "bid": 0.47,
+       "ask": 0.48
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "United States",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782439843.2,
+   "t0_src": "espn",
+   "benefit": "T\u00fcrkiye",
+   "baseline": 0.12,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.12,
+       "ask": 0.13
+      },
+      "United States": {
+       "bid": 0.7,
+       "ask": 0.71
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.12,
+       "ask": 0.13
+      },
+      "United States": {
+       "bid": 0.7,
+       "ask": 0.71
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.12,
+       "ask": 0.13
+      },
+      "United States": {
+       "bid": 0.7,
+       "ask": 0.71
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.12,
+       "ask": 0.13
+      },
+      "United States": {
+       "bid": 0.7,
+       "ask": 0.71
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "T\u00fcrkiye",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782441098.2,
+   "t0_src": "espn",
+   "benefit": "T\u00fcrkiye",
+   "baseline": 0.26,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "United States": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "United States": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "United States": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.28
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "United States": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "T\u00fcrkiye",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782443499.8,
+   "t0_src": "espn",
+   "benefit": "United States",
+   "baseline": 0.2,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.53,
+       "ask": 0.54
+      },
+      "United States": {
+       "bid": 0.2,
+       "ask": 0.21
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.53,
+       "ask": 0.54
+      },
+      "United States": {
+       "bid": 0.2,
+       "ask": 0.21
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.53,
+       "ask": 0.54
+      },
+      "United States": {
+       "bid": 0.2,
+       "ask": 0.21
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.27
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.53,
+       "ask": 0.54
+      },
+      "United States": {
+       "bid": 0.2,
+       "ask": 0.21
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "United States",
+   "score_before": "2-1",
+   "score_after": "2-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782446508.9,
+   "t0_src": "espn",
+   "benefit": "T\u00fcrkiye",
+   "baseline": 0.07,
+   "prices": {
+    "before": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.86,
+       "ask": 0.87
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "United States": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.86,
+       "ask": 0.87
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "United States": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.86,
+       "ask": 0.87
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "United States": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.86,
+       "ask": 0.87
+      },
+      "T\u00fcrkiye": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "United States": {
+       "bid": 0.05,
+       "ask": 0.06
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "T\u00fcrkiye",
+   "score_before": "2-2",
+   "score_after": "3-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [],
+ "attention_rate": null,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "id": "colombia-vs-portugal-2026-06-27",
+ "match": "Colombia vs Portugal",
+ "teams": [
+  "Colombia",
+  "Portugal"
+ ],
+ "date": "2026-06-27",
+ "slug": null,
+ "labels": [
+  "Colombia",
+  "Portugal",
+  "draw"
+ ],
+ "t0": 1782603121.2,
+ "t1": 1782610118.3,
+ "rows": 1413,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [],
+ "tids": [],
+ "counts": {
+  "poly:book": 1413,
+  "txline:odds": 262
+ },
+ "moments": [],
+ "opportunities": [],
+ "attention_rate": 0.189,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

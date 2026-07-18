@@ -1,0 +1,669 @@
+{
+ "id": "united-states-vs-belgium-2026-07-06",
+ "match": "United States vs Belgium",
+ "teams": [
+  "United States",
+  "Belgium"
+ ],
+ "date": "2026-07-06",
+ "slug": "fifwc-usa-bel-2026-07-06",
+ "labels": [
+  "Belgium",
+  "United States",
+  "draw"
+ ],
+ "t0": 1783382469.6,
+ "t1": 1783389546.4,
+ "rows": 1342,
+ "fid": 18193785,
+ "home1": true,
+ "tx_teams": [
+  "United States",
+  "Belgium"
+ ],
+ "score_changes": [
+  [
+   1783383014.5,
+   1
+  ],
+  [
+   1783384305.1,
+   0
+  ],
+  [
+   1783384416.2,
+   1
+  ],
+  [
+   1783387280.0,
+   1
+  ],
+  [
+   1783389429.5,
+   1
+  ]
+ ],
+ "tids": [
+  "12543071273398745069375249451965314920040978384485189026440480252129098460445",
+  "59186683917106781508840646814784183903801989090902543836226957447714849845978",
+  "76141439386499692279040322719837529255735670745305640408917612006545881065962"
+ ],
+ "counts": {
+  "txline:action": 1107,
+  "poly:book": 1342,
+  "txline:odds": 744,
+  "polyws:tick": 1854,
+  "polyws:burst": 11,
+  "bot:trade": 8,
+  "espn:score": 5,
+  "wc26:score": 5,
+  "bot:decision": 6
+ },
+ "moments": [
+  {
+   "t0": 1783382951.3,
+   "t0_src": "txline",
+   "benefit": "Belgium",
+   "baseline": 0.36,
+   "poly_dt": -7.1,
+   "delta_120s": 0.2,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "United States": {
+       "bid": 0.34,
+       "ask": 0.35
+      },
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "Belgium": {
+       "bid": 0.38,
+       "ask": 0.39
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.6,
+     "outcomes": {
+      "United States": {
+       "bid": 0.16,
+       "ask": 0.18
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Belgium": {
+       "bid": 0.59,
+       "ask": 0.6
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.7,
+     "outcomes": {
+      "United States": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Belgium": {
+       "bid": 0.57,
+       "ask": 0.58
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.0,
+     "outcomes": {
+      "United States": {
+       "bid": 0.18,
+       "ask": 0.19
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Belgium": {
+       "bid": 0.57,
+       "ask": 0.58
+      }
+     }
+    }
+   },
+   "espn_dt": 63.2,
+   "wc26_dt": 89.2,
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "cs": 517,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "seq": 127,
+   "part": 2,
+   "bot_action": "ENTRY",
+   "bot_dt": 0.6,
+   "bot_price": 0.6,
+   "bot_fair": 0.355,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": -1.25
+  },
+  {
+   "t0": 1783384267.35,
+   "t0_src": "txline",
+   "benefit": "United States",
+   "baseline": 0.15,
+   "poly_dt": -6.8,
+   "delta_120s": 0.18,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "United States": {
+       "bid": 0.16,
+       "ask": 0.17
+      },
+      "draw": {
+       "bid": 0.25,
+       "ask": 0.26
+      },
+      "Belgium": {
+       "bid": 0.59,
+       "ask": 0.6
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.7,
+     "outcomes": {
+      "United States": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Belgium": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.8,
+     "outcomes": {
+      "United States": {
+       "bid": 0.31,
+       "ask": 0.32
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Belgium": {
+       "bid": 0.37,
+       "ask": 0.38
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.9,
+     "outcomes": {
+      "United States": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.31
+      },
+      "Belgium": {
+       "bid": 0.36,
+       "ask": 0.37
+      }
+     }
+    }
+   },
+   "espn_dt": 37.8,
+   "wc26_dt": 100.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "United States",
+   "cs": 1833,
+   "confirmed": false,
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "seq": 316,
+   "part": 1,
+   "bot_action": "ENTRY",
+   "bot_dt": 0.7,
+   "bot_price": 0.33,
+   "bot_fair": 0.147,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": -0.76
+  },
+  {
+   "t0": 1783384383.21,
+   "t0_src": "txline",
+   "benefit": "Belgium",
+   "baseline": 0.35,
+   "poly_dt": -7.3,
+   "delta_120s": 0.27,
+   "prices": {
+    "before": {
+     "dt": 0.7,
+     "outcomes": {
+      "United States": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Belgium": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "txline": {
+     "dt": 1.2,
+     "outcomes": {
+      "United States": {
+       "bid": 0.17,
+       "ask": 0.18
+      },
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Belgium": {
+       "bid": 0.6,
+       "ask": 0.61
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.3,
+     "outcomes": {
+      "United States": {
+       "bid": 0.16,
+       "ask": 0.17
+      },
+      "draw": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "Belgium": {
+       "bid": 0.6,
+       "ask": 0.61
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.5,
+     "outcomes": {
+      "United States": {
+       "bid": 0.15,
+       "ask": 0.17
+      },
+      "draw": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "Belgium": {
+       "bid": 0.6,
+       "ask": 0.61
+      }
+     }
+    }
+   },
+   "espn_dt": 33.0,
+   "wc26_dt": 112.4,
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "cs": 1949,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "seq": 335,
+   "part": 2,
+   "bot_action": "ENTRY",
+   "bot_dt": 33.0,
+   "bot_price": 0.61,
+   "bot_fair": 0.321,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": 0
+  },
+  {
+   "t0": 1783387238.39,
+   "t0_src": "txline",
+   "benefit": "Belgium",
+   "baseline": 0.65,
+   "poly_dt": -7.1,
+   "delta_120s": 0.25,
+   "prices": {
+    "before": {
+     "dt": -1.8,
+     "outcomes": {
+      "United States": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "draw": {
+       "bid": 0.23,
+       "ask": 0.24
+      },
+      "Belgium": {
+       "bid": 0.66,
+       "ask": 0.67
+      }
+     }
+    },
+    "txline": {
+     "dt": -1.5,
+     "outcomes": {
+      "United States": {
+       "bid": 0.04,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "Belgium": {
+       "bid": 0.87,
+       "ask": 0.88
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "United States": {
+       "bid": 0.03,
+       "ask": 0.04
+      },
+      "draw": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "Belgium": {
+       "bid": 0.87,
+       "ask": 0.88
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "United States": {
+       "bid": 0.02,
+       "ask": 0.03
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.11
+      },
+      "Belgium": {
+       "bid": 0.87,
+       "ask": 0.88
+      }
+     }
+    }
+   },
+   "espn_dt": 41.6,
+   "wc26_dt": 125.0,
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "cs": 3397,
+   "confirmed": false,
+   "score_before": "1-2",
+   "score_after": "1-3",
+   "seq": 703,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 41.6,
+   "bot_price": 0.89,
+   "bot_fair": 0.657,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783389386.54,
+   "t0_src": "txline",
+   "benefit": "Belgium",
+   "baseline": 0.998,
+   "delta_120s": -0.003,
+   "prices": {
+    "before": {
+     "dt": 2.2,
+     "outcomes": {
+      "draw": {
+       "bid": 0.001,
+       "ask": 0.002
+      },
+      "Belgium": {
+       "bid": 0.995,
+       "ask": 0.998
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.012,
+       "ask": 0.018
+      },
+      "Belgium": {
+       "bid": 0.995,
+       "ask": 0.998
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.7,
+     "outcomes": {
+      "draw": {
+       "bid": 0.012,
+       "ask": 0.018
+      },
+      "Belgium": {
+       "bid": 0.995,
+       "ask": 0.998
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.012,
+       "ask": 0.018
+      },
+      "Belgium": {
+       "bid": 0.995,
+       "ask": 0.998
+      }
+     }
+    }
+   },
+   "espn_dt": 43.0,
+   "wc26_dt": 86.9,
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "cs": 5544,
+   "confirmed": false,
+   "score_before": "1-3",
+   "score_after": "1-4",
+   "seq": 1110,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 48.1,
+   "bot_price": null,
+   "bot_fair": null,
+   "bot_reason": "no-txodds-confirm",
+   "bot_entries": 0
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783382945.9,
+   "label": "United States",
+   "tx_fair": 0.346,
+   "poly_ask": 0.21,
+   "initial_gap": 0.136,
+   "max_gap": 0.136,
+   "ask_depth": 1185,
+   "pre_activity": 2.674,
+   "clock": "8'",
+   "score": "0-0",
+   "duration": 62.6,
+   "exit_bid": 0.16,
+   "gross_per_share": -0.05,
+   "entry_5s_ask": 0.18,
+   "gross_5s_per_share": -0.02
+  },
+  {
+   "t": 1783384262.8,
+   "label": "Belgium",
+   "tx_fair": 0.608,
+   "poly_ask": 0.38,
+   "initial_gap": 0.228,
+   "max_gap": 0.228,
+   "ask_depth": 548,
+   "pre_activity": 2.238,
+   "clock": "30'",
+   "score": "0-1",
+   "duration": 53.4,
+   "exit_bid": 0.36,
+   "gross_per_share": -0.02,
+   "entry_5s_ask": 0.36,
+   "gross_5s_per_share": 0.0
+  },
+  {
+   "t": 1783384379.2,
+   "label": "United States",
+   "tx_fair": 0.328,
+   "poly_ask": 0.19,
+   "initial_gap": 0.138,
+   "max_gap": 0.138,
+   "ask_depth": 288,
+   "pre_activity": 2.846,
+   "clock": "32'",
+   "score": "1-1",
+   "duration": 68.8,
+   "exit_bid": 0.14,
+   "gross_per_share": -0.05,
+   "entry_5s_ask": 0.18,
+   "gross_5s_per_share": -0.04
+  },
+  {
+   "t": 1783384379.2,
+   "label": "draw",
+   "tx_fair": 0.351,
+   "poly_ask": 0.22,
+   "initial_gap": 0.131,
+   "max_gap": 0.131,
+   "ask_depth": 940,
+   "pre_activity": 2.846,
+   "clock": "32'",
+   "score": "1-1",
+   "duration": 68.8,
+   "exit_bid": 0.24,
+   "gross_per_share": 0.02,
+   "entry_5s_ask": 0.22,
+   "gross_5s_per_share": 0.02
+  },
+  {
+   "t": 1783387236.9,
+   "label": "United States",
+   "tx_fair": 0.103,
+   "poly_ask": 0.05,
+   "initial_gap": 0.053,
+   "max_gap": 0.053,
+   "ask_depth": 567,
+   "pre_activity": 2.645,
+   "clock": "57'",
+   "score": "1-2",
+   "duration": 53.4,
+   "exit_bid": 0.01,
+   "gross_per_share": -0.04,
+   "entry_5s_ask": 0.04,
+   "gross_5s_per_share": -0.03
+  },
+  {
+   "t": 1783387231.8,
+   "label": "draw",
+   "tx_fair": 0.241,
+   "poly_ask": 0.14,
+   "initial_gap": 0.101,
+   "max_gap": 0.141,
+   "ask_depth": 247,
+   "pre_activity": 2.539,
+   "clock": "56'",
+   "score": "1-2",
+   "duration": 58.5,
+   "exit_bid": 0.08,
+   "gross_per_share": -0.06,
+   "entry_5s_ask": 0.1,
+   "gross_5s_per_share": -0.02
+  }
+ ],
+ "attention_rate": 4.036,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783385151.891,
+    "cs": 2715,
+    "duration": 2.0,
+    "decision": "completed"
+   },
+   {
+    "t": 1783385314.17,
+    "cs": 2879,
+    "duration": 2.0,
+    "decision": "completed"
+   }
+  ],
+  "corrections": 7,
+  "penalties": [],
+  "cards": [
+   {
+    "t": 1783384506.384,
+    "action": "yellow_card",
+    "team": "United States",
+    "cs": 2065
+   },
+   {
+    "t": 1783387938.763,
+    "action": "yellow_card",
+    "team": "United States",
+    "cs": 4090
+   }
+  ],
+  "shots": {
+   "total": 28,
+   "teams": {
+    "Belgium": 15,
+    "United States": 13
+   }
+  }
+ }
+}

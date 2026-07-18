@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TxLINE Observatory</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🔭</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1><span class="tx">TxLINE</span> Observatory</h1>
+  <select id="match-select"></select>
+  <button id="btn-full" class="active" data-tip="Load the complete recorded timeline immediately.">Full</button>
+  <button id="btn-replay" data-tip="Play the archived event stream at 60× speed in your browser.">Replay 60&times;</button>
+  <button id="btn-live" data-tip="Follow a match detected by the running monitors using finite polling.">Live</button>
+  <span class="spacer"></span>
+  <span id="status"></span>
+  <button id="btn-wallet" data-tip="Match any public Polymarket bot wallet to World Cup events in this archive.">Bot Wallet</button>
+  <button id="btn-insights" data-tip="Compare recorded goals, feed latency, price gaps, and bot outcomes across the World Cup archive.">Insights</button>
+  <button id="btn-inspector" data-tip="Inspect the selected normalized event and its nearby feed messages.">Inspector</button>
+</header>
+
+<section id="upcoming-hero" hidden>
+  <div>
+    <span class="eyebrow">UPCOMING · PREMATCH DATA</span>
+    <h2 id="upcoming-title"></h2>
+    <div id="upcoming-kickoff"></div>
+  </div>
+  <div class="countdown-wrap">
+    <span class="eyebrow">KICKOFF COUNTDOWN</span>
+    <strong id="upcoming-countdown">—</strong>
+    <span id="upcoming-delay"></span>
+  </div>
+</section>
+
+<div id="moments"></div>
+<div id="chips"></div>
+
+<div id="main">
+  <div id="chart-wrap">
+    <canvas id="chart"></canvas>
+    <div id="legend"></div>
+    <div id="tooltip"></div>
+  </div>
+  <section id="insights" aria-label="Cross-match insights" hidden></section>
+  <div id="inspector">
+    <h3>Selected event</h3>
+    <pre id="insp-json">click a flag or moment</pre>
+    <div id="insp-anchor"></div>
+    <div class="ctx"><h3>Nearby feed messages</h3><div id="insp-ctx"></div></div>
+  </div>
+</div>
+
+<div id="goal-overlay" class="modal-backdrop" hidden>
+  <section class="goal-modal" role="dialog" aria-modal="true" aria-labelledby="goal-modal-title">
+    <button type="button" id="goal-modal-close" class="modal-close" aria-label="Close goal detail">×</button>
+    <div id="goal-modal-content"></div>
+  </section>
+</div>
+<div id="wallet-overlay" class="modal-backdrop" hidden>
+  <section class="wallet-modal" role="dialog" aria-modal="true" aria-labelledby="wallet-modal-title">
+    <button type="button" id="wallet-modal-close" class="modal-close" aria-label="Close bot wallet">×</button>
+    <div class="wallet-head">
+      <span class="eyebrow">WORLD CUP BOT LENS</span>
+      <h2 id="wallet-modal-title">Compare a public bot wallet</h2>
+      <p>Read-only public fills · no signing, private key, or trading access · World Cup archive markets only.</p>
+    </div>
+    <div id="recorded-bot-summary"></div>
+    <form id="wallet-form">
+      <label for="wallet-address">Polymarket profile / proxy wallet address</label>
+      <div>
+        <input id="wallet-address" autocomplete="off" spellcheck="false" placeholder="0x…" maxlength="42">
+        <button type="submit">Load World Cup fills</button>
+      </div>
+      <button type="button" id="wallet-demo">Use recorded demo wallet</button>
+    </form>
+    <div id="wallet-results" aria-live="polite"><p class="wallet-empty">Enter a wallet to match its public fills to goal events and recorded price data.</p></div>
+  </section>
+</div>
+<div id="help-popover" role="tooltip" hidden></div>
+
+<footer>
+  <span>drag = pan &middot; wheel = zoom &middot; dbl-click = fit</span>
+  <span>solid = Polymarket bid &middot; dashed = TxLINE fair prob</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

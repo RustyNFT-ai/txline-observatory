@@ -1,0 +1,669 @@
+{
+ "id": "norway-vs-england-2026-07-11",
+ "match": "Norway vs England",
+ "teams": [
+  "Norway",
+  "England"
+ ],
+ "date": "2026-07-11",
+ "slug": "fifwc-nor-eng-2026-07-11",
+ "labels": [
+  "England",
+  "Norway",
+  "draw"
+ ],
+ "t0": 1783803716.8,
+ "t1": 1783813643.1,
+ "rows": 1586,
+ "fid": 18213979,
+ "home1": true,
+ "tx_teams": [
+  "Norway",
+  "England"
+ ],
+ "score_changes": [
+  [
+   1783805831.4,
+   0
+  ],
+  [
+   1783806505.4,
+   1
+  ],
+  [
+   1783808262.0,
+   0
+  ],
+  [
+   1783808299.2,
+   0
+  ],
+  [
+   1783811447.4,
+   1
+  ]
+ ],
+ "tids": [
+  "101609312241167873882360947921080859853145865660281247946682387335776462114544",
+  "69356014065023591601401540629477632179960561513202758818327214611100094905114",
+  "866370305411260885620344443432925550941005016614412438009174244566837236043"
+ ],
+ "counts": {
+  "txline:action": 1172,
+  "poly:book": 1586,
+  "txline:odds": 1116,
+  "polyws:tick": 6760,
+  "polyws:burst": 17,
+  "bot:decision": 14,
+  "espn:score": 7,
+  "bot:trade": 8,
+  "wc26:score": 5
+ },
+ "moments": [
+  {
+   "t0": 1783805791.12,
+   "t0_src": "txline",
+   "benefit": "Norway",
+   "baseline": 0.195,
+   "poly_dt": -8.6,
+   "delta_120s": 0.227,
+   "prices": {
+    "before": {
+     "dt": 1.9,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.3925,
+       "ask": 0.415
+      },
+      "draw": {
+       "bid": 0.2925,
+       "ask": 0.295
+      },
+      "England": {
+       "bid": 0.26,
+       "ask": 0.3
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.6,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.4025,
+       "ask": 0.4325
+      },
+      "draw": {
+       "bid": 0.295,
+       "ask": 0.2975
+      },
+      "England": {
+       "bid": 0.2775,
+       "ask": 0.3
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.8,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.4075,
+       "ask": 0.41
+      },
+      "draw": {
+       "bid": 0.295,
+       "ask": 0.3075
+      },
+      "England": {
+       "bid": 0.29,
+       "ask": 0.2975
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.3,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.3625,
+       "ask": 0.37
+      },
+      "draw": {
+       "bid": 0.2975,
+       "ask": 0.3025
+      },
+      "England": {
+       "bid": 0.3125,
+       "ask": 0.32
+      }
+     }
+    }
+   },
+   "espn_dt": 40.3,
+   "wc26_dt": 153.2,
+   "var": false,
+   "action": "goal",
+   "scorer": "Norway",
+   "cs": 2104,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "seq": 314,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 40.3,
+   "bot_price": 0.44,
+   "bot_fair": 0.196,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783806456.95,
+   "t0_src": "txline",
+   "benefit": "England",
+   "baseline": 0.26,
+   "poly_dt": -9.8,
+   "delta_120s": 0.237,
+   "prices": {
+    "before": {
+     "dt": 1.1,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.2,
+       "ask": 0.265
+      },
+      "draw": {
+       "bid": 0.3025,
+       "ask": 0.305
+      },
+      "England": {
+       "bid": 0.4425,
+       "ask": 0.5
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.3,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.2225,
+       "ask": 0.23
+      },
+      "draw": {
+       "bid": 0.2925,
+       "ask": 0.295
+      },
+      "England": {
+       "bid": 0.4425,
+       "ask": 0.48
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.215,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.2925,
+       "ask": 0.295
+      },
+      "England": {
+       "bid": 0.4575,
+       "ask": 0.48
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.6,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.1975,
+       "ask": 0.2125
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.3025
+      },
+      "England": {
+       "bid": 0.4625,
+       "ask": 0.4775
+      }
+     }
+    }
+   },
+   "espn_dt": 48.5,
+   "wc26_dt": 171.5,
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "cs": 2770,
+   "confirmed": false,
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "seq": 418,
+   "part": 2,
+   "bot_action": "ENTRY",
+   "bot_dt": 0.2,
+   "bot_price": 0.48,
+   "bot_fair": 0.259,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": 0.52
+  },
+  {
+   "t0": 1783806621.55,
+   "t0_src": "txline",
+   "benefit": "England",
+   "baseline": 0.495,
+   "poly_dt": -9.4,
+   "delta_120s": -0.003,
+   "prices": {
+    "before": {
+     "dt": -0.2,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.1425,
+       "ask": 0.145
+      },
+      "draw": {
+       "bid": 0.2575,
+       "ask": 0.2925
+      },
+      "England": {
+       "bid": 0.58,
+       "ask": 0.5825
+      }
+     }
+    },
+    "txline": {
+     "dt": 1.3,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.1625,
+       "ask": 0.18
+      },
+      "draw": {
+       "bid": 0.2775,
+       "ask": 0.28
+      },
+      "England": {
+       "bid": 0.51,
+       "ask": 0.52
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.9,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.16,
+       "ask": 0.1825
+      },
+      "draw": {
+       "bid": 0.2825,
+       "ask": 0.3175
+      },
+      "England": {
+       "bid": 0.51,
+       "ask": 0.5125
+      }
+     }
+    },
+    "10s": {
+     "dt": -3.1,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.16,
+       "ask": 0.1825
+      },
+      "draw": {
+       "bid": 0.2825,
+       "ask": 0.3175
+      },
+      "England": {
+       "bid": 0.51,
+       "ask": 0.5125
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "cs": 2935,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "seq": 440,
+   "part": 2,
+   "disallowed": true,
+   "bot_action": "ENTRY",
+   "bot_dt": 1.2,
+   "bot_price": 0.52,
+   "bot_fair": 0.482,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": -1.44
+  },
+  {
+   "t0": 1783808213.22,
+   "t0_src": "txline",
+   "benefit": "Norway",
+   "baseline": 0.22,
+   "poly_dt": -9.6,
+   "delta_120s": 0.048,
+   "prices": {
+    "before": {
+     "dt": 1.1,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.4925,
+       "ask": 0.515
+      },
+      "draw": {
+       "bid": 0.2825,
+       "ask": 0.29
+      },
+      "England": {
+       "bid": 0.195,
+       "ask": 0.225
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.2,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.515,
+       "ask": 0.5175
+      },
+      "draw": {
+       "bid": 0.295,
+       "ask": 0.2975
+      },
+      "England": {
+       "bid": 0.19,
+       "ask": 0.1925
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.1,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.495,
+       "ask": 0.4975
+      },
+      "draw": {
+       "bid": 0.3,
+       "ask": 0.3025
+      },
+      "England": {
+       "bid": 0.22,
+       "ask": 0.2275
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.7,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.47,
+       "ask": 0.475
+      },
+      "draw": {
+       "bid": 0.3025,
+       "ask": 0.305
+      },
+      "England": {
+       "bid": 0.21,
+       "ask": 0.215
+      }
+     }
+    }
+   },
+   "espn_dt": 48.8,
+   "wc26_dt": 134.3,
+   "var": true,
+   "action": "goal",
+   "scorer": "Norway",
+   "cs": 3262,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "seq": 533,
+   "part": 1,
+   "disallowed": true,
+   "bot_action": "SKIP",
+   "bot_dt": 43.3,
+   "bot_price": 0.425,
+   "bot_fair": 0.203,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783811401.42,
+   "t0_src": "txline",
+   "benefit": "England",
+   "prices": {
+    "before": {
+     "dt": 2.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "txline": {
+     "dt": 2.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "5s": {
+     "dt": -2.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.9,
+     "outcomes": {
+      "draw": {
+       "bid": 0.9975,
+       "ask": 1.0
+      }
+     }
+    }
+   },
+   "espn_dt": 46.0,
+   "wc26_dt": 121.5,
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "cs": 5555,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "seq": 885,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 46.0,
+   "bot_price": null,
+   "bot_fair": null,
+   "bot_reason": "no-poly-label",
+   "bot_entries": 0
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783805783.0,
+   "label": "England",
+   "tx_fair": 0.51,
+   "poly_ask": 0.3,
+   "initial_gap": 0.21,
+   "max_gap": 0.212,
+   "ask_depth": 164,
+   "pre_activity": 6.312,
+   "clock": "35'",
+   "score": "0-0",
+   "duration": 75.6,
+   "exit_bid": 0.3125,
+   "gross_per_share": 0.013,
+   "entry_5s_ask": 0.3,
+   "gross_5s_per_share": 0.013
+  },
+  {
+   "t": 1783805864.1,
+   "label": "Norway",
+   "tx_fair": 0.446,
+   "poly_ask": 0.39,
+   "initial_gap": 0.056,
+   "max_gap": 0.056,
+   "ask_depth": 3319,
+   "pre_activity": 6.905,
+   "clock": "36'",
+   "score": "1-0",
+   "duration": 26.2,
+   "exit_bid": 0.42,
+   "gross_per_share": 0.03,
+   "entry_5s_ask": 0.395,
+   "gross_5s_per_share": 0.025
+  },
+  {
+   "t": 1783806448.0,
+   "label": "Norway",
+   "tx_fair": 0.435,
+   "poly_ask": 0.265,
+   "initial_gap": 0.17,
+   "max_gap": 0.205,
+   "ask_depth": 1148,
+   "pre_activity": 6.911,
+   "clock": "45'+1'",
+   "score": "1-0",
+   "duration": 68.6,
+   "exit_bid": 0.1875,
+   "gross_per_share": -0.078,
+   "entry_5s_ask": 0.23,
+   "gross_5s_per_share": -0.043
+  },
+  {
+   "t": 1783806617.1,
+   "label": "draw",
+   "tx_fair": 0.34,
+   "poly_ask": 0.26,
+   "initial_gap": 0.08,
+   "max_gap": 0.08,
+   "ask_depth": 433,
+   "pre_activity": 6.984,
+   "clock": "45'+4'",
+   "score": "1-1",
+   "duration": 57.8,
+   "exit_bid": 0.32,
+   "gross_per_share": 0.06,
+   "entry_5s_ask": 0.28,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1783808204.3,
+   "label": "draw",
+   "tx_fair": 0.387,
+   "poly_ask": 0.29,
+   "initial_gap": 0.097,
+   "max_gap": 0.097,
+   "ask_depth": 479,
+   "pre_activity": 6.091,
+   "clock": "54'",
+   "score": "1-1",
+   "duration": 68.8,
+   "exit_bid": 0.355,
+   "gross_per_share": 0.065,
+   "entry_5s_ask": 0.2975,
+   "gross_5s_per_share": 0.057
+  },
+  {
+   "t": 1783808204.3,
+   "label": "England",
+   "tx_fair": 0.41,
+   "poly_ask": 0.225,
+   "initial_gap": 0.185,
+   "max_gap": 0.185,
+   "ask_depth": 636,
+   "pre_activity": 6.091,
+   "clock": "54'",
+   "score": "1-1",
+   "duration": 68.8,
+   "exit_bid": 0.35,
+   "gross_per_share": 0.125,
+   "entry_5s_ask": 0.1925,
+   "gross_5s_per_share": 0.157
+  },
+  {
+   "t": 1783808273.1,
+   "label": "Norway",
+   "tx_fair": 0.514,
+   "poly_ask": 0.24,
+   "initial_gap": 0.274,
+   "max_gap": 0.285,
+   "ask_depth": 24189,
+   "pre_activity": 6.698,
+   "clock": "55'",
+   "score": "1-1",
+   "duration": 94.9,
+   "exit_bid": 0.2425,
+   "gross_per_share": 0.003,
+   "entry_5s_ask": 0.2525,
+   "gross_5s_per_share": -0.01
+  }
+ ],
+ "attention_rate": 4.449,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783808270.143,
+    "cs": 3315,
+    "duration": 87.2,
+    "decision": "goal disallowed"
+   },
+   {
+    "t": 1783811820.275,
+    "cs": 5968,
+    "duration": 97.9,
+    "decision": "completed"
+   }
+  ],
+  "corrections": 7,
+  "penalties": [
+   {
+    "t": 1783811776.346,
+    "action": "penalty",
+    "team": "England",
+    "cs": 5929
+   }
+  ],
+  "cards": [
+   {
+    "t": 1783813277.368,
+    "action": "yellow_card",
+    "team": "Norway",
+    "cs": 7005
+   }
+  ],
+  "shots": {
+   "total": 30,
+   "teams": {
+    "England": 14,
+    "Norway": 14,
+    "Unassigned": 2
+   }
+  }
+ }
+}

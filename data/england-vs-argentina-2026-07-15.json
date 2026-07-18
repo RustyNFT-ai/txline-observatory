@@ -1,0 +1,412 @@
+{
+ "id": "england-vs-argentina-2026-07-15",
+ "match": "England vs Argentina",
+ "teams": [
+  "England",
+  "Argentina"
+ ],
+ "date": "2026-07-15",
+ "slug": "fifwc-eng-arg-2026-07-15",
+ "labels": [
+  "Argentina",
+  "England",
+  "draw"
+ ],
+ "t0": 1784142063.1,
+ "t1": 1784149401.0,
+ "rows": 1172,
+ "fid": 18241006,
+ "home1": true,
+ "tx_teams": [
+  "England",
+  "Argentina"
+ ],
+ "score_changes": [
+  [
+   1784146568.0,
+   0
+  ],
+  [
+   1784148421.9,
+   1
+  ],
+  [
+   1784148801.2,
+   1
+  ]
+ ],
+ "tids": [
+  "26480993337079434490856133942482101351393348205667335284619584625389515346213",
+  "62975583795498792086117213116943744194566684233762863056174017776352240969485",
+  "85633756210324151397822274959403676422451634259093065838612463900396751402106"
+ ],
+ "counts": {
+  "txline:odds": 4354,
+  "jupiter:jbook": 1495,
+  "txline:action": 950,
+  "poly:book": 1172,
+  "polyws:tick": 7890,
+  "whale:fill": 149,
+  "polyws:burst": 13,
+  "espn:score": 3,
+  "bot:trade": 16,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1784146532.76,
+   "t0_src": "txline",
+   "benefit": "England",
+   "baseline": 0.275,
+   "poly_dt": -9.2,
+   "delta_120s": 0.385,
+   "prices": {
+    "before": {
+     "dt": -1.1,
+     "outcomes": {
+      "England": {
+       "bid": 0.295,
+       "ask": 0.3
+      },
+      "draw": {
+       "bid": 0.46,
+       "ask": 0.4625
+      },
+      "Argentina": {
+       "bid": 0.25,
+       "ask": 0.2525
+      }
+     }
+    },
+    "txline": {
+     "dt": -1.6,
+     "outcomes": {
+      "England": {
+       "bid": 0.6375,
+       "ask": 0.64
+      },
+      "draw": {
+       "bid": 0.27,
+       "ask": 0.2725
+      },
+      "Argentina": {
+       "bid": 0.0925,
+       "ask": 0.0975
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.7,
+     "outcomes": {
+      "England": {
+       "bid": 0.63,
+       "ask": 0.6375
+      },
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.285
+      },
+      "Argentina": {
+       "bid": 0.0875,
+       "ask": 0.09
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.4,
+     "outcomes": {
+      "England": {
+       "bid": 0.6275,
+       "ask": 0.63
+      },
+      "draw": {
+       "bid": 0.285,
+       "ask": 0.2875
+      },
+      "Argentina": {
+       "bid": 0.0825,
+       "ask": 0.0875
+      }
+     }
+    }
+   },
+   "espn_dt": 35.2,
+   "wc26_dt": 167.5,
+   "whale_dt": 91.2,
+   "whale_who": "swisstony",
+   "jup_dt": 1.2,
+   "var": false,
+   "action": "goal",
+   "scorer": "England",
+   "cs": 3264,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "seq": 540,
+   "part": 1
+  },
+  {
+   "t0": 1784148363.12,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "baseline": 0.077,
+   "poly_dt": -9.2,
+   "delta_120s": 0.063,
+   "prices": {
+    "txline": {
+     "dt": 3.1,
+     "outcomes": {
+      "England": {
+       "bid": 0.1225,
+       "ask": 0.125
+      },
+      "draw": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "Argentina": {
+       "bid": 0.1475,
+       "ask": 0.15
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.9,
+     "outcomes": {
+      "England": {
+       "bid": 0.1225,
+       "ask": 0.125
+      },
+      "draw": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "Argentina": {
+       "bid": 0.1475,
+       "ask": 0.15
+      }
+     }
+    },
+    "10s": {
+     "dt": -6.9,
+     "outcomes": {
+      "England": {
+       "bid": 0.1225,
+       "ask": 0.125
+      },
+      "draw": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "Argentina": {
+       "bid": 0.1475,
+       "ask": 0.15
+      }
+     }
+    }
+   },
+   "espn_dt": 58.8,
+   "whale_dt": -4.1,
+   "whale_who": "RN1",
+   "jup_dt": 3.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 5095,
+   "confirmed": false,
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "seq": 831,
+   "part": 2,
+   "bot_action": "ENTER",
+   "bot_dt": 54.9,
+   "bot_price": 0.077,
+   "bot_fair": 0.182,
+   "bot_reason": "edge",
+   "bot_entries": 1,
+   "bot_pnl": 45.16
+  },
+  {
+   "t0": 1784148756.8,
+   "t0_src": "txline",
+   "benefit": "Argentina",
+   "baseline": 0.25,
+   "poly_dt": -9.5,
+   "delta_120s": 0.652,
+   "prices": {
+    "before": {
+     "dt": -4.9,
+     "outcomes": {
+      "England": {
+       "bid": 0.015,
+       "ask": 0.025
+      },
+      "draw": {
+       "bid": 0.145,
+       "ask": 0.16
+      },
+      "Argentina": {
+       "bid": 0.81,
+       "ask": 0.8275
+      }
+     }
+    },
+    "5s": {
+     "dt": 9.7,
+     "outcomes": {
+      "England": {
+       "bid": 0.015,
+       "ask": 0.0175
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.1075
+      },
+      "Argentina": {
+       "bid": 0.85,
+       "ask": 0.87
+      }
+     }
+    },
+    "10s": {
+     "dt": 4.7,
+     "outcomes": {
+      "England": {
+       "bid": 0.015,
+       "ask": 0.0175
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.1075
+      },
+      "Argentina": {
+       "bid": 0.85,
+       "ask": 0.87
+      }
+     }
+    }
+   },
+   "espn_dt": 44.4,
+   "jup_dt": 13.8,
+   "var": false,
+   "action": "goal",
+   "scorer": "Argentina",
+   "cs": 5488,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "seq": 871,
+   "part": 2
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1784146526.4,
+   "label": "draw",
+   "tx_fair": 0.464,
+   "poly_ask": 0.2875,
+   "initial_gap": 0.177,
+   "max_gap": 0.177,
+   "ask_depth": 416,
+   "pre_activity": 6.125,
+   "clock": "54'",
+   "score": "0-0",
+   "duration": 73.5,
+   "exit_bid": 0.2575,
+   "gross_per_share": -0.03,
+   "entry_5s_ask": 0.285,
+   "gross_5s_per_share": -0.027
+  },
+  {
+   "t": 1784146526.4,
+   "label": "Argentina",
+   "tx_fair": 0.253,
+   "poly_ask": 0.13,
+   "initial_gap": 0.123,
+   "max_gap": 0.123,
+   "ask_depth": 188,
+   "pre_activity": 6.125,
+   "clock": "54'",
+   "score": "0-0",
+   "duration": 73.5,
+   "exit_bid": 0.0775,
+   "gross_per_share": -0.053,
+   "entry_5s_ask": 0.09,
+   "gross_5s_per_share": -0.012
+  },
+  {
+   "t": 1784148336.5,
+   "label": "England",
+   "tx_fair": 0.693,
+   "poly_ask": 0.285,
+   "initial_gap": 0.408,
+   "max_gap": 0.408,
+   "ask_depth": 374,
+   "pre_activity": 2.083,
+   "clock": "85'",
+   "score": "1-0",
+   "duration": 85.4,
+   "exit_bid": 0.1375,
+   "gross_per_share": -0.147,
+   "entry_5s_ask": 0.125,
+   "gross_5s_per_share": 0.013
+  },
+  {
+   "t": 1784148712.2,
+   "label": "draw",
+   "tx_fair": 0.769,
+   "poly_ask": 0.62,
+   "initial_gap": 0.149,
+   "max_gap": 0.617,
+   "ask_depth": 44,
+   "pre_activity": 2.082,
+   "clock": "90'+1'",
+   "score": "1-1",
+   "duration": 174.7,
+   "exit_bid": 0.09,
+   "gross_per_share": -0.53,
+   "entry_5s_ask": 0.16,
+   "gross_5s_per_share": -0.07
+  }
+ ],
+ "attention_rate": 5.086,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 8,
+  "penalties": [],
+  "cards": [
+   {
+    "t": 1784144235.892,
+    "action": "yellow_card",
+    "team": "England",
+    "cs": 2174
+   },
+   {
+    "t": 1784144510.576,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 2473
+   },
+   {
+    "t": 1784146337.554,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 3046
+   },
+   {
+    "t": 1784148893.959,
+    "action": "yellow_card",
+    "team": "Argentina",
+    "cs": 5617
+   }
+  ],
+  "shots": {
+   "total": 33,
+   "teams": {
+    "Unassigned": 5,
+    "England": 10,
+    "Argentina": 18
+   }
+  }
+ }
+}

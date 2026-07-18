@@ -1,0 +1,408 @@
+{
+ "id": "brazil-vs-japan-2026-06-29",
+ "match": "Brazil vs Japan",
+ "teams": [
+  "Brazil",
+  "Japan"
+ ],
+ "date": "2026-06-29",
+ "slug": null,
+ "labels": [
+  "Brazil",
+  "Japan",
+  "draw"
+ ],
+ "t0": 1782752460.0,
+ "t1": 1782759805.2,
+ "rows": 2854,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782754216.6,
+   1
+  ],
+  [
+   1782757060.3,
+   0
+  ],
+  [
+   1782759500.7,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 2854,
+  "txline:odds": 1254,
+  "espn:score": 3,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1782754216.6,
+   "t0_src": "espn",
+   "benefit": "Japan",
+   "baseline": 0.17,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.51,
+       "ask": 0.52
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.17,
+       "ask": 0.18
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.51,
+       "ask": 0.52
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.17,
+       "ask": 0.18
+      }
+     }
+    },
+    "5s": {
+     "dt": 2.6,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.51,
+       "ask": 0.52
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.17,
+       "ask": 0.18
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.51,
+       "ask": 0.52
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.17,
+       "ask": 0.18
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Japan",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782757060.3,
+   "t0_src": "espn",
+   "benefit": "Brazil",
+   "baseline": 0.22,
+   "delta_120s": -0.01,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.6,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.32,
+       "ask": 0.33
+      },
+      "Japan": {
+       "bid": 0.45,
+       "ask": 0.46
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Brazil",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782759500.7,
+   "t0_src": "espn",
+   "benefit": "Brazil",
+   "baseline": 0.14,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.9,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "draw": {
+       "bid": 0.83,
+       "ask": 0.85
+      },
+      "Japan": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "draw": {
+       "bid": 0.83,
+       "ask": 0.85
+      },
+      "Japan": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "5s": {
+     "dt": 2.7,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "draw": {
+       "bid": 0.83,
+       "ask": 0.85
+      },
+      "Japan": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    },
+    "10s": {
+     "dt": -2.1,
+     "outcomes": {
+      "Brazil": {
+       "bid": 0.14,
+       "ask": 0.15
+      },
+      "draw": {
+       "bid": 0.83,
+       "ask": 0.85
+      },
+      "Japan": {
+       "bid": 0.03,
+       "ask": 0.04
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Brazil",
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782754201.5,
+   "label": "Japan",
+   "tx_fair": 0.426,
+   "poly_ask": 0.18,
+   "initial_gap": 0.246,
+   "max_gap": 0.253,
+   "ask_depth": 56237,
+   "pre_activity": 0.202,
+   "clock": "30'",
+   "score": "0-0",
+   "duration": 129.2,
+   "exit_bid": 0.4,
+   "gross_per_share": 0.22,
+   "entry_5s_ask": 0.18,
+   "gross_5s_per_share": 0.22
+  },
+  {
+   "t": 1782757078.0,
+   "label": "Brazil",
+   "tx_fair": 0.489,
+   "poly_ask": 0.22,
+   "initial_gap": 0.269,
+   "max_gap": 0.269,
+   "ask_depth": 23522,
+   "pre_activity": 0.1,
+   "clock": "56'",
+   "score": "1-1",
+   "duration": 253.2,
+   "exit_bid": 0.45,
+   "gross_per_share": 0.23,
+   "entry_5s_ask": 0.22,
+   "gross_5s_per_share": 0.23
+  },
+  {
+   "t": 1782757078.0,
+   "label": "draw",
+   "tx_fair": 0.39,
+   "poly_ask": 0.33,
+   "initial_gap": 0.06,
+   "max_gap": 0.106,
+   "ask_depth": 1677,
+   "pre_activity": 0.1,
+   "clock": "56'",
+   "score": "1-1",
+   "duration": 253.2,
+   "exit_bid": 0.4,
+   "gross_per_share": 0.07,
+   "entry_5s_ask": 0.33,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1782757566.9,
+   "label": "draw",
+   "tx_fair": 0.46,
+   "poly_ask": 0.41,
+   "initial_gap": 0.05,
+   "max_gap": 0.078,
+   "ask_depth": 90996,
+   "pre_activity": 0.203,
+   "clock": "64'",
+   "score": "1-1",
+   "duration": 363.3,
+   "exit_bid": 0.5,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.41,
+   "gross_5s_per_share": 0.09
+  },
+  {
+   "t": 1782758331.8,
+   "label": "draw",
+   "tx_fair": 0.584,
+   "poly_ask": 0.53,
+   "initial_gap": 0.054,
+   "max_gap": 0.092,
+   "ask_depth": 86207,
+   "pre_activity": 0.202,
+   "clock": "76'",
+   "score": "1-1",
+   "duration": 200.1,
+   "exit_bid": 0.6,
+   "gross_per_share": 0.07,
+   "entry_5s_ask": 0.53,
+   "gross_5s_per_share": 0.07
+  },
+  {
+   "t": 1782758646.5,
+   "label": "draw",
+   "tx_fair": 0.66,
+   "poly_ask": 0.61,
+   "initial_gap": 0.05,
+   "max_gap": 0.132,
+   "ask_depth": 112424,
+   "pre_activity": 0.201,
+   "clock": "83'",
+   "score": "1-1",
+   "duration": 917.7,
+   "exit_bid": 0.83,
+   "gross_per_share": 0.22,
+   "entry_5s_ask": 0.61,
+   "gross_5s_per_share": 0.22
+  }
+ ],
+ "attention_rate": 0.172,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

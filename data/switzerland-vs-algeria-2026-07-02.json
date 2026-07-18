@@ -1,0 +1,253 @@
+{
+ "id": "switzerland-vs-algeria-2026-07-02",
+ "match": "Switzerland vs Algeria",
+ "teams": [
+  "Switzerland",
+  "Algeria"
+ ],
+ "date": "2026-07-02",
+ "slug": null,
+ "labels": [
+  "Algeria",
+  "Switzerland",
+  "draw"
+ ],
+ "t0": 1783047651.2,
+ "t1": 1783055523.4,
+ "rows": 2956,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783048315.5,
+   0
+  ],
+  [
+   1783051610.0,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 2956,
+  "txline:odds": 879,
+  "espn:score": 3,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1783048315.5,
+   "t0_src": "espn",
+   "benefit": "Switzerland",
+   "baseline": 0.412,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.4125,
+       "ask": 0.415
+      },
+      "draw": {
+       "bid": 0.315,
+       "ask": 0.3175
+      },
+      "Algeria": {
+       "bid": 0.2675,
+       "ask": 0.27
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.4125,
+       "ask": 0.415
+      },
+      "draw": {
+       "bid": 0.315,
+       "ask": 0.3175
+      },
+      "Algeria": {
+       "bid": 0.2675,
+       "ask": 0.27
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.3,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.4125,
+       "ask": 0.415
+      },
+      "draw": {
+       "bid": 0.315,
+       "ask": 0.3175
+      },
+      "Algeria": {
+       "bid": 0.2675,
+       "ask": 0.27
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.4125,
+       "ask": 0.415
+      },
+      "draw": {
+       "bid": 0.315,
+       "ask": 0.3175
+      },
+      "Algeria": {
+       "bid": 0.2675,
+       "ask": 0.27
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Switzerland",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1783051610.0,
+   "t0_src": "espn",
+   "benefit": "Switzerland",
+   "baseline": 0.705,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.1,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "draw": {
+       "bid": 0.2225,
+       "ask": 0.225
+      },
+      "Algeria": {
+       "bid": 0.08,
+       "ask": 0.0825
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "draw": {
+       "bid": 0.2225,
+       "ask": 0.225
+      },
+      "Algeria": {
+       "bid": 0.08,
+       "ask": 0.0825
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "draw": {
+       "bid": 0.2225,
+       "ask": 0.225
+      },
+      "Algeria": {
+       "bid": 0.08,
+       "ask": 0.0825
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "Switzerland": {
+       "bid": 0.705,
+       "ask": 0.7075
+      },
+      "draw": {
+       "bid": 0.2225,
+       "ask": 0.225
+      },
+      "Algeria": {
+       "bid": 0.08,
+       "ask": 0.0825
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Switzerland",
+   "score_before": "1-0",
+   "score_after": "2-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783048281.9,
+   "label": "Switzerland",
+   "tx_fair": 0.66,
+   "poly_ask": 0.415,
+   "initial_gap": 0.245,
+   "max_gap": 0.252,
+   "ask_depth": 6175,
+   "pre_activity": 0.202,
+   "clock": "11'",
+   "score": "0-0",
+   "duration": 250.5,
+   "exit_bid": 0.66,
+   "gross_per_share": 0.245,
+   "entry_5s_ask": 0.415,
+   "gross_5s_per_share": 0.245
+  },
+  {
+   "t": 1783051595.3,
+   "label": "Switzerland",
+   "tx_fair": 0.915,
+   "poly_ask": 0.7075,
+   "initial_gap": 0.208,
+   "max_gap": 0.22,
+   "ask_depth": 599420,
+   "pre_activity": 0.201,
+   "clock": "47'",
+   "score": "1-0",
+   "duration": 225.5,
+   "exit_bid": 0.91,
+   "gross_per_share": 0.203,
+   "entry_5s_ask": 0.7075,
+   "gross_5s_per_share": 0.203
+  }
+ ],
+ "attention_rate": 0.175,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

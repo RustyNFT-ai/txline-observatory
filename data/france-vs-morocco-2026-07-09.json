@@ -1,0 +1,464 @@
+{
+ "id": "france-vs-morocco-2026-07-09",
+ "match": "France vs Morocco",
+ "teams": [
+  "France",
+  "Morocco"
+ ],
+ "date": "2026-07-09",
+ "slug": "fifwc-fra-mar-2026-07-09",
+ "labels": [
+  "France",
+  "Morocco",
+  "draw"
+ ],
+ "t0": 1783627294.1,
+ "t1": 1783634497.7,
+ "rows": 1176,
+ "fid": 18209181,
+ "home1": true,
+ "tx_teams": [
+  "France",
+  "Morocco"
+ ],
+ "score_changes": [
+  [
+   1783632279.0,
+   0
+  ],
+  [
+   1783632651.7,
+   0
+  ]
+ ],
+ "tids": [
+  "14226508065870426054190705878267947981688371809768362929061594780236487316843",
+  "46553311265357284100312037955579178961205885337560768277560718608306086924270",
+  "59376244379747988336832016917908236721650516433890704080422157946407884434153"
+ ],
+ "counts": {
+  "txline:action": 1098,
+  "poly:book": 1176,
+  "txline:odds": 643,
+  "polyws:tick": 4393,
+  "polyws:burst": 17,
+  "bot:decision": 10,
+  "bot:trade": 8,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1783630178.07,
+   "t0_src": "txline",
+   "benefit": "Morocco",
+   "baseline": 0.107,
+   "delta_120s": 0.005,
+   "prices": {
+    "before": {
+     "dt": -1.5,
+     "outcomes": {
+      "France": {
+       "bid": 0.61,
+       "ask": 0.6125
+      },
+      "draw": {
+       "bid": 0.2725,
+       "ask": 0.275
+      },
+      "Morocco": {
+       "bid": 0.1175,
+       "ask": 0.12
+      }
+     }
+    },
+    "txline": {
+     "dt": -2.7,
+     "outcomes": {
+      "France": {
+       "bid": 0.6,
+       "ask": 0.6025
+      },
+      "draw": {
+       "bid": 0.275,
+       "ask": 0.2775
+      },
+      "Morocco": {
+       "bid": 0.1175,
+       "ask": 0.12
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.2,
+     "outcomes": {
+      "France": {
+       "bid": 0.59,
+       "ask": 0.5925
+      },
+      "draw": {
+       "bid": 0.2775,
+       "ask": 0.28
+      },
+      "Morocco": {
+       "bid": 0.125,
+       "ask": 0.1275
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.8,
+     "outcomes": {
+      "France": {
+       "bid": 0.585,
+       "ask": 0.5875
+      },
+      "draw": {
+       "bid": 0.28,
+       "ask": 0.2825
+      },
+      "Morocco": {
+       "bid": 0.1275,
+       "ask": 0.13
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Morocco",
+   "cs": 2924,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "seq": 534,
+   "part": 2,
+   "bot_action": "EXIT",
+   "bot_dt": 76.4,
+   "bot_price": 0.11,
+   "bot_fair": 0.105,
+   "bot_reason": "unconfirmed",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783632227.77,
+   "t0_src": "txline",
+   "benefit": "France",
+   "baseline": 0.53,
+   "poly_dt": -9.1,
+   "delta_120s": 0.31,
+   "prices": {
+    "before": {
+     "dt": -0.6,
+     "outcomes": {
+      "France": {
+       "bid": 0.535,
+       "ask": 0.5375
+      },
+      "draw": {
+       "bid": 0.3625,
+       "ask": 0.365
+      },
+      "Morocco": {
+       "bid": 0.0975,
+       "ask": 0.1
+      }
+     }
+    },
+    "txline": {
+     "dt": 3.8,
+     "outcomes": {
+      "France": {
+       "bid": 0.7975,
+       "ask": 0.8
+      },
+      "draw": {
+       "bid": 0.165,
+       "ask": 0.1775
+      },
+      "Morocco": {
+       "bid": 0.0325,
+       "ask": 0.045
+      }
+     }
+    },
+    "5s": {
+     "dt": -1.2,
+     "outcomes": {
+      "France": {
+       "bid": 0.7975,
+       "ask": 0.8
+      },
+      "draw": {
+       "bid": 0.165,
+       "ask": 0.1775
+      },
+      "Morocco": {
+       "bid": 0.0325,
+       "ask": 0.045
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.6,
+     "outcomes": {
+      "France": {
+       "bid": 0.8075,
+       "ask": 0.81
+      },
+      "draw": {
+       "bid": 0.1475,
+       "ask": 0.15
+      },
+      "Morocco": {
+       "bid": 0.035,
+       "ask": 0.045
+      }
+     }
+    }
+   },
+   "espn_dt": 51.2,
+   "wc26_dt": 149.2,
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "cs": 3560,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "seq": 739,
+   "part": 1,
+   "bot_action": "ENTRY",
+   "bot_dt": 3.8,
+   "bot_price": 0.8,
+   "bot_fair": 0.523,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": 1.41
+  },
+  {
+   "t0": 1783632590.35,
+   "t0_src": "txline",
+   "benefit": "France",
+   "baseline": 0.853,
+   "poly_dt": -9.3,
+   "delta_120s": 0.122,
+   "prices": {
+    "before": {
+     "dt": -2.4,
+     "outcomes": {
+      "France": {
+       "bid": 0.8525,
+       "ask": 0.855
+      },
+      "draw": {
+       "bid": 0.12,
+       "ask": 0.1225
+      },
+      "Morocco": {
+       "bid": 0.0225,
+       "ask": 0.025
+      }
+     }
+    },
+    "txline": {
+     "dt": 1.7,
+     "outcomes": {
+      "France": {
+       "bid": 0.955,
+       "ask": 0.9575
+      },
+      "draw": {
+       "bid": 0.04,
+       "ask": 0.0425
+      },
+      "Morocco": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "5s": {
+     "dt": 3.0,
+     "outcomes": {
+      "France": {
+       "bid": 0.96,
+       "ask": 0.9625
+      },
+      "draw": {
+       "bid": 0.035,
+       "ask": 0.04
+      },
+      "Morocco": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "10s": {
+     "dt": -2.0,
+     "outcomes": {
+      "France": {
+       "bid": 0.96,
+       "ask": 0.9625
+      },
+      "draw": {
+       "bid": 0.035,
+       "ask": 0.04
+      },
+      "Morocco": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    }
+   },
+   "espn_dt": 61.3,
+   "wc26_dt": 128.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "cs": 3922,
+   "confirmed": false,
+   "score_before": "1-0",
+   "score_after": "2-0",
+   "seq": 794,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 44.9,
+   "bot_price": 0.9675,
+   "bot_fair": 0.862,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783628722.6,
+   "label": "draw",
+   "tx_fair": 0.251,
+   "poly_ask": 0.17,
+   "initial_gap": 0.081,
+   "max_gap": 0.102,
+   "ask_depth": 368,
+   "pre_activity": 5.983,
+   "clock": "24'",
+   "score": "0-0",
+   "duration": 198.3,
+   "exit_bid": 0.2525,
+   "gross_per_share": 0.082,
+   "entry_5s_ask": 0.16,
+   "gross_5s_per_share": 0.092
+  },
+  {
+   "t": 1783628722.6,
+   "label": "Morocco",
+   "tx_fair": 0.122,
+   "poly_ask": 0.07,
+   "initial_gap": 0.052,
+   "max_gap": 0.062,
+   "ask_depth": 2050,
+   "pre_activity": 5.983,
+   "clock": "24'",
+   "score": "0-0",
+   "duration": 198.3,
+   "exit_bid": 0.11,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.065,
+   "gross_5s_per_share": 0.045
+  },
+  {
+   "t": 1783632222.7,
+   "label": "draw",
+   "tx_fair": 0.372,
+   "poly_ask": 0.1475,
+   "initial_gap": 0.225,
+   "max_gap": 0.225,
+   "ask_depth": 905,
+   "pre_activity": 7.628,
+   "clock": "59'",
+   "score": "0-0",
+   "duration": 72.7,
+   "exit_bid": 0.1325,
+   "gross_per_share": -0.015,
+   "entry_5s_ask": 0.1775,
+   "gross_5s_per_share": -0.045
+  },
+  {
+   "t": 1783632222.7,
+   "label": "Morocco",
+   "tx_fair": 0.106,
+   "poly_ask": 0.0375,
+   "initial_gap": 0.069,
+   "max_gap": 0.069,
+   "ask_depth": 903,
+   "pre_activity": 7.628,
+   "clock": "59'",
+   "score": "0-0",
+   "duration": 72.7,
+   "exit_bid": 0.03,
+   "gross_per_share": -0.007,
+   "entry_5s_ask": 0.045,
+   "gross_5s_per_share": -0.015
+  },
+  {
+   "t": 1783632583.6,
+   "label": "draw",
+   "tx_fair": 0.118,
+   "poly_ask": 0.0375,
+   "initial_gap": 0.08,
+   "max_gap": 0.08,
+   "ask_depth": 201,
+   "pre_activity": 8.309,
+   "clock": "65'",
+   "score": "1-0",
+   "duration": 68.1,
+   "exit_bid": 0.02,
+   "gross_per_share": -0.017,
+   "entry_5s_ask": 0.0425,
+   "gross_5s_per_share": -0.023
+  }
+ ],
+ "attention_rate": 5.406,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783628805.796,
+    "cs": 1550,
+    "duration": 30.1,
+    "decision": "completed"
+   }
+  ],
+  "corrections": 6,
+  "penalties": [
+   {
+    "t": 1783628843.789,
+    "action": "penalty",
+    "team": "France",
+    "cs": 1472
+   },
+   {
+    "t": 1783628927.782,
+    "action": "penalty_outcome",
+    "team": "France",
+    "cs": 1665
+   }
+  ],
+  "cards": [
+   {
+    "t": 1783632440.408,
+    "action": "yellow_card",
+    "team": "Morocco",
+    "cs": 3756
+   }
+  ],
+  "shots": {
+   "total": 76,
+   "teams": {
+    "France": 43,
+    "Morocco": 29,
+    "Unassigned": 4
+   }
+  }
+ }
+}

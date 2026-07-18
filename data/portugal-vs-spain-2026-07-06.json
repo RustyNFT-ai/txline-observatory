@@ -1,0 +1,209 @@
+{
+ "id": "portugal-vs-spain-2026-07-06",
+ "match": "Portugal vs Spain",
+ "teams": [
+  "Portugal",
+  "Spain"
+ ],
+ "date": "2026-07-06",
+ "slug": "fifwc-prt-esp-2026-07-06",
+ "labels": [
+  "Portugal",
+  "Spain",
+  "draw"
+ ],
+ "t0": 1783364436.4,
+ "t1": 1783371725.8,
+ "rows": 1191,
+ "fid": 18198205,
+ "home1": true,
+ "tx_teams": [
+  "Portugal",
+  "Spain"
+ ],
+ "score_changes": [
+  [
+   1783371216.9,
+   1
+  ]
+ ],
+ "tids": [
+  "5192239819945131266804252801981428616883815794825428562052730446971967802530",
+  "77468978154746252186754362384998395549431983276046673742016654147362593379501",
+  "87143512590234629605431257080998414893198014883333299027317583597291917249311"
+ ],
+ "counts": {
+  "txline:action": 980,
+  "poly:book": 1191,
+  "txline:odds": 840,
+  "espn:score": 1,
+  "bot:decision": 2,
+  "wc26:score": 1
+ },
+ "moments": [
+  {
+   "t0": 1783371172.75,
+   "t0_src": "txline",
+   "benefit": "Spain",
+   "baseline": 0.14,
+   "poly_dt": 0.9,
+   "delta_120s": 0.76,
+   "prices": {
+    "before": {
+     "dt": 2.3,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.01,
+       "ask": 0.02
+      },
+      "draw": {
+       "bid": 0.18,
+       "ask": 0.29
+      },
+      "Spain": {
+       "bid": 0.83,
+       "ask": 0.84
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.9,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.01,
+       "ask": 0.02
+      },
+      "draw": {
+       "bid": 0.1,
+       "ask": 0.14
+      },
+      "Spain": {
+       "bid": 0.87,
+       "ask": 0.88
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.8,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.01,
+       "ask": 0.02
+      },
+      "draw": {
+       "bid": 0.08,
+       "ask": 0.09
+      },
+      "Spain": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.5,
+     "outcomes": {
+      "Portugal": {
+       "bid": 0.01,
+       "ask": 0.02
+      },
+      "draw": {
+       "bid": 0.08,
+       "ask": 0.09
+      },
+      "Spain": {
+       "bid": 0.89,
+       "ask": 0.91
+      }
+     }
+    }
+   },
+   "espn_dt": 44.1,
+   "wc26_dt": 112.0,
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "cs": 5408,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "seq": 904,
+   "part": 2,
+   "bot_action": "SKIP",
+   "bot_dt": 44.2,
+   "bot_price": 0.92,
+   "bot_fair": 0.133,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783366849.8,
+   "label": "Spain",
+   "tx_fair": 0.448,
+   "poly_ask": 0.34,
+   "initial_gap": 0.108,
+   "max_gap": 0.108,
+   "ask_depth": 978,
+   "pre_activity": 2.019,
+   "clock": "40'",
+   "score": "0-0",
+   "duration": 5.6,
+   "exit_bid": 0.44,
+   "gross_per_share": 0.1,
+   "entry_5s_ask": 0.45,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783371165.1,
+   "label": "draw",
+   "tx_fair": 0.791,
+   "poly_ask": 0.29,
+   "initial_gap": 0.501,
+   "max_gap": 0.501,
+   "ask_depth": 1317,
+   "pre_activity": 4.569,
+   "clock": "90'",
+   "score": "0-0",
+   "duration": 94.5,
+   "exit_bid": 0.09,
+   "gross_per_share": -0.2,
+   "entry_5s_ask": 0.14,
+   "gross_5s_per_share": -0.05
+  }
+ ],
+ "attention_rate": 2.7,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 8,
+  "penalties": [],
+  "cards": [
+   {
+    "t": 1783371067.708,
+    "action": "yellow_card",
+    "team": "Portugal",
+    "cs": 5290
+   },
+   {
+    "t": 1783371357.542,
+    "action": "yellow_card",
+    "team": "Portugal",
+    "cs": 5582
+   },
+   {
+    "t": 1783371657.679,
+    "action": "yellow_card",
+    "team": "Spain",
+    "cs": 5880
+   }
+  ],
+  "shots": {
+   "total": 44,
+   "teams": {
+    "Spain": 26,
+    "Portugal": 18
+   }
+  }
+ }
+}

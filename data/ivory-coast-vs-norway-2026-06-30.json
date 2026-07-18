@@ -1,0 +1,391 @@
+{
+ "id": "ivory-coast-vs-norway-2026-06-30",
+ "match": "Ivory Coast vs Norway",
+ "teams": [
+  "Ivory Coast",
+  "Norway"
+ ],
+ "date": "2026-06-30",
+ "slug": null,
+ "labels": [
+  "C\u00f4te d'Ivoire",
+  "Norway",
+  "draw"
+ ],
+ "t0": 1782838873.9,
+ "t1": 1782845915.8,
+ "rows": 2838,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782841200.9,
+   1
+  ],
+  [
+   1782844455.8,
+   0
+  ],
+  [
+   1782845191.3,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 2838,
+  "txline:odds": 1219,
+  "espn:score": 3,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1782841200.9,
+   "t0_src": "espn",
+   "benefit": "Norway",
+   "baseline": 0.35,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 1.0,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "Norway": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "Norway": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.3,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "Norway": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.4,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.28,
+       "ask": 0.29
+      },
+      "draw": {
+       "bid": 0.35,
+       "ask": 0.36
+      },
+      "Norway": {
+       "bid": 0.35,
+       "ask": 0.36
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Norway",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782844455.8,
+   "t0_src": "espn",
+   "benefit": "C\u00f4te d'Ivoire",
+   "baseline": 0.06,
+   "delta_120s": -0.01,
+   "prices": {
+    "before": {
+     "dt": -3.2,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Norway": {
+       "bid": 0.68,
+       "ask": 0.69
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Norway": {
+       "bid": 0.68,
+       "ask": 0.69
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Norway": {
+       "bid": 0.68,
+       "ask": 0.69
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.0,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.06,
+       "ask": 0.07
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Norway": {
+       "bid": 0.68,
+       "ask": 0.69
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "C\u00f4te d'Ivoire",
+   "score_before": "0-1",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782845191.3,
+   "t0_src": "espn",
+   "benefit": "Norway",
+   "baseline": 0.21,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.4,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "draw": {
+       "bid": 0.62,
+       "ask": 0.63
+      },
+      "Norway": {
+       "bid": 0.21,
+       "ask": 0.22
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "draw": {
+       "bid": 0.62,
+       "ask": 0.63
+      },
+      "Norway": {
+       "bid": 0.21,
+       "ask": 0.22
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.4,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "draw": {
+       "bid": 0.62,
+       "ask": 0.63
+      },
+      "Norway": {
+       "bid": 0.21,
+       "ask": 0.22
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.2,
+     "outcomes": {
+      "C\u00f4te d'Ivoire": {
+       "bid": 0.15,
+       "ask": 0.16
+      },
+      "draw": {
+       "bid": 0.62,
+       "ask": 0.63
+      },
+      "Norway": {
+       "bid": 0.21,
+       "ask": 0.22
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Norway",
+   "score_before": "1-1",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782841222.4,
+   "label": "Norway",
+   "tx_fair": 0.651,
+   "poly_ask": 0.36,
+   "initial_gap": 0.291,
+   "max_gap": 0.31,
+   "ask_depth": 92045,
+   "pre_activity": 0.101,
+   "clock": "40'",
+   "score": "0-1",
+   "duration": 335.0,
+   "exit_bid": 0.63,
+   "gross_per_share": 0.27,
+   "entry_5s_ask": 0.36,
+   "gross_5s_per_share": 0.27
+  },
+  {
+   "t": 1782844511.0,
+   "label": "C\u00f4te d'Ivoire",
+   "tx_fair": 0.231,
+   "poly_ask": 0.06,
+   "initial_gap": 0.171,
+   "max_gap": 0.171,
+   "ask_depth": 36351,
+   "pre_activity": 0.201,
+   "clock": "75'",
+   "score": "1-1",
+   "duration": 292.2,
+   "exit_bid": 0.18,
+   "gross_per_share": 0.12,
+   "entry_5s_ask": 0.06,
+   "gross_5s_per_share": 0.12
+  },
+  {
+   "t": 1782844511.0,
+   "label": "draw",
+   "tx_fair": 0.522,
+   "poly_ask": 0.25,
+   "initial_gap": 0.272,
+   "max_gap": 0.333,
+   "ask_depth": 218226,
+   "pre_activity": 0.201,
+   "clock": "75'",
+   "score": "1-1",
+   "duration": 292.2,
+   "exit_bid": 0.57,
+   "gross_per_share": 0.32,
+   "entry_5s_ask": 0.25,
+   "gross_5s_per_share": 0.32
+  },
+  {
+   "t": 1782845000.3,
+   "label": "draw",
+   "tx_fair": 0.63,
+   "poly_ask": 0.58,
+   "initial_gap": 0.05,
+   "max_gap": 0.066,
+   "ask_depth": 17810,
+   "pre_activity": 0.202,
+   "clock": "83'",
+   "score": "1-1",
+   "duration": 106.7,
+   "exit_bid": 0.62,
+   "gross_per_share": 0.04,
+   "entry_5s_ask": 0.58,
+   "gross_5s_per_share": 0.04
+  },
+  {
+   "t": 1782845200.5,
+   "label": "Norway",
+   "tx_fair": 0.819,
+   "poly_ask": 0.22,
+   "initial_gap": 0.599,
+   "max_gap": 0.635,
+   "ask_depth": 171167,
+   "pre_activity": 0.202,
+   "clock": "87'",
+   "score": "1-2",
+   "duration": 206.5,
+   "exit_bid": 0.84,
+   "gross_per_share": 0.62,
+   "entry_5s_ask": 0.22,
+   "gross_5s_per_share": 0.62
+  }
+ ],
+ "attention_rate": 0.162,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

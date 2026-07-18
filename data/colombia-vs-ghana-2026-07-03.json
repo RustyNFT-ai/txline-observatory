@@ -1,0 +1,149 @@
+{
+ "id": "colombia-vs-ghana-2026-07-03",
+ "match": "Colombia vs Ghana",
+ "teams": [
+  "Colombia",
+  "Ghana"
+ ],
+ "date": "2026-07-03",
+ "slug": null,
+ "labels": [
+  "Colombia",
+  "Ghana",
+  "draw"
+ ],
+ "t0": 1783128657.6,
+ "t1": 1783135946.4,
+ "rows": 3123,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1783129492.1,
+   0
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 3123,
+  "txline:odds": 949,
+  "espn:score": 1,
+  "wc26:score": 3
+ },
+ "moments": [
+  {
+   "t0": 1783129492.1,
+   "t0_src": "espn",
+   "benefit": "Colombia",
+   "baseline": 0.64,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.8,
+     "outcomes": {
+      "Colombia": {
+       "bid": 0.64,
+       "ask": 0.65
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Ghana": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Colombia": {
+       "bid": 0.64,
+       "ask": 0.65
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Ghana": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Colombia": {
+       "bid": 0.64,
+       "ask": 0.65
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Ghana": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.4,
+     "outcomes": {
+      "Colombia": {
+       "bid": 0.64,
+       "ask": 0.65
+      },
+      "draw": {
+       "bid": 0.24,
+       "ask": 0.25
+      },
+      "Ghana": {
+       "bid": 0.1,
+       "ask": 0.11
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Colombia",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783129510.8,
+   "label": "Colombia",
+   "tx_fair": 0.842,
+   "poly_ask": 0.65,
+   "initial_gap": 0.192,
+   "max_gap": 0.205,
+   "ask_depth": 90382,
+   "pre_activity": 0.202,
+   "clock": "15'",
+   "score": "1-0",
+   "duration": 180.8,
+   "exit_bid": 0.84,
+   "gross_per_share": 0.19,
+   "entry_5s_ask": 0.65,
+   "gross_5s_per_share": 0.19
+  }
+ ],
+ "attention_rate": 0.189,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

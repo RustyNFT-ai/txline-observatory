@@ -1,0 +1,532 @@
+{
+ "id": "norway-vs-france-2026-06-26",
+ "match": "Norway vs France",
+ "teams": [
+  "Norway",
+  "France"
+ ],
+ "date": "2026-06-26",
+ "slug": null,
+ "labels": [
+  "France",
+  "Norway",
+  "draw"
+ ],
+ "t0": 1782500545.8,
+ "t1": 1782507595.1,
+ "rows": 1299,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782500915.0,
+   1
+  ],
+  [
+   1782501698.2,
+   1
+  ],
+  [
+   1782501768.1,
+   0
+  ],
+  [
+   1782502440.1,
+   1
+  ],
+  [
+   1782507478.0,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1299,
+  "txline:odds": 526,
+  "espn:score": 5,
+  "wc26:score": 5
+ },
+ "moments": [
+  {
+   "t0": 1782500915.0,
+   "t0_src": "espn",
+   "benefit": "France",
+   "baseline": 0.74,
+   "delta_120s": 0.15,
+   "prices": {
+    "before": {
+     "dt": 0.2,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "draw": {
+       "bid": 0.16,
+       "ask": 0.17
+      },
+      "France": {
+       "bid": 0.74,
+       "ask": 0.75
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "draw": {
+       "bid": 0.16,
+       "ask": 0.17
+      },
+      "France": {
+       "bid": 0.74,
+       "ask": 0.75
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.1,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "draw": {
+       "bid": 0.16,
+       "ask": 0.17
+      },
+      "France": {
+       "bid": 0.74,
+       "ask": 0.75
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.09,
+       "ask": 0.1
+      },
+      "draw": {
+       "bid": 0.16,
+       "ask": 0.17
+      },
+      "France": {
+       "bid": 0.74,
+       "ask": 0.75
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782501698.2,
+   "t0_src": "espn",
+   "benefit": "France",
+   "baseline": 0.88,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.5,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "5s": {
+     "dt": 3.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "10s": {
+     "dt": -2.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "score_before": "0-1",
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782501768.1,
+   "t0_src": "espn",
+   "benefit": "Norway",
+   "baseline": 0.042,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.3,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.2,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.8,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.042,
+       "ask": 0.043
+      },
+      "draw": {
+       "bid": 0.07,
+       "ask": 0.08
+      },
+      "France": {
+       "bid": 0.88,
+       "ask": 0.89
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Norway",
+   "score_before": "0-2",
+   "score_after": "1-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782502440.1,
+   "t0_src": "espn",
+   "benefit": "France",
+   "baseline": 0.866,
+   "delta_120s": 0.074,
+   "prices": {
+    "before": {
+     "dt": 0.3,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.046,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.087,
+       "ask": 0.089
+      },
+      "France": {
+       "bid": 0.866,
+       "ask": 0.868
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.046,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.087,
+       "ask": 0.089
+      },
+      "France": {
+       "bid": 0.866,
+       "ask": 0.868
+      }
+     }
+    },
+    "5s": {
+     "dt": 3.3,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.046,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.087,
+       "ask": 0.089
+      },
+      "France": {
+       "bid": 0.866,
+       "ask": 0.868
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.7,
+     "outcomes": {
+      "Norway": {
+       "bid": 0.046,
+       "ask": 0.05
+      },
+      "draw": {
+       "bid": 0.087,
+       "ask": 0.089
+      },
+      "France": {
+       "bid": 0.866,
+       "ask": 0.868
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "score_before": "1-2",
+   "score_after": "1-3",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782507478.0,
+   "t0_src": "espn",
+   "benefit": "France",
+   "baseline": 0.998,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": -0.3,
+     "outcomes": {
+      "draw": {
+       "bid": 0.001,
+       "ask": 0.002
+      },
+      "France": {
+       "bid": 0.998,
+       "ask": 0.999
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.001,
+       "ask": 0.002
+      },
+      "France": {
+       "bid": 0.998,
+       "ask": 0.999
+      }
+     }
+    },
+    "5s": {
+     "dt": 3.4,
+     "outcomes": {
+      "draw": {
+       "bid": 0.001,
+       "ask": 0.002
+      },
+      "France": {
+       "bid": 0.998,
+       "ask": 0.999
+      }
+     }
+    },
+    "10s": {
+     "dt": -1.6,
+     "outcomes": {
+      "draw": {
+       "bid": 0.001,
+       "ask": 0.002
+      },
+      "France": {
+       "bid": 0.998,
+       "ask": 0.999
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "France",
+   "score_before": "1-3",
+   "score_after": "1-4",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782500932.9,
+   "label": "France",
+   "tx_fair": 0.883,
+   "poly_ask": 0.75,
+   "initial_gap": 0.133,
+   "max_gap": 0.139,
+   "ask_depth": 34855,
+   "pre_activity": 0.158,
+   "clock": "8'",
+   "score": "0-1",
+   "duration": 75.4,
+   "exit_bid": 0.89,
+   "gross_per_share": 0.14,
+   "entry_5s_ask": 0.75,
+   "gross_5s_per_share": 0.14
+  },
+  {
+   "t": 1782501711.2,
+   "label": "France",
+   "tx_fair": 0.961,
+   "poly_ask": 0.89,
+   "initial_gap": 0.071,
+   "max_gap": 0.074,
+   "ask_depth": 299054,
+   "pre_activity": 0.203,
+   "clock": "21'",
+   "score": "0-2",
+   "duration": 56.9,
+   "exit_bid": 0.88,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.89,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782502468.0,
+   "label": "France",
+   "tx_fair": 0.949,
+   "poly_ask": 0.868,
+   "initial_gap": 0.081,
+   "max_gap": 0.083,
+   "ask_depth": 61817,
+   "pre_activity": 0.203,
+   "clock": "33'",
+   "score": "1-3",
+   "duration": 75.7,
+   "exit_bid": 0.94,
+   "gross_per_share": 0.072,
+   "entry_5s_ask": 0.868,
+   "gross_5s_per_share": 0.072
+  },
+  {
+   "t": 1782504914.8,
+   "label": "France",
+   "tx_fair": 0.957,
+   "poly_ask": 0.883,
+   "initial_gap": 0.074,
+   "max_gap": 0.077,
+   "ask_depth": 175777,
+   "pre_activity": 0.202,
+   "clock": "51'",
+   "score": "1-3",
+   "duration": 295.0,
+   "exit_bid": 0.952,
+   "gross_per_share": 0.069,
+   "entry_5s_ask": 0.883,
+   "gross_5s_per_share": 0.069
+  }
+ ],
+ "attention_rate": 0.196,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

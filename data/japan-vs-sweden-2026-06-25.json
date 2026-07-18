@@ -1,0 +1,217 @@
+{
+ "id": "japan-vs-sweden-2026-06-25",
+ "match": "Japan vs Sweden",
+ "teams": [
+  "Japan",
+  "Sweden"
+ ],
+ "date": "2026-06-25",
+ "slug": null,
+ "labels": [
+  "Japan",
+  "Sweden",
+  "draw"
+ ],
+ "t0": 1782428459.3,
+ "t1": 1782435507.7,
+ "rows": 1432,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782433020.5,
+   0
+  ],
+  [
+   1782433404.3,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1432,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1782433020.5,
+   "t0_src": "espn",
+   "benefit": "Japan",
+   "baseline": 0.333,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.438,
+       "ask": 0.439
+      },
+      "Japan": {
+       "bid": 0.333,
+       "ask": 0.334
+      },
+      "Sweden": {
+       "bid": 0.224,
+       "ask": 0.227
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.438,
+       "ask": 0.439
+      },
+      "Japan": {
+       "bid": 0.333,
+       "ask": 0.334
+      },
+      "Sweden": {
+       "bid": 0.224,
+       "ask": 0.227
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.438,
+       "ask": 0.439
+      },
+      "Japan": {
+       "bid": 0.333,
+       "ask": 0.334
+      },
+      "Sweden": {
+       "bid": 0.224,
+       "ask": 0.227
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.438,
+       "ask": 0.439
+      },
+      "Japan": {
+       "bid": 0.333,
+       "ask": 0.334
+      },
+      "Sweden": {
+       "bid": 0.224,
+       "ask": 0.227
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Japan",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782433404.3,
+   "t0_src": "espn",
+   "benefit": "Sweden",
+   "baseline": 0.065,
+   "delta_120s": 0.153,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "draw": {
+       "bid": 0.219,
+       "ask": 0.22
+      },
+      "Japan": {
+       "bid": 0.69,
+       "ask": 0.691
+      },
+      "Sweden": {
+       "bid": 0.065,
+       "ask": 0.068
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.219,
+       "ask": 0.22
+      },
+      "Japan": {
+       "bid": 0.69,
+       "ask": 0.691
+      },
+      "Sweden": {
+       "bid": 0.065,
+       "ask": 0.068
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "draw": {
+       "bid": 0.219,
+       "ask": 0.22
+      },
+      "Japan": {
+       "bid": 0.69,
+       "ask": 0.691
+      },
+      "Sweden": {
+       "bid": 0.065,
+       "ask": 0.068
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.8,
+     "outcomes": {
+      "draw": {
+       "bid": 0.219,
+       "ask": 0.22
+      },
+      "Japan": {
+       "bid": 0.69,
+       "ask": 0.691
+      },
+      "Sweden": {
+       "bid": 0.065,
+       "ask": 0.068
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Sweden",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [],
+ "attention_rate": null,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

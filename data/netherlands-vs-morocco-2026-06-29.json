@@ -1,0 +1,304 @@
+{
+ "id": "netherlands-vs-morocco-2026-06-29",
+ "match": "Netherlands vs Morocco",
+ "teams": [
+  "Netherlands",
+  "Morocco"
+ ],
+ "date": "2026-06-29",
+ "slug": null,
+ "labels": [
+  "Morocco",
+  "Netherlands",
+  "draw"
+ ],
+ "t0": 1782781259.8,
+ "t1": 1782791662.8,
+ "rows": 4417,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782786847.1,
+   0
+  ],
+  [
+   1782787962.9,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 4417,
+  "txline:odds": 1511,
+  "espn:score": 2,
+  "wc26:score": 2
+ },
+ "moments": [
+  {
+   "t0": 1782786847.1,
+   "t0_src": "espn",
+   "benefit": "Netherlands",
+   "baseline": 0.21,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.8,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "Netherlands": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "Netherlands": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    },
+    "5s": {
+     "dt": -0.5,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "Netherlands": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.9,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.22,
+       "ask": 0.23
+      },
+      "Netherlands": {
+       "bid": 0.21,
+       "ask": 0.22
+      },
+      "draw": {
+       "bid": 0.56,
+       "ask": 0.57
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Netherlands",
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782787962.9,
+   "t0_src": "espn",
+   "benefit": "Morocco",
+   "baseline": 0.018,
+   "delta_120s": -0.011,
+   "prices": {
+    "before": {
+     "dt": 0.8,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.018,
+       "ask": 0.02
+      },
+      "Netherlands": {
+       "bid": 0.78,
+       "ask": 0.79
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.018,
+       "ask": 0.02
+      },
+      "Netherlands": {
+       "bid": 0.78,
+       "ask": 0.79
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.018,
+       "ask": 0.02
+      },
+      "Netherlands": {
+       "bid": 0.78,
+       "ask": 0.79
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    },
+    "10s": {
+     "dt": -0.4,
+     "outcomes": {
+      "Morocco": {
+       "bid": 0.018,
+       "ask": 0.02
+      },
+      "Netherlands": {
+       "bid": 0.78,
+       "ask": 0.79
+      },
+      "draw": {
+       "bid": 0.19,
+       "ask": 0.2
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Morocco",
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782786416.0,
+   "label": "draw",
+   "tx_fair": 0.54,
+   "poly_ask": 0.49,
+   "initial_gap": 0.05,
+   "max_gap": 0.066,
+   "ask_depth": 127656,
+   "pre_activity": 0.202,
+   "clock": "65'",
+   "score": "0-0",
+   "duration": 103.0,
+   "exit_bid": 0.54,
+   "gross_per_share": 0.05,
+   "entry_5s_ask": 0.49,
+   "gross_5s_per_share": 0.05
+  },
+  {
+   "t": 1782786871.9,
+   "label": "Netherlands",
+   "tx_fair": 0.749,
+   "poly_ask": 0.22,
+   "initial_gap": 0.529,
+   "max_gap": 0.532,
+   "ask_depth": 22952,
+   "pre_activity": 0.202,
+   "clock": "73'",
+   "score": "1-0",
+   "duration": 235.9,
+   "exit_bid": 0.72,
+   "gross_per_share": 0.5,
+   "entry_5s_ask": 0.22,
+   "gross_5s_per_share": 0.5
+  },
+  {
+   "t": 1782787609.7,
+   "label": "Netherlands",
+   "tx_fair": 0.78,
+   "poly_ask": 0.73,
+   "initial_gap": 0.05,
+   "max_gap": 0.067,
+   "ask_depth": 8842,
+   "pre_activity": 0.202,
+   "clock": "85'",
+   "score": "1-0",
+   "duration": 96.4,
+   "exit_bid": 0.78,
+   "gross_per_share": 0.05,
+   "entry_5s_ask": 0.73,
+   "gross_5s_per_share": 0.05
+  },
+  {
+   "t": 1782787911.4,
+   "label": "Netherlands",
+   "tx_fair": 0.842,
+   "poly_ask": 0.79,
+   "initial_gap": 0.052,
+   "max_gap": 0.063,
+   "ask_depth": 106946,
+   "pre_activity": 0.2,
+   "clock": "90'",
+   "score": "1-0",
+   "duration": 84.5,
+   "exit_bid": 0.78,
+   "gross_per_share": -0.01,
+   "entry_5s_ask": 0.79,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1782787995.9,
+   "label": "draw",
+   "tx_fair": 0.795,
+   "poly_ask": 0.2,
+   "initial_gap": 0.595,
+   "max_gap": 0.796,
+   "ask_depth": 260927,
+   "pre_activity": 0.202,
+   "clock": "90'+1'",
+   "score": "1-1",
+   "duration": 425.2,
+   "exit_bid": 0.91,
+   "gross_per_share": 0.71,
+   "entry_5s_ask": 0.2,
+   "gross_5s_per_share": 0.71
+  }
+ ],
+ "attention_rate": 0.133,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "id": "cura-ao-vs-ivory-coast-2026-06-25",
+ "match": "Cura\u00e7ao vs Ivory Coast",
+ "teams": [
+  "Cura\u00e7ao",
+  "Ivory Coast"
+ ],
+ "date": "2026-06-25",
+ "slug": null,
+ "labels": [],
+ "t0": 1782417710.3,
+ "t1": 1782424670.5,
+ "rows": 1422,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782418062.2,
+   1
+  ],
+  [
+   1782418079.7,
+   1
+  ],
+  [
+   1782422732.4,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "espn:score": 4
+ },
+ "moments": [
+  {
+   "t0": 1782418062.2,
+   "t0_src": "espn",
+   "benefit": null,
+   "prices": {},
+   "var": false,
+   "action": "goal",
+   "scorer": null,
+   "score_before": null,
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  },
+  {
+   "t0": 1782422732.4,
+   "t0_src": "espn",
+   "benefit": null,
+   "prices": {},
+   "var": false,
+   "action": "goal",
+   "scorer": null,
+   "score_before": null,
+   "score_after": "0-2",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [],
+ "attention_rate": null,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}

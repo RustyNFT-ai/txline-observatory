@@ -1,0 +1,160 @@
+{
+ "id": "switzerland-vs-colombia-2026-07-07",
+ "match": "Switzerland vs Colombia",
+ "teams": [
+  "Switzerland",
+  "Colombia"
+ ],
+ "date": "2026-07-07",
+ "slug": "fifwc-che-col-2026-07-07",
+ "labels": [
+  "Colombia",
+  "Switzerland",
+  "draw"
+ ],
+ "t0": 1783454446.7,
+ "t1": 1783465031.2,
+ "rows": 1649,
+ "fid": 18202783,
+ "home1": true,
+ "tx_teams": [
+  "Switzerland",
+  "Colombia"
+ ],
+ "score_changes": [],
+ "tids": [
+  "42380288660191542812245553421682685747542075745465207800717921959616754402501",
+  "66569899468789141604730928852200840975457837449855481155211476611890307710677",
+  "72753295727566659208677964635039361717871718602259295378609650323504626128275"
+ ],
+ "counts": {
+  "txline:action": 1336,
+  "poly:book": 1649,
+  "txline:odds": 1006,
+  "polyws:tick": 1099,
+  "polyws:burst": 8,
+  "bot:decision": 1,
+  "bot:trade": 4
+ },
+ "moments": [],
+ "opportunities": [
+  {
+   "t": 1783458736.1,
+   "label": "draw",
+   "tx_fair": 0.454,
+   "poly_ask": 0.35,
+   "initial_gap": 0.104,
+   "max_gap": 0.104,
+   "ask_depth": 1151,
+   "pre_activity": 2.333,
+   "clock": "53'",
+   "score": "0-0",
+   "duration": 5.6,
+   "exit_bid": 0.45,
+   "gross_per_share": 0.1,
+   "entry_5s_ask": 0.46,
+   "gross_5s_per_share": -0.01
+  },
+  {
+   "t": 1783458736.1,
+   "label": "Colombia",
+   "tx_fair": 0.316,
+   "poly_ask": 0.22,
+   "initial_gap": 0.096,
+   "max_gap": 0.096,
+   "ask_depth": 421,
+   "pre_activity": 2.333,
+   "clock": "53'",
+   "score": "0-0",
+   "duration": 5.6,
+   "exit_bid": 0.31,
+   "gross_per_share": 0.09,
+   "entry_5s_ask": 0.32,
+   "gross_5s_per_share": -0.01
+  }
+ ],
+ "attention_rate": 1.536,
+ "event_insights": {
+  "reviews": [
+   {
+    "t": 1783456805.571,
+    "cs": 2383,
+    "duration": 9.5,
+    "decision": "completed"
+   },
+   {
+    "t": 1783461062.225,
+    "cs": 5474,
+    "duration": null,
+    "decision": "no end recorded"
+   }
+  ],
+  "corrections": 14,
+  "penalties": [
+   {
+    "t": 1783464524.071,
+    "action": "penalty_shootout_team",
+    "team": "Colombia",
+    "cs": null
+   },
+   {
+    "t": 1783464588.635,
+    "action": "penalty_outcome",
+    "team": "Colombia",
+    "cs": null
+   },
+   {
+    "t": 1783464589.56,
+    "action": "penalty_shootout_team",
+    "team": "Switzerland",
+    "cs": null
+   },
+   {
+    "t": 1783464660.1,
+    "action": "penalty_outcome",
+    "team": "Switzerland",
+    "cs": null
+   }
+  ],
+  "cards": [
+   {
+    "t": 1783458625.222,
+    "action": "yellow_card",
+    "team": "Switzerland",
+    "cs": 3033
+   },
+   {
+    "t": 1783459084.85,
+    "action": "yellow_card",
+    "team": "Switzerland",
+    "cs": 3492
+   },
+   {
+    "t": 1783459187.793,
+    "action": "yellow_card",
+    "team": "Colombia",
+    "cs": 3581
+   },
+   {
+    "t": 1783461851.782,
+    "action": "yellow_card",
+    "team": "Colombia",
+    "cs": 5649
+   },
+   {
+    "t": 1783462485.177,
+    "action": "yellow_card",
+    "team": "Switzerland",
+    "cs": 6280
+   }
+  ],
+  "shots": {
+   "total": 109,
+   "teams": {
+    "Switzerland": 40,
+    "Unassigned": 22,
+    "Colombia": 47
+   }
+  }
+ }
+}

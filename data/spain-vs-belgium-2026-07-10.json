@@ -1,0 +1,452 @@
+{
+ "id": "spain-vs-belgium-2026-07-10",
+ "match": "Spain vs Belgium",
+ "teams": [
+  "Spain",
+  "Belgium"
+ ],
+ "date": "2026-07-10",
+ "slug": "fifwc-esp-bel-2026-07-10",
+ "labels": [
+  "Belgium",
+  "Spain",
+  "draw"
+ ],
+ "t0": 1783710097.8,
+ "t1": 1783717201.1,
+ "rows": 1182,
+ "fid": 18218149,
+ "home1": true,
+ "tx_teams": [
+  "Spain",
+  "Belgium"
+ ],
+ "score_changes": [
+  [
+   1783711863.0,
+   0
+  ],
+  [
+   1783712476.9,
+   1
+  ],
+  [
+   1783716614.5,
+   0
+  ]
+ ],
+ "tids": [
+  "113258140039729603259288671364749723242703790462413008421390186262563698386140",
+  "113279756530825620298138806497651966059839483646018838321123245227908205380626",
+  "114083367175349101587118456512209157494315102378898420654169806682644264287063"
+ ],
+ "counts": {
+  "txline:action": 1067,
+  "poly:book": 1181,
+  "txline:odds": 869,
+  "polyws:tick": 6127,
+  "polyws:burst": 9,
+  "bot:decision": 10,
+  "espn:score": 3,
+  "wc26:score": 3,
+  "bot:trade": 2
+ },
+ "moments": [
+  {
+   "t0": 1783711800.38,
+   "t0_src": "txline",
+   "benefit": "Spain",
+   "baseline": 0.57,
+   "poly_dt": -8.4,
+   "delta_120s": 0.223,
+   "prices": {
+    "before": {
+     "dt": -1.1,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.5725,
+       "ask": 0.575
+      },
+      "draw": {
+       "bid": 0.2675,
+       "ask": 0.27
+      },
+      "Belgium": {
+       "bid": 0.1575,
+       "ask": 0.16
+      }
+     }
+    },
+    "txline": {
+     "dt": -0.4,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.77,
+       "ask": 0.7725
+      },
+      "draw": {
+       "bid": 0.165,
+       "ask": 0.1725
+      },
+      "Belgium": {
+       "bid": 0.0625,
+       "ask": 0.0725
+      }
+     }
+    },
+    "5s": {
+     "dt": 3.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.77,
+       "ask": 0.7725
+      },
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.1725
+      },
+      "Belgium": {
+       "bid": 0.0625,
+       "ask": 0.0675
+      }
+     }
+    },
+    "10s": {
+     "dt": -2.0,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.77,
+       "ask": 0.7725
+      },
+      "draw": {
+       "bid": 0.17,
+       "ask": 0.1725
+      },
+      "Belgium": {
+       "bid": 0.0625,
+       "ask": 0.0675
+      }
+     }
+    }
+   },
+   "espn_dt": 62.6,
+   "wc26_dt": 94.6,
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "cs": 1761,
+   "confirmed": false,
+   "score_before": "0-0",
+   "score_after": "1-0",
+   "seq": 325,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 45.2,
+   "bot_price": 0.78,
+   "bot_fair": 0.574,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  },
+  {
+   "t0": 1783712450.2,
+   "t0_src": "txline",
+   "benefit": "Belgium",
+   "baseline": 0.046,
+   "poly_dt": -7.3,
+   "delta_120s": 0.089,
+   "prices": {
+    "before": {
+     "dt": -0.3,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.805,
+       "ask": 0.8075
+      },
+      "draw": {
+       "bid": 0.1425,
+       "ask": 0.145
+      },
+      "Belgium": {
+       "bid": 0.05,
+       "ask": 0.0525
+      }
+     }
+    },
+    "txline": {
+     "dt": 1.1,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.57,
+       "ask": 0.58
+      },
+      "draw": {
+       "bid": 0.265,
+       "ask": 0.2675
+      },
+      "Belgium": {
+       "bid": 0.1325,
+       "ask": 0.14
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.7,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.595,
+       "ask": 0.61
+      },
+      "draw": {
+       "bid": 0.26,
+       "ask": 0.2625
+      },
+      "Belgium": {
+       "bid": 0.135,
+       "ask": 0.14
+      }
+     }
+    },
+    "10s": {
+     "dt": 2.3,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.6,
+       "ask": 0.6025
+      },
+      "draw": {
+       "bid": 0.2825,
+       "ask": 0.285
+      },
+      "Belgium": {
+       "bid": 0.1225,
+       "ask": 0.125
+      }
+     }
+    }
+   },
+   "espn_dt": 26.7,
+   "wc26_dt": 96.5,
+   "var": false,
+   "action": "goal",
+   "scorer": "Belgium",
+   "cs": 2411,
+   "confirmed": false,
+   "score_before": "1-0",
+   "score_after": "1-1",
+   "seq": 422,
+   "part": 2,
+   "bot_action": "ENTRY",
+   "bot_dt": 1.1,
+   "bot_price": 0.14,
+   "bot_fair": 0.046,
+   "bot_reason": "fast",
+   "bot_entries": 1,
+   "bot_pnl": -4.91
+  },
+  {
+   "t0": 1783716577.03,
+   "t0_src": "txline",
+   "benefit": "Spain",
+   "baseline": 0.26,
+   "poly_dt": -7.7,
+   "delta_120s": 0.637,
+   "prices": {
+    "before": {
+     "dt": -0.8,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.2575,
+       "ask": 0.2625
+      },
+      "draw": {
+       "bid": 0.67,
+       "ask": 0.6725
+      },
+      "Belgium": {
+       "bid": 0.07,
+       "ask": 0.0725
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.5,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.84,
+       "ask": 0.8475
+      },
+      "draw": {
+       "bid": 0.1275,
+       "ask": 0.1725
+      },
+      "Belgium": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "5s": {
+     "dt": 1.2,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.8925,
+       "ask": 0.9
+      },
+      "draw": {
+       "bid": 0.0875,
+       "ask": 0.09
+      },
+      "Belgium": {
+       "bid": 0.0075,
+       "ask": 0.01
+      }
+     }
+    },
+    "10s": {
+     "dt": 1.8,
+     "outcomes": {
+      "Spain": {
+       "bid": 0.8875,
+       "ask": 0.9075
+      },
+      "draw": {
+       "bid": 0.0825,
+       "ask": 0.09
+      },
+      "Belgium": {
+       "bid": 0.005,
+       "ask": 0.0075
+      }
+     }
+    }
+   },
+   "espn_dt": 37.5,
+   "wc26_dt": 105.7,
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "cs": 5244,
+   "confirmed": false,
+   "score_before": "1-1",
+   "score_after": "2-1",
+   "seq": 967,
+   "part": 1,
+   "bot_action": "SKIP",
+   "bot_dt": 43.1,
+   "bot_price": 0.905,
+   "bot_fair": 0.265,
+   "bot_reason": "gap<min",
+   "bot_entries": 0
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1783711794.9,
+   "label": "draw",
+   "tx_fair": 0.268,
+   "poly_ask": 0.1775,
+   "initial_gap": 0.091,
+   "max_gap": 0.091,
+   "ask_depth": 1250,
+   "pre_activity": 2.534,
+   "clock": "29'",
+   "score": "0-0",
+   "duration": 68.1,
+   "exit_bid": 0.16,
+   "gross_per_share": -0.017,
+   "entry_5s_ask": 0.1725,
+   "gross_5s_per_share": -0.012
+  },
+  {
+   "t": 1783711794.9,
+   "label": "Belgium",
+   "tx_fair": 0.158,
+   "poly_ask": 0.08,
+   "initial_gap": 0.078,
+   "max_gap": 0.078,
+   "ask_depth": 1877,
+   "pre_activity": 2.534,
+   "clock": "29'",
+   "score": "0-0",
+   "duration": 68.1,
+   "exit_bid": 0.055,
+   "gross_per_share": -0.025,
+   "entry_5s_ask": 0.0725,
+   "gross_5s_per_share": -0.017
+  },
+  {
+   "t": 1783712445.8,
+   "label": "Spain",
+   "tx_fair": 0.82,
+   "poly_ask": 0.57,
+   "initial_gap": 0.25,
+   "max_gap": 0.25,
+   "ask_depth": 5079,
+   "pre_activity": 6.734,
+   "clock": "39'",
+   "score": "1-0",
+   "duration": 74.1,
+   "exit_bid": 0.575,
+   "gross_per_share": 0.005,
+   "entry_5s_ask": 0.58,
+   "gross_5s_per_share": -0.005
+  },
+  {
+   "t": 1783716571.9,
+   "label": "draw",
+   "tx_fair": 0.667,
+   "poly_ask": 0.2075,
+   "initial_gap": 0.46,
+   "max_gap": 0.46,
+   "ask_depth": 193,
+   "pre_activity": 8.755,
+   "clock": "87'",
+   "score": "1-1",
+   "duration": 68.4,
+   "exit_bid": 0.075,
+   "gross_per_share": -0.133,
+   "entry_5s_ask": 0.1725,
+   "gross_5s_per_share": -0.097
+  }
+ ],
+ "attention_rate": 5.811,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 8,
+  "penalties": [],
+  "cards": [
+   {
+    "t": 1783712597.949,
+    "action": "yellow_card",
+    "team": "Spain",
+    "cs": 2553
+   },
+   {
+    "t": 1783716409.182,
+    "action": "yellow_card",
+    "team": "Belgium",
+    "cs": 5073
+   },
+   {
+    "t": 1783716878.813,
+    "action": "yellow_card",
+    "team": "Spain",
+    "cs": 5542
+   },
+   {
+    "t": 1783716997.606,
+    "action": "yellow_card",
+    "team": "Belgium",
+    "cs": 5659
+   }
+  ],
+  "shots": {
+   "total": 40,
+   "teams": {
+    "Unassigned": 10,
+    "Spain": 22,
+    "Belgium": 8
+   }
+  }
+ }
+}

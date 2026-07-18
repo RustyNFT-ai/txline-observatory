@@ -1,0 +1,166 @@
+{
+ "id": "uruguay-vs-spain-2026-06-26",
+ "match": "Uruguay vs Spain",
+ "teams": [
+  "Uruguay",
+  "Spain"
+ ],
+ "date": "2026-06-26",
+ "slug": null,
+ "labels": [
+  "Spain",
+  "Uruguay",
+  "draw"
+ ],
+ "t0": 1782518513.5,
+ "t1": 1782525693.2,
+ "rows": 1439,
+ "fid": null,
+ "home1": null,
+ "tx_teams": null,
+ "score_changes": [
+  [
+   1782520997.1,
+   1
+  ]
+ ],
+ "tids": [],
+ "counts": {
+  "poly:book": 1439,
+  "txline:odds": 867,
+  "espn:score": 1,
+  "wc26:score": 1
+ },
+ "moments": [
+  {
+   "t0": 1782520997.1,
+   "t0_src": "espn",
+   "benefit": "Spain",
+   "baseline": 0.47,
+   "delta_120s": 0.0,
+   "prices": {
+    "before": {
+     "dt": 0.1,
+     "outcomes": {
+      "Uruguay": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Spain": {
+       "bid": 0.47,
+       "ask": 0.48
+      },
+      "draw": {
+       "bid": 0.33,
+       "ask": 0.34
+      }
+     }
+    },
+    "txline": {
+     "dt": 0.0,
+     "outcomes": {
+      "Uruguay": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Spain": {
+       "bid": 0.47,
+       "ask": 0.48
+      },
+      "draw": {
+       "bid": 0.33,
+       "ask": 0.34
+      }
+     }
+    },
+    "5s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Uruguay": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Spain": {
+       "bid": 0.47,
+       "ask": 0.48
+      },
+      "draw": {
+       "bid": 0.33,
+       "ask": 0.34
+      }
+     }
+    },
+    "10s": {
+     "dt": 0.0,
+     "outcomes": {
+      "Uruguay": {
+       "bid": 0.19,
+       "ask": 0.2
+      },
+      "Spain": {
+       "bid": 0.47,
+       "ask": 0.48
+      },
+      "draw": {
+       "bid": 0.33,
+       "ask": 0.34
+      }
+     }
+    }
+   },
+   "var": false,
+   "action": "goal",
+   "scorer": "Spain",
+   "score_before": "0-0",
+   "score_after": "0-1",
+   "note": "t0 is ESPN detection; TxLINE goal-action recording unavailable"
+  }
+ ],
+ "opportunities": [
+  {
+   "t": 1782521022.1,
+   "label": "Spain",
+   "tx_fair": 0.755,
+   "poly_ask": 0.48,
+   "initial_gap": 0.275,
+   "max_gap": 0.283,
+   "ask_depth": 17136,
+   "pre_activity": 0.202,
+   "clock": "42'",
+   "score": "0-1",
+   "duration": 430.7,
+   "exit_bid": 0.74,
+   "gross_per_share": 0.26,
+   "entry_5s_ask": 0.48,
+   "gross_5s_per_share": 0.26
+  },
+  {
+   "t": 1782525154.1,
+   "label": "Spain",
+   "tx_fair": 0.87,
+   "poly_ask": 0.82,
+   "initial_gap": 0.05,
+   "max_gap": 0.094,
+   "ask_depth": 414588,
+   "pre_activity": 0.203,
+   "clock": "88'",
+   "score": "0-1",
+   "duration": 501.7,
+   "exit_bid": 0.98,
+   "gross_per_share": 0.16,
+   "entry_5s_ask": 0.82,
+   "gross_5s_per_share": 0.16
+  }
+ ],
+ "attention_rate": 0.184,
+ "event_insights": {
+  "reviews": [],
+  "corrections": 0,
+  "penalties": [],
+  "cards": [],
+  "shots": {
+   "total": 0,
+   "teams": {}
+  }
+ }
+}
