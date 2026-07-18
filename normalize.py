@@ -29,6 +29,8 @@ import re
 import statistics
 import sys
 import time
+import urllib.parse
+import urllib.request
 
 OBS = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(OBS)
@@ -95,18 +97,21 @@ def iter_jsonl(path):
 # ── TxLINE fixtures (fid -> team names), fetched once and cached ────────────
 def fetch_fixtures():
     try:
-        import requests
         tok = os.environ.get("TXLINE_API_TOKEN", "").strip()
         if not tok:
             tok = open(os.path.join(STUDY, ".txodds_token")).read().strip()
-        r = requests.post(TXODDS_BASE + "/auth/guest/start", timeout=12)
-        jwt = r.json().get("token")
+        auth = urllib.request.Request(TXODDS_BASE + "/auth/guest/start", data=b"",
+                                      headers={"User-Agent": "txline-observatory/1.0"}, method="POST")
+        with urllib.request.urlopen(auth, timeout=12) as response:
+            jwt = json.load(response).get("token")
         h = {"Authorization": f"Bearer {jwt}", "X-Api-Token": tok}
-        r = requests.get(TXODDS_BASE + "/api/fixtures/snapshot", headers=h,
-                         params={"competitionId": 72}, timeout=20)
+        url = TXODDS_BASE + "/api/fixtures/snapshot?" + urllib.parse.urlencode({"competitionId": 72})
+        req = urllib.request.Request(url, headers={**h, "User-Agent": "txline-observatory/1.0"})
+        with urllib.request.urlopen(req, timeout=20) as response:
+            rows = json.load(response)
         fx = [{"fid": f.get("FixtureId"), "t1": f.get("Participant1"), "t2": f.get("Participant2"),
                "home1": bool(f.get("Participant1IsHome")), "start": (f.get("StartTime") or 0) / 1000.0}
-              for f in r.json() if f.get("FixtureId")]
+              for f in rows if f.get("FixtureId")]
         if fx:
             os.makedirs(DATA, exist_ok=True)
             with open(FIXTURES_CACHE, "w") as f:
