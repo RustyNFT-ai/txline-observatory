@@ -61,7 +61,9 @@ trading permission. The server scans a bounded public fill window and keeps only
 IDs mapped to World Cup match markets in this 47-match archive.”
 
 Point to matched fills, match count, and matched notional. Click one mapped timeline
-event. Then point to the separate internal bot ledger card.
+event and its public-wallet diamonds. Mention that only the public address is remembered;
+fill details stay in session memory and can ground AI for the selected goal. Then point
+to the separate internal bot ledger card.
 
 “Fill history does not prove realized P&L, so the wallet view reports activity and
 notional. Our own event ledger's 33 closed trades and plus 22 dollars and 4 cents remain
@@ -96,4 +98,3 @@ stat validation. Those feeds are normalized with market and execution evidence i
 working research product judges can test now. This is TxLINE Observatory.”
 
 Stop recording. Do not add a long outro; preserve margin under five minutes.
-

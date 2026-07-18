@@ -58,6 +58,7 @@ const S = {
   live: [], liveWant: null,
   upcoming: [], upcomingMatch: null,
   currentId: null, loadSeq: 0, ready: false,
+  walletAddress: null, walletFillsByMatch: new Map(),
 };
 
 function syncPageState(t = null) {
@@ -152,6 +153,7 @@ function loadFull(id, focusT = null) {
     if (loadSeq !== S.loadSeq || S.mode !== "full") return;
     resetData(d.meta);
     d.events.forEach(addEvent);
+    addWalletFillsToCurrent(id);
     // series must be time-sorted (book rows and ws ticks interleave)
     for (const s of S.series.values()) { s.poly.sort((x, y) => x[0] - y[0]); s.tx.sort((x, y) => x[0] - y[0]); }
     S.view = [d.meta.t0 - 60, d.meta.t1 + 60];
@@ -216,7 +218,7 @@ function startReplay(id, speed = 60) {
     resetData(d.meta);
     S.view = [d.meta.t0 - 30, d.meta.t0 + 600];
     renderMoments(); renderChips(); renderLegend(); statusLine(); syncPageState();
-    const evs = d.events || [];
+    const evs = [...(d.events || []), ...walletTimelineEvents(id, d.events || [])].sort((a, b) => a.t - b.t);
     if (!evs.length) { S.mode = "full"; setModeButtons(); syncPageState(); return; }
     let i = 0;
     const t0 = evs[0].t;
@@ -450,9 +452,11 @@ function requestAiInsight(mo, index, question) {
   const controller = new AbortController();
   S._aiAbort = controller;
   const timer = setTimeout(() => controller.abort(), 36000);
+  const request = {match_id: S.currentId, moment_index: index, question};
+  if (S.walletAddress) request.wallet_address = S.walletAddress;
   fetch("/api/ai-insight", {
     method: "POST", signal: controller.signal, headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({match_id: S.currentId, moment_index: index, question}),
+    body: JSON.stringify(request),
   }).then(async (response) => {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "AI insight request failed");
@@ -469,8 +473,61 @@ function requestAiInsight(mo, index, question) {
 
 // ── public World Cup wallet lens ─────────────────────────────────────────────
 let walletConfig = null, walletReturnFocus = null;
+const WALLET_STORAGE_KEY = "txline-observatory-wallet";
 const shortWallet = (address) => address ? `${address.slice(0, 6)}…${address.slice(-4)}` : "—";
 const walletMoney = (value) => `$${Number(value || 0).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+
+function rememberedWallet() {
+  try {
+    const address = localStorage.getItem(WALLET_STORAGE_KEY) || "";
+    return /^0x[a-f0-9]{40}$/.test(address) ? address : "";
+  } catch (_) { return ""; }
+}
+
+function walletFillKey(fill) {
+  return `${Math.round(Number(fill.t ?? fill.timestamp) || 0)}:${fill.side || ""}:${Number(fill.price || 0).toFixed(6)}:${Number(fill.size || 0).toFixed(6)}`;
+}
+
+function walletTimelineEvents(matchId, existing = S.events) {
+  const fills = S.walletFillsByMatch.get(matchId) || [];
+  const seen = new Set(existing.filter((x) => x.kind === "fill").map(walletFillKey));
+  const events = [];
+  for (const fill of fills) {
+    const event = {t: fill.timestamp, src: "public-wallet", kind: "fill",
+      who: shortWallet(S.walletAddress), wallet_address: S.walletAddress,
+      team: fill.team || fill.outcome, side: fill.side, price: fill.price, size: fill.size,
+      notional: fill.notional, market_title: fill.market_title, fill_source: fill.source};
+    const key = walletFillKey(event);
+    if (!seen.has(key)) { seen.add(key); events.push(event); }
+  }
+  return events;
+}
+
+function addWalletFillsToCurrent(matchId = S.currentId) {
+  const events = walletTimelineEvents(matchId);
+  events.forEach(addEvent);
+  return events.length;
+}
+
+function removePublicWalletFills() {
+  S.events = S.events.filter((x) => x.src !== "public-wallet");
+  S.flags = S.flags.filter((x) => x.src !== "public-wallet");
+  S.lastT = Math.max(0, ...S.events.map((x) => x.t || 0));
+}
+
+function rememberWalletReport(report) {
+  S.walletAddress = report.address;
+  S.walletFillsByMatch = new Map();
+  for (const fill of report.fills || []) {
+    const list = S.walletFillsByMatch.get(fill.match_id) || [];
+    list.push(fill); S.walletFillsByMatch.set(fill.match_id, list);
+  }
+  try { localStorage.setItem(WALLET_STORAGE_KEY, report.address); } catch (_) {}
+  $("wallet-forget").hidden = false;
+  if (S.mode === "full" && S.currentId) {
+    removePublicWalletFills(); addWalletFillsToCurrent(); renderChips(); statusLine(); draw();
+  }
+}
 
 function renderRecordedBot(config) {
   const bot = config.recorded_bot || {};
@@ -483,6 +540,9 @@ function openWallet() {
   walletReturnFocus = document.activeElement;
   $("wallet-overlay").hidden = false;
   document.body.classList.add("modal-open");
+  const saved = rememberedWallet();
+  if (!$("wallet-address").value && saved) $("wallet-address").value = saved;
+  $("wallet-forget").hidden = !saved;
   if (walletConfig) { renderRecordedBot(walletConfig); $("wallet-address").focus(); return; }
   $("recorded-bot-summary").innerHTML = `<div class="wallet-loading">Loading archive scope…</div>`;
   fetch("/api/wallet").then((response) => response.json()).then((config) => {
@@ -529,7 +589,7 @@ function loadWallet(address) {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "Wallet lookup failed");
     return data;
-  }).then(renderWalletReport).catch((error) => {
+  }).then((report) => { rememberWalletReport(report); renderWalletReport(report); }).catch((error) => {
     $("wallet-results").innerHTML = `<p class="wallet-error">${esc(error.message)}</p>`;
   });
 }
@@ -539,6 +599,13 @@ $("wallet-modal-close").onclick = closeWallet;
 $("wallet-overlay").onclick = (ev) => { if (ev.target === $("wallet-overlay")) closeWallet(); };
 $("wallet-form").onsubmit = (ev) => { ev.preventDefault(); loadWallet($("wallet-address").value); };
 $("wallet-demo").onclick = () => { if (walletConfig) loadWallet(walletConfig.demo_address); };
+$("wallet-forget").onclick = () => {
+  try { localStorage.removeItem(WALLET_STORAGE_KEY); } catch (_) {}
+  S.walletAddress = null; S.walletFillsByMatch = new Map(); removePublicWalletFills();
+  $("wallet-address").value = ""; $("wallet-forget").hidden = true;
+  $("wallet-results").innerHTML = `<p class="wallet-empty">Saved address removed. Enter a wallet to match its public fills to the World Cup archive.</p>`;
+  renderChips(); statusLine(); draw(); $("wallet-address").focus();
+};
 
 function selectMoment(mo, card, viewT = mo.t0) {
   S.view = [viewT - 120, viewT + 420];

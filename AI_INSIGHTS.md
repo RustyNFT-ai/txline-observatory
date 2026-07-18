@@ -13,12 +13,14 @@ questions such as:
 The control is available on every recorded goal, including negative replays,
 disallowed goals, feed gaps, and goals where no screened edge exists.
 
-The browser sends one finite `POST /api/ai-insight` request with only `match_id`,
-`moment_index`, and `question`. The server ignores browser-supplied facts and resolves
-the selection into trusted local context: the goal record, all available market history
-before it (including prematch observations), nearby feed/fill/bot evidence, screened
-opportunities, bot events, archive benchmarks, and exact methodology. It then makes
-one finite Anthropic Messages API call. No API key or raw model call exists in `web/`.
+The browser sends one finite `POST /api/ai-insight` request with `match_id`,
+`moment_index`, `question`, and—only after the wallet lens loads successfully—an optional
+validated `wallet_address`. The browser never supplies timing, price, fill, or bot facts.
+The server resolves the selection into trusted local context: the goal record, all
+available market history before it (including prematch observations), nearby
+feed/fill/bot evidence, screened opportunities, bot events, archive benchmarks, exact
+methodology, and bounded server-cached fills for that address. It then makes one finite
+Anthropic Messages API call. No API key or raw model call exists in `web/`.
 
 Suggested context payload:
 

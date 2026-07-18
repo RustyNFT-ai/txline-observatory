@@ -69,11 +69,15 @@
     <div id="recorded-bot-summary"></div>
     <form id="wallet-form">
       <label for="wallet-address">Polymarket profile / proxy wallet address</label>
-      <div>
+      <div class="wallet-input-row">
         <input id="wallet-address" autocomplete="off" spellcheck="false" placeholder="0x…" maxlength="42">
         <button type="submit">Load World Cup fills</button>
       </div>
-      <button type="button" id="wallet-demo">Use recorded demo wallet</button>
+      <div class="wallet-secondary-actions">
+        <button type="button" id="wallet-demo">Use recorded demo wallet</button>
+        <button type="button" id="wallet-forget" hidden>Forget saved address</button>
+      </div>
+      <p class="wallet-storage-note">This browser remembers only the public address. Fill results remain in memory for this session.</p>
     </form>
     <div id="wallet-results" aria-live="polite"><p class="wallet-empty">Enter a wallet to match its public fills to goal events and recorded price data.</p></div>
   </section>

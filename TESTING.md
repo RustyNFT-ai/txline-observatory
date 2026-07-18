@@ -50,8 +50,16 @@ Click **Bot Wallet**, then **Load demo wallet**. Expect the public address
 and a current result of approximately **74 deduplicated fills**, **2 archive matches**,
 and **$7,924.85 matched notional**. Public API history can change, so counts may increase
 or the app may label the scan capped. Click a timeline action and confirm the matching
-recorded match opens near the nearest goal. The separate internal bot card should remain
+recorded match opens near the nearest goal. The **whales** chip count should include the
+loaded public-wallet diamonds; hovering a diamond should show the short wallet address,
+side, outcome, price, and size. Expand the nearby goal and Ask AI what the selected public
+wallet did; expect the answer to cite server-verified nearby fills without claiming P&L.
+The separate internal bot card should remain
 **33 entries / 33 exits / +$22.04** and must not be described as wallet P&L.
+
+Reload, reopen **Bot Wallet**, and confirm the address is prefilled but results are not
+persisted. Click **Forget saved address**; expect the input, chart diamonds, in-memory
+fill set, and the single address-only browser storage entry to clear.
 
 Invalid test: enter `0x1234`. Expect an address-validation message and no request for a
 signature, login, private key, or trading permission.

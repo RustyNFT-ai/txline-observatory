@@ -256,10 +256,14 @@ button[data-tip] { text-decoration: none; }
 #recorded-bot-summary .neg { color: var(--crit); }
 #wallet-form { margin-top: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
 #wallet-form label { display: block; margin-bottom: 5px; color: var(--ink-2); font-size: 11px; }
-#wallet-form > div { display: flex; gap: 7px; }
+#wallet-form > .wallet-input-row { display: flex; gap: 7px; }
 #wallet-address { flex: 1; min-width: 0; padding: 8px 10px; color: var(--ink); background: var(--page); border: 1px solid var(--border); border-radius: 6px; font: 12px ui-monospace, monospace; }
-#wallet-form > div button { background: var(--s1); border-color: var(--s1); }
-#wallet-demo { margin-top: 7px; color: #b9d9ff; border-color: rgba(57,135,229,.4); }
+#wallet-form > .wallet-input-row button { background: var(--s1); border-color: var(--s1); }
+.wallet-secondary-actions { display: flex; gap: 7px; margin-top: 7px; }
+.wallet-secondary-actions button { flex: 1; }
+#wallet-demo { color: #b9d9ff; border-color: rgba(57,135,229,.4); }
+#wallet-forget { color: var(--muted); }
+.wallet-storage-note { margin-top: 6px; color: var(--muted); font-size: 10px; }
 .wallet-empty { padding: 24px 0; color: var(--muted); text-align: center; }
 .wallet-loading { display: flex; gap: 10px; align-items: center; padding: 18px; color: var(--ink-2); }
 .wallet-loading > span { color: #79b4fa; font-size: 20px; animation: aipulse 1.1s ease-in-out infinite alternate; }
@@ -368,8 +372,8 @@ footer {
   #ai-question-form > div { align-items: stretch; }
   .wallet-modal { padding: 18px 14px; }
   #recorded-bot-summary, .wallet-result-head { align-items: flex-start; flex-direction: column; }
-  #wallet-form > div { flex-direction: column; }
-  #wallet-form > div button { width: 100%; }
+  #wallet-form > .wallet-input-row { flex-direction: column; }
+  #wallet-form > .wallet-input-row button { width: 100%; }
   .wallet-tiles { overflow-x: auto; }
   .wallet-tiles > div { min-width: 130px; }
   .wallet-fill { grid-template-columns: 1fr; }

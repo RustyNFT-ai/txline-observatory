@@ -39,8 +39,15 @@ Click **Bot Wallet** and enter any Polymarket profile/proxy wallet address. This
 read-only: no signature, private key, login, or trading permission is requested. The
 server reads the wallet's public Polymarket trade tape and keeps only fills whose
 token ID belongs to a main match-outcome market in the 47-match World Cup archive.
-Matched fills link back to the exact point on the Observatory timeline and show the
-nearest goal when it is within five minutes.
+Matched fills appear as public-wallet diamonds on the chart, link back to their exact
+point on the Observatory timeline, and show the nearest goal when it is within five
+minutes. After a wallet is loaded, its server-verified nearby fills are also available
+to Ask AI for the selected goal.
+
+The browser persists only the validated public address so it can prefill the next visit;
+fill details remain in memory for the current session and can be cleared with **Forget
+saved address**. The server keeps a short in-memory response cache and writes no wallet
+profile or fills to disk.
 
 The public Data API exposes a bounded recent window, so the endpoint scans up to the
 20,000 most-recent fills and says when that window is capped. The built-in `cigarettes`

@@ -16,7 +16,7 @@ runtime exceptions were monitored during the mode regression.
 | Goal detail | A separate expand affordance preserves card-to-chart zoom while revealing source timing, VAR/feed-gap state, price move, and bot evidence. |
 | Explanation | Ask AI stays tied to the selected goal and exposes provider/fallback state instead of presenting an ungrounded global chatbot. |
 | Terminology | Hover/focus/tap help was added for unclear metrics. Negative timing is described as “recorded before,” not unsupported front-running. |
-| Wallet safety | The modal says public/read-only and World-Cup-only before input; demo, invalid, empty, capped, and public-API failure states are explicit. Wallet notional and internal bot P&L remain separate. |
+| Wallet safety | The modal says public/read-only and World-Cup-only before input; demo, invalid, empty, capped, and public-API failure states are explicit. Only the address persists; fills remain in memory, overlay on the timeline, and can ground the selected-event AI. Wallet notional and internal bot P&L remain separate. |
 | Responsive header | At 390 px, the match picker and all seven actions fit a compact three-row grid without document overflow. Long status detail collapses. |
 | Chart | Margins, tick density, and endpoint labels adapt to narrow widths. Empty views show a double-click-to-fit hint. |
 | Modals | Goal and wallet dialogs fit at 390 px, avoid horizontal overflow, close with Escape/outside click, and restore focus. |
@@ -52,4 +52,3 @@ manual hash edits still work and naturally create normal browser history.
 Do not add another major UI surface before the video. The most valuable remaining work
 is operational: add the Anthropic key, complete the durable deployment, execute
 [TESTING.md](TESTING.md) against that URL, and record [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md).
-
