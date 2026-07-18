@@ -6,12 +6,12 @@ Routes:
   GET /                      web UI
   GET /api/matches           match index (data/index.json)
   GET /api/match/<id>        {"meta":..., "events":[...]}  full timeline, instant
-  GET /api/stream/<id>?speed=60&from=<unix>   SSE paced replay of a built match
-  GET /api/live              SSE live tail of the running monitors' output files,
-                             normalized to the same event schema (+ "match" field)
+  GET /api/live/poll?since=<seq>   finite live-tail JSON for the browser
+  POST /api/ai-insight       bounded, server-grounded event explanation
+  GET /api/wallet?address=   bounded public World Cup wallet match
 
-Replay and live share the client-side path: both are an SSE stream of unified
-events; replay is just a recorded stream played at speed x.
+The browser fetches a recorded match once and replays it client-side; Live uses short
+polling. Legacy /api/stream and /api/live SSE routes remain for local tooling only.
 """
 import collections
 import hashlib

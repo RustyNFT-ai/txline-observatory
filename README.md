@@ -61,8 +61,8 @@ P&L**. The separate recorded in-play bot card retains the internal event-ledger 
 ```
 recorders (already running, unchanged):        observatory/
   goal_latency.py  ── goal_latency.jsonl ──┐   normalize.py  batch: files -> data/<id>.jsonl (+moments)
-    ├─ TxLINE /api/odds/stream  ─ tx_odds_raw.jsonl │   server.py     /api/match, /api/stream (SSE replay),
-    ├─ TxLINE /api/scores/stream ─ tx_scores_raw.jsonl ├──▶            /api/live (SSE tail), static web/
+    ├─ TxLINE /api/odds/stream  ─ tx_odds_raw.jsonl │   server.py     finite /api/match, /api/live/poll,
+    ├─ TxLINE /api/scores/stream ─ tx_scores_raw.jsonl ├──▶            /api/wallet, /api/ai-insight, static web/
     └─ poly-ws-watch ─ burst_events.jsonl   │   web/          index.html + app.js (canvas) + style.css
   inplay bots ── inplay*_events.csv ────────┘
 ```
