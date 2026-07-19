@@ -73,6 +73,8 @@ const TOOLTIP_FILL_LIMIT = 8;
 const autoJoin = () => !!S.view && (S.view[1] - S.view[0]) < AUTOJOIN_SPAN;
 const isMobile = () => matchMedia("(max-width: 700px)").matches;
 const isCoarse = () => matchMedia("(pointer: coarse)").matches;
+const GOAL_ACTOR_WINDOW = 300;                 // match server-side "goal-linked" wallet scope
+const GOAL_ACTOR_LIMIT = 5;
 
 function syncPageState(t = null) {
   let hash = "", match = null;
@@ -493,13 +495,20 @@ function stopStream() {
 // ── moments strip ────────────────────────────────────────────────────────────
 const fmtClock = (cs) => cs == null ? "" : `${Math.floor(cs / 60)}'`;
 const fmtDt = (v) => v == null ? "—" : `${v >= 0 ? "+" : ""}${v.toFixed(1)}s`;
-const GOAL_WATCHLIST_LIMIT = 5;
-
 function watchedGoalFills(mo) {
   if (mo?.t0 == null) return [];
   const candidates = S.flags.filter((event) => event.kind === "fill" && isWatchlistedFill(event) &&
-    event.t >= mo.t0 - 30 && event.t <= mo.t0 + 180).sort((a, b) => a.t - b.t);
+    event.t >= mo.t0 - GOAL_ACTOR_WINDOW && event.t <= mo.t0 + GOAL_ACTOR_WINDOW)
+    .sort((a, b) => Math.abs(a.t - mo.t0) - Math.abs(b.t - mo.t0) || a.t - b.t);
   return candidates.map((fill) => ({...fill, label: watchNameForFill(fill), dt: fill.t - mo.t0}));
+}
+
+function paperGoalActivity(mo) {
+  if (!paperBotSelected() || mo?.t0 == null) return [];
+  return S.flags.filter((event) => event.src === "bot" && event.kind === "trade" &&
+    event.t >= mo.t0 - GOAL_ACTOR_WINDOW && event.t <= mo.t0 + GOAL_ACTOR_WINDOW)
+    .sort((a, b) => Math.abs(a.t - mo.t0) - Math.abs(b.t - mo.t0) || a.t - b.t)
+    .map((event) => ({...event, dt: event.t - mo.t0}));
 }
 
 function renderMoments() {
@@ -595,10 +604,15 @@ function openGoalDetail(mo, card, index) {
       {label: "wc26", value: mo.wc26_dt},
     ].filter((source, i) => i === 0 || source.value != null);
     const watched = watchedGoalFills(mo);
-    const walletSources = watched.slice(0, GOAL_WATCHLIST_LIMIT).map((fill) => ({
+    const walletSources = watched.slice(0, GOAL_ACTOR_LIMIT).map((fill) => ({
       label: fill.label, value: fill.dt, fill,
     }));
-    const botSources = botActor && mo.bot_action && mo.bot_dt != null ? [{label: botActor.name, value: mo.bot_dt,
+    const nearbyBot = paperGoalActivity(mo);
+    const botSources = nearbyBot.length ? nearbyBot.slice(0, GOAL_ACTOR_LIMIT).map((event) => ({
+      label: botActor.name, value: event.dt,
+      bot: {action: event.action, team: event.team, price: event.price, pnl: event.pnl,
+        reason: event.reason, actor: botActor},
+    })) : botActor && mo.bot_action && mo.bot_dt != null ? [{label: botActor.name, value: mo.bot_dt,
       bot: {action: mo.bot_action, team: mo.benefit, price: mo.bot_price, actor: botActor}}] : [];
     const values = [...marketSources, ...botSources, ...walletSources].map((source) => source.value);
     const min = Math.floor(Math.min(-5, ...values));
@@ -610,15 +624,16 @@ function openGoalDetail(mo, card, index) {
       const front = value < 0;
       const color = fill ? watchColorForFill(fill) : bot ? watchColor(bot.actor) : null;
       const detail = fill ? `<small>${esc(String(fill.side || "fill").toUpperCase())} ${esc(fill.team || "outcome")}${fill.size == null ? "" : ` · ${Number(fill.size).toLocaleString(undefined, {maximumFractionDigits: 2})}`}${fill.price == null ? "" : ` @ ${(Number(fill.price) * 100).toFixed(1)}¢`}</small>` :
-        bot ? `<small>${esc(bot.action)}${bot.team ? ` ${esc(bot.team)}` : ""}${bot.price == null ? "" : ` @ ${(Number(bot.price) * 100).toFixed(1)}¢`}</small>` : "";
-      const glyph = fill ? "◆" : bot ? "▲" : "";
+        bot ? `<small>${esc(bot.action)}${bot.team ? ` ${esc(bot.team)}` : ""}${bot.price == null ? "" : ` @ ${(Number(bot.price) * 100).toFixed(1)}¢`}${bot.pnl == null ? "" : ` · ${bot.pnl >= 0 ? "+" : "−"}$${Math.abs(bot.pnl).toFixed(2)}`}${bot.reason ? ` · ${esc(bot.reason)}` : ""}</small>` : "";
+      const glyph = fill ? "◆" : bot ? bot.action === "EXIT" ? "▼" : "▲" : "";
       return `<div class="waterfall-row"><span><b>${glyph ? `<i class="actor-glyph" style="color:${color}">${glyph}</i>` : ""}${esc(label)}</b>${detail}</span><div class="waterfall-track" style="--zero:${zero}%;${color ? `--actor-color:${color};` : ""}"><i class="waterfall-bar ${front ? "front" : ""}${fill || bot ? " actor" : ""}" style="left:${left}%;width:${Math.max(width, value === 0 ? .6 : 0)}%"></i></div><strong class="${front ? "front" : ""}">${value === 0 ? "0.0s" : fmtDt(value)}</strong></div>`;
     };
     const walletBody = walletSources.length
       ? walletSources.map(row).join("") + (watched.length > walletSources.length ? `<div class="waterfall-more">+${watched.length - walletSources.length} more watched fill${watched.length - walletSources.length === 1 ? "" : "s"}</div>` : "")
       : "";
-    const botBody = botSources.map(row).join("");
-    const actorBody = botBody || walletBody ? `${botBody}${walletBody}` : `<p class="waterfall-empty">${S.watchlist.length ? "No watched actor activity from 30s before through 180s after this goal." : "Add an actor to compare its goal-reaction activity."}</p>`;
+    const botBody = botSources.map(row).join("") + (nearbyBot.length > botSources.length
+      ? `<div class="waterfall-more">+${nearbyBot.length - botSources.length} more paper execution${nearbyBot.length - botSources.length === 1 ? "" : "s"}</div>` : "");
+    const actorBody = botBody || walletBody ? `${botBody}${walletBody}` : `<p class="waterfall-empty">${S.watchlist.length ? "No watched actor activity within five minutes of this goal." : "Add an actor to compare its goal-reaction activity."}</p>`;
     body = `<div class="waterfall" aria-label="Source and watched-actor timing relative to TxLINE"><div class="waterfall-axis"><span>${fmtDt(min)}</span><span>TxLINE 0</span><span>${fmtDt(max)}</span></div><div class="waterfall-group-label">Market signals</div>${marketSources.map(row).join("")}<div class="waterfall-group-label"><span>Watchlist</span><button type="button" id="goal-open-watchlist">${S.watchlist.length ? "Manage watchlist" : "+ Add actors"}</button></div>${actorBody}</div><p class="waterfall-note"><span class="front-key"></span> Negative means the source or actor activity arrived before TxLINE's recorded goal message.</p>`;
   }
   out.innerHTML = `<header class="goal-modal-head"><div><span class="eyebrow">GOAL MOMENT · ${esc(mo.score_before || "?")} → ${esc(mo.score_after || "?")}</span><h2 id="goal-modal-title">${esc(mo.scorer || "Unknown")} goal, ${minute}</h2><div class="goal-badges">${badges}</div></div></header>${body}<div class="goal-modal-footer">${footer}<span class="footer-spacer"></span><button type="button" id="goal-ask-ai" class="ai-trigger">✦ Ask AI insight</button><button type="button" id="goal-show-chart">Show on chart</button></div><section id="ai-panel" aria-live="polite" hidden></section>`;
@@ -951,6 +966,10 @@ function applyWalletConfig(config) {
       const suggestion = (config.suggested_bots || []).find((item) => item.id === entry.id);
       return suggestion ? {...entry, ...suggestion, curated: true} : entry;
     }
+    // A wallet explicitly entered as custom remains the user's local identity even
+    // when its address is also in our research cohort. This also keeps its fetched
+    // report indexed instead of switching to name-only archive matching mid-load.
+    if (!entry.curated) return entry;
     const suggestion = (config.suggested_wallets || []).find((item) => item.address === entry.address);
     if (!suggestion) return entry;
     if (!entry.curated || entry.name !== suggestion.name || entry.description !== suggestion.description) changed = true;
@@ -2027,7 +2046,7 @@ function insightBaseline(item) {
   return Number(item.txline_t ?? item.goal_t ?? item.espn_t ?? item.t);
 }
 
-function insightWatchNear(data, item, before = 30, after = 180) {
+function insightWatchNear(data, item, before = GOAL_ACTOR_WINDOW, after = GOAL_ACTOR_WINDOW) {
   const baseline = insightBaseline(item);
   if (!Number.isFinite(baseline)) return [];
   return insightWatchFills(data).filter((fill) =>
