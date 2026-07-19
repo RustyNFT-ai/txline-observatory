@@ -20,6 +20,8 @@ import time
 
 import requests
 
+from wallet_roster import WATCH
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUT_PATH = os.environ.get(
@@ -28,14 +30,6 @@ OUT_PATH = os.environ.get(
 DATA_API = "https://data-api.polymarket.com/trades"
 POLL = 10.0          # full sweep interval (all wallets); ~30 req/min total
 LIMIT = 50
-
-WATCH = {
-    "0x2005d16a84ceefa912d4e380cd32e7ff827875ea": "RN1",
-    "0x204f72f35326db932158cba6adff0b9a1da95e14": "swisstony",
-    "0xd218e474776403a330142299f7796e8ba32eb5c9": "cigarettes",
-    "0x84cfffc3f16dcc353094de30d4a45226eccd2f63": "mooseborzoi",
-    "0x0346afae2603313d2bbee96b628536c8cbe352a5": "GoalLineGhost",
-}
 
 S = requests.Session()
 S.headers.update({"User-Agent": "obs-wallet-watch/1.0"})

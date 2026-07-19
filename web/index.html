@@ -9,48 +9,69 @@
 </head>
 <body>
 <header>
-  <h1><span class="tx">TxLINE</span> Observatory</h1>
+  <h1><a id="brand-home" href="/" aria-label="TxLINE Observatory home" title="Return to the main match view"><span class="tx">TxLINE</span> Observatory</a></h1>
   <select id="match-select"></select>
   <button id="btn-full" class="active" data-tip="Load the complete recorded timeline immediately.">Full</button>
   <button id="btn-replay" data-tip="Play the archived event stream at 60× speed in your browser.">Replay 60&times;</button>
   <button id="btn-live" data-tip="Follow a match detected by the running monitors using finite polling.">Live</button>
+  <span id="mode-note" hidden>Full &amp; Replay unlock once this match has recorded data.</span>
   <span class="spacer"></span>
-  <span id="status"></span>
-  <button id="btn-wallet" data-tip="Match any public Polymarket bot wallet to World Cup events in this archive.">Bot Wallet</button>
-  <button id="btn-insights" data-tip="Compare recorded goals, feed latency, price gaps, and bot outcomes across the World Cup archive.">Insights</button>
+  <button id="btn-wallet" data-tip="Choose wallets or paper actors to compare on charts and goal analysis.">Watchlist</button>
+  <button id="btn-insights" data-tip="Compare recorded goals, feed latency, price gaps, and selected watchlist activity across the World Cup archive.">Insights</button>
   <button id="btn-inspector" data-tip="Inspect the selected normalized event and its nearby feed messages.">Inspector</button>
 </header>
 
-<section id="upcoming-hero" hidden>
-  <div>
-    <span class="eyebrow">UPCOMING · PREMATCH DATA</span>
-    <h2 id="upcoming-title"></h2>
-    <div id="upcoming-kickoff"></div>
+<section id="scoreboard" hidden>
+  <div class="sb-main">
+    <div class="sb-score-row">
+      <span class="sb-team" id="sb-team1"></span>
+      <span class="sb-nums" id="sb-nums">–</span>
+      <span class="sb-team" id="sb-team2"></span>
+      <span class="sb-state" id="sb-state"></span>
+    </div>
+    <div class="sb-finding" id="sb-finding"></div>
+    <div class="sb-goalbar" id="sb-goalbar" aria-label="Goals on a 0–120 minute strip"></div>
   </div>
-  <div class="countdown-wrap">
-    <span class="eyebrow">KICKOFF COUNTDOWN</span>
-    <strong id="upcoming-countdown">—</strong>
-    <span id="upcoming-delay"></span>
+  <div class="sb-side">
+    <span id="status"></span>
+    <div class="countdown-wrap" id="sb-countdown-wrap" hidden>
+      <span class="eyebrow">KICKOFF COUNTDOWN</span>
+      <strong id="upcoming-countdown">—</strong>
+      <span id="upcoming-delay"></span>
+    </div>
   </div>
 </section>
 
 <div id="moments"></div>
 <div id="chips"></div>
+<div id="comparison-bar" hidden></div>
 
 <div id="main">
   <div id="chart-wrap">
     <canvas id="chart"></canvas>
     <div id="legend"></div>
+    <button type="button" id="btn-fity" aria-pressed="false" data-tip="Rescale the price axis to the visible data. 0¢ and 100¢ stay as ghost lines.">fit y</button>
     <div id="tooltip"></div>
+    <div id="chart-loading" aria-hidden="true"><span></span>Loading match…</div>
   </div>
   <section id="insights" aria-label="Cross-match insights" hidden></section>
   <div id="inspector">
+    <button type="button" class="insp-close-x" aria-label="Close inspector">×</button>
     <h3>Selected event</h3>
     <pre id="insp-json">click a flag or moment</pre>
     <div id="insp-anchor"></div>
     <div class="ctx"><h3>Nearby feed messages</h3><div id="insp-ctx"></div></div>
   </div>
 </div>
+
+<div id="detail-strip" hidden>
+  <span id="detail-text"></span>
+  <span class="detail-actions">
+    <button type="button" id="detail-json" data-tip="Open the raw normalized event JSON and nearby feed messages.">Raw JSON</button>
+    <button type="button" id="detail-verify" hidden data-tip="Check this event's Merkle proof against the TxLINE anchor account on Solana mainnet.">Verify on Solana</button>
+  </span>
+</div>
+<div id="sr-live" class="sr-only" aria-live="polite"></div>
 
 <div id="goal-overlay" class="modal-backdrop" hidden>
   <section class="goal-modal" role="dialog" aria-modal="true" aria-labelledby="goal-modal-title">
@@ -60,26 +81,36 @@
 </div>
 <div id="wallet-overlay" class="modal-backdrop" hidden>
   <section class="wallet-modal" role="dialog" aria-modal="true" aria-labelledby="wallet-modal-title">
-    <button type="button" id="wallet-modal-close" class="modal-close" aria-label="Close bot wallet">×</button>
+    <button type="button" id="wallet-modal-close" class="modal-close" aria-label="Close watchlist">×</button>
     <div class="wallet-head">
-      <span class="eyebrow">WORLD CUP BOT LENS</span>
-      <h2 id="wallet-modal-title">Compare a public bot wallet</h2>
-      <p>Read-only public fills · no signing, private key, or trading access · World Cup archive markets only.</p>
+      <span class="eyebrow">LOCAL ACTOR WATCHLIST</span>
+      <h2 id="wallet-modal-title">Follow wallets and paper actors</h2>
+      <p>Your selections control chart markers, clustered fills, and goal-waterfall comparisons. Public wallets are read-only; paper actors are clearly identified simulations.</p>
     </div>
-    <div id="recorded-bot-summary"></div>
+    <section class="watchlist-section">
+      <div class="watchlist-section-head"><div><h3>Your watchlist</h3><p>Saved only in this browser.</p></div><span id="watchlist-count">0 actors</span></div>
+      <div id="watchlist-current"><p class="wallet-empty">No actors yet. Add a suggestion below or enter a wallet address.</p></div>
+    </section>
+    <section class="watchlist-section">
+      <div class="watchlist-section-head"><div><h3>Suggested actors</h3><p>Includes an optional TxLINE simulation and public leaderboard wallets; not profitability claims.</p></div><button type="button" id="watchlist-add-all">Add suggested wallets</button></div>
+      <div id="watchlist-suggestions"><div class="wallet-loading">Loading suggestions…</div></div>
+    </section>
     <form id="wallet-form">
-      <label for="wallet-address">Polymarket profile / proxy wallet address</label>
+      <label for="wallet-address">Add any Polymarket profile / proxy wallet</label>
       <div class="wallet-input-row">
         <input id="wallet-address" autocomplete="off" spellcheck="false" placeholder="0x…" maxlength="42">
-        <button type="submit">Load World Cup fills</button>
+        <button type="submit">Add to watchlist</button>
       </div>
-      <div class="wallet-secondary-actions">
-        <button type="button" id="wallet-demo">Use recorded demo wallet</button>
-        <button type="button" id="wallet-forget" hidden>Forget saved address</button>
-      </div>
-      <p class="wallet-storage-note">This browser remembers only the public address. Fill results remain in memory for this session.</p>
+      <p class="wallet-storage-note">Addresses and labels are stored locally. Public fill results remain in memory for this session.</p>
     </form>
-    <div id="wallet-results" aria-live="polite"><p class="wallet-empty">Enter a wallet to match its public fills to goal events and recorded price data.</p></div>
+    <div id="wallet-results" aria-live="polite"><p class="wallet-empty">Add a custom address to inspect its World Cup archive activity.</p></div>
+  </section>
+</div>
+<div id="filter-overlay" class="modal-backdrop" hidden>
+  <section class="filter-sheet" role="dialog" aria-modal="true" aria-label="Event filters">
+    <button type="button" id="filter-close" class="modal-close" aria-label="Close filters">×</button>
+    <h2>Event filters</h2>
+    <div id="chips-sheet"></div>
   </section>
 </div>
 <div id="help-popover" role="tooltip" hidden></div>

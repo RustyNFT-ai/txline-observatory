@@ -28,6 +28,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs, urlencode
 
 import normalize as N
+from wallet_roster import SUGGESTED_BOTS, SUGGESTED_WALLETS
 
 OBS = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.join(OBS, "web")
@@ -182,7 +183,7 @@ def similar_goal_cases(match_id, moment, limit=5):
     return sorted(candidates, key=distance)[:limit]
 
 
-def ai_context(match_id, moment_index, wallet_address=None):
+def ai_context(match_id, moment_index, wallet_address=None, watchlist=None, include_bot=False):
     """Resolve a small browser selection into trusted archive context server-side."""
     meta = json.load(open(os.path.join(DATA, match_id + ".json")))
     moments = meta.get("moments") or []
@@ -192,6 +193,9 @@ def ai_context(match_id, moment_index, wallet_address=None):
     comparable_moment = {**moment, "_index": moment_index}
     t0 = moment["t0"]
     events = [json.loads(line) for line in open(os.path.join(DATA, match_id + ".jsonl"))]
+    watchlist = list(dict.fromkeys(watchlist or []))
+    suggested_names = {wallet["address"]: wallet["name"] for wallet in SUGGESTED_WALLETS}
+    watched_names = {suggested_names[address] for address in watchlist if address in suggested_names}
 
     history = {}
     for event in events:
@@ -225,25 +229,57 @@ def ai_context(match_id, moment_index, wallet_address=None):
             r"goal|shot|possible|danger|corner|penalty|var|card", event.get("action") or "")
         if not (notable_action or event.get("kind") in ("burst", "fill", "trade", "score", "shock")):
             continue
+        if event.get("src") == "bot" and not include_bot:
+            continue
+        if event.get("kind") == "fill" and event.get("who") not in watched_names:
+            continue
         row = {key: event[key] for key in keep if event.get(key) is not None}
         row["dt"] = round(dt, 1)
         nearby.append(row)
     if len(nearby) > 36:
         nearby = sorted(sorted(nearby, key=lambda x: abs(x["dt"]))[:36], key=lambda x: x["dt"])
 
-    opportunities = [x for x in meta.get("opportunities") or [] if abs(x.get("t", 0) - t0) <= 240]
+    strip_bot = lambda row: {key: value for key, value in row.items() if include_bot or not key.startswith("bot_")}
+    opportunities = [strip_bot(x) for x in meta.get("opportunities") or [] if abs(x.get("t", 0) - t0) <= 240]
     opportunities.sort(key=lambda x: abs(x.get("t", 0) - t0))
-    bot = [x for x in meta.get("trades") or [] if abs(x.get("t", 0) - t0) <= 600]
+    bot = [x for x in meta.get("trades") or [] if include_bot and abs(x.get("t", 0) - t0) <= 600]
+    watched_goal_fills = []
+    seen_wallets = set()
+    for event in events:
+        who = event.get("who")
+        dt = event.get("t", 0) - t0
+        if (event.get("kind") != "fill" or who not in watched_names or who in seen_wallets):
+            continue
+        if event.get("side") != "BUY" or event.get("team") != moment.get("benefit") or not -5 < dt < 180:
+            continue
+        seen_wallets.add(who)
+        watched_goal_fills.append({"name": who, "dt": round(dt, 1), "side": event.get("side"),
+                                   "outcome": event.get("team"), "price": event.get("price"),
+                                   "size": event.get("size")})
+    public_evidence = [selected_wallet_context(address, match_id, t0) for address in watchlist
+                       if address not in suggested_names and address != wallet_address]
+    public_evidence = [evidence for evidence in public_evidence if evidence]
+    context_goal = {key: value for key, value in moment.items()
+                    if key not in ("whale_dt", "whale_who") and (include_bot or not key.startswith("bot_"))}
+    similar_cases = [{key: value for key, value in case.items()
+                      if key not in ("whale_dt", "whale_who") and (include_bot or not key.startswith("bot_"))}
+                     for case in similar_goal_cases(match_id, comparable_moment)]
+    benchmark = _archive_summary()
+    if not include_bot:
+        benchmark = {"summary": {key: value for key, value in benchmark["summary"].items() if key != "bot"}}
     return {
         "selection": {"type": "goal", "match_id": match_id, "moment_index": moment_index,
-                      "match": meta.get("match"), "date": meta.get("date"), "goal": moment},
+                      "match": meta.get("match"), "date": meta.get("date"), "goal": context_goal},
+        "paper_bot_selected": include_bot,
         "pre_event_market_history": list(history.values()),
         "nearby_event_evidence": nearby,
         "screened_opportunities_within_240s": opportunities[:6],
         "recorded_bot_events_within_10m": bot[:20],
         "selected_public_wallet_evidence": selected_wallet_context(wallet_address, match_id, t0),
-        "similar_recorded_goal_cases": similar_goal_cases(match_id, comparable_moment),
-        "archive_benchmark": _archive_summary(),
+        "watched_public_wallet_evidence": public_evidence,
+        "watched_wallet_goal_fills": watched_goal_fills,
+        "similar_recorded_goal_cases": similar_cases,
+        "archive_benchmark": benchmark,
         "methodology": {
             "latency_baseline": "Seconds relative to TxLINE's recorded goal message; negative means earlier.",
             "poly_dt": "First sustained Polymarket move of at least 3 cents relative to the baseline.",
@@ -259,16 +295,20 @@ def fallback_ai(context, warning):
     match = context["selection"]["match"]
     clock = f'{int(goal["cs"] // 60)}\'' if goal.get("cs") is not None else "recorded time"
     lags = []
-    for label, key in (("Polymarket", "poly_dt"), (goal.get("whale_who") or "tracked wallet", "whale_dt"),
-                       ("Jupiter", "jup_dt"), ("ESPN", "espn_dt"), ("wc26", "wc26_dt")):
+    for label, key in (("Polymarket", "poly_dt"), ("Jupiter", "jup_dt"),
+                       ("ESPN", "espn_dt"), ("wc26", "wc26_dt")):
         if goal.get(key) is not None:
             lags.append(f'{label} {goal[key]:+.1f}s')
+    for fill in context.get("watched_wallet_goal_fills") or []:
+        lags.append(f'{fill.get("name") or "watched wallet"} {fill["dt"]:+.1f}s')
     prior = [x for x in context["nearby_event_evidence"] if x["dt"] < 0 and x.get("action")]
     action_text = ", ".join((x.get("action") or "").replace("_", " ") for x in prior[-3:]) or "no nearby precursor event"
     opp = context["screened_opportunities_within_240s"]
-    trade = "No recorded bot entry is attached to this goal."
-    if goal.get("bot_action"):
-        trade = f'The recorded bot action was {goal["bot_action"]} at {goal.get("bot_dt", 0):+.1f}s'
+    trade = ""
+    if context.get("paper_bot_selected") and not goal.get("bot_action"):
+        trade = "No selected paper-bot entry is attached to this goal."
+    elif context.get("paper_bot_selected") and goal.get("bot_action"):
+        trade = f'The selected paper-bot action was {goal["bot_action"]} at {goal.get("bot_dt", 0):+.1f}s'
         if goal.get("bot_pnl") is not None:
             trade += f', with recorded P&L {goal["bot_pnl"]:+.2f} dollars'
         trade += "."
@@ -291,7 +331,7 @@ def fallback_ai(context, warning):
         interpretation = (f'Polymarket repriced before the TxLINE goal message while nearby TxLINE events included {action_text}. '
                           "That is consistent with traders reacting to live play before the score message, but it does not prove why they moved.")
     answer = (f"Recorded facts\n{match}, {goal.get('scorer') or 'goal'} at {clock}: " +
-              (", ".join(lags) or "source lags are unavailable") + f". {trade}{wallet_text}\n\nInterpretation\n{interpretation}\n\n"
+              (", ".join(lags) or "source lags are unavailable") + f".{' ' + trade if trade else ''}{wallet_text}\n\nInterpretation\n{interpretation}\n\n"
               f"Trading caveat\n{replay} A quoted historical replay is not guaranteed profit and excludes fees, latency, slippage, and fill uncertainty.")
     return {"answer": answer, "provider": "recorded-facts", "model": None,
             "fallback": True, "warning": warning}
@@ -536,6 +576,7 @@ def insights():
                 "min": min(values) if values else None, "max": max(values) if values else None}
 
     source_races = []
+    wallet_fills = []
     lags = {"espn": [], "wc26": []}
     for meta in metas:
         for mo in meta.get("moments") or []:
@@ -544,7 +585,8 @@ def insights():
             for source in lags:
                 if mo.get(source + "_dt") is not None:
                     lags[source].append(mo[source + "_dt"])
-            source_races.append({"match": meta.get("match"), "date": meta.get("date"), **mo})
+            source_races.append({"match_id": meta["_id"], "match": meta.get("match"),
+                                 "date": meta.get("date"), **mo})
 
     opportunities = []
     bot_entries = bot_exits = captured = 0
@@ -560,6 +602,14 @@ def insights():
                 elif '"src": "espn"' in line and '"kind": "score"' in line:
                     score_event = json.loads(line)
                     score_events.append(score_event)
+                elif '"kind": "fill"' in line:
+                    fill = json.loads(line)
+                    if fill.get("kind") == "fill":
+                        wallet_fills.append({"match_id": meta["_id"], "match": match,
+                            "t": fill.get("t"), "who": fill.get("who"),
+                            "wallet_address": fill.get("wallet_address"),
+                            "team": fill.get("team"), "side": fill.get("side"),
+                            "price": fill.get("price"), "size": fill.get("size")})
         except (OSError, ValueError):
             pass
         chronological_scores, max_clock = [], -1
@@ -592,7 +642,8 @@ def insights():
                     team = meta.get("teams", [None, None])[side]
                     scorer = next((x for x in meta.get("labels") or []
                                    if x != "draw" and N.tmatch(x, team)), team)
-                    accepted.append({"side": side, "match": match, "date": meta.get("date"),
+                    accepted.append({"side": side, "match_id": meta["_id"],
+                                     "match": match, "date": meta.get("date"),
                                      "scorer": scorer, "clock": score_event.get("clock"),
                                      "espn_t": score_event["t"],
                                      "score_before": f'{reduced[0] - (1 if side == 0 else 0)}-{reduced[1] - (1 if side == 1 else 0)}',
@@ -635,7 +686,8 @@ def insights():
             goal_linked = goal_dt is not None and -30 <= goal_dt <= 180
             if hit:
                 captured += 1
-            opportunities.append({"match": match, "date": meta.get("date"),
+            opportunities.append({"match_id": meta["_id"], "match": match,
+                                  "date": meta.get("date"),
                                   "activity_regime": activity_regime,
                                   "goal_linked": goal_linked,
                                   "goal_dt": round(goal_dt, 1) if goal_linked else None,
@@ -718,6 +770,7 @@ def insights():
         "goal_edges": goal_edges,
         "goals": catalog_goals,
         "source_races": source_races,
+        "wallet_fills": wallet_fills,
         "events": {"reviews": reviews, "corrections": corrections,
                    "penalties": penalties, "cards": cards, "shots": shots},
         "methodology": {
@@ -1119,6 +1172,8 @@ class Handler(BaseHTTPRequestHandler):
         question = body.get("question") if isinstance(body, dict) else None
         moment_index = body.get("moment_index") if isinstance(body, dict) else None
         wallet_address = body.get("wallet_address") if isinstance(body, dict) else None
+        watchlist = body.get("watchlist", []) if isinstance(body, dict) else []
+        include_bot = body.get("include_bot", False) if isinstance(body, dict) else False
         if not isinstance(match_id, str) or not re.fullmatch(r"[\w-]+", match_id):
             return self._json({"error": "valid match_id required"}, 400)
         if not isinstance(moment_index, int):
@@ -1129,14 +1184,21 @@ class Handler(BaseHTTPRequestHandler):
             if not isinstance(wallet_address, str) or not re.fullmatch(r"0x[a-fA-F0-9]{40}", wallet_address):
                 return self._json({"error": "valid wallet_address required"}, 400)
             wallet_address = wallet_address.lower()
+        if not isinstance(watchlist, list) or len(watchlist) > 10 or any(
+                not isinstance(address, str) or not re.fullmatch(r"0x[a-fA-F0-9]{40}", address)
+                for address in watchlist):
+            return self._json({"error": "watchlist must contain at most 10 valid public addresses"}, 400)
+        watchlist = list(dict.fromkeys(address.lower() for address in watchlist))
+        if not isinstance(include_bot, bool):
+            return self._json({"error": "include_bot must be a boolean"}, 400)
         try:
-            context = ai_context(match_id, moment_index, wallet_address)
+            context = ai_context(match_id, moment_index, wallet_address, watchlist, include_bot)
         except FileNotFoundError:
             return self._json({"error": "unknown match"}, 404)
         except IndexError:
             return self._json({"error": "unknown moment"}, 404)
         cache_key = hashlib.sha256(
-            f"{match_id}:{moment_index}:{wallet_address or ''}:{question.strip()}".encode()).hexdigest()
+            f"{match_id}:{moment_index}:{wallet_address or ''}:{','.join(watchlist)}:{include_bot}:{question.strip()}".encode()).hexdigest()
         with _AI_LOCK:
             cached = _AI_CACHE.get(cache_key)
             if cached:
@@ -1174,10 +1236,10 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/wallet":
                 address = (q.get("address") or "").lower()
                 if not address:
-                    summary = _archive_summary()["summary"]
                     return self._json({"scope": "World Cup archive markets only",
                         "archive_matches": wallet_scope()["count"], "demo_address": WALLET_DEMO,
-                        "demo_name": WALLET_DEMO_NAME, "recorded_bot": summary.get("bot")})
+                        "demo_name": WALLET_DEMO_NAME, "suggested_bots": SUGGESTED_BOTS,
+                        "suggested_wallets": SUGGESTED_WALLETS})
                 if not re.fullmatch(r"0x[a-f0-9]{40}", address):
                     return self._json({"error": "address must be 0x followed by 40 hex characters"}, 400)
                 now = time.time()

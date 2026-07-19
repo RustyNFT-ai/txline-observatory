@@ -6,10 +6,3 @@ services:
     buildCommand: python3 -m py_compile server.py normalize.py
     startCommand: python3 server.py
     healthCheckPath: /api/health
-    envVars:
-      - key: OPENAI_API_KEY
-        sync: false
-      - key: OPENAI_MODEL
-        value: gpt-5.6-terra
-      - key: TXLINE_API_TOKEN
-        sync: false

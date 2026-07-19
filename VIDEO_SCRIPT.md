@@ -54,16 +54,17 @@ Point to the provider label and one event-specific sentence. Do not read the ful
 
 ## 2:20–3:05 — Safe public wallet comparison
 
-**Action:** Close the goal modal, click **Bot Wallet**, load the demo wallet.
+**Action:** Close the goal modal, click **Watchlist**, add a suggested wallet, then enter
+the recorded demo address to inspect its public report.
 
 “A user can add a public Polymarket profile wallet—never a private key, signature, or
 trading permission. The server scans a bounded public fill window and keeps only token
 IDs mapped to World Cup match markets in this 47-match archive.”
 
 Point to matched fills, match count, and matched notional. Click one mapped timeline
-event and its public-wallet diamonds. Mention that only the public address is remembered;
-fill details stay in session memory and can ground AI for the selected goal. Then point
-to the separate internal bot ledger card.
+event and its public-wallet diamonds. Mention that watchlist addresses and labels are
+stored locally; custom fill details stay in session memory and can ground AI for the
+selected goal. Then point to the separate internal bot ledger card.
 
 “Fill history does not prove realized P&L, so the wallet view reports activity and
 notional. Our own event ledger's 33 closed trades and plus 22 dollars and 4 cents remain

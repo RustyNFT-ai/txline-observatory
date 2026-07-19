@@ -20,11 +20,12 @@ $APP/#m=england-vs-argentina-2026-07-15&t=1784148363.12
 ```
 
 Expect England vs Argentina in **Full**, the Argentina goal card selected, the chart
-zoomed around the event, and the Inspector open. Click the card's small expand icon.
-Expect the Argentina goal detail to show RN1 at **−4.1s**, Polymarket at **−9.2s**,
-Jupiter at **+3.6s**, ESPN at **+58.8s**, a **+6.3¢** 120-second move, and the recorded
-bot line **1 entry · +$45.16**. Negative means the source was recorded before TxLINE's
-goal message; it is not a causality claim. Press Escape and confirm the modal closes.
+zoomed around the event, and the Inspector open. Each goal card must have a prominent
+**Analyze goal** button rather than an icon-only affordance. Open the Argentina 84' goal.
+With an empty watchlist, expect no RN1 row and an **Add wallets** action. Polymarket must
+show **−9.2s**, Jupiter **+3.6s**, ESPN **+58.8s**, the 120-second move **+6.3¢**, and the
+recorded bot line **ENTER · +$45.16**. Negative means the source was recorded before
+TxLINE's goal message; it is not a causality claim. Press Escape and confirm the modal closes.
 
 In Inspector, click **Verify on Solana** for the selected goal. Expect the locally
 recomputed proof status, TxLINE-owned mainnet anchor account, slot, and Solscan link.
@@ -44,23 +45,21 @@ Open `$APP/#m=france-vs-spain-2026-07-14`. Expand the first Spain goal. Expect a
 misleading latency axis. Expand the next Spain goal and expect a **VAR** badge. The third
 goal is marked **VAR** and **DISALLOWED**.
 
-## 5. World Cup wallet lens (60 seconds)
+## 5. World Cup wallet watchlist (75 seconds)
 
-Click **Bot Wallet**, then **Load demo wallet**. Expect the public address
-`0xd218e474776403a330142299f7796e8ba32eb5c9`, a clear read-only/World-Cup-only notice,
-and a current result of approximately **74 deduplicated fills**, **2 archive matches**,
-and **$7,924.85 matched notional**. Public API history can change, so counts may increase
-or the app may label the scan capped. Click a timeline action and confirm the matching
-recorded match opens near the nearest goal. The **whales** chip count should include the
-loaded public-wallet diamonds; hovering a diamond should show the short wallet address,
-side, outcome, price, and size. Expand the nearby goal and Ask AI what the selected public
-wallet did; expect the answer to cite server-verified nearby fills without claiming P&L.
-The separate internal bot card should remain
-**33 entries / 33 exits / +$22.04** and must not be described as wallet P&L.
+Click **Watchlist**. Expect five leaderboard suggestions and an empty initial list.
+Add RN1, close the modal, and reopen the Argentina 84' goal analysis. Expect an RN1 row at
+**−4.1s** with `BUY Argentina`, size, and price. The **watchlist** chip should count only
+RN1 fills. Reopen Watchlist, add all suggestions, and confirm five locally saved entries.
+Remove one and confirm its chart markers and waterfall rows disappear. Reload and confirm
+the addresses and labels persist.
 
-Reload, reopen **Bot Wallet**, and confirm the address is prefilled but results are not
-persisted. Click **Forget saved address**; expect the input, chart diamonds, in-memory
-fill set, and the single address-only browser storage entry to clear.
+Enter the recorded demo address `0xd218e474776403a330142299f7796e8ba32eb5c9`
+to inspect its current public report. Expect approximately **74 deduplicated fills**,
+**2 archive matches**, and **$7,924.85 matched notional**; public API history can change.
+The separate internal bot card remains **33 entries / 33 exits / +$22.04** and must not
+be described as wallet P&L. Custom fill reports remain session-only even though the
+watchlist entry persists.
 
 Invalid test: enter `0x1234`. Expect an address-validation message and no request for a
 signature, login, private key, or trading permission.

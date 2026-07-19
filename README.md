@@ -40,21 +40,25 @@ set pieces etc. opt-in). Click any flag → Inspector shows the raw feed message
 and its neighbours. Solid line = Polymarket best bid; dashed = TxLINE de-margined
 fair prob. Hue = outcome (validated CVD-safe palette), line style = source.
 
-## Public bot wallet lens
+## Public wallet watchlist
 
-Click **Bot Wallet** and enter any Polymarket profile/proxy wallet address. This is
-read-only: no signature, private key, login, or trading permission is requested. The
-server reads the wallet's public Polymarket trade tape and keeps only fills whose
-token ID belongs to a main match-outcome market in the 47-match World Cup archive.
-Matched fills appear as public-wallet diamonds on the chart, link back to their exact
-point on the Observatory timeline, and show the nearest goal when it is within five
-minutes. After a wallet is loaded, its server-verified nearby fills are also available
-to Ask AI for the selected goal.
+Click **Watchlist** to follow public Polymarket wallets across charts and goal analysis.
+The five leaderboard-study wallets already captured with the archive are offered as
+one-click suggestions; they are a research cohort, not endorsements or profitability
+claims. The watchlist starts empty, so a wallet such as RN1 appears only after the user
+chooses to follow it. The prominent **Analyze goal** action splits the timing waterfall
+into market signals and watched-wallet fills, with side, outcome, size, and price.
 
-The browser persists only the validated public address so it can prefill the next visit;
-fill details remain in memory for the current session and can be cleared with **Forget
-saved address**. The server keeps a short in-memory response cache and writes no wallet
-profile or fills to disk.
+Any Polymarket profile/proxy address can also be added. This remains read-only: no
+signature, private key, login, or trading permission is requested. The server reads
+that wallet's public trade tape and keeps only fills whose token ID belongs to a main
+match-outcome market in the 47-match World Cup archive. Matched fills appear as
+public-wallet diamonds on the chart and link back to their exact timeline position.
+
+The browser persists only watchlist addresses, labels, and whether they came from the
+curated cohort. Custom-wallet fill details remain in memory for the current session;
+after a reload the user can explicitly load those public fills again. The server keeps
+a short in-memory response cache and writes no wallet profile or fills to disk.
 
 The public Data API exposes a bounded recent window, so the endpoint scans up to the
 20,000 most-recent fills and says when that window is capped. The built-in `cigarettes`
@@ -116,9 +120,11 @@ honestly rather than faking a match. CLI: `python3 solana_anchor.py <fid> <seq> 
 ## Deploy
 
 The standalone public repository includes `render.yaml`. In Render, create a new
-Blueprint from the repository and set `OPENAI_API_KEY` and `TXLINE_API_TOKEN` as
-secret environment variables. The latter enables the optional live Merkle-proof receipt;
-it is never sent to the browser. Render supplies `PORT`; `server.py` binds to it. The included
+Blueprint from the repository; no secrets are required for the recorded application,
+replay, watchlist, Insights, or deterministic evidence summaries. Add `OPENAI_API_KEY`
+later to enable generated event analysis, and optionally add `TXLINE_API_TOKEN` for the
+live Merkle-proof receipt. Neither secret is ever sent to the browser. Render supplies
+`PORT`; `server.py` binds to it. The included
 47-match archive makes Full, Replay, Insights, AI context, and wallet matching work
 without access to the private recorder filesystem. A free service can cold-start, so
 open the app once before a live demo or judging session.
@@ -145,11 +151,11 @@ Source paths can be overridden with `OBS_GL`, `OBS_TX_SCORES`, `OBS_TX_ODDS`,
 
 ## Extra recorders (both launched detached 2026-07-13, survive session close)
 
-- **`wallet_watch.py`** — polls Polymarket data-api for the fast-crowd wallets
+- **`wallet_watch.py`** — polls Polymarket data-api for the suggested fast-crowd wallets
   (RN1, swisstony, cigarettes, mooseborzoi, GoalLineGhost) every 10s →
   `out/wallet_fills.jsonl`. UI: ◆ diamonds at fill price; moments gain
-  `whale_dt` ("RN1 filled +Xs after TxLINE's goal message") — the benchmark the
-  bot competes with.
+  `whale_dt` (the archive's original research benchmark). The UI now filters those
+  fills through the user's local watchlist instead of displaying one implicitly.
 - **`jupiter_watch.py`** — polls Jupiter Predict (Solana) orderbooks for WC match
   markets (auto-discovered from the TxLINE fixtures cache) every 15s →
   `out/jupiter_books.jsonl`. UI: dotted line per outcome; moments gain `jup_dt`.
