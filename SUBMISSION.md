@@ -16,7 +16,7 @@ compare an opt-in paper ledger with public-wallet activity on the same timeline.
 **Most useful submission link:** use the public app URL. It opens directly into the
 working product and links to the public repository and documentation from this brief.
 
-**Public app:** `[ADD DURABLE DEPLOY URL]`
+**Public app:** `https://txline-observatory.onrender.com`
 
 **Demo video:** `[ADD PUBLIC LOOM OR YOUTUBE URL]`
 
@@ -134,8 +134,10 @@ the recorder while using finite JSON fetches and short polling in the judge-faci
 
 ## Submission checklist
 
-- [ ] Replace the public app placeholder with the durable deployed URL.
-- [ ] Add `OPENAI_API_KEY` and `TXLINE_API_TOKEN` as deployment secrets; verify AI and one Solana receipt.
+- [x] Deploy and smoke-test the durable public app URL.
+- [ ] Optional after submission: add `OPENAI_API_KEY` for generated analysis and
+  `TXLINE_API_TOKEN` for fresh Solana proof retrieval. The recorded app and deterministic
+  evidence fallback require neither secret.
 - [ ] Run [TESTING.md](TESTING.md) against the deployed URL.
 - [ ] Record and publish the video using [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md).
 - [ ] Confirm the video, app, repository, and documentation links work in a private window.

@@ -1,5 +1,7 @@
 # TxLINE Observatory
 
+**Live judge build:** https://txline-observatory.onrender.com
+
 An autonomous World Cup goal-lag paper agent with an event-to-execution audit surface.
 The agent consumes **TxLINE live odds and score streams**, compares TxLINE's
 de-margined fair probability with the executable **Polymarket** ask, enters a simulated
@@ -140,6 +142,11 @@ without access to the private recorder filesystem. A free service can cold-start
 open the app once before a live demo or judging session.
 
 [Deploy the public repository to Render](https://render.com/deploy?repo=https://github.com/RustyNFT-ai/txline-observatory)
+
+The submission instance is available at
+[`https://txline-observatory.onrender.com`](https://txline-observatory.onrender.com).
+Render's free service can take roughly one minute to wake after 15 minutes without an
+incoming request; the URL is stable and Render shows a loading page during the wake-up.
 
 For a temporary preview, run `cloudflared tunnel --url http://localhost:8901`. The
 generated URL changes on restart and requires this computer to stay awake, so it is not
