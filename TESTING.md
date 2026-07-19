@@ -5,11 +5,10 @@ Set `APP` to the deployed origin, without a trailing slash. For local testing us
 
 ## 1. Service and recorded data (20 seconds)
 
-Open `$APP/api/health`. Expect `ok: true`, `matches: 47`, `ai_enabled: true`, and
-`txline_verify_enabled: true` after both deployment secrets are configured.
-`ai_enabled: false` is safe but means Ask AI will use the labeled recorded-evidence
-fallback. `txline_verify_enabled: false` leaves the recorded data usable but disables
-live retrieval of a new TxLINE Merkle proof.
+Open `$APP/api/health`. Expect `ok: true` and `matches: 47`. The submission deployment
+intentionally starts with `ai_enabled: false`; Ask AI uses the labeled deterministic
+recorded-evidence fallback until a key is added. `txline_verify_enabled: false` leaves
+the recorded proof data usable but disables retrieval of a new TxLINE Merkle proof.
 
 ## 2. Full match, deep link, and goal detail (75 seconds)
 
@@ -22,10 +21,10 @@ $APP/#m=england-vs-argentina-2026-07-15&t=1784148363.12
 Expect England vs Argentina in **Full**, the Argentina goal card selected, the chart
 zoomed around the event, and the Inspector open. Each goal card must have a prominent
 **Analyze goal** button rather than an icon-only affordance. Open the Argentina 84' goal.
-With an empty watchlist, expect no RN1 row and an **Add wallets** action. Polymarket must
+With an empty watchlist, expect no wallet or paper-agent row and an **Add actors** action. Polymarket must
 show **−9.2s**, Jupiter **+3.6s**, ESPN **+58.8s**, the 120-second move **+6.3¢**, and the
-recorded bot line **ENTER · +$45.16**. Negative means the source was recorded before
-TxLINE's goal message; it is not a causality claim. Press Escape and confirm the modal closes.
+paper agent must be absent. Negative means the source was recorded before TxLINE's goal
+message; it is not a causality claim. Press Escape and confirm the modal closes.
 
 In Inspector, click **Verify on Solana** for the selected goal. Expect the locally
 recomputed proof status, TxLINE-owned mainnet anchor account, slot, and Solscan link.
@@ -33,10 +32,9 @@ recomputed proof status, TxLINE-owned mainnet anchor account, slot, and Solscan 
 ## 3. AI evidence path (35 seconds)
 
 Expand the same Argentina goal and click **Ask AI insight**. Expect a response tied to
-Argentina, the selected source times, market move, and recorded bot action. Without a
-key it is labeled `RECORDED-FACTS FALLBACK` and still contains only server-reconstructed
-facts. A keyed response is labeled `OPENAI · EVENT-GROUNDED` with the configured model
-beside it.
+Argentina, the selected source times, and market move. Without a key it is labeled
+`RECORDED-FACTS FALLBACK` and still contains only server-reconstructed facts. A keyed
+response is labeled `OPENAI · EVENT-GROUNDED` with the configured model beside it.
 
 ## 4. Feed-gap and VAR states (40 seconds)
 
@@ -47,7 +45,12 @@ goal is marked **VAR** and **DISALLOWED**.
 
 ## 5. World Cup wallet watchlist (75 seconds)
 
-Click **Watchlist**. Expect five leaderboard suggestions and an empty initial list.
+Click **Watchlist**. Expect the optional TxLINE paper bot plus five leaderboard-wallet
+suggestions and an empty initial list. Add the paper bot, close the modal, and reopen the
+Argentina 84' goal. Expect a neutrally colored `TxLINE paper bot` row at **+54.9s** and
+`ENTER · +$45.16`; it must not use success green. Remove it and confirm every paper-agent
+row, legend item, and Insights value disappears.
+
 Add RN1, close the modal, and reopen the Argentina 84' goal analysis. Expect an RN1 row at
 **−4.1s** with `BUY Argentina`, size, and price. The **watchlist** chip should count only
 RN1 fills. Reopen Watchlist, add all suggestions, and confirm five locally saved entries.
@@ -55,10 +58,9 @@ Remove one and confirm its chart markers and waterfall rows disappear. Reload an
 the addresses and labels persist.
 
 Enter the recorded demo address `0xd218e474776403a330142299f7796e8ba32eb5c9`
-to inspect its current public report. Expect approximately **74 deduplicated fills**,
-**2 archive matches**, and **$7,924.85 matched notional**; public API history can change.
-The separate internal bot card remains **33 entries / 33 exits / +$22.04** and must not
-be described as wallet P&L. Custom fill reports remain session-only even though the
+to inspect its current public report. It must appear as **My wallet** across the watchlist,
+chart, goal analysis, and Insights. Public API counts and notional can change. No built-in
+bot identity may reappear. Custom fill reports remain session-only even though the
 watchlist entry persists.
 
 Invalid test: enter `0x1234`. Expect an address-validation message and no request for a
@@ -93,6 +95,7 @@ From the repository root:
 ```bash
 node --check web/app.js
 python3 -m py_compile server.py normalize.py solana_anchor.py wallet_watch.py jupiter_watch.py
+python3 -m py_compile agent/goal_latency.py agent/goal_paper_trader.py
 curl -fsS http://localhost:8901/api/health
 curl -fsS http://localhost:8901/api/match/england-vs-argentina-2026-07-15 >/dev/null
 curl -fsS http://localhost:8901/api/insights >/dev/null

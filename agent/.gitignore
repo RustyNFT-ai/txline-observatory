@@ -1,0 +1,5 @@
+.txodds_token
+out/
+inplay_paper_events.csv
+paper_trader.out
+__pycache__/

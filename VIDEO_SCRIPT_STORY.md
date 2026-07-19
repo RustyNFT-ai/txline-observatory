@@ -1,5 +1,9 @@
 # Demo Video Script — Personal Narrative Cut, Target 4:00, Hard Limit 5:00
 
+> This is an alternate narrative draft. Use [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md) for the
+> final Trading Tools and Agents submission; it matches the current user-agnostic UI
+> and foregrounds the published autonomous agent source.
+
 This is an alternate cut of [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md): same product, same tested
 demo beats (reuse [TESTING.md](TESTING.md) preflight and exact numbers below), but told as
 your own build story instead of a feature tour. Practice out loud once with a timer before

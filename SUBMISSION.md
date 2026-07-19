@@ -2,14 +2,16 @@
 
 ## Submission fields
 
-**Project title:** TxLINE Observatory
+**Track:** Trading Tools and Agents
 
-**Brief explanation:** TxLINE Observatory turns fast World Cup score and odds data
-into event-to-execution intelligence for prediction-market traders. It aligns TxLINE,
-Polymarket, ESPN, WorldCup26, Jupiter, public wallet fills, and a recorded bot ledger
-on one replayable timeline. Users can inspect the source timing and tradable price gap
-around each goal, ask a context-bounded AI analyst about the recorded evidence, and
-compare a public Polymarket wallet with the same World Cup archive.
+**Project title:** TxLINE Observatory — Autonomous Event-to-Execution Agent
+
+**Brief explanation:** A deterministic paper agent consumes TxLINE's live World Cup
+score and odds streams, compares TxLINE's de-margined fair probability with the
+executable Polymarket book, and autonomously enters and exits goal-lag positions. The
+TxLINE Observatory is its audit and replay surface: judges can inspect every source
+event, price, decision, fill assumption, and outcome across 47 recorded matches, then
+compare an opt-in paper ledger with public-wallet activity on the same timeline.
 
 **Most useful submission link:** use the public app URL. It opens directly into the
 working product and links to the public repository and documentation from this brief.
@@ -30,23 +32,32 @@ decision can reverse it, the market can move before or after the message, and a 
 still has to turn the signal into an executable order. A normal scoreboard hides that
 sequence. A raw feed log makes it hard to understand.
 
+Once started, the agent runs without manual intervention. TxLINE score actions are its
+primary goal trigger, with ESPN score transitions as a fallback; every candidate still
+must pass the same TxLINE-fair versus executable-ask gate. It targets 70% convergence
+of the initial gap and exits early on reversal or after 180 seconds. Every entry, exit,
+and skip is append-only evidence rather than an opaque claim.
+
 The Observatory normalizes those layers into one event clock. For each goal it shows:
 
 - the TxLINE message and nearby score actions;
 - Polymarket top-of-book and TxLINE de-margined fair probability;
 - source timing relative to TxLINE, including legitimately negative observations;
 - VAR, disallowed-goal, and missing-feed context;
-- the 120-second market move and recorded bot outcome;
+- the 120-second market move and any selected paper-agent outcome;
 - public wallet fills that map to the archive's World Cup match-outcome tokens; and
 - an AI explanation grounded in a server-built, bounded event evidence packet.
 
-The result is useful for post-match bot debugging, feed benchmarking, strategy
+The result is useful for post-match agent debugging, feed benchmarking, strategy
 research, and explaining event-driven execution to a non-technical stakeholder.
 
 ## Business and technical highlights
 
 - **Evidence before narrative.** Source times, event messages, market prices, and bot
   actions remain inspectable; AI interpretation is labeled separately.
+- **Autonomous deterministic operation.** TxLINE goal triggers, a 3¢ minimum executable
+  edge, adaptive convergence exit, reversal stop, fixed notional, and hard time limit
+  are explicit in [`agent/goal_paper_trader.py`](agent/goal_paper_trader.py).
 - **Replayable research.** Forty-seven recorded World Cup matches remain usable after
   the live event, with Full, 60× Replay, Live, and upcoming-prematch modes.
 - **Execution-aware analysis.** The screen distinguishes fair probability from an
@@ -57,7 +68,7 @@ research, and explaining event-driven execution to a non-technical stakeholder.
 - **Portable implementation.** The server uses Python's standard library and the
   client is vanilla JavaScript/CSS/canvas. The browser uses finite fetches and short
   polling, which works through ordinary hosting proxies.
-- **Grounded OpenAI integration.** The browser sends a match ID, moment index,
+- **Optional grounded OpenAI integration.** The browser sends a match ID, moment index,
   bounded question, and optionally a validated public-wallet identifier—not facts. The
   server reconstructs trusted context from the archive, adds prematch/nearby evidence
   and similar cases, then calls OpenAI's Responses API. A clearly labeled deterministic
@@ -87,7 +98,7 @@ historical replay and never presented as a live market.
   across 39 matches; median duration is 102.7 seconds.
 - Edge Finder identifies 39 quiet-book accepted-goal cases; 37 had positive quoted
   replay outcomes across 23 matches.
-- The separate internal event ledger records 33 entries and 33 exits totaling +$22.04.
+- The separate paper-agent event ledger records 33 entries and 33 exits totaling +$22.04.
   This is not presented as arbitrary-wallet P&L.
 
 These are retrospective measurements from the included archive, not promises of live

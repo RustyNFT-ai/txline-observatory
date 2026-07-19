@@ -1,13 +1,22 @@
 # TxLINE Observatory
 
-Multi-feed observatory for in-play soccer prediction markets: aligns **TxLINE**
-(odds + scores streams), **ESPN**, **worldcup26.ir**, **Polymarket** (REST books +
-real-time WS ticks) and **our bot's trades** on one timeline — live during a match,
-and replayable after. Per goal it measures the score transition, exact-score source
-latencies, sustained Polymarket repricing, outcome price moves, and bot execution.
-The Insights panel also measures executable TxLINE-fair versus Polymarket-ask windows.
+An autonomous World Cup goal-lag paper agent with an event-to-execution audit surface.
+The agent consumes **TxLINE live odds and score streams**, compares TxLINE's
+de-margined fair probability with the executable **Polymarket** ask, enters a simulated
+position when the deterministic edge gate clears, and exits on convergence, reversal,
+or a hard time limit. It needs no human input after startup.
+
+The Observatory aligns TxLINE, ESPN, worldcup26.ir, Polymarket, Jupiter, selected
+public-wallet fills, and opt-in paper executions on one timeline—live during a match
+and replayable after. Per goal it measures the score transition, source latency,
+sustained repricing, executable gaps, and the agent's decision. The Insights panel
+tests where that strategy's premise holds across the 47-match archive.
 
 Zero runtime dependencies: stdlib-only Python server, hand-rolled canvas frontend.
+
+The submitted agent source and deterministic parameters are documented in
+[`agent/`](agent/README.md). The agent monitor uses `requests`; the judge-facing web
+server itself remains standard-library-only.
 
 ## Run
 
@@ -40,9 +49,10 @@ set pieces etc. opt-in). Click any flag → Inspector shows the raw feed message
 and its neighbours. Solid line = Polymarket best bid; dashed = TxLINE de-margined
 fair prob. Hue = outcome (validated CVD-safe palette), line style = source.
 
-## Public wallet watchlist
+## Local actor watchlist
 
-Click **Watchlist** to follow public Polymarket wallets across charts and goal analysis.
+Click **Watchlist** to follow public Polymarket wallets or the optional TxLINE paper
+agent across charts and goal analysis. Nothing is pre-labeled as the user's bot.
 The five leaderboard-study wallets already captured with the archive are offered as
 one-click suggestions; they are a research cohort, not endorsements or profitability
 claims. The watchlist starts empty, so a wallet such as RN1 appears only after the user
@@ -64,18 +74,18 @@ The public Data API exposes a bounded recent window, so the endpoint scans up to
 20,000 most-recent fills and says when that window is capped. The built-in `cigarettes`
 demo is cross-checked against real fills captured by the recorder with the match archive.
 Wallet fills show activity and matched notional only—**they do not establish realized
-P&L**. The separate recorded in-play bot card retains the internal event-ledger result
-(33 entries, 33 exits, +$22.04) and labels it separately.
+P&L**. The TxLINE paper agent is a clearly labeled suggestion and joins charts,
+goal waterfalls, Insights, and AI context only after the user follows it.
 
 ## Architecture
 
 ```
-recorders (already running, unchanged):        observatory/
-  goal_latency.py  ── goal_latency.jsonl ──┐   normalize.py  batch: files -> data/<id>.jsonl (+moments)
-    ├─ TxLINE /api/odds/stream  ─ tx_odds_raw.jsonl │   server.py     finite /api/match, /api/live/poll,
-    ├─ TxLINE /api/scores/stream ─ tx_scores_raw.jsonl ├──▶            /api/wallet, /api/ai-insight, static web/
-    └─ poly-ws-watch ─ burst_events.jsonl   │   web/          index.html + app.js (canvas) + style.css
-  inplay bots ── inplay*_events.csv ────────┘
+TxLINE odds/scores SSE ─┐
+Polymarket CLOB book ───┼─▶ agent/goal_latency.py ─▶ goal_latency.jsonl ─┐
+ESPN fallback ──────────┘                                                ├─▶ normalize.py
+                         agent/goal_paper_trader.py ─▶ paper ledger ─────┘      │
+                                                                                 ▼
+web/app.js (canvas) ◀─ server.py (/api/match, /api/insights, /api/wallet) ◀─ data/
 ```
 
 Unified event schema (one JSON/line, sorted by `t` unix-seconds):
@@ -192,10 +202,10 @@ Status check: `pgrep -af "wallet_watch|jupiter_watch"`; logs sit next to the scr
   including negative replays and goals without a screened edge, remain visible
   in the neutral Goals catalog. Quiet means fewer than 0.25 top-of-book changes per
   minute during the ten minutes before the signal.
-- The recorded bot ledger contains 33 entries and 33 exits totaling **+$22.04**.
+- The recorded paper-agent ledger contains 33 entries and 33 exits totaling **+$22.04**.
 
 [AI event analyst](AI_INSIGHTS.md): expand any goal moment and ask OpenAI to explain
-its source timing, nearby feed evidence, executable edge, and recorded bot action.
+its source timing, nearby feed evidence, executable edge, and selected paper-agent action.
 The server rebuilds trusted event context, prematch history, and five similar goal
 cases from the archive; credentials and model calls never reach the browser.
 

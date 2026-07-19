@@ -1,101 +1,95 @@
-# Demo Video Script — Target 4:35, Hard Limit 5:00
+# Demo Video Script — Trading Tools and Agents Track
 
-Record at 1440×900 with the browser zoom at 100%. Close notifications and unrelated
-tabs. Preload the links below, load the demo wallet once, and verify AI before recording.
-Keep the mouse still when speaking so tooltips do not cover the screen.
+Target 4:15; hard limit 5:00. Record at 1440×900 and 100% browser zoom. Preload the
+deployed app, the Argentina 84' goal, Insights → Edge Finder, and
+`agent/goal_paper_trader.py` in the public repository. AI is optional and should not be
+shown unless it is configured and already tested.
 
 ## Preflight
 
-1. Open the deployed `/api/health`; confirm 47 matches and `ai_enabled: true`.
-2. Open the focused Argentina goal link from [TESTING.md](TESTING.md).
-3. In a second tab open France vs Spain; in a third open the repository README.
-4. Test the goal modal, AI response, demo wallet, Replay, and Insights once.
-5. If OpenAI is unavailable, use the app's labeled recorded-evidence fallback and say so.
-6. If no game is live, do not demo Live. Replay is the reliable substitute.
+1. Confirm `/api/health` returns `ok: true` and `matches: 47`.
+2. Open `#m=england-vs-argentina-2026-07-15&t=1784148363.12`.
+3. Start with an empty browser watchlist.
+4. Test adding/removing the TxLINE paper bot and adding the demo wallet once.
+5. If no match is live, show Replay. Never present recorded data as live.
 
-## 0:00–0:35 — Problem
+## 0:00–0:30 — Problem
 
-**Screen:** England vs Argentina, full timeline.
+**Screen:** England vs Argentina full timeline.
 
-“A goal is not one timestamp. The score feed reports it, VAR may review it, prediction
-markets reprice, and a bot still has to execute. Those events can be seconds apart, but
-ordinary scoreboards and bot logs hide the sequence. TxLINE Observatory turns that
-sequence into one inspectable World Cup timeline.”
+“A goal is not one timestamp. TxLINE reports the score action, odds move, markets
+reprice, and an agent still has to decide whether an executable edge exists. Ordinary
+scoreboards and bot logs hide that sequence. I built an autonomous goal-lag paper agent,
+then built TxLINE Observatory so every decision could be audited.”
 
-Point to the solid Polymarket lines, dashed TxLINE fair probabilities, flags, and goal
-cards. Mention that this is a recorded historical replay, not a live market.
+## 0:30–1:15 — Autonomous strategy and TxLINE ingestion
 
-## 0:35–1:35 — TxLINE event-to-market evidence
+**Screen:** public repo, `agent/README.md`, then `agent/goal_paper_trader.py`.
 
-**Action:** Use the already-focused Argentina goal and expand it.
+“Once started, the agent needs no manual input. TxLINE's score stream is the primary
+goal trigger. Its live odds stream supplies a de-margined fair probability, and the
+agent compares that with the executable Polymarket ask. It enters only when fair minus
+ask is at least three cents.”
 
-“This Argentina goal is anchored to TxLINE's recorded goal message. RN1's public fill
-was recorded 4.1 seconds earlier, Polymarket had already moved 9.2 seconds earlier,
-Jupiter refreshed 3.6 seconds after TxLINE, and ESPN followed 58.8 seconds later. The
-market moved another 6.3 cents over 120 seconds, and our recorded bot made one entry for
-45 dollars and 16 cents on this event.”
+Point to the constants and entry branch.
 
-“Negative timing only means recorded earlier—it does not claim why. The raw normalized
-event and surrounding messages remain available in Inspector.”
+“The exit is deterministic too: capture 70 percent of convergence, exit immediately if
+TxLINE fair reverses below entry, or time out after 180 seconds. Every entry, exit, and
+skip is appended to the ledger. This is paper execution against observed bid/ask—not a
+claim of live-money fills.”
 
-Click **Show on chart**, briefly pan the local event window, then expand it again.
+## 1:15–2:05 — Inspect one event-to-execution path
 
-## 1:35–2:20 — Context-bounded AI
+**Screen:** return to the Argentina 84' goal and click **Analyze goal**.
 
-**Action:** Click **Ask AI insight**.
+“With no actors selected, the product does not pretend this is the user's bot. Market
+signals stand on their own: Polymarket moved 9.2 seconds before TxLINE's recorded goal,
+Jupiter followed 3.6 seconds after, and ESPN followed 58.8 seconds after.”
 
-“The AI analyst cannot roam across the product or accept invented client facts. The
-browser sends only this match ID, moment index, and question. The Python server rebuilds
-a bounded evidence packet with nearby events, prematch trading, source state, prices,
-and bot activity, then asks OpenAI to separate fact from interpretation. That keeps the
-answer focused on exactly where the user asked for insight.”
+Open **Watchlist**, add **TxLINE paper bot**, then reopen the goal.
 
-Point to the provider label and one event-specific sentence. Do not read the full answer.
+“The selected paper ledger now joins the same waterfall. It entered 54.9 seconds after
+TxLINE at 7.7 cents. The neutral color is identity—not a claim that this timing or trade
+was good. The recorded paper result on this event was plus $45.16.”
 
-## 2:20–3:05 — Safe public wallet comparison
+Click **Show on chart** and point to the paper-execution triangle and surrounding prices.
 
-**Action:** Close the goal modal, click **Watchlist**, add a suggested wallet, then enter
-the recorded demo address to inspect its public report.
+## 2:05–2:45 — Compare with public actors
 
-“A user can add a public Polymarket profile wallet—never a private key, signature, or
-trading permission. The server scans a bounded public fill window and keeps only token
-IDs mapped to World Cup match markets in this 47-match archive.”
+Open **Watchlist**, remove the paper bot, and enter
+`0xd218e474776403a330142299f7796e8ba32eb5c9`.
 
-Point to matched fills, match count, and matched notional. Click one mapped timeline
-event and its public-wallet diamonds. Mention that watchlist addresses and labels are
-stored locally; custom fill details stay in session memory and can ground AI for the
-selected goal. Then point to the separate internal bot ledger card.
+“A user can add a public Polymarket wallet read-only—no private key, signature, login, or
+trading permission. It becomes My wallet across the chart, goal analysis, and Insights.
+Public fills show activity and notional, not realized P&L.”
 
-“Fill history does not prove realized P&L, so the wallet view reports activity and
-notional. Our own event ledger's 33 closed trades and plus 22 dollars and 4 cents remain
-separate.”
+Close the modal and point to **My wallet** markers and the comparison layer.
 
-## 3:05–3:45 — Feed quality and replay
+## 2:45–3:20 — Honest replay and feed quality
 
-**Screen:** France vs Spain.
+**Screen:** France vs Spain, then a 60× Replay.
 
-Expand the first goal: “Here the goal-action record is missing, so the Observatory says
-feed gap and refuses to draw a fake TxLINE latency axis.” Expand the second: “The next
-goal preserves its VAR context.”
+“The archive preserves uncomfortable cases too. This goal has no valid TxLINE action
+baseline, so the product says feed gap instead of drawing fake latency. VAR and
+disallowed events stay explicit. Because tournament matches finish before judging,
+every recorded match can replay at 60× with the exact event order and agent evidence.”
 
-Switch to Norway vs England Replay: “Every recorded match can be played back at 60×,
-which makes event-driven strategy behavior reviewable after kickoff.”
+## 3:20–3:55 — Aggregate strategy research
 
-## 3:45–4:20 — Aggregate intelligence
+Open **Insights → Edge Finder**, then **All Gaps**.
 
-**Action:** Open Insights, then Edge Finder and All Gaps.
+“Across 47 matches, the product screens TxLINE-fair versus executable-ask windows and
+separates quiet from active books. Edge Finder found 37 positive quoted replays among 39
+quiet-book accepted-goal cases. All Gaps keeps negative and no-edge cases visible. These
+are retrospective quoted replays before fees and fill uncertainty—not profit claims.”
 
-“Across the archive, Edge Finder screens accepted goals for quiet books and executable
-TxLINE-fair versus Polymarket-ask gaps. The Observatory found 154 five-cent-or-larger
-windows across 39 matches, with a 102.7-second median duration. Neutral catalogs keep
-the negative and no-edge cases visible so this is not a winners-only dashboard.”
+## 3:55–4:15 — Close
 
-## 4:20–4:35 — TxLINE backend and close
+**Screen:** README endpoint table, then app.
 
-**Screen:** repository README at the endpoint table, then return to app.
+“TxLINE powers fixture discovery, odds snapshots and streams, score actions, and Solana
+Merkle validation. The public repository contains the agent, deterministic strategy,
+47-match evidence archive, and this working judge-facing application. This is TxLINE
+Observatory.”
 
-“TxLINE powers fixture discovery, odds snapshots and streams, score actions, and Merkle
-stat validation. Those feeds are normalized with market and execution evidence into a
-working research product judges can test now. This is TxLINE Observatory.”
-
-Stop recording. Do not add a long outro; preserve margin under five minutes.
+Stop. Leave margin under five minutes.
