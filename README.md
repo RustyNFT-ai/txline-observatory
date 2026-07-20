@@ -2,17 +2,48 @@
 
 **Live judge build:** https://txline-observatory.onrender.com
 
-An autonomous World Cup goal-lag paper agent with an event-to-execution audit surface.
-The agent consumes **TxLINE live odds and score streams**, compares TxLINE's
-de-margined fair probability with the executable **Polymarket** ask, enters a simulated
-position when the deterministic edge gate clears, and exits on convergence, reversal,
-or a hard time limit. It needs no human input after startup.
+TxLINE Observatory is a trading-intelligence and replay dashboard for understanding
+why event-driven sports strategies win, lose, or stay out. It combines TxLINE's live
+scores and de-margined odds with executable Polymarket prices, other score feeds,
+public-wallet fills, and automated strategy decisions on one auditable timeline.
 
-The Observatory aligns TxLINE, ESPN, worldcup26.ir, Polymarket, Jupiter, selected
-public-wallet fills, and opt-in paper executions on one timeline—live during a match
-and replayable after. Per goal it measures the score transition, source latency,
-sustained repricing, executable gaps, and the agent's decision. The Insights panel
-tests where that strategy's premise holds across the 47-match archive.
+## What we built — and why
+
+This project started with a practical problem: a paper-trading ledger showed that the
+bot sometimes won and sometimes lost, but it did not explain **why**. A P&L row could
+not show whether TxLINE saw the goal first, whether Polymarket had already repriced,
+whether the book was active or quiet, or whether the bot entered after the opportunity
+had disappeared. Those facts were scattered across separate feeds and logs.
+
+The Observatory turns that evidence into a product a trader can explore:
+
+- **Goal analysis:** Click any goal to compare TxLINE, Polymarket, Jupiter, ESPN, and
+  watched-actor timing in one waterfall. Nearby paper entries, exits, wallet fills,
+  prices, sizes, and recorded paper outcomes remain visible instead of being reduced
+  to a win/loss label.
+- **Watchlist comparisons:** Add a bot's public Polymarket address or follow suggested
+  research wallets. Their fills appear across charts, goal analysis, and Insights.
+  This is read-only and never requests a private key, signature, or trading access.
+- **Grounded analysis:** Ask the built-in analyst about a selected goal. The server
+  constructs a bounded packet from recorded timing, prices, feed events, and selected
+  actors before producing an explanation. Without an OpenAI key it returns a labeled
+  deterministic evidence summary, so the core experience still works.
+- **Live and replayable timelines:** During collection, Live mode follows incoming
+  events. After a match, 60× Replay preserves their original order so judges can still
+  inspect the complete experience after the tournament ends.
+- **Cross-match Insights:** Edge Finder and All Gaps compare opportunities across the
+  47-match archive while retaining negative and no-edge cases.
+
+The most interesting finding is about **attention**. In the recorded sample, the
+strongest quoted goal-lag replays clustered in quiet order books; heavily watched games
+repriced more efficiently. This is a hypothesis, not a profit claim. A month of full
+TxODDS access would let us test it on a much larger set of lower-attention matches and
+leagues, then use the Observatory to show exactly where it holds and where it breaks.
+
+The repository also includes a deterministic paper-trading strategy as a reference
+implementation. It consumes TxLINE score and odds streams, compares fair probability
+with the executable Polymarket ask, and records every entry, exit, and skip. The
+dashboard is the product; the paper agent supplies an inspectable strategy trace.
 
 Zero runtime dependencies: stdlib-only Python server, hand-rolled canvas frontend.
 
